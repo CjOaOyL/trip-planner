@@ -1,0 +1,117 @@
+{
+  "id": "04-long-weekend",
+  "name": "Long Weekend Sprint",
+  "tagline": "Yale + Harvard/MIT + one ski day at Killington — back in 4 days",
+  "vibe": "Efficient. All three campuses plus one strong ski day. No Canada, no Portland. Great if time is short.",
+  "highlights": ["Yale", "Harvard + MIT", "Killington skiing", "Black Heritage Trail Boston"],
+  "skiDays": 1,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 650,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Saturday, Apr 11",
+      "theme": "Hopewell → Yale → Boston",
+      "legs": [
+        {
+          "id": "leg-home-yale",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "yale-university",
+          "distanceMiles": 115,
+          "drivingMinutes": 110,
+          "notes": "I-95 N.",
+          "chargingStops": [
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 15, "supercharger": true }
+          ]
+        },
+        {
+          "id": "leg-yale-boston",
+          "fromPlaceId": "yale-university",
+          "toPlaceId": "harvard-university",
+          "distanceMiles": 138,
+          "drivingMinutes": 135,
+          "notes": "I-95 N. Afternoon Boston traffic possible.",
+          "chargingStops": [
+            { "placeId": "supercharger-boston", "estimatedChargeMinutes": 20, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "7:30 AM", "placeId": "hopewell-nj", "activity": "Depart Hopewell", "durationMinutes": 0 },
+        { "time": "10:00 AM", "placeId": "yale-university", "activity": "Yale campus walk — Old Campus, Harkness Tower, Art Gallery", "durationMinutes": 150 },
+        { "time": "12:30 PM", "placeId": "yale-university", "activity": "Lunch + depart for Boston", "durationMinutes": 45 },
+        { "time": "3:30 PM", "placeId": "museum-of-african-american-history-boston", "activity": "Museum of African American History", "durationMinutes": 90 },
+        { "time": "5:30 PM", "placeId": "harvard-university", "activity": "Check in, walk Harvard Square", "durationMinutes": 60 }
+      ],
+      "overnightPlaceId": "harvard-university",
+      "notes": "Long first day but packs in a lot. Yale in the morning, Boston history in the afternoon."
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Sunday, Apr 12",
+      "theme": "Harvard + MIT",
+      "legs": [],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "sofra-bakery", "activity": "Breakfast at Sofra Bakery", "durationMinutes": 60 },
+        { "time": "10:00 AM", "placeId": "harvard-university", "activity": "Harvard Admissions tour", "durationMinutes": 120 },
+        { "time": "12:30 PM", "placeId": "dudley-cafe", "activity": "Lunch at Dudley Café, Roxbury", "durationMinutes": 75 },
+        { "time": "2:30 PM", "placeId": "mit", "activity": "MIT self-guided tour — Infinite Corridor, Stata Center, Killian Court", "durationMinutes": 150 },
+        { "time": "5:00 PM", "placeId": "mit", "activity": "Walk along the Charles River", "durationMinutes": 60 }
+      ],
+      "overnightPlaceId": "harvard-university"
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Monday, Apr 13",
+      "theme": "Drive to Killington + Ski",
+      "legs": [
+        {
+          "id": "leg-boston-killington",
+          "fromPlaceId": "harvard-university",
+          "toPlaceId": "killington-resort",
+          "distanceMiles": 185,
+          "drivingMinutes": 195,
+          "notes": "I-93 N to I-89 N to VT-4 W. Charge in Montpelier.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "harvard-university", "activity": "Depart Cambridge", "durationMinutes": 0 },
+        { "time": "11:00 AM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + snack stop", "durationMinutes": 30 },
+        { "time": "12:00 PM", "placeId": "killington-resort", "activity": "Arrive Killington — rent gear, grab lunch", "durationMinutes": 90 },
+        { "time": "2:00 PM", "placeId": "killington-resort", "activity": "Ski! Afternoon session (3–4 hours)", "durationMinutes": 210 },
+        { "time": "6:00 PM", "placeId": "killington-resort", "activity": "Dinner + check in to lodge", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "killington-resort",
+      "notes": "Killington is often open into May — great spring skiing conditions."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Tuesday, Apr 14",
+      "theme": "Drive Home",
+      "legs": [
+        {
+          "id": "leg-killington-home",
+          "fromPlaceId": "killington-resort",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 345,
+          "drivingMinutes": 340,
+          "notes": "VT-4 E to I-89 S to I-91 S to I-95 S. Charge in Hartford.",
+          "chargingStops": [
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:00 AM", "placeId": "killington-resort", "activity": "Optional morning ski run (1–2 hours)", "durationMinutes": 120 },
+        { "time": "10:30 AM", "placeId": "killington-resort", "activity": "Return gear + depart", "durationMinutes": 30 },
+        { "time": "1:30 PM", "placeId": "supercharger-hartford-ct", "activity": "Charge + lunch in Hartford", "durationMinutes": 45 },
+        { "time": "4:00 PM", "placeId": "hopewell-nj", "activity": "Arrive home", "durationMinutes": 0 }
+      ],
+      "overnightPlaceId": "hopewell-nj"
+    }
+  ]
+}

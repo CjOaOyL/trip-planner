@@ -1,0 +1,147 @@
+{
+  "id": "01-scholars-loop",
+  "name": "The Scholar's Loop",
+  "tagline": "Yale → Boston (Harvard + MIT) → Vermont skiing → home",
+  "vibe": "College-focused with one strong ski day. Steady pacing, no Canada.",
+  "highlights": ["Yale campus tour", "Harvard Yard", "MIT campus", "Stowe skiing", "Roxbury / Black Boston"],
+  "skiDays": 1,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 820,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Saturday, Apr 11",
+      "theme": "Drive to New Haven + Yale",
+      "legs": [
+        {
+          "id": "leg-home-yale",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "yale-university",
+          "distanceMiles": 115,
+          "drivingMinutes": 110,
+          "notes": "Take I-95 N. Charge at Hartford Supercharger if needed.",
+          "chargingStops": [
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 20, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:00 AM", "placeId": "hopewell-nj", "activity": "Depart Hopewell", "durationMinutes": 0 },
+        { "time": "10:30 AM", "placeId": "yale-university", "activity": "Arrive Yale — self-guided campus walk", "durationMinutes": 90 },
+        { "time": "12:00 PM", "placeId": "yale-university", "activity": "Lunch on or near campus (Atticus Bookstore Café)", "durationMinutes": 60 },
+        { "time": "1:00 PM", "placeId": "yale-university", "activity": "Yale Art Gallery (free) + Beinecke Library exterior", "durationMinutes": 90 },
+        { "time": "3:00 PM", "placeId": "yale-university", "activity": "Check in to hotel in New Haven", "durationMinutes": 30 }
+      ],
+      "overnightPlaceId": "yale-university",
+      "notes": "New Haven has great pizza — Frank Pepe's or Sally's Apizza are legendary."
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Sunday, Apr 12",
+      "theme": "Drive to Boston + Arrive",
+      "legs": [
+        {
+          "id": "leg-yale-boston",
+          "fromPlaceId": "yale-university",
+          "toPlaceId": "harvard-university",
+          "distanceMiles": 138,
+          "drivingMinutes": 135,
+          "notes": "I-95 N to I-93 N. Boston traffic can add 30+ min.",
+          "chargingStops": [
+            { "placeId": "supercharger-boston", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "yale-university", "activity": "Depart New Haven", "durationMinutes": 0 },
+        { "time": "11:30 AM", "placeId": "museum-of-african-american-history-boston", "activity": "Museum of African American History + Black Heritage Trail", "durationMinutes": 120 },
+        { "time": "2:00 PM", "placeId": "dudley-cafe", "activity": "Late lunch at Dudley Café (Roxbury)", "durationMinutes": 60 },
+        { "time": "3:30 PM", "placeId": "harvard-university", "activity": "Check in to Cambridge hotel", "durationMinutes": 30 },
+        { "time": "5:00 PM", "placeId": "harvard-university", "activity": "Walk Harvard Square + Harvard Yard (exterior)", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "harvard-university",
+      "notes": "Stay in Cambridge — walking distance to both Harvard and MIT."
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Monday, Apr 13",
+      "theme": "Harvard + MIT",
+      "legs": [],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "sofra-bakery", "activity": "Breakfast at Sofra Bakery", "durationMinutes": 60 },
+        { "time": "10:00 AM", "placeId": "harvard-university", "activity": "Harvard Admissions tour (pre-register)", "durationMinutes": 120 },
+        { "time": "12:30 PM", "placeId": "harvard-university", "activity": "Lunch in Harvard Square", "durationMinutes": 60 },
+        { "time": "2:00 PM", "placeId": "mit", "activity": "MIT self-guided tour — Infinite Corridor, Stata Center, Media Lab", "durationMinutes": 150 },
+        { "time": "5:00 PM", "placeId": "mit", "activity": "Walk along Charles River Esplanade", "durationMinutes": 60 }
+      ],
+      "overnightPlaceId": "harvard-university",
+      "notes": "Harvard tours book up — register in advance at college.harvard.edu/admissions/visit."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Tuesday, Apr 14",
+      "theme": "Drive to Stowe, VT",
+      "legs": [
+        {
+          "id": "leg-boston-stowe",
+          "fromPlaceId": "harvard-university",
+          "toPlaceId": "stowe-mountain-resort",
+          "distanceMiles": 215,
+          "drivingMinutes": 215,
+          "notes": "I-93 N to I-89 N. Charge in Montpelier.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 30, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "harvard-university", "activity": "Depart Cambridge", "durationMinutes": 0 },
+        { "time": "12:00 PM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + lunch in Montpelier", "durationMinutes": 45 },
+        { "time": "1:30 PM", "placeId": "stowe-mountain-resort", "activity": "Arrive Stowe — check in, rent ski gear", "durationMinutes": 90 },
+        { "time": "3:30 PM", "placeId": "stowe-mountain-resort", "activity": "Afternoon ski session (2–3 hours)", "durationMinutes": 150 }
+      ],
+      "overnightPlaceId": "stowe-mountain-resort",
+      "notes": "Book ski rentals and lessons in advance at stowe.com — spring rates apply."
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Wednesday, Apr 15",
+      "theme": "Full Ski Day at Stowe",
+      "legs": [],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "stowe-mountain-resort", "activity": "Ski school / lessons (beginners)", "durationMinutes": 120 },
+        { "time": "11:00 AM", "placeId": "stowe-mountain-resort", "activity": "Open skiing — all skill levels", "durationMinutes": 180 },
+        { "time": "2:00 PM", "placeId": "stowe-mountain-resort", "activity": "Lunch on the mountain", "durationMinutes": 60 },
+        { "time": "3:00 PM", "placeId": "stowe-mountain-resort", "activity": "Afternoon runs or rest + hot chocolate", "durationMinutes": 120 }
+      ],
+      "overnightPlaceId": "stowe-mountain-resort",
+      "notes": "Stowe village has great dinner options — try the Whip Bar & Grill or Hen of the Wood."
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Thursday, Apr 16",
+      "theme": "Drive Home",
+      "legs": [
+        {
+          "id": "leg-stowe-home",
+          "fromPlaceId": "stowe-mountain-resort",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 370,
+          "drivingMinutes": 355,
+          "notes": "I-89 S to I-91 S to I-95 S. Charge in Hartford or New Haven.",
+          "chargingStops": [
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "stowe-mountain-resort", "activity": "Depart Stowe", "durationMinutes": 0 },
+        { "time": "12:00 PM", "placeId": "supercharger-hartford-ct", "activity": "Charge + lunch break in Hartford", "durationMinutes": 45 },
+        { "time": "3:00 PM", "placeId": "hopewell-nj", "activity": "Arrive home", "durationMinutes": 0 }
+      ],
+      "overnightPlaceId": "hopewell-nj",
+      "notes": "Leave by 9 AM to beat afternoon traffic through Hartford and New Haven."
+    }
+  ]
+}

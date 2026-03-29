@@ -1,0 +1,19 @@
+{
+  "id": "spring-break-2026",
+  "name": "Spring Break 2026",
+  "subtitle": "New England colleges, Black culture, skiing, and coastal vibes",
+  "startDate": "2026-04-11",
+  "endDate": "2026-04-18",
+  "origin": {
+    "name": "Hopewell, NJ",
+    "placeId": "hopewell-nj"
+  },
+  "travelers": ["Mom", "Daughter 1 (15)", "Daughter 2 (13)", "Daughter 3 (11)"],
+  "vehicle": "Tesla Model Y",
+  "itineraryIds": [
+    "01-scholars-loop",
+    "02-diaspora-journey",
+    "03-ski-first",
+    "04-long-weekend"
+  ]
+}

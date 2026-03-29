@@ -1,0 +1,172 @@
+{
+  "id": "02-diaspora-journey",
+  "name": "The Diaspora Journey",
+  "tagline": "Yale → Boston → Montreal (Black culture + diaspora) → Mont Tremblant skiing → home",
+  "vibe": "Culture-rich and immersive. Two ski days in Quebec. The longest trip but the most memorable.",
+  "highlights": ["Yale campus", "Black Heritage Trail Boston", "Little Burgundy Montreal", "Haitian + Caribbean dining", "Mont Tremblant", "French Canadian culture"],
+  "skiDays": 2,
+  "includesMontreal": true,
+  "includesPortland": false,
+  "totalMiles": 1240,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Saturday, Apr 11",
+      "theme": "Drive to New Haven + Yale",
+      "legs": [
+        {
+          "id": "leg-home-yale",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "yale-university",
+          "distanceMiles": 115,
+          "drivingMinutes": 110,
+          "notes": "Take I-95 N through Connecticut.",
+          "chargingStops": [
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 20, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:00 AM", "placeId": "hopewell-nj", "activity": "Depart Hopewell", "durationMinutes": 0 },
+        { "time": "10:30 AM", "placeId": "yale-university", "activity": "Arrive Yale — campus walk, Yale Art Gallery", "durationMinutes": 180 },
+        { "time": "2:00 PM", "placeId": "yale-university", "activity": "Lunch near campus", "durationMinutes": 60 },
+        { "time": "3:00 PM", "placeId": "yale-university", "activity": "Check in to New Haven hotel", "durationMinutes": 30 }
+      ],
+      "overnightPlaceId": "yale-university"
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Sunday, Apr 12",
+      "theme": "Boston — Black History + Culture",
+      "legs": [
+        {
+          "id": "leg-yale-boston",
+          "fromPlaceId": "yale-university",
+          "toPlaceId": "museum-of-african-american-history-boston",
+          "distanceMiles": 138,
+          "drivingMinutes": 135,
+          "notes": "I-95 N. Boston traffic — plan for extra time.",
+          "chargingStops": [
+            { "placeId": "supercharger-boston", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "yale-university", "activity": "Depart New Haven", "durationMinutes": 0 },
+        { "time": "11:30 AM", "placeId": "museum-of-african-american-history-boston", "activity": "Museum of African American History", "durationMinutes": 120 },
+        { "time": "2:00 PM", "placeId": "dudley-cafe", "activity": "Lunch at Dudley Café, Roxbury", "durationMinutes": 75 },
+        { "time": "4:00 PM", "placeId": "harvard-university", "activity": "Walk Harvard Yard + Harvard Square", "durationMinutes": 90 },
+        { "time": "6:00 PM", "placeId": "mit", "activity": "Drive by MIT campus, walk Infinite Corridor area", "durationMinutes": 60 }
+      ],
+      "overnightPlaceId": "harvard-university",
+      "notes": "Stay in Cambridge for easy Harvard + MIT access tomorrow morning."
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Monday, Apr 13",
+      "theme": "Harvard + MIT + Drive to Montreal",
+      "legs": [
+        {
+          "id": "leg-boston-montreal",
+          "fromPlaceId": "harvard-university",
+          "toPlaceId": "little-burgundy-montreal",
+          "distanceMiles": 312,
+          "drivingMinutes": 300,
+          "notes": "I-93 N to I-89 N into Quebec. Passport required. Charge in Montpelier.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 30, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "sofra-bakery", "activity": "Breakfast at Sofra", "durationMinutes": 60 },
+        { "time": "9:30 AM", "placeId": "harvard-university", "activity": "Harvard Admissions tour (pre-register)", "durationMinutes": 90 },
+        { "time": "11:30 AM", "placeId": "mit", "activity": "MIT self-guided walk", "durationMinutes": 60 },
+        { "time": "1:00 PM", "placeId": "harvard-university", "activity": "Depart Cambridge toward Montreal", "durationMinutes": 0 },
+        { "time": "3:30 PM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + rest stop in Montpelier", "durationMinutes": 35 },
+        { "time": "6:00 PM", "placeId": "little-burgundy-montreal", "activity": "Arrive Montreal — check in to hotel", "durationMinutes": 30 },
+        { "time": "7:30 PM", "placeId": "chez-aline-montreal", "activity": "Dinner at Chez Aline (Haitian)", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "little-burgundy-montreal",
+      "notes": "Bring passports. Border crossing at the Vermont/Quebec border is typically smooth."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Tuesday, Apr 14",
+      "theme": "Montreal — Diaspora Culture Day",
+      "legs": [],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "little-burgundy-montreal", "activity": "Morning walk through Little Burgundy neighborhood", "durationMinutes": 60, "notes": "Oscar Peterson grew up here — birthplace of Montreal jazz." },
+        { "time": "10:30 AM", "placeId": "little-burgundy-montreal", "activity": "Marché Atwater — local food market", "durationMinutes": 60 },
+        { "time": "12:00 PM", "placeId": "little-burgundy-montreal", "activity": "Lunch at a Caribbean/African restaurant in the neighborhood", "durationMinutes": 75 },
+        { "time": "2:00 PM", "placeId": "little-burgundy-montreal", "activity": "Old Montreal walking tour — Notre-Dame Basilica, Place d'Armes", "durationMinutes": 150 },
+        { "time": "5:00 PM", "placeId": "little-burgundy-montreal", "activity": "Explore Plateau Mont-Royal neighborhood", "durationMinutes": 90 },
+        { "time": "7:00 PM", "placeId": "chez-aline-montreal", "activity": "Dinner in Little Burgundy", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "little-burgundy-montreal",
+      "notes": "Consider visiting the Black Community Resource Centre if scheduling allows."
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Wednesday, Apr 15",
+      "theme": "Drive to Tremblant + Ski",
+      "legs": [
+        {
+          "id": "leg-montreal-tremblant",
+          "fromPlaceId": "little-burgundy-montreal",
+          "toPlaceId": "mont-tremblant",
+          "distanceMiles": 85,
+          "drivingMinutes": 95,
+          "notes": "Autoroute 15 N. Charge in Montreal before departing."
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "little-burgundy-montreal", "activity": "Depart Montreal", "durationMinutes": 0 },
+        { "time": "10:45 AM", "placeId": "mont-tremblant", "activity": "Arrive Tremblant — check in, rent ski gear", "durationMinutes": 75 },
+        { "time": "1:00 PM", "placeId": "mont-tremblant", "activity": "Afternoon ski session + beginner lessons", "durationMinutes": 210 },
+        { "time": "5:00 PM", "placeId": "mont-tremblant", "activity": "Explore the pedestrian village at the base", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "mont-tremblant"
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Thursday, Apr 16",
+      "theme": "Full Ski Day at Tremblant",
+      "legs": [],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "mont-tremblant", "activity": "Ski school (beginners) + open runs", "durationMinutes": 210 },
+        { "time": "12:00 PM", "placeId": "mont-tremblant", "activity": "Lunch on the mountain", "durationMinutes": 60 },
+        { "time": "1:00 PM", "placeId": "mont-tremblant", "activity": "Afternoon skiing — all levels", "durationMinutes": 180 },
+        { "time": "4:30 PM", "placeId": "mont-tremblant", "activity": "Return gear, relax in village", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "mont-tremblant"
+    },
+    {
+      "id": "day7",
+      "label": "Day 7 — Friday, Apr 17",
+      "theme": "Drive Home",
+      "legs": [
+        {
+          "id": "leg-tremblant-home",
+          "fromPlaceId": "mont-tremblant",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 540,
+          "drivingMinutes": 520,
+          "notes": "Long drive day. Cross back into US at Vermont border. Charge in Montpelier and Hartford.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 30, "supercharger": true },
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 20, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "8:00 AM", "placeId": "mont-tremblant", "activity": "Depart Tremblant — early start", "durationMinutes": 0 },
+        { "time": "12:00 PM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + lunch in Montpelier", "durationMinutes": 45 },
+        { "time": "3:00 PM", "placeId": "supercharger-hartford-ct", "activity": "Charge break in Hartford", "durationMinutes": 25 },
+        { "time": "5:30 PM", "placeId": "hopewell-nj", "activity": "Arrive home", "durationMinutes": 0 }
+      ],
+      "overnightPlaceId": "hopewell-nj",
+      "notes": "This is the longest drive day — leave Tremblant by 8 AM."
+    }
+  ]
+}

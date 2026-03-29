@@ -1,0 +1,186 @@
+[
+  {
+    "id": "hopewell-nj",
+    "name": "Hopewell, NJ",
+    "type": "other",
+    "description": "Home base — a small historic borough in Mercer County, New Jersey.",
+    "address": "Hopewell, NJ 08525",
+    "coordinates": [40.3876, -74.7657],
+    "googleMapsUrl": "https://maps.google.com/?q=Hopewell,NJ",
+    "tags": ["origin"]
+  },
+  {
+    "id": "yale-university",
+    "name": "Yale University",
+    "type": "university",
+    "description": "One of the world's leading research universities, founded in 1701. Home to the Yale School of Drama, Beinecke Rare Book Library, and a stunning Gothic campus in New Haven, CT.",
+    "address": "New Haven, CT 06520",
+    "coordinates": [41.3163, -72.9223],
+    "googleMapsUrl": "https://maps.google.com/?q=Yale+University,New+Haven,CT",
+    "website": "https://www.yale.edu",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Yale_University_Old_Campus_2.jpg/1280px-Yale_University_Old_Campus_2.jpg"
+    ],
+    "tags": ["college-tour", "ivy-league"]
+  },
+  {
+    "id": "harvard-university",
+    "name": "Harvard University",
+    "type": "university",
+    "description": "The oldest university in the United States, founded in 1636. Located in Cambridge, MA, Harvard has produced 8 U.S. presidents, 161 Nobel laureates, and countless groundbreaking scholars.",
+    "address": "Cambridge, MA 02138",
+    "coordinates": [42.3770, -71.1167],
+    "googleMapsUrl": "https://maps.google.com/?q=Harvard+University,Cambridge,MA",
+    "website": "https://www.harvard.edu",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/800px-Harvard_University_coat_of_arms.svg.png"
+    ],
+    "tags": ["college-tour", "ivy-league"]
+  },
+  {
+    "id": "mit",
+    "name": "MIT — Massachusetts Institute of Technology",
+    "type": "university",
+    "description": "A world-renowned science and technology university in Cambridge, MA. MIT's campus sits along the Charles River and is home to 97 Nobel laureates and countless innovations.",
+    "address": "77 Massachusetts Ave, Cambridge, MA 02139",
+    "coordinates": [42.3601, -71.0942],
+    "googleMapsUrl": "https://maps.google.com/?q=MIT,Cambridge,MA",
+    "website": "https://www.mit.edu",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/GW_Dome_MIT_infinity_corrected.jpg/1280px-GW_Dome_MIT_infinity_corrected.jpg"
+    ],
+    "tags": ["college-tour", "stem"]
+  },
+  {
+    "id": "dudley-cafe",
+    "name": "Dudley Café",
+    "type": "restaurant",
+    "description": "A beloved community gathering spot in Roxbury, one of Boston's most historically Black neighborhoods. Great coffee, food, and local art.",
+    "address": "2505 Washington St, Boston, MA 02119",
+    "coordinates": [42.3239, -71.0832],
+    "googleMapsUrl": "https://maps.google.com/?q=Dudley+Cafe,Boston,MA",
+    "blackOwned": true,
+    "tags": ["black-owned", "breakfast", "coffee", "roxbury"]
+  },
+  {
+    "id": "sofra-bakery",
+    "name": "Sofra Bakery & Café",
+    "type": "restaurant",
+    "description": "An acclaimed Middle Eastern bakery and café in Cambridge. Pastries, mezze spreads, and strong coffee — beloved by Harvard and MIT communities alike.",
+    "address": "1 Belmont St, Cambridge, MA 02138",
+    "coordinates": [42.3724, -71.1331],
+    "googleMapsUrl": "https://maps.google.com/?q=Sofra+Bakery+Cambridge,MA",
+    "tags": ["breakfast", "cafe", "cambridge"]
+  },
+  {
+    "id": "museum-of-african-american-history-boston",
+    "name": "Museum of African American History",
+    "type": "museum",
+    "description": "The largest institution in New England dedicated to preserving and sharing the contributions of African Americans. Located on Beacon Hill, it includes the African Meeting House — the oldest surviving Black church in the US.",
+    "address": "46 Joy St, Boston, MA 02114",
+    "coordinates": [42.3575, -71.0636],
+    "googleMapsUrl": "https://maps.google.com/?q=Museum+of+African+American+History,Boston",
+    "website": "https://www.maah.org",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/African_Meeting_House_Boston.jpg/1280px-African_Meeting_House_Boston.jpg"
+    ],
+    "tags": ["black-history", "museum", "beacon-hill"]
+  },
+  {
+    "id": "stowe-mountain-resort",
+    "name": "Stowe Mountain Resort",
+    "type": "ski-resort",
+    "description": "Vermont's premier ski destination. Mt. Mansfield — Vermont's highest peak — offers terrain for all levels. Stowe village is charming and walkable.",
+    "address": "5781 Mountain Rd, Stowe, VT 05672",
+    "coordinates": [44.5328, -72.7812],
+    "googleMapsUrl": "https://maps.google.com/?q=Stowe+Mountain+Resort,VT",
+    "website": "https://www.stowe.com",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Stowe_Mountain_Resort.jpg/1280px-Stowe_Mountain_Resort.jpg"
+    ],
+    "tags": ["skiing", "vermont", "beginner-friendly"]
+  },
+  {
+    "id": "killington-resort",
+    "name": "Killington Resort",
+    "type": "ski-resort",
+    "description": "The largest ski resort in the Eastern US with 155 trails. A classic spring skiing destination — often open into May. Great for beginners and thrill-seekers alike.",
+    "address": "4763 Killington Rd, Killington, VT 05751",
+    "coordinates": [43.6045, -72.8201],
+    "googleMapsUrl": "https://maps.google.com/?q=Killington+Resort,VT",
+    "website": "https://www.killington.com",
+    "tags": ["skiing", "vermont", "spring-skiing"]
+  },
+  {
+    "id": "mont-tremblant",
+    "name": "Mont Tremblant",
+    "type": "ski-resort",
+    "description": "Quebec's most famous ski resort, with a picturesque pedestrian village at its base. 102 trails, beginner-friendly schools, and a distinctly French Canadian atmosphere.",
+    "address": "1000 Chemin des Voyageurs, Mont-Tremblant, QC J8E 1T1",
+    "coordinates": [46.2132, -74.5858],
+    "googleMapsUrl": "https://maps.google.com/?q=Mont+Tremblant,Quebec",
+    "website": "https://www.tremblant.ca",
+    "tags": ["skiing", "quebec", "beginner-friendly", "french-canada"]
+  },
+  {
+    "id": "little-burgundy-montreal",
+    "name": "Little Burgundy, Montreal",
+    "type": "neighborhood",
+    "description": "Montreal's historically Black neighborhood, home to the vibrant jazz heritage of Oscar Peterson and the famous Joe Beef restaurant strip. Rich with Caribbean and African diaspora culture.",
+    "address": "Little Burgundy, Montreal, QC",
+    "coordinates": [45.4766, -73.5752],
+    "googleMapsUrl": "https://maps.google.com/?q=Little+Burgundy,Montreal,QC",
+    "tags": ["black-culture", "diaspora", "montreal", "jazz"]
+  },
+  {
+    "id": "chez-aline-montreal",
+    "name": "Chez Aline",
+    "type": "restaurant",
+    "description": "A beloved Haitian restaurant in Montreal serving traditional dishes like griot, diri ak pwa, and tasso. A taste of the Caribbean diaspora in Quebec.",
+    "address": "Montreal, QC",
+    "coordinates": [45.5120, -73.5695],
+    "googleMapsUrl": "https://maps.google.com/?q=Chez+Aline+Montreal",
+    "blackOwned": true,
+    "tags": ["haitian", "black-owned", "diaspora", "montreal"]
+  },
+  {
+    "id": "portland-maine-waterfront",
+    "name": "Portland, ME — Old Port Waterfront",
+    "type": "attraction",
+    "description": "Portland's historic waterfront district with cobblestone streets, working piers, seafood shacks, and boutique shops. A quintessential Maine coastal experience.",
+    "address": "Old Port, Portland, ME 04101",
+    "coordinates": [43.6591, -70.2568],
+    "googleMapsUrl": "https://maps.google.com/?q=Old+Port,Portland,ME",
+    "tags": ["coastal", "maine", "seafood"]
+  },
+  {
+    "id": "supercharger-hartford-ct",
+    "name": "Tesla Supercharger — Hartford, CT",
+    "type": "charging-station",
+    "description": "Tesla Supercharger station near I-91 in Hartford, CT. Convenient stop between Hopewell NJ and New Haven.",
+    "address": "Hartford, CT",
+    "coordinates": [41.7658, -72.6851],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Hartford+CT",
+    "tags": ["tesla", "charging", "i-91"]
+  },
+  {
+    "id": "supercharger-boston",
+    "name": "Tesla Supercharger — Boston, MA",
+    "type": "charging-station",
+    "description": "Tesla Supercharger in the Boston area.",
+    "address": "Boston, MA",
+    "coordinates": [42.3601, -71.0589],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Boston+MA",
+    "tags": ["tesla", "charging"]
+  },
+  {
+    "id": "supercharger-montpelier-vt",
+    "name": "Tesla Supercharger — Montpelier, VT",
+    "type": "charging-station",
+    "description": "Tesla Supercharger near I-89 in Montpelier, VT. Key stop on the Vermont ski leg.",
+    "address": "Montpelier, VT",
+    "coordinates": [44.2601, -72.5754],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Montpelier+VT",
+    "tags": ["tesla", "charging", "i-89"]
+  }
+]
