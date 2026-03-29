@@ -1,6 +1,26 @@
-import { useMemo } from 'react';
+import { useMemo, useState, useCallback } from 'react';
+import {
+  DndContext,
+  DragOverlay,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  closestCenter,
+  type DragStartEvent,
+  type DragEndEvent,
+} from '@dnd-kit/core';
 import type { Itinerary, Place, Day, Segment, TimeSlot } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
+import {
+  uid,
+  DraggableCard,
+  DroppableCell,
+  DroppableDiv,
+  type DndSegment,
+  type DragPayload,
+} from './SlotDnD';
+
+/* ─── Props ─────────────────────────────────────────────────────────────────── */
 
 interface Props {
   itinerary: Itinerary;
@@ -8,183 +28,378 @@ interface Props {
   onPlaceClick: (place: Place) => void;
 }
 
-interface SlottedSegment {
-  segment: Segment;
-  slot: TimeSlot;
-  place?: Place;
-}
+/* ─── Grid state ────────────────────────────────────────────────────────────── */
 
-interface SlottedDay {
+interface GridDay {
   day: Day;
-  bySlot: Map<TimeSlot, SlottedSegment[]>;
+  bySlot: Map<TimeSlot, DndSegment[]>;
 }
 
-function buildSlottedDays(itinerary: Itinerary, places: Record<string, Place>): SlottedDay[] {
+function buildGrid(itinerary: Itinerary, places: Record<string, Place>): GridDay[] {
   return itinerary.days.map((day) => {
-    const bySlot = new Map<TimeSlot, SlottedSegment[]>();
-    for (const slot of SLOT_ORDER) bySlot.set(slot, []);
+    const bySlot = new Map<TimeSlot, DndSegment[]>();
+    for (const s of SLOT_ORDER) bySlot.set(s, []);
 
     for (const segment of day.segments) {
       const place = places[segment.placeId];
       const slot = inferSlot(segment, place?.type);
-      bySlot.get(slot)!.push({ segment, slot, place });
+      bySlot.get(slot)!.push({ uid: uid(), segment, slot, place });
     }
 
-    // Add driving legs as travel segments
     for (const leg of day.legs) {
-      const fromPlace = places[leg.fromPlaceId];
-      const toPlace   = places[leg.toPlaceId];
-      const fakeSegment: Segment = {
+      const from = places[leg.fromPlaceId];
+      const to   = places[leg.toPlaceId];
+      const fake: Segment = {
         time: '—',
         placeId: leg.fromPlaceId,
-        activity: `Drive: ${fromPlace?.name ?? '?'} → ${toPlace?.name ?? '?'} (${Math.floor(leg.drivingMinutes / 60)}h${leg.drivingMinutes % 60 ? ` ${leg.drivingMinutes % 60}m` : ''})`,
+        activity: `Drive: ${from?.name ?? '?'} → ${to?.name ?? '?'} (${Math.floor(leg.drivingMinutes / 60)}h${leg.drivingMinutes % 60 ? ` ${leg.drivingMinutes % 60}m` : ''})`,
         durationMinutes: leg.drivingMinutes,
       };
-      bySlot.get('travel')!.push({ segment: fakeSegment, slot: 'travel', place: fromPlace });
+      bySlot.get('travel')!.push({ uid: uid(), segment: fake, slot: 'travel', place: from });
     }
 
     return { day, bySlot };
   });
 }
 
-// Which slots actually have content across the whole itinerary?
-function activeSlotsFor(days: SlottedDay[]): TimeSlot[] {
-  return SLOT_ORDER.filter((slot) =>
-    days.some((d) => (d.bySlot.get(slot)?.length ?? 0) > 0)
+/** Places from the trip that don't appear in any segment — candidates for the bench. */
+function findUnscheduledPlaces(
+  places: Record<string, Place>,
+  grid: GridDay[],
+  bench: DndSegment[],
+): Place[] {
+  const used = new Set<string>();
+  for (const gd of grid) {
+    for (const segs of gd.bySlot.values()) {
+      for (const s of segs) if (s.place) used.add(s.place.id);
+    }
+  }
+  for (const s of bench) if (s.place) used.add(s.place.id);
+  return Object.values(places).filter(
+    (p) => !used.has(p.id) && p.type !== 'charging-station',
   );
 }
 
-export default function TripOverview({ itinerary, places, onPlaceClick }: Props) {
-  const slottedDays = useMemo(
-    () => buildSlottedDays(itinerary, places),
-    [itinerary, places]
+function activeSlots(grid: GridDay[], bench: DndSegment[]): TimeSlot[] {
+  return SLOT_ORDER.filter((slot) =>
+    grid.some((d) => (d.bySlot.get(slot)?.length ?? 0) > 0) ||
+    bench.some((s) => s.slot === slot),
   );
-  const activeSlots = useMemo(() => activeSlotsFor(slottedDays), [slottedDays]);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   Component
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+export default function TripOverview({ itinerary, places, onPlaceClick }: Props) {
+  /* ── State ── */
+  const initialGrid = useMemo(() => buildGrid(itinerary, places), [itinerary, places]);
+  const [grid, setGrid] = useState<GridDay[]>(() => buildGrid(itinerary, places));
+  const [bench, setBench] = useState<DndSegment[]>([]);
+  const [activeId, setActiveId] = useState<DndSegment | null>(null);
+  const [showBench, setShowBench] = useState(true);
+
+  const slots = useMemo(() => activeSlots(grid, bench), [grid, bench]);
+  const unscheduled = useMemo(() => findUnscheduledPlaces(places, grid, bench), [places, grid, bench]);
+
+  /* ── DnD sensors ── */
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 5 } }),
+  );
+
+  /* ── Reset to original ── */
+  const handleReset = useCallback(() => {
+    setGrid(buildGrid(itinerary, places));
+    setBench([]);
+  }, [itinerary, places]);
+
+  const hasChanges = useMemo(() => {
+    // Quick dirty check: compare segment counts
+    const origCount = initialGrid.reduce((n, d) => n + [...d.bySlot.values()].reduce((a, s) => a + s.length, 0), 0);
+    const currCount = grid.reduce((n, d) => n + [...d.bySlot.values()].reduce((a, s) => a + s.length, 0), 0);
+    return currCount !== origCount || bench.length > 0;
+  }, [initialGrid, grid, bench]);
+
+  /* ── DnD handlers ── */
+  function handleDragStart(event: DragStartEvent) {
+    const data = event.active.data.current as DragPayload | undefined;
+    if (data) setActiveId(data.seg);
+  }
+
+  function handleDragEnd(event: DragEndEvent) {
+    setActiveId(null);
+    const { active, over } = event;
+    if (!over) return;
+
+    const dragData = active.data.current as DragPayload;
+    const dropData = over.data.current as { dayIndex: number; slot: TimeSlot; location: 'grid' | 'bench' } | undefined;
+    if (!dragData || !dropData) return;
+
+    // Same spot — no-op
+    if (
+      dragData.fromLocation === dropData.location &&
+      dragData.fromDayIndex === dropData.dayIndex &&
+      dragData.fromSlot === dropData.slot
+    ) return;
+
+    const seg = dragData.seg;
+
+    setGrid((prev) => {
+      const next = prev.map((gd) => ({
+        ...gd,
+        bySlot: new Map([...gd.bySlot.entries()].map(([k, v]) => [k, [...v]])),
+      }));
+
+      // Remove from grid source
+      if (dragData.fromLocation === 'grid') {
+        const srcSlotArr = next[dragData.fromDayIndex]?.bySlot.get(dragData.fromSlot);
+        if (srcSlotArr) {
+          const idx = srcSlotArr.findIndex((s) => s.uid === seg.uid);
+          if (idx !== -1) srcSlotArr.splice(idx, 1);
+        }
+      }
+
+      // Add to grid target
+      if (dropData.location === 'grid') {
+        const tgtSlotArr = next[dropData.dayIndex]?.bySlot.get(dropData.slot);
+        if (tgtSlotArr) {
+          tgtSlotArr.push({ ...seg, slot: dropData.slot });
+        }
+      }
+
+      return next;
+    });
+
+    // Remove from bench source
+    if (dragData.fromLocation === 'bench') {
+      setBench((prev) => prev.filter((s) => s.uid !== seg.uid));
+    }
+
+    // Add to bench target
+    if (dropData.location === 'bench') {
+      setBench((prev) => [...prev, seg]);
+    }
+  }
+
+  /* ── Add unscheduled place to bench ── */
+  function addToBench(place: Place) {
+    const seg: DndSegment = {
+      uid: uid(),
+      segment: { time: 'TBD', placeId: place.id, activity: place.name, durationMinutes: 60 },
+      slot: 'afternoon',
+      place,
+    };
+    setBench((prev) => [...prev, seg]);
+  }
+
+  /* ── Remove from bench entirely ── */
+  function removeFromBench(segUid: number) {
+    setBench((prev) => prev.filter((s) => s.uid !== segUid));
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════════ */
 
   return (
-    <div>
-      <p className="text-xs text-stone-400 mb-4">
-        All {itinerary.days.length} days side-by-side. Click any place to see details. Scroll right for more days.
-      </p>
+    <DndContext
+      sensors={sensors}
+      collisionDetection={closestCenter}
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+    >
+      <div>
+        <div className="flex items-center justify-between mb-4">
+          <p className="text-xs text-stone-400">
+            All {itinerary.days.length} days side-by-side. <strong>Drag</strong> events between slots. Scroll right for more days.
+          </p>
+          <div className="flex items-center gap-2">
+            {hasChanges && (
+              <button
+                onClick={handleReset}
+                className="text-xs text-stone-400 hover:text-stone-700 underline"
+              >
+                Reset
+              </button>
+            )}
+            <button
+              onClick={() => setShowBench(!showBench)}
+              className={`text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors ${
+                showBench
+                  ? 'border-teal-400 bg-teal-50 text-teal-700'
+                  : 'border-stone-200 bg-white text-stone-500 hover:border-stone-400'
+              }`}
+            >
+              📦 Bench {bench.length > 0 && `(${bench.length})`}
+            </button>
+          </div>
+        </div>
 
-      {/* Horizontal scroll container */}
-      <div className="overflow-x-auto pb-4">
-        <table className="border-separate border-spacing-0 min-w-full text-xs">
-          {/* ── Day headers ── */}
-          <thead>
-            <tr>
-              {/* Slot label column */}
-              <th className="sticky left-0 z-20 bg-stone-50 border-b border-r border-stone-200 p-0">
-                <div className="w-28 h-14" />
-              </th>
-              {slottedDays.map(({ day }, i) => (
-                <th
-                  key={day.id}
-                  className="border-b border-r border-stone-200 bg-white min-w-[180px] max-w-[220px]"
-                >
-                  <div className="px-3 py-2 text-left">
-                    <div className="font-bold text-stone-700">Day {i + 1}</div>
-                    <div className="text-stone-400 font-normal truncate">{day.theme}</div>
-                  </div>
+        {/* ── Slot grid ── */}
+        <div className="overflow-x-auto pb-4">
+          <table className="border-separate border-spacing-0 min-w-full text-xs">
+            <thead>
+              <tr>
+                <th className="sticky left-0 z-20 bg-stone-50 border-b border-r border-stone-200 p-0">
+                  <div className="w-28 h-14" />
                 </th>
+                {grid.map(({ day }, i) => (
+                  <th key={day.id} className="border-b border-r border-stone-200 bg-white min-w-[180px] max-w-[220px]">
+                    <div className="px-3 py-2 text-left">
+                      <div className="font-bold text-stone-700">Day {i + 1}</div>
+                      <div className="text-stone-400 font-normal truncate">{day.theme}</div>
+                    </div>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {slots.map((slot) => (
+                <tr key={slot}>
+                  <td className={`sticky left-0 z-10 border-b border-r border-stone-200 ${SLOT_BG[slot]}`}>
+                    <div className="w-28 px-3 py-2 font-semibold text-stone-600 whitespace-nowrap">
+                      {SLOT_LABEL[slot]}
+                    </div>
+                  </td>
+
+                  {grid.map(({ day, bySlot }, di) => {
+                    const segs = bySlot.get(slot) ?? [];
+                    const dropId = `grid:${di}:${slot}`;
+                    return (
+                      <DroppableCell
+                        key={day.id}
+                        id={dropId}
+                        dropData={{ dayIndex: di, slot, location: 'grid' }}
+                        className={`border-b border-r border-stone-200 align-top ${SLOT_BG[slot]} min-w-[180px]`}
+                      >
+                        {segs.length === 0 ? (
+                          <div className="px-3 py-2 text-stone-300 italic">—</div>
+                        ) : (
+                          <div className="px-2 py-1.5 space-y-1.5">
+                            {segs.map((seg) => (
+                              <DraggableCard
+                                key={seg.uid}
+                                id={`drag:${di}:${slot}:${seg.uid}`}
+                                dragData={{ seg, fromDayIndex: di, fromSlot: slot, fromLocation: 'grid' }}
+                                seg={seg}
+                                onPlaceClick={onPlaceClick}
+                              />
+                            ))}
+                          </div>
+                        )}
+                      </DroppableCell>
+                    );
+                  })}
+                </tr>
               ))}
-            </tr>
-          </thead>
 
-          {/* ── Slot rows ── */}
-          <tbody>
-            {activeSlots.map((slot) => (
-              <tr key={slot}>
-                {/* Sticky slot label */}
-                <td className={`sticky left-0 z-10 border-b border-r border-stone-200 ${SLOT_BG[slot]}`}>
-                  <div className="w-28 px-3 py-2 font-semibold text-stone-600 whitespace-nowrap">
-                    {SLOT_LABEL[slot]}
-                  </div>
+              {/* Overnight row (not draggable) */}
+              <tr>
+                <td className="sticky left-0 z-10 border-b border-r border-stone-200 bg-indigo-50">
+                  <div className="w-28 px-3 py-2 font-semibold text-indigo-700 whitespace-nowrap">🛏 Overnight</div>
                 </td>
-
-                {/* Day cells */}
-                {slottedDays.map(({ day, bySlot }) => {
-                  const segs = bySlot.get(slot) ?? [];
+                {grid.map(({ day }) => {
+                  const place = places[day.overnightPlaceId];
                   return (
-                    <td
-                      key={day.id}
-                      className={`border-b border-r border-stone-200 align-top ${SLOT_BG[slot]} min-w-[180px]`}
-                    >
-                      {segs.length === 0 ? (
-                        <div className="px-3 py-2 text-stone-300 italic">—</div>
-                      ) : (
-                        <div className="px-2 py-1.5 space-y-1.5">
-                          {segs.map((ss, i) => (
-                            <SlotCell
-                              key={i}
-                              ss={ss}
-                              onPlaceClick={onPlaceClick}
-                            />
-                          ))}
-                        </div>
-                      )}
+                    <td key={day.id} className="border-b border-r border-stone-200 bg-indigo-50 align-middle">
+                      <div className="px-2 py-1.5">
+                        {place ? (
+                          <button
+                            onClick={() => onPlaceClick(place)}
+                            className="text-indigo-700 font-medium hover:underline text-left leading-tight"
+                          >
+                            {place.name}
+                          </button>
+                        ) : (
+                          <span className="text-stone-300">—</span>
+                        )}
+                      </div>
                     </td>
                   );
                 })}
               </tr>
-            ))}
+            </tbody>
+          </table>
+        </div>
 
-            {/* Overnight row */}
-            <tr>
-              <td className="sticky left-0 z-10 border-b border-r border-stone-200 bg-indigo-50">
-                <div className="w-28 px-3 py-2 font-semibold text-indigo-700 whitespace-nowrap">🛏 Overnight</div>
-              </td>
-              {slottedDays.map(({ day }) => {
-                const place = places[day.overnightPlaceId];
-                return (
-                  <td key={day.id} className="border-b border-r border-stone-200 bg-indigo-50 align-middle">
-                    <div className="px-2 py-1.5">
-                      {place ? (
-                        <button
-                          onClick={() => onPlaceClick(place)}
-                          className="text-indigo-700 font-medium hover:underline text-left leading-tight"
-                        >
-                          {place.name}
-                        </button>
-                      ) : (
-                        <span className="text-stone-300">—</span>
-                      )}
-                    </div>
-                  </td>
-                );
-              })}
-            </tr>
-          </tbody>
-        </table>
+        {/* ── Slot legend ── */}
+        <div className="flex flex-wrap gap-2 mt-4">
+          {slots.map((slot) => (
+            <div key={slot} className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded-full ${SLOT_BG[slot]} text-stone-600`}>
+              {SLOT_LABEL[slot]}
+            </div>
+          ))}
+        </div>
+
+        {/* ── Bench / parking lot ── */}
+        {showBench && (
+          <section className="mt-6 border-2 border-dashed border-teal-300 rounded-xl bg-teal-50/40 p-4">
+            <h3 className="text-sm font-bold text-teal-800 mb-2">
+              📦 Bench <span className="font-normal text-teal-600 text-xs">— drag items here to stash them, or drag them back to a slot</span>
+            </h3>
+
+            {/* Drop zone for bench */}
+            <DroppableDiv
+              id="drop:bench"
+              dropData={{ dayIndex: -1, slot: 'morning', location: 'bench' }}
+              className="min-h-[56px] flex flex-wrap gap-2 p-2 rounded-lg border border-teal-200 bg-white/60"
+            >
+              {bench.length === 0 && (
+                <p className="text-xs text-teal-400 italic w-full text-center py-2">
+                  Drag events here to remove them from the schedule
+                </p>
+              )}
+              {bench.map((seg) => (
+                <div key={seg.uid} className="relative group">
+                  <DraggableCard
+                    id={`drag:bench:${seg.uid}`}
+                    dragData={{ seg, fromDayIndex: -1, fromSlot: seg.slot, fromLocation: 'bench' }}
+                    seg={seg}
+                    onPlaceClick={onPlaceClick}
+                  />
+                  <button
+                    onClick={() => removeFromBench(seg.uid)}
+                    title="Remove from bench"
+                    className="absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-red-400 text-white text-[10px] leading-none opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                  >
+                    ×
+                  </button>
+                </div>
+              ))}
+            </DroppableDiv>
+
+            {/* Unscheduled places — add to bench */}
+            {unscheduled.length > 0 && (
+              <div className="mt-3">
+                <p className="text-xs text-teal-600 font-medium mb-1.5">Available places not in schedule:</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {unscheduled.map((place) => (
+                    <button
+                      key={place.id}
+                      onClick={() => addToBench(place)}
+                      className="text-xs px-2 py-1 rounded-full border border-teal-200 bg-white text-teal-700 hover:bg-teal-100 transition-colors"
+                    >
+                      + {place.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
       </div>
 
-      {/* Slot legend */}
-      <div className="flex flex-wrap gap-2 mt-4">
-        {activeSlots.map((slot) => (
-          <div key={slot} className={`flex items-center gap-1.5 text-xs px-2 py-1 rounded-full ${SLOT_BG[slot]} text-stone-600`}>
-            {SLOT_LABEL[slot]}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function SlotCell({ ss, onPlaceClick }: { ss: SlottedSegment; onPlaceClick: (p: Place) => void }) {
-  return (
-    <div className="rounded bg-white/70 px-2 py-1 shadow-sm">
-      {ss.segment.time !== '—' && (
-        <div className="text-[10px] text-stone-400 tabular-nums">{ss.segment.time}</div>
-      )}
-      <div className="text-stone-700 leading-snug">{ss.segment.activity}</div>
-      {ss.place && (
-        <button
-          onClick={() => onPlaceClick(ss.place!)}
-          className="text-[10px] text-stone-400 hover:text-stone-700 hover:underline mt-0.5 text-left"
-        >
-          {ss.place.blackOwned ? '★ ' : ''}{ss.place.name}
-        </button>
-      )}
-    </div>
+      {/* ── Drag overlay (follows cursor) ── */}
+      <DragOverlay>
+        {activeId && (
+          <DraggableCard
+            id="overlay"
+            dragData={{ seg: activeId, fromDayIndex: -1, fromSlot: activeId.slot, fromLocation: 'grid' }}
+            seg={activeId}
+            onPlaceClick={onPlaceClick}
+            isDragOverlay
+          />
+        )}
+      </DragOverlay>
+    </DndContext>
   );
 }

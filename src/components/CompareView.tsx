@@ -1,6 +1,24 @@
 import { useMemo, useState, useCallback } from 'react';
+import {
+  DndContext,
+  DragOverlay,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  closestCenter,
+  type DragStartEvent,
+  type DragEndEvent,
+} from '@dnd-kit/core';
 import type { Itinerary, Place, Segment, TimeSlot, Day } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
+import {
+  uid,
+  DraggableCard,
+  DroppableCell,
+  DroppableDiv,
+  type DndSegment,
+  type DragPayload,
+} from './SlotDnD';
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
 
@@ -14,6 +32,7 @@ interface Props {
 /* ─── Slot‑parsed helpers ───────────────────────────────────────────────────── */
 
 interface SlottedSegment {
+  uid: number;
   segment: Segment;
   slot: TimeSlot;
   place?: Place;
@@ -40,7 +59,7 @@ function buildSlottedDay(
   for (const segment of day.segments) {
     const place = places[segment.placeId];
     const slot = inferSlot(segment, place?.type);
-    bySlot.get(slot)!.push({ segment, slot, place, itineraryId, dayIndex });
+    bySlot.get(slot)!.push({ uid: uid(), segment, slot, place, itineraryId, dayIndex });
   }
 
   // Driving legs → travel slot
@@ -53,7 +72,7 @@ function buildSlottedDay(
       activity: `Drive: ${from?.name ?? '?'} → ${to?.name ?? '?'} (${Math.floor(leg.drivingMinutes / 60)}h${leg.drivingMinutes % 60 ? ` ${leg.drivingMinutes % 60}m` : ''})`,
       durationMinutes: leg.drivingMinutes,
     };
-    bySlot.get('travel')!.push({ segment: fake, slot: 'travel', place: from, itineraryId, dayIndex });
+    bySlot.get('travel')!.push({ uid: uid(), segment: fake, slot: 'travel', place: from, itineraryId, dayIndex });
   }
 
   return { day, dayIndex, itineraryId, bySlot };
