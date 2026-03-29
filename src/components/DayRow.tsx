@@ -1,4 +1,4 @@
-import type { Day, Place } from '../types';
+import type { Day, Place, ReservationStatus } from '../types';
 import LegCard from './LegCard';
 import SegmentRow from './SegmentRow';
 
@@ -9,6 +9,7 @@ interface Props {
   isOpen: boolean;
   onToggle: () => void;
   onPlaceClick: (place: Place) => void;
+  reservationsByPlaceId?: Record<string, ReservationStatus>;
 }
 
 /** Total drive minutes across all legs in a day */
@@ -23,7 +24,7 @@ function formatMinutes(minutes: number): string {
   return m === 0 ? `${h}h` : `${h}h ${m}m`;
 }
 
-export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick }: Props) {
+export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick, reservationsByPlaceId = {} }: Props) {
   const overnight = places[day.overnightPlaceId];
   const driveMinutes = totalDriveMinutes(day);
   const hasLegs = day.legs.length > 0;
@@ -93,6 +94,7 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
                   segment={seg}
                   place={places[seg.placeId]}
                   onPlaceClick={onPlaceClick}
+                  reservationStatus={reservationsByPlaceId[seg.placeId]}
                 />
               ))}
             </div>

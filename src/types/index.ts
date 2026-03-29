@@ -46,6 +46,17 @@ export interface Leg {
   chargingStops?: ChargingStop[];
 }
 
+// ─── Time slots for the overview grid ────────────────────────────────────────
+
+export type TimeSlot =
+  | 'travel'     // departures, arrivals, charging stops
+  | 'breakfast'  // 7–10 AM eating
+  | 'morning'    // 9 AM–noon activities
+  | 'lunch'      // 11 AM–2 PM eating
+  | 'afternoon'  // 1–5 PM activities
+  | 'dinner'     // 5–8 PM eating
+  | 'evening';   // after 7 PM
+
 // ─── A single time block within a day ─────────────────────────────────────────
 
 export interface Segment {
@@ -80,6 +91,7 @@ export interface Itinerary {
   includesMontreal: boolean;
   includesPortland: boolean;
   totalMiles: number;
+  archived?: boolean;       // hidden from main list; shown in collapsed section
   days: Day[];
 }
 

@@ -1,0 +1,156 @@
+{
+  "id": "06-quick-montreal",
+  "name": "Quick Montreal Run",
+  "tagline": "Yale stop → Boston (Harvard + MIT) → Montréal → Tremblant ski → home in 6 days",
+  "vibe": "Efficient. Gets everything in without dragging. Good if school restarts quickly.",
+  "highlights": ["Yale campus stop", "Harvard + MIT", "Old Montréal", "Notre-Dame Basilica", "Little Burgundy", "Mont Tremblant"],
+  "skiDays": 1,
+  "includesMontreal": true,
+  "includesPortland": false,
+  "totalMiles": 980,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Saturday, Apr 11",
+      "theme": "Hopewell → Yale stop → Boston",
+      "legs": [
+        {
+          "id": "leg-home-yale",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "yale-university",
+          "distanceMiles": 115,
+          "drivingMinutes": 110,
+          "notes": "I-95 N. Top off at New Haven Supercharger.",
+          "chargingStops": [
+            { "placeId": "supercharger-new-haven", "estimatedChargeMinutes": 25, "supercharger": true }
+          ]
+        },
+        {
+          "id": "leg-yale-boston",
+          "fromPlaceId": "yale-university",
+          "toPlaceId": "museum-of-african-american-history-boston",
+          "distanceMiles": 138,
+          "drivingMinutes": 135,
+          "notes": "I-95 N to Boston."
+        }
+      ],
+      "segments": [
+        { "time": "8:00 AM", "placeId": "hopewell-nj", "activity": "Depart Hopewell", "durationMinutes": 0 },
+        { "time": "10:00 AM", "placeId": "yale-university", "activity": "Yale campus walk — Old Campus, art gallery, Beinecke Library exterior", "durationMinutes": 120 },
+        { "time": "12:00 PM", "placeId": "yale-university", "activity": "Lunch near campus + depart for Boston", "durationMinutes": 45 },
+        { "time": "3:00 PM", "placeId": "museum-of-african-american-history-boston", "activity": "Museum of African American History + Black Heritage Trail", "durationMinutes": 90 },
+        { "time": "5:00 PM", "placeId": "faneuil-hall", "activity": "Walk Faneuil Hall Marketplace + North End neighborhood", "durationMinutes": 75 },
+        { "time": "7:00 PM", "placeId": "faneuil-hall", "activity": "Dinner in the North End (Boston's Little Italy)", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "harvard-university"
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Sunday, Apr 12",
+      "theme": "Harvard + MIT + Tourist Boston",
+      "legs": [],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "sofra-bakery", "activity": "Breakfast at Sofra Bakery", "durationMinutes": 60 },
+        { "time": "10:00 AM", "placeId": "harvard-university", "activity": "Harvard campus tour", "durationMinutes": 120 },
+        { "time": "12:30 PM", "placeId": "harvard-university", "activity": "Lunch in Harvard Square", "durationMinutes": 60 },
+        { "time": "2:00 PM", "placeId": "mit", "activity": "MIT self-guided tour", "durationMinutes": 120 },
+        { "time": "4:30 PM", "placeId": "boston-common", "activity": "Boston Common + Public Garden walk", "durationMinutes": 75 },
+        { "time": "6:30 PM", "placeId": "dudley-cafe", "activity": "Dinner in Roxbury", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "harvard-university"
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Monday, Apr 13",
+      "theme": "Drive to Montréal",
+      "legs": [
+        {
+          "id": "leg-boston-montreal",
+          "fromPlaceId": "harvard-university",
+          "toPlaceId": "old-montreal",
+          "distanceMiles": 312,
+          "drivingMinutes": 300,
+          "notes": "I-93 N → I-89 N. Passport required. Charge in Montpelier.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 30, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "harvard-university", "activity": "Depart Cambridge", "durationMinutes": 0 },
+        { "time": "12:00 PM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + lunch in Montpelier", "durationMinutes": 40 },
+        { "time": "3:00 PM", "placeId": "old-montreal", "activity": "Arrive Montréal — check in near Old Montréal", "durationMinutes": 45 },
+        { "time": "4:00 PM", "placeId": "notre-dame-basilica-montreal", "activity": "Notre-Dame Basilica", "durationMinutes": 75 },
+        { "time": "5:30 PM", "placeId": "old-montreal", "activity": "Walk Old Montréal — Place Jacques-Cartier, Old Port", "durationMinutes": 90 },
+        { "time": "7:30 PM", "placeId": "chez-aline-montreal", "activity": "Dinner in Little Burgundy", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "little-burgundy-montreal",
+      "notes": "Passports required for US-Canada border crossing."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Tuesday, Apr 14",
+      "theme": "Montréal — Full Culture Day",
+      "legs": [],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "little-burgundy-montreal", "activity": "Little Burgundy morning walk — birthplace of Montréal jazz", "durationMinutes": 60 },
+        { "time": "10:30 AM", "placeId": "mcgill-university", "activity": "McGill University campus walk", "durationMinutes": 60 },
+        { "time": "12:00 PM", "placeId": "jean-talon-market", "activity": "Lunch at Jean-Talon Market", "durationMinutes": 75 },
+        { "time": "2:00 PM", "placeId": "mount-royal-park", "activity": "Mount Royal Park — city panorama from the Belvedere", "durationMinutes": 90 },
+        { "time": "4:00 PM", "placeId": "old-montreal", "activity": "Old Montréal afternoon — museums, shops, waterfront", "durationMinutes": 120 },
+        { "time": "7:00 PM", "placeId": "little-burgundy-montreal", "activity": "Dinner — Caribbean or African diaspora restaurant", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "little-burgundy-montreal"
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Wednesday, Apr 15",
+      "theme": "Mont Tremblant — Ski Day",
+      "legs": [
+        {
+          "id": "leg-montreal-tremblant",
+          "fromPlaceId": "little-burgundy-montreal",
+          "toPlaceId": "mont-tremblant",
+          "distanceMiles": 85,
+          "drivingMinutes": 95,
+          "notes": "Autoroute 15 N."
+        }
+      ],
+      "segments": [
+        { "time": "8:30 AM", "placeId": "little-burgundy-montreal", "activity": "Depart Montréal", "durationMinutes": 0 },
+        { "time": "10:15 AM", "placeId": "mont-tremblant", "activity": "Arrive Tremblant — gear rental + lessons check-in", "durationMinutes": 60 },
+        { "time": "11:30 AM", "placeId": "mont-tremblant", "activity": "Ski school + open runs — full day on the mountain", "durationMinutes": 270 },
+        { "time": "5:00 PM", "placeId": "mont-tremblant", "activity": "Village stroll + hot chocolate", "durationMinutes": 90 },
+        { "time": "7:00 PM", "placeId": "mont-tremblant", "activity": "Dinner in Tremblant village", "durationMinutes": 90 }
+      ],
+      "overnightPlaceId": "mont-tremblant"
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Thursday, Apr 16",
+      "theme": "Drive Home",
+      "legs": [
+        {
+          "id": "leg-tremblant-home",
+          "fromPlaceId": "mont-tremblant",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 540,
+          "drivingMinutes": 520,
+          "notes": "Long drive day — leave by 8 AM. Two charging stops.",
+          "chargingStops": [
+            { "placeId": "supercharger-montpelier-vt", "estimatedChargeMinutes": 30, "supercharger": true },
+            { "placeId": "supercharger-hartford-ct", "estimatedChargeMinutes": 20, "supercharger": true }
+          ]
+        }
+      ],
+      "segments": [
+        { "time": "7:30 AM", "placeId": "mont-tremblant", "activity": "Optional morning run before checkout", "durationMinutes": 90 },
+        { "time": "9:00 AM", "placeId": "mont-tremblant", "activity": "Depart Tremblant", "durationMinutes": 0 },
+        { "time": "12:30 PM", "placeId": "supercharger-montpelier-vt", "activity": "Charge + lunch in Montpelier", "durationMinutes": 45 },
+        { "time": "3:30 PM", "placeId": "supercharger-hartford-ct", "activity": "Charge break in Hartford", "durationMinutes": 25 },
+        { "time": "5:30 PM", "placeId": "hopewell-nj", "activity": "Arrive home", "durationMinutes": 0 }
+      ],
+      "overnightPlaceId": "hopewell-nj"
+    }
+  ]
+}

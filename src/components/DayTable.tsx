@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import type { Day, Place } from '../types';
+import type { Day, Place, ReservationStatus } from '../types';
 import DayRow from './DayRow';
 
 interface Props {
   days: Day[];
   places: Record<string, Place>;
   onPlaceClick: (place: Place) => void;
+  reservationsByPlaceId?: Record<string, ReservationStatus>;
 }
 
-export default function DayTable({ days, places, onPlaceClick }: Props) {
+export default function DayTable({ days, places, onPlaceClick, reservationsByPlaceId = {} }: Props) {
   const [openDayId, setOpenDayId] = useState<string | null>(days[0]?.id ?? null);
 
   function toggle(dayId: string) {
@@ -26,6 +27,7 @@ export default function DayTable({ days, places, onPlaceClick }: Props) {
           isOpen={openDayId === day.id}
           onToggle={() => toggle(day.id)}
           onPlaceClick={onPlaceClick}
+          reservationsByPlaceId={reservationsByPlaceId}
         />
       ))}
     </div>

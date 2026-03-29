@@ -1,6 +1,7 @@
-import { useState, useCallback } from 'react';
-import type { Reservation, ReservationCategory, ReservationStatus, Place } from '../types';
+import { useState, useCallback, useEffect } from 'react';
+import type { Reservation, ReservationCategory, ReservationStatus, Place, Trip, Itinerary } from '../types';
 import { listReservations } from '../utils/reservations';
+import { seedReservations } from '../utils/seedReservations';
 import ReservationCard from './ReservationCard';
 import ReservationModal from './ReservationModal';
 
@@ -9,6 +10,8 @@ interface Props {
   itineraryId: string;
   itineraryName: string;
   places: Record<string, Place>;
+  trip?: Trip;
+  itinerary?: Itinerary;
 }
 
 const CATEGORY_ORDER: ReservationCategory[] = [
@@ -33,13 +36,21 @@ const STATUS_FILTER_OPTIONS: { value: ReservationStatus | 'all'; label: string }
   { value: 'confirmed', label: 'Confirmed' },
 ];
 
-export default function ReservationsTab({ tripId, itineraryId, itineraryName }: Props) {
+export default function ReservationsTab({ tripId, itineraryId, itineraryName, trip, itinerary }: Props) {
   const [statusFilter, setStatusFilter] = useState<ReservationStatus | 'all'>('all');
   const [editTarget, setEditTarget] = useState<Reservation | null | 'new'>('new' as unknown as null);
   const [modalOpen, setModalOpen] = useState(false);
   const [tick, setTick] = useState(0); // increment to re-read localStorage
 
   const refresh = useCallback(() => setTick((t) => t + 1), []);
+
+  // Auto-seed on first open if trip + itinerary data available
+  useEffect(() => {
+    if (trip && itinerary) {
+      seedReservations(trip, itinerary);
+      refresh();
+    }
+  }, [trip, itinerary]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const allReservations = listReservations(tripId, itineraryId);
   const filtered = statusFilter === 'all'

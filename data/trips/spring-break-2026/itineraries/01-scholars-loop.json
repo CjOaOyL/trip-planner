@@ -8,6 +8,7 @@
   "includesMontreal": false,
   "includesPortland": false,
   "totalMiles": 820,
+  "archived": true,
   "days": [
     {
       "id": "day1",

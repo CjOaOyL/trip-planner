@@ -45,6 +45,9 @@ function getItineraryIds(tripId: string): string[] {
       '02-diaspora-journey',
       '03-ski-first',
       '04-long-weekend',
+      '05-colleges-and-culture',
+      '06-quick-montreal',
+      '07-four-colleges',
     ],
   };
   return map[tripId] ?? [];

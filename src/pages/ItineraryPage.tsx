@@ -1,13 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { loadTrip } from '../utils/loadTrip';
-import type { Trip, Itinerary, Place } from '../types';
+import { listReservations } from '../utils/reservations';
+import type { Trip, Itinerary, Place, ReservationStatus } from '../types';
 import DayTable from '../components/DayTable';
 import PlacePanel from '../components/PlacePanel';
 import RouteMap from '../components/RouteMap';
 import ReservationsTab from '../components/ReservationsTab';
+import TripOverview from '../components/TripOverview';
+import CompareView from '../components/CompareView';
 
-type Tab = 'itinerary' | 'reservations';
+type Tab = 'itinerary' | 'overview' | 'compare' | 'reservations';
 
 export default function ItineraryPage() {
   const { tripId, itineraryId } = useParams<{ tripId: string; itineraryId: string }>();
@@ -16,6 +19,7 @@ export default function ItineraryPage() {
   const [itinerary, setItinerary] = useState<Itinerary | null>(null);
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [tab, setTab] = useState<Tab>('itinerary');
+  const [resTick, setResTick] = useState(0);
 
   useEffect(() => {
     if (!tripId) return;
@@ -26,9 +30,34 @@ export default function ItineraryPage() {
     });
   }, [tripId, itineraryId]);
 
+  // Build placeId → best reservation status map for dot badges in the day table
+  const reservationsByPlaceId = useMemo<Record<string, ReservationStatus>>(() => {
+    if (!tripId || !itineraryId) return {};
+    const STATUS_RANK: Record<ReservationStatus, number> = {
+      needed: 0, contacted: 1, booked: 2, confirmed: 3, cancelled: -1,
+    };
+    const map: Record<string, ReservationStatus> = {};
+    for (const r of listReservations(tripId, itineraryId)) {
+      if (!r.placeId) continue;
+      const existing = map[r.placeId];
+      if (!existing || STATUS_RANK[r.status] > STATUS_RANK[existing]) {
+        map[r.placeId] = r.status;
+      }
+    }
+    return map;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tripId, itineraryId, resTick]);
+
   if (!trip || !itinerary) {
     return <div className="p-8 text-stone-400">Loading…</div>;
   }
+
+  const TABS: { id: Tab; label: string }[] = [
+    { id: 'itinerary',    label: 'Itinerary' },
+    { id: 'overview',     label: 'Overview' },
+    { id: 'compare',      label: 'Compare' },
+    { id: 'reservations', label: 'Reservations' },
+  ];
 
   return (
     <div className="min-h-screen bg-stone-50">
@@ -46,8 +75,6 @@ export default function ItineraryPage() {
             <h1 className="text-2xl font-bold text-stone-800">{itinerary.name}</h1>
             <p className="text-stone-500 text-sm mt-0.5">{itinerary.tagline}</p>
           </div>
-
-          {/* Summary chips */}
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="bg-stone-100 text-stone-600 px-3 py-1 rounded-full">
               {itinerary.days.length} days
@@ -59,7 +86,7 @@ export default function ItineraryPage() {
               ⛷ {itinerary.skiDays} ski {itinerary.skiDays === 1 ? 'day' : 'days'}
             </span>
             {itinerary.includesMontreal && (
-              <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Montreal</span>
+              <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Montréal</span>
             )}
             {itinerary.includesPortland && (
               <span className="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Portland</span>
@@ -68,7 +95,6 @@ export default function ItineraryPage() {
         </div>
 
         <p className="text-xs text-stone-400 italic mt-2">{itinerary.vibe}</p>
-
         <div className="flex flex-wrap gap-1.5 mt-3 mb-4">
           {itinerary.highlights.map((h, i) => (
             <span key={i} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full">
@@ -78,36 +104,31 @@ export default function ItineraryPage() {
         </div>
 
         {/* ── Tabs ── */}
-        <div className="flex gap-0 -mb-px">
-          {([['itinerary', 'Itinerary'], ['reservations', 'Reservations']] as [Tab, string][]).map(
-            ([id, label]) => (
-              <button
-                key={id}
-                onClick={() => setTab(id)}
-                className={`px-5 py-2.5 text-sm font-medium border-b-2 transition-colors ${
-                  tab === id
-                    ? 'border-stone-800 text-stone-800'
-                    : 'border-transparent text-stone-400 hover:text-stone-600'
-                }`}
-              >
-                {label}
-              </button>
-            )
-          )}
+        <div className="flex gap-0 -mb-px overflow-x-auto">
+          {TABS.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => setTab(id)}
+              className={`shrink-0 px-5 py-2.5 text-sm font-medium border-b-2 transition-colors ${
+                tab === id
+                  ? 'border-stone-800 text-stone-800'
+                  : 'border-transparent text-stone-400 hover:text-stone-600'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
       </div>
 
       {/* ── Tab content ── */}
-      <div className="max-w-3xl mx-auto px-4 py-6">
+      <div className={`${tab === 'overview' || tab === 'compare' ? '' : 'max-w-3xl mx-auto'} px-4 py-6`}>
+
+        {/* Itinerary tab */}
         {tab === 'itinerary' && (
           <>
-            {/* Route map */}
             <div className="mb-6">
-              <RouteMap
-                itinerary={itinerary}
-                places={trip.places}
-                onPlaceClick={setSelectedPlace}
-              />
+              <RouteMap itinerary={itinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
               <div className="flex flex-wrap gap-3 mt-2 px-1">
                 {[
                   { color: '#6366f1', label: 'University' },
@@ -118,36 +139,65 @@ export default function ItineraryPage() {
                   { color: '#22c55e', label: 'Charger ⚡' },
                 ].map(({ color, label }) => (
                   <div key={label} className="flex items-center gap-1.5 text-xs text-stone-500">
-                    <span
-                      className="inline-block w-2.5 h-2.5 rounded-full border-2 border-white shadow-sm"
-                      style={{ backgroundColor: color }}
-                    />
+                    <span className="inline-block w-2.5 h-2.5 rounded-full border-2 border-white shadow-sm" style={{ backgroundColor: color }} />
+                    {label}
+                  </div>
+                ))}
+              </div>
+              {/* Reservation dot legend */}
+              <div className="flex flex-wrap gap-3 mt-1.5 px-1 border-t border-stone-100 pt-2">
+                <span className="text-xs text-stone-400 mr-1">Booking status:</span>
+                {[
+                  { color: 'bg-stone-200', label: 'Not tracked' },
+                  { color: 'bg-red-400',   label: 'Needed' },
+                  { color: 'bg-yellow-400',label: 'Contacted' },
+                  { color: 'bg-blue-400',  label: 'Booked' },
+                  { color: 'bg-green-500', label: 'Confirmed' },
+                ].map(({ color, label }) => (
+                  <div key={label} className="flex items-center gap-1.5 text-xs text-stone-500">
+                    <span className={`inline-block w-2 h-2 rounded-full ${color}`} />
                     {label}
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Day table */}
             <DayTable
               days={itinerary.days}
               places={trip.places}
               onPlaceClick={setSelectedPlace}
+              reservationsByPlaceId={reservationsByPlaceId}
             />
           </>
         )}
 
+        {/* Overview tab */}
+        {tab === 'overview' && (
+          <TripOverview itinerary={itinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
+        )}
+
+        {/* Compare tab */}
+        {tab === 'compare' && (
+          <CompareView
+            currentItinerary={itinerary}
+            allItineraries={trip.itineraries}
+            places={trip.places}
+            onPlaceClick={setSelectedPlace}
+          />
+        )}
+
+        {/* Reservations tab */}
         {tab === 'reservations' && tripId && (
           <ReservationsTab
             tripId={tripId}
             itineraryId={itinerary.id}
             itineraryName={itinerary.name}
             places={trip.places}
+            trip={trip}
+            itinerary={itinerary}
           />
         )}
       </div>
 
-      {/* ── Place detail panel ── */}
       <PlacePanel place={selectedPlace} onClose={() => setSelectedPlace(null)} />
     </div>
   );

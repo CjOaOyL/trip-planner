@@ -1,9 +1,10 @@
-import type { Segment, Place, PlaceType } from '../types';
+import type { Segment, Place, PlaceType, ReservationStatus } from '../types';
 
 interface Props {
   segment: Segment;
   place: Place | undefined;
   onPlaceClick: (place: Place) => void;
+  reservationStatus?: ReservationStatus;
 }
 
 function formatDuration(minutes: number): string {
@@ -15,21 +16,37 @@ function formatDuration(minutes: number): string {
 }
 
 const TYPE_STYLES: Record<PlaceType, { bg: string; label: string }> = {
-  university:        { bg: 'bg-indigo-100 text-indigo-700', label: 'University' },
-  restaurant:        { bg: 'bg-orange-100 text-orange-700', label: 'Restaurant' },
-  attraction:        { bg: 'bg-teal-100 text-teal-700',     label: 'Attraction' },
-  hotel:             { bg: 'bg-purple-100 text-purple-700', label: 'Hotel' },
-  'ski-resort':      { bg: 'bg-sky-100 text-sky-700',       label: 'Ski Resort' },
-  'charging-station':{ bg: 'bg-green-100 text-green-700',   label: 'Charger' },
-  neighborhood:      { bg: 'bg-pink-100 text-pink-700',     label: 'Neighborhood' },
-  museum:            { bg: 'bg-amber-100 text-amber-700',   label: 'Museum' },
-  park:              { bg: 'bg-lime-100 text-lime-700',     label: 'Park' },
-  other:             { bg: 'bg-stone-100 text-stone-500',   label: '' },
+  university:         { bg: 'bg-indigo-100 text-indigo-700', label: 'University' },
+  restaurant:         { bg: 'bg-orange-100 text-orange-700', label: 'Restaurant' },
+  attraction:         { bg: 'bg-teal-100 text-teal-700',     label: 'Attraction' },
+  hotel:              { bg: 'bg-purple-100 text-purple-700', label: 'Hotel' },
+  'ski-resort':       { bg: 'bg-sky-100 text-sky-700',       label: 'Ski Resort' },
+  'charging-station': { bg: 'bg-green-100 text-green-700',   label: 'Charger' },
+  neighborhood:       { bg: 'bg-pink-100 text-pink-700',     label: 'Neighborhood' },
+  museum:             { bg: 'bg-amber-100 text-amber-700',   label: 'Museum' },
+  park:               { bg: 'bg-lime-100 text-lime-700',     label: 'Park' },
+  other:              { bg: 'bg-stone-100 text-stone-500',   label: '' },
 };
 
-export default function SegmentRow({ segment, place, onPlaceClick }: Props) {
+// Dot color + tooltip text per reservation status
+const RES_DOT: Record<ReservationStatus, { color: string; title: string }> = {
+  needed:    { color: 'bg-red-400',    title: 'Reservation needed' },
+  contacted: { color: 'bg-yellow-400', title: 'Contacted' },
+  booked:    { color: 'bg-blue-400',   title: 'Booked' },
+  confirmed: { color: 'bg-green-500',  title: 'Confirmed ✓' },
+  cancelled: { color: 'bg-stone-300',  title: 'Cancelled' },
+};
+
+// Only show a dot for place types that typically need a reservation
+const NEEDS_RESERVATION: PlaceType[] = [
+  'restaurant', 'ski-resort', 'museum', 'attraction', 'university',
+];
+
+export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus }: Props) {
   const typeStyle = place ? TYPE_STYLES[place.type] : TYPE_STYLES.other;
   const duration = formatDuration(segment.durationMinutes);
+  const showDot = place && NEEDS_RESERVATION.includes(place.type);
+  const dot = reservationStatus ? RES_DOT[reservationStatus] : null;
 
   return (
     <div className="flex items-start gap-4 px-5 py-3 hover:bg-stone-50 transition-colors">
@@ -40,7 +57,18 @@ export default function SegmentRow({ segment, place, onPlaceClick }: Props) {
 
       {/* Activity + place */}
       <div className="flex-1 min-w-0">
-        <div className="text-sm text-stone-800">{segment.activity}</div>
+        <div className="flex items-center gap-2">
+          <span className="text-sm text-stone-800">{segment.activity}</span>
+          {/* Reservation status dot */}
+          {showDot && (
+            <span
+              title={dot ? dot.title : 'No reservation tracked'}
+              className={`shrink-0 inline-block w-2 h-2 rounded-full ${
+                dot ? dot.color : 'bg-stone-200'
+              }`}
+            />
+          )}
+        </div>
 
         {place && (
           <button

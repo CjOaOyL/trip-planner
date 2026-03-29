@@ -182,5 +182,199 @@
     "coordinates": [44.2601, -72.5754],
     "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Montpelier+VT",
     "tags": ["tesla", "charging", "i-89"]
+  },
+  {
+    "id": "faneuil-hall",
+    "name": "Faneuil Hall Marketplace",
+    "type": "attraction",
+    "description": "Boston's iconic marketplace and meeting hall, built in 1742. Today it's a vibrant tourist hub with food vendors, street performers, and shops in the heart of downtown Boston. The Great Hall upstairs is a living piece of American history — Frederick Douglass, Susan B. Anthony, and countless others spoke here.",
+    "address": "4 S Market St, Boston, MA 02109",
+    "coordinates": [42.3601, -71.0548],
+    "googleMapsUrl": "https://maps.google.com/?q=Faneuil+Hall+Marketplace,Boston",
+    "website": "https://www.faneuilhallmarketplace.com",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Faneuilhall.jpg/1280px-Faneuilhall.jpg"
+    ],
+    "tags": ["tourist-attraction", "history", "food", "shopping", "downtown-boston"]
+  },
+  {
+    "id": "freedom-trail",
+    "name": "Freedom Trail",
+    "type": "attraction",
+    "description": "A 2.5-mile red-brick trail connecting 16 historically significant sites through downtown Boston and Charlestown. Includes the Massachusetts State House, Paul Revere House, Old North Church, and the Bunker Hill Monument. One of America's most important historic walking trails.",
+    "address": "Boston Common Visitor Center, 139 Tremont St, Boston, MA 02111",
+    "coordinates": [42.3554, -71.0641],
+    "googleMapsUrl": "https://maps.google.com/?q=Freedom+Trail,Boston,MA",
+    "website": "https://www.thefreedomtrail.org",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Freedom_Trail_Boston.jpg/1280px-Freedom_Trail_Boston.jpg"
+    ],
+    "tags": ["tourist-attraction", "history", "walking-tour", "boston"]
+  },
+  {
+    "id": "boston-common",
+    "name": "Boston Common & Public Garden",
+    "type": "park",
+    "description": "America's oldest public park (1634), in the heart of downtown Boston. Adjacent to the beautiful Public Garden with swan boats and weeping willows. A perfect place to decompress between museum visits and campus tours.",
+    "address": "Boston Common, Boston, MA 02116",
+    "coordinates": [42.3554, -71.0665],
+    "googleMapsUrl": "https://maps.google.com/?q=Boston+Common",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Boston_Common_2016.jpg/1280px-Boston_Common_2016.jpg"
+    ],
+    "tags": ["park", "tourist-attraction", "downtown-boston", "free"]
+  },
+  {
+    "id": "boston-harborwalk",
+    "name": "Boston Waterfront & Harborwalk",
+    "type": "attraction",
+    "description": "Boston's scenic 47-mile harborwalk along the waterfront. The Fort Point Channel and Seaport District stretch is especially vibrant — great seafood, the Institute of Contemporary Art, and sweeping harbor views.",
+    "address": "Seaport Blvd, Boston, MA 02210",
+    "coordinates": [42.3519, -71.0457],
+    "googleMapsUrl": "https://maps.google.com/?q=Boston+Seaport+Waterfront",
+    "tags": ["waterfront", "tourist-attraction", "seaport", "boston"]
+  },
+  {
+    "id": "old-north-church",
+    "name": "Old North Church",
+    "type": "attraction",
+    "description": "Boston's oldest surviving church (1723), famous for the \"one if by land, two if by sea\" signal lanterns that warned Paul Revere of the British advance. A cornerstone of the Freedom Trail.",
+    "address": "193 Salem St, Boston, MA 02113",
+    "coordinates": [42.3661, -71.0545],
+    "googleMapsUrl": "https://maps.google.com/?q=Old+North+Church,Boston,MA",
+    "website": "https://www.oldnorth.com",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Christ_Church_Boston_MA.jpg/800px-Christ_Church_Boston_MA.jpg"
+    ],
+    "tags": ["freedom-trail", "history", "tourist-attraction", "north-end"]
+  },
+  {
+    "id": "old-montreal",
+    "name": "Old Montréal (Vieux-Montréal)",
+    "type": "neighborhood",
+    "description": "Montréal's historic heart, with cobblestone streets, 17th–18th century architecture, the Old Port, and the iconic Bonsecours Market. Place Jacques-Cartier is the social center. A world away from modern Montréal — and one of the most beautiful historic districts in North America.",
+    "address": "Vieux-Montréal, Montréal, QC",
+    "coordinates": [45.5083, -73.5543],
+    "googleMapsUrl": "https://maps.google.com/?q=Old+Montreal,QC",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Vieux-Montr%C3%A9al_-_Rue_Saint-Paul.jpg/1280px-Vieux-Montr%C3%A9al_-_Rue_Saint-Paul.jpg"
+    ],
+    "tags": ["tourist-attraction", "historic-district", "montreal", "waterfront"]
+  },
+  {
+    "id": "notre-dame-basilica-montreal",
+    "name": "Notre-Dame Basilica de Montréal",
+    "type": "attraction",
+    "description": "One of North America's most breathtaking interiors — a neo-Gothic masterpiece with a vaulted blue ceiling studded with gold stars. Celine Dion got married here. The AURA light show runs evenings. Located in Old Montréal.",
+    "address": "110 Rue Notre-Dame O, Montréal, QC H2Y 1T2",
+    "coordinates": [45.5046, -73.5566],
+    "googleMapsUrl": "https://maps.google.com/?q=Notre-Dame+Basilica,Montreal",
+    "website": "https://www.basiliquenotredame.ca",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Basilique_Notre-Dame_de_Montr%C3%A9al_-_Altar.jpg/800px-Basilique_Notre-Dame_de_Montr%C3%A9al_-_Altar.jpg"
+    ],
+    "tags": ["tourist-attraction", "landmark", "montreal", "old-montreal"]
+  },
+  {
+    "id": "mount-royal-park",
+    "name": "Mount Royal Park",
+    "type": "park",
+    "description": "Designed by Frederick Law Olmsted (who designed Central Park), Mount Royal is Montréal's beloved forested hilltop park. The Kondiaronk Belvedere offers a sweeping panoramic view of the entire city skyline. A perfect half-day escape.",
+    "address": "Voie Camillien-Houde, Montréal, QC H3H 1A1",
+    "coordinates": [45.5041, -73.5876],
+    "googleMapsUrl": "https://maps.google.com/?q=Mount+Royal+Park,Montreal",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Montreal_vue_du_mont-royal.jpg/1280px-Montreal_vue_du_mont-royal.jpg"
+    ],
+    "tags": ["park", "tourist-attraction", "montreal", "viewpoint", "free"]
+  },
+  {
+    "id": "mcgill-university",
+    "name": "McGill University",
+    "type": "university",
+    "description": "One of Canada's top universities, founded in 1821. Its stunning Victorian campus sits at the base of Mount Royal. Walking up the main gates and through the Arts Building quad is free and gives a real feel for one of North America's great research universities.",
+    "address": "845 Rue Sherbrooke O, Montréal, QC H3A 0G4",
+    "coordinates": [45.5048, -73.5772],
+    "googleMapsUrl": "https://maps.google.com/?q=McGill+University,Montreal",
+    "website": "https://www.mcgill.ca",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/McGill_University_campus_2.jpg/1280px-McGill_University_campus_2.jpg"
+    ],
+    "tags": ["college-tour", "montreal", "canada"]
+  },
+  {
+    "id": "jean-talon-market",
+    "name": "Jean-Talon Market",
+    "type": "attraction",
+    "description": "The largest open-air market in North America, in the heart of Montréal's Little Italy. Produces, spices, local cheeses, Québécois maple products, and incredible food stalls. A vibrant, multicultural sensory experience.",
+    "address": "7075 Av. Casgrain, Montréal, QC H2S 3A4",
+    "coordinates": [45.5356, -73.6142],
+    "googleMapsUrl": "https://maps.google.com/?q=Jean-Talon+Market,Montreal",
+    "tags": ["food-market", "tourist-attraction", "montreal", "multicultural"]
+  },
+  {
+    "id": "brown-university",
+    "name": "Brown University",
+    "type": "university",
+    "description": "An Ivy League university in Providence, RI, founded in 1764. Known for its open curriculum, creative culture, and stunning College Hill campus. Brown has produced Pulitzer Prize winners, tech founders, and senators — and its campus is one of the most photogenic in New England.",
+    "address": "1 Prospect St, Providence, RI 02912",
+    "coordinates": [41.8268, -71.4025],
+    "googleMapsUrl": "https://maps.google.com/?q=Brown+University,Providence,RI",
+    "website": "https://www.brown.edu",
+    "photos": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/VanWickle_Gates.jpg/1280px-VanWickle_Gates.jpg"
+    ],
+    "tags": ["college-tour", "ivy-league", "providence"]
+  },
+  {
+    "id": "risd-museum",
+    "name": "RISD Museum of Art",
+    "type": "museum",
+    "description": "One of the finest university art museums in the country, attached to the Rhode Island School of Design. 91,000 objects spanning ancient Egyptian artifacts to contemporary works. Affordable, uncrowded, and genuinely world-class.",
+    "address": "224 Benefit St, Providence, RI 02903",
+    "coordinates": [41.8238, -71.4100],
+    "googleMapsUrl": "https://maps.google.com/?q=RISD+Museum,Providence,RI",
+    "website": "https://risdmuseum.org",
+    "tags": ["museum", "art", "providence", "college-adjacent"]
+  },
+  {
+    "id": "federal-hill-providence",
+    "name": "Federal Hill, Providence",
+    "type": "neighborhood",
+    "description": "Providence's Italian neighborhood — one of the best in New England. Atwells Avenue is lined with restaurants, bakeries, and the iconic pine cone arch at the entrance. A perfect dinner spot the night before heading to Boston.",
+    "address": "Federal Hill, Providence, RI",
+    "coordinates": [41.8219, -71.4274],
+    "googleMapsUrl": "https://maps.google.com/?q=Federal+Hill,Providence,RI",
+    "tags": ["dining", "neighborhood", "providence", "italian"]
+  },
+  {
+    "id": "providence-ri",
+    "name": "Providence, RI",
+    "type": "other",
+    "description": "Rhode Island's capital — a compact, creative city with two major universities, a thriving food scene, and a beautiful colonial waterfront. An underrated overnight stop between New Jersey and Boston.",
+    "address": "Providence, RI 02903",
+    "coordinates": [41.8240, -71.4128],
+    "googleMapsUrl": "https://maps.google.com/?q=Providence,RI",
+    "tags": ["city", "overnight-stop"]
+  },
+  {
+    "id": "supercharger-providence-ri",
+    "name": "Tesla Supercharger — Providence, RI",
+    "type": "charging-station",
+    "description": "Tesla Supercharger in the Providence, RI area. Useful on the Hopewell → Providence leg.",
+    "address": "Providence, RI",
+    "coordinates": [41.8240, -71.4000],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Providence+RI",
+    "tags": ["tesla", "charging", "i-95"]
+  },
+  {
+    "id": "supercharger-new-haven",
+    "name": "Tesla Supercharger — New Haven, CT",
+    "type": "charging-station",
+    "description": "Tesla Supercharger in New Haven, CT. Useful for top-off during a Yale stop.",
+    "address": "New Haven, CT 06510",
+    "coordinates": [41.3082, -72.9250],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+New+Haven+CT",
+    "tags": ["tesla", "charging", "i-95", "new-haven"]
   }
 ]
