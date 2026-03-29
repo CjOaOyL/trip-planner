@@ -19,7 +19,7 @@ export default function ItineraryPage() {
   const [itinerary, setItinerary] = useState<Itinerary | null>(null);
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [tab, setTab] = useState<Tab>('itinerary');
-  const [resTick, setResTick] = useState(0);
+  const [resTick, _setResTick] = useState(0);
 
   useEffect(() => {
     if (!tripId) return;

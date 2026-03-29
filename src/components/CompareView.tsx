@@ -1,24 +1,7 @@
 import { useMemo, useState, useCallback } from 'react';
-import {
-  DndContext,
-  DragOverlay,
-  PointerSensor,
-  useSensor,
-  useSensors,
-  closestCenter,
-  type DragStartEvent,
-  type DragEndEvent,
-} from '@dnd-kit/core';
 import type { Itinerary, Place, Segment, TimeSlot, Day } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
-import {
-  uid,
-  DraggableCard,
-  DroppableCell,
-  DroppableDiv,
-  type DndSegment,
-  type DragPayload,
-} from './SlotDnD';
+import { uid } from './SlotDnD';
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
 
@@ -282,7 +265,6 @@ export default function CompareView({ currentItinerary, allItineraries, places, 
           selectedItineraries={selectedItineraries}
           slottedByItinerary={slottedByItinerary}
           maxDays={maxDays}
-          places={places}
           itineraryColors={itineraryColors}
           draft={draft}
           onPick={pickForDraft}
@@ -296,7 +278,6 @@ export default function CompareView({ currentItinerary, allItineraries, places, 
           draft={draft}
           maxDays={maxDays}
           activeSlots={activeSlots}
-          places={places}
           itineraryColors={itineraryColors}
           allItineraries={allItineraries}
           onClear={clearDraft}
@@ -470,7 +451,6 @@ function SlotFocusGrid({
   selectedItineraries,
   slottedByItinerary,
   maxDays,
-  places,
   itineraryColors,
   draft,
   onPick,
@@ -480,7 +460,6 @@ function SlotFocusGrid({
   selectedItineraries: Itinerary[];
   slottedByItinerary: Map<string, SlottedDay[]>;
   maxDays: number;
-  places: Record<string, Place>;
   itineraryColors: Record<string, string>;
   draft: Map<string, DraftEntry>;
   onPick: (dayIndex: number, slot: TimeSlot, segments: SlottedSegment[], sourceItineraryId: string) => void;
@@ -572,7 +551,6 @@ function DraftPanel({
   draft,
   maxDays,
   activeSlots,
-  places,
   itineraryColors,
   allItineraries,
   onClear,
@@ -581,7 +559,6 @@ function DraftPanel({
   draft: Map<string, DraftEntry>;
   maxDays: number;
   activeSlots: TimeSlot[];
-  places: Record<string, Place>;
   itineraryColors: Record<string, string>;
   allItineraries: Itinerary[];
   onClear: () => void;
