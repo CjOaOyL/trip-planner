@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { loadTrip } from '../utils/loadTrip';
 import { listReservations } from '../utils/reservations';
+import { isFavorite, toggleFavorite } from '../utils/favorites';
 import type { Trip, Itinerary, Place, ReservationStatus } from '../types';
 import DayTable from '../components/DayTable';
 import PlacePanel from '../components/PlacePanel';
@@ -20,6 +21,7 @@ export default function ItineraryPage() {
   const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
   const [tab, setTab] = useState<Tab>('itinerary');
   const [resTick, _setResTick] = useState(0);
+  const [favTick, setFavTick] = useState(0);
 
   useEffect(() => {
     if (!tripId) return;
@@ -71,9 +73,26 @@ export default function ItineraryPage() {
         </button>
 
         <div className="flex items-start justify-between gap-4 flex-wrap">
-          <div>
-            <h1 className="text-2xl font-bold text-stone-800">{itinerary.name}</h1>
-            <p className="text-stone-500 text-sm mt-0.5">{itinerary.tagline}</p>
+          <div className="flex items-center gap-2">
+            {tripId && (() => {
+              const fav = isFavorite(tripId, itinerary.id);
+              void favTick;
+              return (
+                <button
+                  onClick={() => { toggleFavorite(tripId, itinerary.id); setFavTick((t) => t + 1); }}
+                  title={fav ? 'Remove from favourites' : 'Add to favourites'}
+                  className={`text-2xl leading-none p-1 rounded transition-colors ${
+                    fav ? 'text-amber-400 hover:text-amber-500' : 'text-stone-300 hover:text-amber-400'
+                  }`}
+                >
+                  {fav ? '★' : '☆'}
+                </button>
+              );
+            })()}
+            <div>
+              <h1 className="text-2xl font-bold text-stone-800">{itinerary.name}</h1>
+              <p className="text-stone-500 text-sm mt-0.5">{itinerary.tagline}</p>
+            </div>
           </div>
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="bg-stone-100 text-stone-600 px-3 py-1 rounded-full">

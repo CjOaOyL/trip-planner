@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { loadTrip } from '../utils/loadTrip';
 import { isArchived, archiveItinerary, unarchiveItinerary } from '../utils/archive';
+import { isFavorite, toggleFavorite } from '../utils/favorites';
+import { forkItinerary, addCustomItinerary, deleteCustomItinerary, isCustomItinerary } from '../utils/customItineraries';
 import type { Trip, Itinerary } from '../types';
 
 export default function TripPage() {
@@ -22,7 +24,13 @@ export default function TripPage() {
     return isArchived(trip!.meta.id, it.id, it.archived);
   }
 
-  const active   = trip.itineraries.filter((it) => !checkArchived(it));
+  const active   = trip.itineraries
+    .filter((it) => !checkArchived(it))
+    .sort((a, b) => {
+      const af = isFavorite(trip!.meta.id, a.id) ? 0 : 1;
+      const bf = isFavorite(trip!.meta.id, b.id) ? 0 : 1;
+      return af - bf;
+    });
   const archived = trip.itineraries.filter((it) => checkArchived(it));
 
   function toggleArchive(it: Itinerary) {
@@ -32,6 +40,30 @@ export default function TripPage() {
       archiveItinerary(trip!.meta.id, it.id);
     }
     setTick((t) => t + 1);
+  }
+
+  function handleToggleFavorite(it: Itinerary) {
+    toggleFavorite(trip!.meta.id, it.id);
+    setTick((t) => t + 1);
+  }
+
+  function handleFork(it: Itinerary) {
+    const forked = forkItinerary(it);
+    addCustomItinerary(trip!.meta.id, forked);
+    // Reload to pick up the new itinerary
+    loadTrip(trip!.meta.id).then((t) => {
+      setTrip(t);
+      setTick((prev) => prev + 1);
+    });
+  }
+
+  function handleDelete(it: Itinerary) {
+    if (!confirm(`Delete "${it.name}"? This cannot be undone.`)) return;
+    deleteCustomItinerary(trip!.meta.id, it.id);
+    loadTrip(trip!.meta.id).then((t) => {
+      setTrip(t);
+      setTick((prev) => prev + 1);
+    });
   }
 
   void tick;
@@ -54,9 +86,15 @@ export default function TripPage() {
           <ItineraryCard
             key={it.id}
             itinerary={it}
+            tripId={trip.meta.id}
             onSelect={() => navigate(`/trip/${tripId}/itinerary/${it.id}`)}
             onArchive={() => toggleArchive(it)}
+            onToggleFavorite={() => handleToggleFavorite(it)}
+            onFork={() => handleFork(it)}
+            onDelete={isCustomItinerary(trip.meta.id, it.id) ? () => handleDelete(it) : undefined}
             archived={false}
+            favorited={isFavorite(trip.meta.id, it.id)}
+            isCustom={isCustomItinerary(trip.meta.id, it.id)}
           />
         ))}
         {active.length === 0 && (
@@ -81,6 +119,7 @@ export default function TripPage() {
                 <ItineraryCard
                   key={it.id}
                   itinerary={it}
+                  tripId={trip.meta.id}
                   onSelect={() => navigate(`/trip/${tripId}/itinerary/${it.id}`)}
                   onArchive={() => toggleArchive(it)}
                   archived={true}
@@ -96,22 +135,54 @@ export default function TripPage() {
 
 interface CardProps {
   itinerary: Itinerary;
+  tripId?: string;
   onSelect: () => void;
   onArchive: () => void;
+  onToggleFavorite?: () => void;
+  onFork?: () => void;
+  onDelete?: () => void;
   archived: boolean;
+  favorited?: boolean;
+  isCustom?: boolean;
 }
 
-function ItineraryCard({ itinerary: it, onSelect, onArchive, archived }: CardProps) {
+function ItineraryCard({
+  itinerary: it,
+  onSelect,
+  onArchive,
+  onToggleFavorite,
+  onFork,
+  onDelete,
+  archived,
+  favorited,
+  isCustom,
+}: CardProps) {
   return (
     <div className={`bg-white border rounded-2xl p-5 shadow-sm transition-all ${
-      archived ? 'border-stone-100 opacity-60' : 'border-stone-200 hover:shadow-md hover:border-stone-300'
+      archived ? 'border-stone-100 opacity-60' : favorited ? 'border-amber-300 ring-1 ring-amber-200 hover:shadow-md' : 'border-stone-200 hover:shadow-md hover:border-stone-300'
     }`}>
       <div className="flex items-start gap-3">
+        {/* Star / favourite */}
+        {!archived && onToggleFavorite && (
+          <button
+            onClick={(e) => { e.stopPropagation(); onToggleFavorite(); }}
+            title={favorited ? 'Remove from favourites' : 'Add to favourites'}
+            className={`shrink-0 mt-1 text-xl leading-none p-1 rounded transition-colors ${
+              favorited ? 'text-amber-400 hover:text-amber-500' : 'text-stone-300 hover:text-amber-400'
+            }`}
+          >
+            {favorited ? '★' : '☆'}
+          </button>
+        )}
+
         {/* Main clickable area */}
         <button onClick={onSelect} className="flex-1 text-left">
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
-              <div className="text-lg font-semibold text-stone-800">{it.name}</div>
+              <div className="text-lg font-semibold text-stone-800 flex items-center gap-2">
+                {it.name}
+                {isCustom && <span className="text-[10px] font-medium bg-indigo-100 text-indigo-600 px-1.5 py-0.5 rounded-full">custom</span>}
+              </div>
               <div className="text-stone-500 text-sm mt-0.5">{it.tagline}</div>
               <div className="text-stone-400 text-xs mt-1.5 italic">{it.vibe}</div>
             </div>
@@ -129,14 +200,39 @@ function ItineraryCard({ itinerary: it, onSelect, onArchive, archived }: CardPro
           </div>
         </button>
 
-        {/* Archive / restore button */}
-        <button
-          onClick={(e) => { e.stopPropagation(); onArchive(); }}
-          title={archived ? 'Restore itinerary' : 'Archive itinerary'}
-          className="shrink-0 mt-1 text-stone-300 hover:text-stone-600 text-lg leading-none p-1 rounded hover:bg-stone-100 transition-colors"
-        >
-          {archived ? '↩' : '⊖'}
-        </button>
+        {/* Action buttons */}
+        <div className="flex flex-col items-center gap-1 shrink-0 mt-1">
+          {/* Fork / create alternative */}
+          {!archived && onFork && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onFork(); }}
+              title="Create alternative (fork)"
+              className="text-stone-300 hover:text-indigo-500 text-base leading-none p-1 rounded hover:bg-indigo-50 transition-colors"
+            >
+              ⑂
+            </button>
+          )}
+
+          {/* Archive / restore */}
+          <button
+            onClick={(e) => { e.stopPropagation(); onArchive(); }}
+            title={archived ? 'Restore itinerary' : 'Archive itinerary'}
+            className="text-stone-300 hover:text-stone-600 text-lg leading-none p-1 rounded hover:bg-stone-100 transition-colors"
+          >
+            {archived ? '↩' : '⊖'}
+          </button>
+
+          {/* Delete (custom only) */}
+          {onDelete && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onDelete(); }}
+              title="Delete custom itinerary"
+              className="text-stone-300 hover:text-red-500 text-base leading-none p-1 rounded hover:bg-red-50 transition-colors"
+            >
+              ✕
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

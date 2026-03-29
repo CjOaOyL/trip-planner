@@ -1,4 +1,5 @@
 import type { Trip, TripMeta, Place, Itinerary } from '../types';
+import { getCustomItineraries } from './customItineraries';
 
 /**
  * Registry of all available trips.
@@ -12,6 +13,7 @@ export const TRIP_REGISTRY: { id: string; label: string }[] = [
 /**
  * Dynamically imports all data files for a given trip id.
  * Vite resolves these at build time from /data/trips/<id>/.
+ * Also merges in any user-created custom itineraries from localStorage.
  */
 export async function loadTrip(tripId: string): Promise<Trip> {
   const [meta, placesArray, ...itineraries] = await Promise.all([
@@ -29,7 +31,11 @@ export async function loadTrip(tripId: string): Promise<Trip> {
     places[p.id] = p;
   }
 
-  return { meta, places, itineraries };
+  // Merge user-created custom itineraries
+  const custom = getCustomItineraries(tripId);
+  const allItineraries = [...itineraries, ...custom];
+
+  return { meta, places, itineraries: allItineraries };
 }
 
 /**
