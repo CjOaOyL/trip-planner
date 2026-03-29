@@ -4,6 +4,7 @@ import { loadTrip } from '../utils/loadTrip';
 import type { Trip, Itinerary, Place } from '../types';
 import DayTable from '../components/DayTable';
 import PlacePanel from '../components/PlacePanel';
+import RouteMap from '../components/RouteMap';
 
 export default function ItineraryPage() {
   const { tripId, itineraryId } = useParams<{ tripId: string; itineraryId: string }>();
@@ -76,9 +77,32 @@ export default function ItineraryPage() {
 
       {/* ── Main content ── */}
       <div className="max-w-3xl mx-auto px-4 py-6">
-        {/* Map placeholder — will be replaced with Leaflet map */}
-        <div className="bg-stone-200 rounded-2xl h-52 flex items-center justify-center text-stone-400 text-sm mb-6">
-          Map coming next
+        {/* Route map */}
+        <div className="mb-6">
+          <RouteMap
+            itinerary={itinerary}
+            places={trip.places}
+            onPlaceClick={setSelectedPlace}
+          />
+          {/* Legend */}
+          <div className="flex flex-wrap gap-3 mt-2 px-1">
+            {[
+              { color: '#6366f1', label: 'University' },
+              { color: '#0ea5e9', label: 'Ski Resort' },
+              { color: '#f97316', label: 'Restaurant' },
+              { color: '#f59e0b', label: 'Museum' },
+              { color: '#ec4899', label: 'Neighborhood' },
+              { color: '#22c55e', label: 'Charger ⚡' },
+            ].map(({ color, label }) => (
+              <div key={label} className="flex items-center gap-1.5 text-xs text-stone-500">
+                <span
+                  className="inline-block w-2.5 h-2.5 rounded-full border-2 border-white shadow-sm"
+                  style={{ backgroundColor: color }}
+                />
+                {label}
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Day table */}
