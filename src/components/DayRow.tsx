@@ -1,4 +1,4 @@
-import type { Day, Place, ReservationStatus } from '../types';
+import type { Day, Place, Segment, ReservationStatus } from '../types';
 import LegCard from './LegCard';
 import SegmentRow from './SegmentRow';
 
@@ -11,6 +11,9 @@ interface Props {
   onPlaceClick: (place: Place) => void;
   reservationsByPlaceId?: Record<string, ReservationStatus>;
   showCost?: boolean;
+  editing?: boolean;
+  onUpdateDay?: (updated: Day) => void;
+  onRemoveDay?: () => void;
 }
 
 /** Total drive minutes across all legs in a day */
@@ -25,7 +28,7 @@ function formatMinutes(minutes: number): string {
   return m === 0 ? `${h}h` : `${h}h ${m}m`;
 }
 
-export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick, reservationsByPlaceId = {}, showCost }: Props) {
+export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick, reservationsByPlaceId = {}, showCost, editing, onUpdateDay, onRemoveDay }: Props) {
   const overnight = places[day.overnightPlaceId];
   const driveMinutes = totalDriveMinutes(day);
   const hasLegs = day.legs.length > 0;
@@ -84,6 +87,43 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
       {/* ── Expanded content ── */}
       {isOpen && (
         <div className="border-t border-stone-100">
+          {/* Edit day controls (edit mode) */}
+          {editing && onUpdateDay && (
+            <div className="px-5 py-3 bg-blue-50/50 border-b border-stone-100 flex flex-wrap items-center gap-3">
+              <label className="text-xs text-stone-500">
+                Theme
+                <input
+                  value={day.theme}
+                  onChange={(e) => onUpdateDay({ ...day, theme: e.target.value })}
+                  className="block w-56 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white"
+                />
+              </label>
+              <label className="text-xs text-stone-500">
+                Label
+                <input
+                  value={day.label}
+                  onChange={(e) => onUpdateDay({ ...day, label: e.target.value })}
+                  className="block w-56 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white"
+                />
+              </label>
+              <label className="text-xs text-stone-500">
+                Lodging $
+                <input
+                  value={day.lodgingCost ?? ''}
+                  onChange={(e) => onUpdateDay({ ...day, lodgingCost: parseFloat(e.target.value) || 0 })}
+                  type="number" className="block w-20 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white"
+                />
+              </label>
+              {onRemoveDay && (
+                <button
+                  onClick={onRemoveDay}
+                  className="text-xs text-red-500 hover:text-red-700 font-medium px-2 py-1 rounded hover:bg-red-50 ml-auto"
+                >
+                  Remove Day
+                </button>
+              )}
+            </div>
+          )}
           {/* Drive legs */}
           {hasLegs && (
             <div className="px-5 py-4 bg-blue-50 border-b border-stone-100 space-y-3">
@@ -108,8 +148,38 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
                   onPlaceClick={onPlaceClick}
                   reservationStatus={reservationsByPlaceId[seg.placeId]}
                   showCost={showCost}
+                  editing={editing}
+                  onUpdate={editing && onUpdateDay ? (updatedSeg: Segment) => {
+                    const newSegments = [...day.segments];
+                    newSegments[i] = updatedSeg;
+                    onUpdateDay({ ...day, segments: newSegments });
+                  } : undefined}
+                  onRemove={editing && onUpdateDay ? () => {
+                    const newSegments = day.segments.filter((_, idx) => idx !== i);
+                    onUpdateDay({ ...day, segments: newSegments });
+                  } : undefined}
                 />
               ))}
+            </div>
+          )}
+
+          {/* Add segment button (edit mode) */}
+          {editing && onUpdateDay && (
+            <div className="px-5 py-2 border-t border-stone-100">
+              <button
+                onClick={() => {
+                  const newSeg: Segment = {
+                    time: 'TBD',
+                    placeId: day.overnightPlaceId || '',
+                    activity: 'New activity',
+                    durationMinutes: 60,
+                  };
+                  onUpdateDay({ ...day, segments: [...day.segments, newSeg] });
+                }}
+                className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1 hover:bg-blue-50 px-2 py-1 rounded transition-colors"
+              >
+                + Add segment
+              </button>
             </div>
           )}
 

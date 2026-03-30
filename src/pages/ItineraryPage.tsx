@@ -1,9 +1,15 @@
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { loadTrip } from '../utils/loadTrip';
 import { listReservations } from '../utils/reservations';
 import { isFavorite, toggleFavorite } from '../utils/favorites';
-import type { Trip, Itinerary, Place, ReservationStatus } from '../types';
+import {
+  isCustomItinerary,
+  updateCustomItinerary,
+  addCustomItinerary,
+  forkItinerary,
+} from '../utils/customItineraries';
+import type { Trip, Itinerary, Place, Day, ReservationStatus } from '../types';
 import DayTable from '../components/DayTable';
 import PlacePanel from '../components/PlacePanel';
 import RouteMap from '../components/RouteMap';
@@ -23,6 +29,9 @@ export default function ItineraryPage() {
   const [resTick, _setResTick] = useState(0);
   const [favTick, setFavTick] = useState(0);
   const [showCost, setShowCost] = useState(false);
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState<Itinerary | null>(null);   // working copy when editing
+  const [dirty, setDirty] = useState(false);
 
   useEffect(() => {
     if (!tripId) return;
@@ -32,6 +41,85 @@ export default function ItineraryPage() {
       setItinerary(found ?? null);
     });
   }, [tripId, itineraryId]);
+
+  // The "live" itinerary — draft when editing, base otherwise
+  const liveItinerary = editing && draft ? draft : itinerary;
+
+  /* ── Editing helpers ── */
+  const startEditing = useCallback(() => {
+    if (!itinerary) return;
+    setDraft(JSON.parse(JSON.stringify(itinerary)));
+    setEditing(true);
+    setDirty(false);
+  }, [itinerary]);
+
+  const discardEdits = useCallback(() => {
+    setDraft(null);
+    setEditing(false);
+    setDirty(false);
+  }, []);
+
+  const saveEdits = useCallback(() => {
+    if (!tripId || !draft) return;
+
+    // If editing an official itinerary, auto-fork it first
+    if (!isCustomItinerary(tripId, draft.id)) {
+      const forked = forkItinerary(draft, 'Edit');
+      // Copy our edits into the fork
+      const saved = { ...forked, days: draft.days, highlights: draft.highlights };
+      addCustomItinerary(tripId, saved);
+      // Navigate to the new custom itinerary
+      loadTrip(tripId).then((t) => {
+        setTrip(t);
+        const found = t.itineraries.find((i) => i.id === saved.id);
+        setItinerary(found ?? null);
+        navigate(`/trip/${tripId}/itinerary/${saved.id}`, { replace: true });
+      });
+    } else {
+      // Custom itinerary — update in-place
+      updateCustomItinerary(tripId, draft);
+      setItinerary(draft);
+    }
+    setDraft(null);
+    setEditing(false);
+    setDirty(false);
+  }, [tripId, draft, navigate]);
+
+  const updateDraft = useCallback((updater: (prev: Itinerary) => Itinerary) => {
+    setDraft((prev) => prev ? updater(prev) : prev);
+    setDirty(true);
+  }, []);
+
+  const handleUpdateDay = useCallback((dayIndex: number, updated: Day) => {
+    updateDraft((prev) => {
+      const newDays = [...prev.days];
+      newDays[dayIndex] = updated;
+      return { ...prev, days: newDays };
+    });
+  }, [updateDraft]);
+
+  const handleRemoveDay = useCallback((dayIndex: number) => {
+    updateDraft((prev) => ({
+      ...prev,
+      days: prev.days.filter((_, i) => i !== dayIndex),
+    }));
+  }, [updateDraft]);
+
+  const handleAddDay = useCallback(() => {
+    updateDraft((prev) => {
+      const n = prev.days.length + 1;
+      const lastDay = prev.days[prev.days.length - 1];
+      const newDay: Day = {
+        id: `${prev.id}-day${n}-${Date.now().toString(36)}`,
+        label: `Day ${n}`,
+        theme: 'TBD',
+        legs: [],
+        segments: [],
+        overnightPlaceId: lastDay?.overnightPlaceId || '',
+      };
+      return { ...prev, days: [...prev.days, newDay] };
+    });
+  }, [updateDraft]);
 
   // Build placeId → best reservation status map for dot badges in the day table
   const reservationsByPlaceId = useMemo<Record<string, ReservationStatus>>(() => {
@@ -51,17 +139,18 @@ export default function ItineraryPage() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tripId, itineraryId, resTick]);
 
-  if (!trip || !itinerary) {
+  if (!trip || !itinerary || !liveItinerary) {
     return <div className="p-8 text-stone-400">Loading…</div>;
   }
 
-  // Compute itinerary-level cost totals
-  const totalActivityCost = itinerary.days.reduce(
+  // Compute itinerary-level cost totals (use liveItinerary for real-time updates)
+  const totalActivityCost = liveItinerary.days.reduce(
     (sum, d) => sum + d.segments.reduce((s, seg) => s + (seg.costEstimate ?? 0), 0), 0
   );
-  const totalLodgingCost = itinerary.days.reduce((sum, d) => sum + (d.lodgingCost ?? 0), 0);
+  const totalLodgingCost = liveItinerary.days.reduce((sum, d) => sum + (d.lodgingCost ?? 0), 0);
   const grandTotal = totalActivityCost + totalLodgingCost;
   const hasCostData = grandTotal > 0;
+  const isCustom = isCustomItinerary(tripId!, itinerary.id);
 
   const TABS: { id: Tab; label: string }[] = [
     { id: 'itinerary',    label: 'Itinerary' },
@@ -99,36 +188,78 @@ export default function ItineraryPage() {
               );
             })()}
             <div>
-              <h1 className="text-2xl font-bold text-stone-800">{itinerary.name}</h1>
-              <p className="text-stone-500 text-sm mt-0.5">{itinerary.tagline}</p>
+              <h1 className="text-2xl font-bold text-stone-800">{liveItinerary.name}</h1>
+              <p className="text-stone-500 text-sm mt-0.5">{liveItinerary.tagline}</p>
             </div>
           </div>
           <div className="flex flex-wrap gap-2 text-xs">
             <span className="bg-stone-100 text-stone-600 px-3 py-1 rounded-full">
-              {itinerary.days.length} days
+              {liveItinerary.days.length} days
             </span>
             <span className="bg-stone-100 text-stone-600 px-3 py-1 rounded-full">
-              ~{itinerary.totalMiles} miles
+              ~{liveItinerary.totalMiles} miles
             </span>
             <span className="bg-sky-100 text-sky-700 px-3 py-1 rounded-full">
-              ⛷ {itinerary.skiDays} ski {itinerary.skiDays === 1 ? 'day' : 'days'}
+              ⛷ {liveItinerary.skiDays} ski {liveItinerary.skiDays === 1 ? 'day' : 'days'}
             </span>
-            {itinerary.includesMontreal && (
+            {liveItinerary.includesMontreal && (
               <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">Montréal</span>
             )}
-            {itinerary.includesPortland && (
+            {liveItinerary.includesPortland && (
               <span className="bg-teal-100 text-teal-700 px-3 py-1 rounded-full">Portland</span>
             )}
           </div>
         </div>
 
-        <p className="text-xs text-stone-400 italic mt-2">{itinerary.vibe}</p>
+        <p className="text-xs text-stone-400 italic mt-2">{liveItinerary.vibe}</p>
         <div className="flex flex-wrap gap-1.5 mt-3 mb-4">
-          {itinerary.highlights.map((h, i) => (
+          {liveItinerary.highlights.map((h, i) => (
             <span key={i} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5 rounded-full">
               {h}
             </span>
           ))}
+        </div>
+
+        {/* ── Edit / Save / Discard bar ── */}
+        <div className="flex items-center gap-2 mb-4">
+          {!editing ? (
+            <button
+              onClick={startEditing}
+              className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+              title={isCustom ? 'Edit this itinerary' : 'Edit (creates a custom copy)'}
+            >
+              ✏️ {isCustom ? 'Edit' : 'Edit (creates copy)'}
+            </button>
+          ) : (
+            <>
+              <button
+                onClick={saveEdits}
+                disabled={!dirty}
+                className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${
+                  dirty
+                    ? 'border-blue-400 bg-blue-600 text-white hover:bg-blue-700'
+                    : 'border-stone-200 bg-stone-100 text-stone-400 cursor-not-allowed'
+                }`}
+              >
+                💾 Save{!isCustom ? ' as Copy' : ''}
+              </button>
+              <button
+                onClick={discardEdits}
+                className="text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-red-300 hover:text-red-600 hover:bg-red-50 transition-colors"
+              >
+                ✕ Discard
+              </button>
+              <button
+                onClick={handleAddDay}
+                className="text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-colors"
+              >
+                + Add Day
+              </button>
+              {dirty && (
+                <span className="text-xs text-amber-600 font-medium ml-2">● Unsaved changes</span>
+              )}
+            </>
+          )}
         </div>
 
         {/* ── Cost toggle + grand total ── */}
@@ -186,7 +317,7 @@ export default function ItineraryPage() {
         {tab === 'itinerary' && (
           <>
             <div className="mb-6">
-              <RouteMap itinerary={itinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
+              <RouteMap itinerary={liveItinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
               <div className="flex flex-wrap gap-3 mt-2 px-1">
                 {[
                   { color: '#6366f1', label: 'University' },
@@ -220,24 +351,27 @@ export default function ItineraryPage() {
               </div>
             </div>
             <DayTable
-              days={itinerary.days}
+              days={liveItinerary.days}
               places={trip.places}
               onPlaceClick={setSelectedPlace}
               reservationsByPlaceId={reservationsByPlaceId}
               showCost={showCost}
+              editing={editing}
+              onUpdateDay={editing ? handleUpdateDay : undefined}
+              onRemoveDay={editing ? handleRemoveDay : undefined}
             />
           </>
         )}
 
         {/* Overview tab */}
         {tab === 'overview' && (
-          <TripOverview itinerary={itinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
+          <TripOverview itinerary={liveItinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
         )}
 
         {/* Compare tab */}
         {tab === 'compare' && (
           <CompareView
-            currentItinerary={itinerary}
+            currentItinerary={liveItinerary}
             allItineraries={trip.itineraries}
             places={trip.places}
             onPlaceClick={setSelectedPlace}

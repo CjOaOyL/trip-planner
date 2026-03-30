@@ -8,9 +8,12 @@ interface Props {
   onPlaceClick: (place: Place) => void;
   reservationsByPlaceId?: Record<string, ReservationStatus>;
   showCost?: boolean;
+  editing?: boolean;
+  onUpdateDay?: (dayIndex: number, updated: Day) => void;
+  onRemoveDay?: (dayIndex: number) => void;
 }
 
-export default function DayTable({ days, places, onPlaceClick, reservationsByPlaceId = {}, showCost }: Props) {
+export default function DayTable({ days, places, onPlaceClick, reservationsByPlaceId = {}, showCost, editing, onUpdateDay, onRemoveDay }: Props) {
   const [openDayId, setOpenDayId] = useState<string | null>(days[0]?.id ?? null);
 
   function toggle(dayId: string) {
@@ -30,6 +33,9 @@ export default function DayTable({ days, places, onPlaceClick, reservationsByPla
           onPlaceClick={onPlaceClick}
           reservationsByPlaceId={reservationsByPlaceId}
           showCost={showCost}
+          editing={editing}
+          onUpdateDay={onUpdateDay ? (updated: Day) => onUpdateDay(index, updated) : undefined}
+          onRemoveDay={onRemoveDay ? () => onRemoveDay(index) : undefined}
         />
       ))}
     </div>

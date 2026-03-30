@@ -1,5 +1,5 @@
 /**
- * Create alternative itineraries (fork / clone).
+ * Create alternative itineraries (fork / clone) + blank itinerary creation.
  *
  * Fork an existing itinerary, give it a new id + name, and persist it
  * in localStorage so it shows up alongside the bundled ones.
@@ -93,5 +93,50 @@ export function forkItinerary(source: Itinerary, suffix?: string): Itinerary {
     archived: false,
     days: source.days.map((d) => cloneDay(d, newId)),
     highlights: [...source.highlights],
+  };
+}
+
+/**
+ * Create a blank itinerary with a given number of days.
+ * Returns an unsaved Itinerary — caller should call addCustomItinerary.
+ */
+export function createBlankItinerary(opts: {
+  name: string;
+  numDays: number;
+  startDate: string;       // ISO date e.g. "2026-04-11"
+  originPlaceId: string;
+}): Itinerary {
+  const timestamp = Date.now().toString(36);
+  const newId = `custom-${timestamp}`;
+  const start = new Date(opts.startDate + 'T00:00:00');
+  const DOW = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const days: Day[] = [];
+  for (let i = 0; i < opts.numDays; i++) {
+    const date = new Date(start);
+    date.setDate(date.getDate() + i);
+    const label = `Day ${i + 1} — ${DOW[date.getDay()]}, ${MON[date.getMonth()]} ${date.getDate()}`;
+    days.push({
+      id: `${newId}-day${i + 1}`,
+      label,
+      theme: i === 0 ? 'Departure' : i === opts.numDays - 1 ? 'Return Home' : 'TBD',
+      legs: [],
+      segments: [],
+      overnightPlaceId: opts.originPlaceId,
+    });
+  }
+
+  return {
+    id: newId,
+    name: opts.name || 'New Itinerary',
+    tagline: 'Custom itinerary',
+    vibe: '',
+    highlights: [],
+    skiDays: 0,
+    includesMontreal: false,
+    includesPortland: false,
+    totalMiles: 0,
+    days,
   };
 }

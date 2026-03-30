@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { loadTrip } from '../utils/loadTrip';
 import { isArchived, archiveItinerary, unarchiveItinerary } from '../utils/archive';
 import { isFavorite, toggleFavorite } from '../utils/favorites';
-import { forkItinerary, addCustomItinerary, deleteCustomItinerary, isCustomItinerary } from '../utils/customItineraries';
+import { forkItinerary, addCustomItinerary, deleteCustomItinerary, isCustomItinerary, createBlankItinerary } from '../utils/customItineraries';
 import type { Trip, Itinerary } from '../types';
 
 export default function TripPage() {
@@ -12,6 +12,9 @@ export default function TripPage() {
   const [trip, setTrip] = useState<Trip | null>(null);
   const [tick, setTick] = useState(0);
   const [showArchived, setShowArchived] = useState(false);
+  const [creating, setCreating] = useState(false);
+  const [newName, setNewName] = useState('');
+  const [newDays, setNewDays] = useState(7);
 
   useEffect(() => {
     if (!tripId) return;
@@ -66,6 +69,21 @@ export default function TripPage() {
     });
   }
 
+  function handleCreate() {
+    const name = newName.trim() || 'My Itinerary';
+    const blank = createBlankItinerary(name, newDays);
+    addCustomItinerary(trip!.meta.id, blank);
+    loadTrip(trip!.meta.id).then((t) => {
+      setTrip(t);
+      setTick((prev) => prev + 1);
+      setCreating(false);
+      setNewName('');
+      setNewDays(7);
+      // Navigate into the new itinerary in edit mode
+      navigate(`/trip/${tripId}/itinerary/${blank.id}`);
+    });
+  }
+
   void tick;
 
   return (
@@ -99,6 +117,59 @@ export default function TripPage() {
         ))}
         {active.length === 0 && (
           <p className="text-stone-400 text-sm italic">All itineraries are archived. Restore one below.</p>
+        )}
+      </div>
+
+      {/* Create New Itinerary */}
+      <div className="max-w-2xl mb-10">
+        {!creating ? (
+          <button
+            onClick={() => setCreating(true)}
+            className="flex items-center gap-2 text-sm font-medium text-stone-500 hover:text-blue-600 hover:bg-blue-50 border border-dashed border-stone-300 hover:border-blue-400 rounded-2xl px-5 py-4 w-full transition-colors"
+          >
+            <span className="text-lg">＋</span> Create New Itinerary
+          </button>
+        ) : (
+          <div className="bg-white border border-blue-200 rounded-2xl p-5 shadow-sm">
+            <h3 className="text-sm font-semibold text-stone-700 mb-3">New Itinerary</h3>
+            <div className="flex flex-wrap gap-3 items-end">
+              <label className="flex-1 min-w-[180px]">
+                <span className="text-xs text-stone-500 block mb-1">Name</span>
+                <input
+                  type="text"
+                  value={newName}
+                  onChange={(e) => setNewName(e.target.value)}
+                  placeholder="My Custom Itinerary"
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  autoFocus
+                  onKeyDown={(e) => e.key === 'Enter' && handleCreate()}
+                />
+              </label>
+              <label className="w-28">
+                <span className="text-xs text-stone-500 block mb-1">Days</span>
+                <input
+                  type="number"
+                  min={1}
+                  max={30}
+                  value={newDays}
+                  onChange={(e) => setNewDays(Math.max(1, Math.min(30, Number(e.target.value))))}
+                  className="w-full border border-stone-200 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
+                />
+              </label>
+              <button
+                onClick={handleCreate}
+                className="text-sm font-medium px-4 py-1.5 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+              >
+                Create
+              </button>
+              <button
+                onClick={() => { setCreating(false); setNewName(''); setNewDays(7); }}
+                className="text-sm font-medium px-3 py-1.5 rounded-lg border border-stone-200 text-stone-500 hover:bg-stone-50 transition-colors"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
         )}
       </div>
 

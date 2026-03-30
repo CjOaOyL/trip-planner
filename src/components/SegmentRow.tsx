@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { Segment, Place, PlaceType, ReservationStatus } from '../types';
 
 interface Props {
@@ -6,6 +7,9 @@ interface Props {
   onPlaceClick: (place: Place) => void;
   reservationStatus?: ReservationStatus;
   showCost?: boolean;
+  editing?: boolean;
+  onUpdate?: (updated: Segment) => void;
+  onRemove?: () => void;
 }
 
 function formatDuration(minutes: number): string {
@@ -43,15 +47,90 @@ const NEEDS_RESERVATION: PlaceType[] = [
   'restaurant', 'ski-resort', 'museum', 'attraction', 'university',
 ];
 
-export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus, showCost }: Props) {
+export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus, showCost, editing, onUpdate, onRemove }: Props) {
   const typeStyle = place ? TYPE_STYLES[place.type] : TYPE_STYLES.other;
   const duration = formatDuration(segment.durationMinutes);
   const showDot = place && NEEDS_RESERVATION.includes(place.type);
   const dot = reservationStatus ? RES_DOT[reservationStatus] : null;
   const hasCost = showCost && segment.costEstimate != null && segment.costEstimate > 0;
 
+  // Inline editing state
+  const [editTime, setEditTime] = useState(segment.time);
+  const [editActivity, setEditActivity] = useState(segment.activity);
+  const [editDuration, setEditDuration] = useState(String(segment.durationMinutes));
+  const [editCost, setEditCost] = useState(String(segment.costEstimate ?? ''));
+  const [editNotes, setEditNotes] = useState(segment.notes ?? '');
+  const [isEditing, setIsEditing] = useState(false);
+
+  function commitEdit() {
+    if (!onUpdate) return;
+    onUpdate({
+      ...segment,
+      time: editTime.trim() || segment.time,
+      activity: editActivity.trim() || segment.activity,
+      durationMinutes: parseInt(editDuration) || segment.durationMinutes,
+      costEstimate: editCost ? parseFloat(editCost) : undefined,
+      notes: editNotes.trim() || undefined,
+    });
+    setIsEditing(false);
+  }
+
+  function cancelEdit() {
+    setEditTime(segment.time);
+    setEditActivity(segment.activity);
+    setEditDuration(String(segment.durationMinutes));
+    setEditCost(String(segment.costEstimate ?? ''));
+    setEditNotes(segment.notes ?? '');
+    setIsEditing(false);
+  }
+
+  // ── Inline edit mode ──
+  if (editing && isEditing) {
+    return (
+      <div className="flex flex-col gap-2 px-5 py-3 bg-blue-50 border-l-4 border-blue-400">
+        <div className="flex flex-wrap gap-2 items-end">
+          <label className="text-xs text-stone-500">
+            Time
+            <input value={editTime} onChange={(e) => setEditTime(e.target.value)}
+              className="block w-24 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white" />
+          </label>
+          <label className="text-xs text-stone-500 flex-1">
+            Activity
+            <input value={editActivity} onChange={(e) => setEditActivity(e.target.value)}
+              className="block w-full mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white" />
+          </label>
+          <label className="text-xs text-stone-500">
+            Minutes
+            <input value={editDuration} onChange={(e) => setEditDuration(e.target.value)} type="number"
+              className="block w-20 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white" />
+          </label>
+          <label className="text-xs text-stone-500">
+            Cost $
+            <input value={editCost} onChange={(e) => setEditCost(e.target.value)} type="number"
+              className="block w-20 mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white" placeholder="—" />
+          </label>
+        </div>
+        <label className="text-xs text-stone-500">
+          Notes
+          <input value={editNotes} onChange={(e) => setEditNotes(e.target.value)}
+            className="block w-full mt-0.5 px-2 py-1 text-xs border border-stone-200 rounded bg-white" placeholder="Optional" />
+        </label>
+        <div className="flex gap-2">
+          <button onClick={commitEdit}
+            className="text-xs font-medium px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">
+            Done
+          </button>
+          <button onClick={cancelEdit}
+            className="text-xs font-medium px-3 py-1 bg-stone-200 text-stone-600 rounded hover:bg-stone-300 transition-colors">
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex items-start gap-4 px-5 py-3 hover:bg-stone-50 transition-colors">
+    <div className={`flex items-start gap-4 px-5 py-3 hover:bg-stone-50 transition-colors ${editing ? 'group/seg' : ''}`}>
       {/* Time */}
       <span className="shrink-0 w-20 text-xs font-medium text-stone-400 pt-0.5 tabular-nums">
         {segment.time}
@@ -105,6 +184,28 @@ export default function SegmentRow({ segment, place, onPlaceClick, reservationSt
           </span>
         )}
       </div>
+
+      {/* Edit / remove buttons (only in edit mode) */}
+      {editing && (
+        <div className="flex items-center gap-1 shrink-0 opacity-0 group-hover/seg:opacity-100 transition-opacity">
+          <button
+            onClick={() => setIsEditing(true)}
+            title="Edit segment"
+            className="text-xs text-stone-400 hover:text-blue-600 p-0.5 rounded hover:bg-blue-50"
+          >
+            ✏️
+          </button>
+          {onRemove && (
+            <button
+              onClick={onRemove}
+              title="Remove segment"
+              className="text-xs text-stone-400 hover:text-red-500 p-0.5 rounded hover:bg-red-50"
+            >
+              ✕
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
