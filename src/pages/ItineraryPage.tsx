@@ -22,6 +22,7 @@ export default function ItineraryPage() {
   const [tab, setTab] = useState<Tab>('itinerary');
   const [resTick, _setResTick] = useState(0);
   const [favTick, setFavTick] = useState(0);
+  const [showCost, setShowCost] = useState(false);
 
   useEffect(() => {
     if (!tripId) return;
@@ -53,6 +54,14 @@ export default function ItineraryPage() {
   if (!trip || !itinerary) {
     return <div className="p-8 text-stone-400">Loading…</div>;
   }
+
+  // Compute itinerary-level cost totals
+  const totalActivityCost = itinerary.days.reduce(
+    (sum, d) => sum + d.segments.reduce((s, seg) => s + (seg.costEstimate ?? 0), 0), 0
+  );
+  const totalLodgingCost = itinerary.days.reduce((sum, d) => sum + (d.lodgingCost ?? 0), 0);
+  const grandTotal = totalActivityCost + totalLodgingCost;
+  const hasCostData = grandTotal > 0;
 
   const TABS: { id: Tab; label: string }[] = [
     { id: 'itinerary',    label: 'Itinerary' },
@@ -122,6 +131,36 @@ export default function ItineraryPage() {
           ))}
         </div>
 
+        {/* ── Cost toggle + grand total ── */}
+        {hasCostData && (
+          <div className="flex items-center gap-3 mb-4">
+            <button
+              onClick={() => setShowCost((v) => !v)}
+              className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border transition-colors ${
+                showCost
+                  ? 'bg-emerald-50 border-emerald-300 text-emerald-700'
+                  : 'bg-stone-50 border-stone-200 text-stone-500 hover:border-stone-300'
+              }`}
+            >
+              <span>{showCost ? '💲' : '💲'}</span>
+              {showCost ? 'Hide Costs' : 'Show Costs'}
+            </button>
+            {showCost && (
+              <div className="flex items-center gap-3 text-xs">
+                <span className="text-emerald-600">
+                  Activities <span className="font-bold">${totalActivityCost.toLocaleString()}</span>
+                </span>
+                <span className="text-emerald-600">
+                  Lodging <span className="font-bold">${totalLodgingCost.toLocaleString()}</span>
+                </span>
+                <span className="text-emerald-800 font-bold bg-emerald-100 px-2 py-0.5 rounded-full">
+                  Trip Total ${grandTotal.toLocaleString()}
+                </span>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* ── Tabs ── */}
         <div className="flex gap-0 -mb-px overflow-x-auto">
           {TABS.map(({ id, label }) => (
@@ -185,6 +224,7 @@ export default function ItineraryPage() {
               places={trip.places}
               onPlaceClick={setSelectedPlace}
               reservationsByPlaceId={reservationsByPlaceId}
+              showCost={showCost}
             />
           </>
         )}

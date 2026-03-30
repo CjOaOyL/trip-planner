@@ -65,6 +65,7 @@ export interface Segment {
   activity: string;         // e.g. "Campus tour + Admissions info session"
   durationMinutes: number;
   notes?: string;
+  costEstimate?: number;    // estimated cost in USD for the group
 }
 
 // ─── One day in an itinerary ──────────────────────────────────────────────────
@@ -77,6 +78,7 @@ export interface Day {
   segments: Segment[];
   overnightPlaceId: string;
   notes?: string;
+  lodgingCost?: number;     // estimated overnight cost in USD
 }
 
 // ─── One itinerary (a sequence of days) ───────────────────────────────────────

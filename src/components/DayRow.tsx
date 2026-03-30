@@ -10,6 +10,7 @@ interface Props {
   onToggle: () => void;
   onPlaceClick: (place: Place) => void;
   reservationsByPlaceId?: Record<string, ReservationStatus>;
+  showCost?: boolean;
 }
 
 /** Total drive minutes across all legs in a day */
@@ -24,10 +25,16 @@ function formatMinutes(minutes: number): string {
   return m === 0 ? `${h}h` : `${h}h ${m}m`;
 }
 
-export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick, reservationsByPlaceId = {} }: Props) {
+export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPlaceClick, reservationsByPlaceId = {}, showCost }: Props) {
   const overnight = places[day.overnightPlaceId];
   const driveMinutes = totalDriveMinutes(day);
   const hasLegs = day.legs.length > 0;
+
+  // Cost totals for this day
+  const activityCost = day.segments.reduce((sum, s) => sum + (s.costEstimate ?? 0), 0);
+  const lodgingCost = day.lodgingCost ?? 0;
+  const dayTotal = activityCost + lodgingCost;
+  const hasCosts = dayTotal > 0;
 
   return (
     <div className="bg-white border border-stone-200 rounded-xl overflow-hidden shadow-sm">
@@ -49,6 +56,11 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
 
         {/* Meta chips */}
         <div className="hidden sm:flex items-center gap-2 shrink-0">
+          {showCost && hasCosts && (
+            <span className="text-xs bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium">
+              💲{dayTotal.toLocaleString()}
+            </span>
+          )}
           {hasLegs && (
             <span className="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">
               🚗 {formatMinutes(driveMinutes)}
@@ -95,6 +107,7 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
                   place={places[seg.placeId]}
                   onPlaceClick={onPlaceClick}
                   reservationStatus={reservationsByPlaceId[seg.placeId]}
+                  showCost={showCost}
                 />
               ))}
             </div>
@@ -119,6 +132,27 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
               >
                 {overnight.name}
               </button>
+              {showCost && lodgingCost > 0 && (
+                <span className="ml-auto text-xs font-medium text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">
+                  Lodging ${lodgingCost}
+                </span>
+              )}
+            </div>
+          )}
+
+          {/* Day cost summary */}
+          {showCost && hasCosts && (
+            <div className="px-5 py-2.5 bg-emerald-50 border-t border-emerald-100 flex items-center justify-between text-sm">
+              <span className="text-emerald-700 font-medium">Day Total</span>
+              <div className="flex items-center gap-3">
+                {activityCost > 0 && (
+                  <span className="text-xs text-emerald-600">Activities ${activityCost.toLocaleString()}</span>
+                )}
+                {lodgingCost > 0 && (
+                  <span className="text-xs text-emerald-600">Lodging ${lodgingCost.toLocaleString()}</span>
+                )}
+                <span className="font-bold text-emerald-800">${dayTotal.toLocaleString()}</span>
+              </div>
             </div>
           )}
         </div>

@@ -376,5 +376,35 @@
     "coordinates": [41.3082, -72.9250],
     "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+New+Haven+CT",
     "tags": ["tesla", "charging", "i-95", "new-haven"]
+  },
+  {
+    "id": "hadley-ny-cottage",
+    "name": "Cottage — Hadley, NY",
+    "type": "other",
+    "description": "Family cottage in Hadley, NY — at the southern gateway to the Adirondacks, near the Great Sacandaga Lake. A perfect overnight stop to break up the long drive home from Montréal.",
+    "address": "Hadley, NY 12835",
+    "coordinates": [43.3142, -73.8486],
+    "googleMapsUrl": "https://maps.google.com/?q=Hadley,NY",
+    "tags": ["cottage", "family", "adirondacks", "overnight-stop"]
+  },
+  {
+    "id": "supercharger-plattsburgh-ny",
+    "name": "Tesla Supercharger — Plattsburgh, NY",
+    "type": "charging-station",
+    "description": "Tesla Supercharger near I-87 in Plattsburgh, NY. Key stop on the Montréal-to-Adirondacks corridor, about an hour south of the Canadian border.",
+    "address": "Plattsburgh, NY 12901",
+    "coordinates": [44.6995, -73.4529],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Plattsburgh+NY",
+    "tags": ["tesla", "charging", "i-87"]
+  },
+  {
+    "id": "supercharger-albany-ny",
+    "name": "Tesla Supercharger — Albany, NY",
+    "type": "charging-station",
+    "description": "Tesla Supercharger near I-87 in the Albany, NY area. Convenient stop between the Adirondacks and the New York metro area.",
+    "address": "Albany, NY 12205",
+    "coordinates": [42.6526, -73.7562],
+    "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Albany+NY",
+    "tags": ["tesla", "charging", "i-87"]
   }
 ]

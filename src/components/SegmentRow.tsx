@@ -5,6 +5,7 @@ interface Props {
   place: Place | undefined;
   onPlaceClick: (place: Place) => void;
   reservationStatus?: ReservationStatus;
+  showCost?: boolean;
 }
 
 function formatDuration(minutes: number): string {
@@ -42,11 +43,12 @@ const NEEDS_RESERVATION: PlaceType[] = [
   'restaurant', 'ski-resort', 'museum', 'attraction', 'university',
 ];
 
-export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus }: Props) {
+export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus, showCost }: Props) {
   const typeStyle = place ? TYPE_STYLES[place.type] : TYPE_STYLES.other;
   const duration = formatDuration(segment.durationMinutes);
   const showDot = place && NEEDS_RESERVATION.includes(place.type);
   const dot = reservationStatus ? RES_DOT[reservationStatus] : null;
+  const hasCost = showCost && segment.costEstimate != null && segment.costEstimate > 0;
 
   return (
     <div className="flex items-start gap-4 px-5 py-3 hover:bg-stone-50 transition-colors">
@@ -92,10 +94,17 @@ export default function SegmentRow({ segment, place, onPlaceClick, reservationSt
         )}
       </div>
 
-      {/* Duration */}
-      {duration && (
-        <span className="shrink-0 text-xs text-stone-400 pt-0.5">{duration}</span>
-      )}
+      {/* Duration + cost */}
+      <div className="flex flex-col items-end gap-0.5 shrink-0 pt-0.5">
+        {duration && (
+          <span className="text-xs text-stone-400">{duration}</span>
+        )}
+        {hasCost && (
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">
+            ${segment.costEstimate}
+          </span>
+        )}
+      </div>
     </div>
   );
 }
