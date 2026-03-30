@@ -55,6 +55,7 @@ function getItineraryIds(tripId: string): string[] {
       '06-quick-montreal',
       '07-four-colleges',
       '08-colleges-culture-plus',
+      '09-yale-boston-montreal',
     ],
   };
   return map[tripId] ?? [];

@@ -406,5 +406,27 @@
     "coordinates": [42.6526, -73.7562],
     "googleMapsUrl": "https://maps.google.com/?q=Tesla+Supercharger+Albany+NY",
     "tags": ["tesla", "charging", "i-87"]
+  },
+  {
+    "id": "boston-harbor-cruise",
+    "name": "Boston Harbor Cruises — Historic Sightseeing",
+    "type": "attraction",
+    "description": "Classic 90-minute narrated harbor cruise departing from Long Wharf, right next to the New England Aquarium. See the Boston skyline, harbor islands, and lighthouses from the water. Runs daily spring through fall.",
+    "address": "1 Long Wharf, Boston, MA 02110",
+    "coordinates": [42.3606, -71.0505],
+    "googleMapsUrl": "https://maps.google.com/?q=Boston+Harbor+Cruises,Long+Wharf,Boston",
+    "website": "https://www.bostonharborcruises.com",
+    "tags": ["boat-tour", "boston", "harbor", "tourist-attraction"]
+  },
+  {
+    "id": "montreal-old-port-cruise",
+    "name": "Le Bateau-Mouche — Montréal River Cruise",
+    "type": "attraction",
+    "description": "A glass-enclosed river cruise along the St. Lawrence from the Old Port of Montréal. Modeled after the famous Paris Bateau-Mouche fleet. Day cruises, brunch cruises, and sunset options available. Beautiful views of Old Montréal, the Jacques Cartier Bridge, and Île Sainte-Hélène.",
+    "address": "Jacques-Cartier Pier, Old Port, Montréal, QC H2Y 2E2",
+    "coordinates": [45.5075, -73.5530],
+    "googleMapsUrl": "https://maps.google.com/?q=Bateau-Mouche+Old+Port+Montreal",
+    "website": "https://www.bateaumouche.ca",
+    "tags": ["boat-tour", "montreal", "river-cruise", "old-port", "tourist-attraction"]
   }
 ]
