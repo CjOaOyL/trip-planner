@@ -71,7 +71,7 @@ export default function TripPage() {
 
   function handleCreate() {
     const name = newName.trim() || 'My Itinerary';
-    const blank = createBlankItinerary(name, newDays);
+    const blank = createBlankItinerary({ name, numDays: newDays, startDate: trip!.meta.startDate, originPlaceId: trip!.meta.origin.placeId });
     addCustomItinerary(trip!.meta.id, blank);
     loadTrip(trip!.meta.id).then((t) => {
       setTrip(t);

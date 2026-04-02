@@ -1,4 +1,5 @@
 import { useMemo, useState, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   DndContext,
   DragOverlay,
@@ -19,6 +20,7 @@ import {
   type DndSegment,
   type DragPayload,
 } from './SlotDnD';
+import type { VoteOption } from '../utils/voteSession';
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
 
@@ -92,12 +94,52 @@ function activeSlots(grid: GridDay[], bench: DndSegment[]): TimeSlot[] {
    ═══════════════════════════════════════════════════════════════════════════════ */
 
 export default function TripOverview({ itinerary, places, onPlaceClick }: Props) {
+  const navigate = useNavigate();
+
   /* ── State ── */
   const initialGrid = useMemo(() => buildGrid(itinerary, places), [itinerary, places]);
   const [grid, setGrid] = useState<GridDay[]>(() => buildGrid(itinerary, places));
   const [bench, setBench] = useState<DndSegment[]>([]);
   const [activeId, setActiveId] = useState<DndSegment | null>(null);
   const [showBench, setShowBench] = useState(true);
+
+  /* ── Vote selection mode ── */
+  const [voteMode, setVoteMode] = useState(false);
+  const [selected, setSelected] = useState<Map<number, VoteOption>>(new Map());
+
+  function toggleSelect(seg: DndSegment) {
+    setSelected((prev) => {
+      const next = new Map(prev);
+      if (next.has(seg.uid)) {
+        next.delete(seg.uid);
+      } else {
+        const opt: VoteOption = {
+          id: `seg-${seg.uid}`,
+          label: seg.segment.activity,
+          description: seg.place?.name,
+          placeId: seg.segment.placeId,
+          itineraryId: itinerary.id,
+        };
+        next.set(seg.uid, opt);
+      }
+      return next;
+    });
+  }
+
+  function launchVote() {
+    const options = Array.from(selected.values());
+    const params = new URLSearchParams({
+      title: `Vote for ${itinerary.name}`,
+      options: encodeURIComponent(JSON.stringify(options)),
+      itineraryId: itinerary.id,
+    });
+    navigate(`/vote?${params.toString()}`);
+  }
+
+  function exitVoteMode() {
+    setVoteMode(false);
+    setSelected(new Map());
+  }
 
   const slots = useMemo(() => activeSlots(grid, bench), [grid, bench]);
   const unscheduled = useMemo(() => findUnscheduledPlaces(places, grid, bench), [places, grid, bench]);
@@ -207,31 +249,42 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
       onDragEnd={handleDragEnd}
     >
       <div>
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
           <p className="text-xs text-stone-400">
             All {itinerary.days.length} days side-by-side. <strong>Drag</strong> events between slots. Scroll right for more days.
           </p>
           <div className="flex items-center gap-2">
             {hasChanges && (
-              <button
-                onClick={handleReset}
-                className="text-xs text-stone-400 hover:text-stone-700 underline"
-              >
+              <button onClick={handleReset} className="text-xs text-stone-400 hover:text-stone-700 underline">
                 Reset
               </button>
             )}
             <button
               onClick={() => setShowBench(!showBench)}
               className={`text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors ${
-                showBench
-                  ? 'border-teal-400 bg-teal-50 text-teal-700'
-                  : 'border-stone-200 bg-white text-stone-500 hover:border-stone-400'
+                showBench ? 'border-teal-400 bg-teal-50 text-teal-700' : 'border-stone-200 bg-white text-stone-500 hover:border-stone-400'
               }`}
             >
               📦 Bench {bench.length > 0 && `(${bench.length})`}
             </button>
+            <button
+              onClick={() => { setVoteMode(!voteMode); setSelected(new Map()); }}
+              className={`text-xs font-medium px-3 py-1.5 rounded-lg border transition-colors ${
+                voteMode ? 'border-indigo-400 bg-indigo-50 text-indigo-700' : 'border-stone-200 bg-white text-stone-500 hover:border-stone-400'
+              }`}
+            >
+              🗳 {voteMode ? 'Cancel Vote' : 'Start a Vote'}
+            </button>
           </div>
         </div>
+
+        {/* Vote mode instruction banner */}
+        {voteMode && (
+          <div className="mb-3 px-4 py-2.5 bg-indigo-50 border border-indigo-200 rounded-xl text-xs text-indigo-700 flex items-center justify-between gap-3">
+            <span>Click any activity cards to select them for a vote. Select 2 or more, then click <strong>Vote on Selected</strong>.</span>
+            <button onClick={exitVoteMode} className="text-indigo-400 hover:text-indigo-700 font-medium whitespace-nowrap">Exit</button>
+          </div>
+        )}
 
         {/* ── Slot grid ── */}
         <div className="overflow-x-auto pb-4">
@@ -276,13 +329,33 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                         ) : (
                           <div className="px-2 py-1.5 space-y-1.5">
                             {segs.map((seg) => (
-                              <DraggableCard
-                                key={seg.uid}
-                                id={`drag:${di}:${slot}:${seg.uid}`}
-                                dragData={{ seg, fromDayIndex: di, fromSlot: slot, fromLocation: 'grid' }}
-                                seg={seg}
-                                onPlaceClick={onPlaceClick}
-                              />
+                              <div key={seg.uid} className="relative group/card">
+                                <DraggableCard
+                                  id={`drag:${di}:${slot}:${seg.uid}`}
+                                  dragData={{ seg, fromDayIndex: di, fromSlot: slot, fromLocation: 'grid' }}
+                                  seg={seg}
+                                  onPlaceClick={onPlaceClick}
+                                />
+                                {/* Vote selection overlay */}
+                                {voteMode && (
+                                  <button
+                                    onClick={() => toggleSelect(seg)}
+                                    className={`absolute inset-0 rounded transition-all ${
+                                      selected.has(seg.uid)
+                                        ? 'bg-indigo-200/60 ring-2 ring-indigo-500'
+                                        : 'bg-transparent hover:bg-indigo-50/60'
+                                    }`}
+                                  >
+                                    <span className={`absolute top-1 right-1 w-4 h-4 rounded border-2 flex items-center justify-center text-[10px] font-bold transition-colors ${
+                                      selected.has(seg.uid)
+                                        ? 'bg-indigo-500 border-indigo-500 text-white'
+                                        : 'bg-white border-stone-400'
+                                    }`}>
+                                      {selected.has(seg.uid) ? '✓' : ''}
+                                    </span>
+                                  </button>
+                                )}
+                              </div>
                             ))}
                           </div>
                         )}
@@ -387,6 +460,24 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
           </section>
         )}
       </div>
+
+      {/* ── Floating vote bar ── */}
+      {voteMode && selected.size >= 2 && (
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-4 bg-indigo-600 text-white px-6 py-3 rounded-2xl shadow-2xl shadow-indigo-900/30">
+          <span className="text-sm font-medium">
+            {selected.size} options selected
+          </span>
+          <button
+            onClick={launchVote}
+            className="bg-white text-indigo-700 font-semibold text-sm px-4 py-1.5 rounded-xl hover:bg-indigo-50 transition-colors"
+          >
+            🗳 Vote on Selected →
+          </button>
+          <button onClick={() => setSelected(new Map())} className="text-indigo-200 hover:text-white text-xs">
+            Clear
+          </button>
+        </div>
+      )}
 
       {/* ── Drag overlay (follows cursor) ── */}
       <DragOverlay>
