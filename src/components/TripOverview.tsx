@@ -113,10 +113,22 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
       if (next.has(seg.uid)) {
         next.delete(seg.uid);
       } else {
+        // Build a 2–3 sentence summary voters can read before ranking
+        const place = seg.place;
+        const parts: string[] = [];
+        if (place?.description) parts.push(place.description);
+        if (seg.segment.notes) parts.push(seg.segment.notes);
+        if (seg.segment.durationMinutes) {
+          const hrs = Math.floor(seg.segment.durationMinutes / 60);
+          const mins = seg.segment.durationMinutes % 60;
+          const dur = hrs > 0 ? `${hrs}h${mins ? ` ${mins}m` : ''}` : `${mins}m`;
+          parts.push(`Estimated time: ${dur}.`);
+        }
+        if (place?.blackOwned) parts.push('Black-owned.');
         const opt: VoteOption = {
           id: `seg-${seg.uid}`,
           label: seg.segment.activity,
-          description: seg.place?.name,
+          description: parts.join(' ') || place?.name,
           placeId: seg.segment.placeId,
           itineraryId: itinerary.id,
         };

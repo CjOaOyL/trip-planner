@@ -126,9 +126,10 @@ function SetupScreen({ prefillOptions, prefillTitle, tripId, itineraryId, onCrea
                 value={opt.label}
                 onChange={(e) => updateOption(idx, 'label', e.target.value)}
               />
-              <input
-                className="w-40 border border-stone-200 rounded-xl px-3 py-2 text-sm text-stone-600 placeholder:text-stone-300 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-                placeholder="Short description"
+              <textarea
+                className="w-48 border border-stone-200 rounded-xl px-3 py-1.5 text-sm text-stone-600 placeholder:text-stone-300 focus:outline-none focus:ring-2 focus:ring-indigo-200 resize-none"
+                placeholder="Description voters will see (2–3 sentences)"
+                rows={2}
                 value={opt.description ?? ''}
                 onChange={(e) => updateOption(idx, 'description', e.target.value)}
               />
