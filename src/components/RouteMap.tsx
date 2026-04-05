@@ -1,41 +1,8 @@
 import { useEffect, useMemo } from 'react';
 import { MapContainer, TileLayer, Polyline, CircleMarker, Tooltip, useMap } from 'react-leaflet';
-import type { Itinerary, Place, PlaceType } from '../types';
+import type { Itinerary, Place } from '../types';
 import { buildRouteData } from '../utils/routeUtils';
-
-// ── Marker color by place type ────────────────────────────────────────────────
-
-const TYPE_COLOR: Record<PlaceType, string> = {
-  university:         '#6366f1', // indigo
-  restaurant:         '#f97316', // orange
-  attraction:         '#14b8a6', // teal
-  hotel:              '#a855f7', // purple
-  'ski-resort':       '#0ea5e9', // sky
-  'charging-station': '#22c55e', // green
-  neighborhood:       '#ec4899', // pink
-  museum:             '#f59e0b', // amber
-  park:               '#84cc16', // lime
-  'concert-venue':    '#8b5cf6', // violet
-  airport:            '#64748b', // slate-500
-  beach:              '#06b6d4', // cyan
-  other:              '#94a3b8', // slate
-};
-
-const TYPE_EMOJI: Record<PlaceType, string> = {
-  university:         '🎓',
-  restaurant:         '🍽',
-  attraction:         '📍',
-  hotel:              '🛏',
-  'ski-resort':       '⛷',
-  'charging-station': '⚡',
-  neighborhood:       '🏘',
-  museum:             '🏛',
-  park:               '🌿',
-  'concert-venue':    '🎵',
-  airport:            '✈️',
-  beach:              '🏖',
-  other:              '📌',
-};
+import { TYPE_COLOR, TYPE_EMOJI } from '../utils/placeStyles';
 
 // ── Auto-fit bounds ───────────────────────────────────────────────────────────
 

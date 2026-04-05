@@ -1,6 +1,7 @@
 import type { Day, Place, Segment, ReservationStatus } from '../types';
 import LegCard from './LegCard';
 import SegmentRow from './SegmentRow';
+import DayMap from './DayMap';
 
 interface Props {
   day: Day;
@@ -87,6 +88,10 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
       {/* ── Expanded content ── */}
       {isOpen && (
         <div className="border-t border-stone-100">
+          {/* Day map */}
+          <div className="px-4 pt-4 pb-2">
+            <DayMap day={day} places={places} onPlaceClick={onPlaceClick} />
+          </div>
           {/* Edit day controls (edit mode) */}
           {editing && onUpdateDay && (
             <div className="px-5 py-3 bg-blue-50/50 border-b border-stone-100 flex flex-wrap items-center gap-3">
