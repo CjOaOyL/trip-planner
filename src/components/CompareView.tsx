@@ -1,6 +1,7 @@
 import { useMemo, useState, useCallback } from 'react';
 import type { Itinerary, Place, Segment, TimeSlot, Day } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
+import { computeStayRuns, dayColorIdxArray, STAY_PALETTE } from '../utils/stayUtils';
 import { uid } from './SlotDnD';
 import MiniMap from './MiniMap';
 
@@ -334,12 +335,32 @@ function SideBySideGrid({
   onPick: (dayIndex: number, slot: TimeSlot, segments: SlottedSegment[], sourceItineraryId: string) => void;
   onPlaceClick: (place: Place) => void;
 }) {
+  // Per-itinerary stay-group color index arrays
+  const stayRunsByIt = useMemo(() => {
+    const map = new Map<string, ReturnType<typeof computeStayRuns>>();
+    for (const it of selectedItineraries) {
+      const days = slottedByItinerary.get(it.id) ?? [];
+      map.set(it.id, computeStayRuns(days.map((sd) => sd.day.overnightPlaceId)));
+    }
+    return map;
+  }, [selectedItineraries, slottedByItinerary]);
+
+  const dayColorsByIt = useMemo(() => {
+    const map = new Map<string, number[]>();
+    for (const it of selectedItineraries) {
+      const days = slottedByItinerary.get(it.id) ?? [];
+      const runs = stayRunsByIt.get(it.id)!;
+      map.set(it.id, dayColorIdxArray(runs, days.length));
+    }
+    return map;
+  }, [selectedItineraries, slottedByItinerary, stayRunsByIt]);
+
   return (
     <div className="overflow-x-auto pb-4">
       <table className="border-separate border-spacing-0 min-w-full text-xs">
         {/* ── Header: Day columns grouped per itinerary ── */}
         <thead>
-          {/* Itinerary group header */}
+          {/* Day group header */}
           <tr>
             <th className="sticky left-0 z-30 bg-stone-50 border-b border-r border-stone-200 p-0" rowSpan={2}>
               <div className="w-28 h-full" />
@@ -348,25 +369,27 @@ function SideBySideGrid({
               <th
                 key={di}
                 colSpan={selectedItineraries.length}
-                className="border-b border-r-2 border-stone-500 bg-stone-100 text-center py-1.5 font-bold text-stone-600"
+                className="border-b border-r-2 border-stone-400 bg-stone-100 text-center py-1.5 font-bold text-stone-600"
               >
                 Day {di + 1}
               </th>
             ))}
           </tr>
-          {/* Itinerary labels within each day */}
+          {/* Per-itinerary sub-header — colored by that itinerary's stay */}
           <tr>
             {Array.from({ length: maxDays }, (_, di) =>
               selectedItineraries.map((it, itIdx) => {
+                const colorIdx = dayColorsByIt.get(it.id)?.[di] ?? 0;
                 const isLastInDay = itIdx === selectedItineraries.length - 1;
                 return (
                   <th
                     key={`${di}-${it.id}`}
-                    className={`border-b bg-white min-w-[160px] max-w-[200px] ${
-                      isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
+                    style={{ backgroundColor: STAY_PALETTE[colorIdx] + '50' }}
+                    className={`border-b min-w-[160px] max-w-[200px] ${
+                      isLastInDay ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'
                     }`}
                   >
-                    <div className="flex items-center gap-1.5 px-2 py-1 text-[10px] text-stone-400 font-medium truncate">
+                    <div className="flex items-center gap-1.5 px-2 py-1 text-[10px] text-stone-500 font-medium truncate">
                       <span className={`w-2 h-2 rounded-full shrink-0 ${itineraryColors[it.id]}`} />
                       <span className="truncate">{it.name}</span>
                     </div>
@@ -394,12 +417,14 @@ function SideBySideGrid({
                   const draftKey = `${di}:${slot}`;
                   const isDrafted = draft.get(draftKey)?.sourceItineraryId === it.id;
                   const isLastInDay = itIdx === selectedItineraries.length - 1;
+                  const colorIdx = dayColorsByIt.get(it.id)?.[di] ?? 0;
 
                   return (
                     <td
                       key={`${di}-${it.id}-${slot}`}
+                      style={{ borderLeft: `3px solid ${STAY_PALETTE[colorIdx]}` }}
                       className={`border-b align-top ${SLOT_BG[slot]} min-w-[160px] relative group ${
-                        isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
+                        isLastInDay ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'
                       } ${isDrafted ? 'ring-2 ring-amber-400 ring-inset' : ''}`}
                     >
                       {!slottedDay ? (
@@ -436,10 +461,10 @@ function SideBySideGrid({
             </tr>
           ))}
 
-          {/* ── Overnight row ── */}
+          {/* ── Overnight row — full stay color per cell ── */}
           <tr>
-            <td className="sticky left-0 z-10 border-b border-r border-stone-200 bg-indigo-50">
-              <div className="w-28 px-3 py-2 font-semibold text-indigo-700 whitespace-nowrap">🛏 Overnight</div>
+            <td className="sticky left-0 z-10 border-b border-r border-stone-200 bg-stone-100">
+              <div className="w-28 px-3 py-2 font-semibold text-stone-600 whitespace-nowrap">🛏 Overnight</div>
             </td>
             {Array.from({ length: maxDays }, (_, di) =>
               selectedItineraries.map((it, itIdx) => {
@@ -447,19 +472,22 @@ function SideBySideGrid({
                 const slottedDay = days?.[di];
                 const place = slottedDay ? places[slottedDay.day.overnightPlaceId] : undefined;
                 const isLastInDay = itIdx === selectedItineraries.length - 1;
+                const colorIdx = dayColorsByIt.get(it.id)?.[di] ?? 0;
                 return (
-                  <td key={`${di}-${it.id}-overnight`} className={`border-b bg-indigo-50 align-middle ${
-                    isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
-                  }`}>
+                  <td
+                    key={`${di}-${it.id}-overnight`}
+                    style={{ backgroundColor: STAY_PALETTE[colorIdx] }}
+                    className={`border-b align-middle ${isLastInDay ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'}`}
+                  >
                     {place ? (
                       <button
                         onClick={() => onPlaceClick(place)}
-                        className="px-2 py-1.5 text-indigo-700 font-medium hover:underline text-left leading-tight text-[11px]"
+                        className="px-2 py-1.5 text-stone-700 font-medium hover:underline text-left leading-tight text-[11px]"
                       >
                         {place.name}
                       </button>
                     ) : (
-                      <span className="px-2 py-1.5 text-stone-200 italic block">—</span>
+                      <span className="px-2 py-1.5 text-stone-400 italic block">—</span>
                     )}
                   </td>
                 );

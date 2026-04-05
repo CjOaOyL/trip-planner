@@ -109,16 +109,18 @@ interface DroppableCellProps {
   id: string;
   dropData: DropPayload;
   className?: string;
+  style?: React.CSSProperties;
   children: ReactNode;
 }
 
-export function DroppableCell({ id, dropData, className, children }: DroppableCellProps) {
+export function DroppableCell({ id, dropData, className, style, children }: DroppableCellProps) {
   const { isOver, setNodeRef } = useDroppable({ id, data: dropData });
 
   return (
     <td
       ref={setNodeRef}
       className={`${className ?? ''} ${isOver ? 'ring-2 ring-amber-400 ring-inset bg-amber-50/40' : ''}`}
+      style={style}
     >
       {children}
     </td>

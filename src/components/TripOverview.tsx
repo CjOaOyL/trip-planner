@@ -12,6 +12,7 @@ import {
 } from '@dnd-kit/core';
 import type { Itinerary, Place, Day, Segment, TimeSlot } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
+import { computeStayRuns, dayColorIdxArray, isStayBoundary, STAY_PALETTE } from '../utils/stayUtils';
 import {
   uid,
   DraggableCard,
@@ -155,6 +156,15 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
 
   const slots = useMemo(() => activeSlots(grid, bench), [grid, bench]);
   const unscheduled = useMemo(() => findUnscheduledPlaces(places, grid, bench), [places, grid, bench]);
+
+  const stayRuns = useMemo(
+    () => computeStayRuns(grid.map((gd) => gd.day.overnightPlaceId)),
+    [grid],
+  );
+  const dayColors = useMemo(
+    () => dayColorIdxArray(stayRuns, grid.length),
+    [stayRuns, grid.length],
+  );
 
   /* ── DnD sensors ── */
   const sensors = useSensors(
@@ -302,18 +312,45 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
         <div className="overflow-x-auto pb-4">
           <table className="border-separate border-spacing-0 min-w-full text-xs">
             <thead>
+              {/* ── Stay-group row ── */}
+              <tr>
+                <th className="sticky left-0 z-30 bg-stone-50 border-b border-r border-stone-200 px-2 py-1">
+                  <div className="w-28 text-[10px] text-stone-400 font-medium text-center leading-tight">Hotel stay</div>
+                </th>
+                {stayRuns.map((run) => {
+                  const place = places[run.placeId];
+                  return (
+                    <th
+                      key={`stay-${run.start}`}
+                      colSpan={run.length}
+                      style={{ backgroundColor: STAY_PALETTE[run.colorIdx] }}
+                      className="border-b border-r-2 border-stone-400 text-center py-1.5 px-2 text-[10px] font-semibold text-stone-700 overflow-hidden"
+                    >
+                      <span className="block truncate">🛏 {place?.name ?? '—'}</span>
+                    </th>
+                  );
+                })}
+              </tr>
+              {/* ── Day header row ── */}
               <tr>
                 <th className="sticky left-0 z-20 bg-stone-50 border-b border-r border-stone-200 p-0">
-                  <div className="w-28 h-14" />
+                  <div className="w-28 h-10" />
                 </th>
-                {grid.map(({ day }, i) => (
-                  <th key={day.id} className="border-b border-r-2 border-stone-400 bg-white min-w-[180px] max-w-[220px]">
-                    <div className="px-3 py-2 text-left">
-                      <div className="font-bold text-stone-700">Day {i + 1}</div>
-                      <div className="text-stone-400 font-normal truncate">{day.theme}</div>
-                    </div>
-                  </th>
-                ))}
+                {grid.map(({ day }, i) => {
+                  const boundary = isStayBoundary(stayRuns, i);
+                  return (
+                    <th
+                      key={day.id}
+                      style={{ backgroundColor: STAY_PALETTE[dayColors[i]] + '30' }}
+                      className={`border-b min-w-[180px] max-w-[220px] ${boundary ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'}`}
+                    >
+                      <div className="px-3 py-2 text-left">
+                        <div className="font-bold text-stone-700">Day {i + 1}</div>
+                        <div className="text-stone-400 font-normal truncate">{day.theme}</div>
+                      </div>
+                    </th>
+                  );
+                })}
               </tr>
             </thead>
 
@@ -329,12 +366,14 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                   {grid.map(({ day, bySlot }, di) => {
                     const segs = bySlot.get(slot) ?? [];
                     const dropId = `grid:${di}:${slot}`;
+                    const boundary = isStayBoundary(stayRuns, di);
                     return (
                       <DroppableCell
                         key={day.id}
                         id={dropId}
                         dropData={{ dayIndex: di, slot, location: 'grid' }}
-                        className={`border-b border-r-2 border-stone-400 align-top ${SLOT_BG[slot]} min-w-[180px]`}
+                        className={`border-b align-top ${SLOT_BG[slot]} min-w-[180px] ${boundary ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'}`}
+                        style={{ borderLeft: `3px solid ${STAY_PALETTE[dayColors[di]]}` }}
                       >
                         {segs.length === 0 ? (
                           <div className="px-3 py-2 text-stone-300 italic">—</div>
@@ -382,15 +421,20 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                 <td className="sticky left-0 z-10 border-b border-r border-stone-200 bg-indigo-50">
                   <div className="w-28 px-3 py-2 font-semibold text-indigo-700 whitespace-nowrap">🛏 Overnight</div>
                 </td>
-                {grid.map(({ day }) => {
+                {grid.map(({ day }, di) => {
                   const place = places[day.overnightPlaceId];
+                  const boundary = isStayBoundary(stayRuns, di);
                   return (
-                    <td key={day.id} className="border-b border-r-2 border-stone-400 bg-indigo-50 align-middle">
+                    <td
+                      key={day.id}
+                      style={{ backgroundColor: STAY_PALETTE[dayColors[di]] }}
+                      className={`border-b align-middle ${boundary ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'}`}
+                    >
                       <div className="px-2 py-1.5">
                         {place ? (
                           <button
                             onClick={() => onPlaceClick(place)}
-                            className="text-indigo-700 font-medium hover:underline text-left leading-tight"
+                            className="text-stone-700 font-medium hover:underline text-left leading-tight"
                           >
                             {place.name}
                           </button>
