@@ -8,6 +8,7 @@ import { getCustomItineraries } from './customItineraries';
  */
 export const TRIP_REGISTRY: { id: string; label: string }[] = [
   { id: 'spring-break-2026', label: 'Spring Break 2026' },
+  { id: 'france-2026', label: 'YOBC French Alps & Riviera 2026' },
 ];
 
 /**
@@ -56,6 +57,10 @@ function getItineraryIds(tripId: string): string[] {
       '07-four-colleges',
       '08-colleges-culture-plus',
       '09-yale-boston-montreal',
+    ],
+    'france-2026': [
+      '01-performer-schedule',
+      '02-visitor-guide',
     ],
   };
   return map[tripId] ?? [];

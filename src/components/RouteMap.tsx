@@ -15,6 +15,9 @@ const TYPE_COLOR: Record<PlaceType, string> = {
   neighborhood:       '#ec4899', // pink
   museum:             '#f59e0b', // amber
   park:               '#84cc16', // lime
+  'concert-venue':    '#8b5cf6', // violet
+  airport:            '#64748b', // slate-500
+  beach:              '#06b6d4', // cyan
   other:              '#94a3b8', // slate
 };
 
@@ -28,6 +31,9 @@ const TYPE_EMOJI: Record<PlaceType, string> = {
   neighborhood:       '🏘',
   museum:             '🏛',
   park:               '🌿',
+  'concert-venue':    '🎵',
+  airport:            '✈️',
+  beach:              '🏖',
   other:              '📌',
 };
 

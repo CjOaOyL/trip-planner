@@ -1,0 +1,18 @@
+{
+  "id": "france-2026",
+  "name": "YOBC French Alps & Riviera Tour",
+  "subtitle": "July 27 – August 6, 2026",
+  "startDate": "2026-07-27",
+  "endDate": "2026-08-06",
+  "tripType": "group-tour",
+  "origin": {
+    "name": "JFK Airport, New York",
+    "placeId": "jfk-airport"
+  },
+  "travelers": ["YOBC Performers"],
+  "coverImage": "",
+  "itineraryIds": [
+    "01-performer-schedule",
+    "02-visitor-guide"
+  ]
+}

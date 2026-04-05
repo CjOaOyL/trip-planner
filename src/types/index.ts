@@ -12,7 +12,25 @@ export type PlaceType =
   | 'neighborhood'
   | 'museum'
   | 'park'
+  | 'concert-venue'
+  | 'airport'
+  | 'beach'
   | 'other';
+
+// ─── Participant types ─────────────────────────────────────────────────────────
+
+export type ParticipantType = 'performer' | 'visitor';
+
+// ─── Event types for group-tour segments ──────────────────────────────────────
+
+export type EventType =
+  | 'concert'      // public performance
+  | 'rehearsal'    // performers only
+  | 'meal'         // group meal (may or may not be open to visitors)
+  | 'activity'     // sightseeing, tours, etc.
+  | 'free-time'    // unscheduled — visitors can join
+  | 'travel'       // transfers, flights
+  | 'rest';        // check-in, pool, downtime
 
 export interface Place {
   id: string;
@@ -36,12 +54,15 @@ export interface ChargingStop {
   supercharger: boolean;
 }
 
+export type TravelMode = 'drive' | 'bus' | 'flight' | 'train' | 'walk' | 'boat';
+
 export interface Leg {
   id: string;
   fromPlaceId: string;
   toPlaceId: string;
   distanceMiles: number;
   drivingMinutes: number;
+  travelMode?: TravelMode;   // defaults to 'drive' if absent
   notes?: string;
   chargingStops?: ChargingStop[];
 }
@@ -66,6 +87,11 @@ export interface Segment {
   durationMinutes: number;
   notes?: string;
   costEstimate?: number;    // estimated cost in USD for the group
+  // ── Group-tour fields ──────────────────────────────────────────────────────
+  fixed?: boolean;          // true = cannot be moved; core event on a group tour
+  eventType?: EventType;    // visual badge + filtering
+  openTo?: ParticipantType[]; // which participant types can attend; omit = all
+  ticketed?: boolean;       // visitors may need to buy a ticket separately
 }
 
 // ─── One day in an itinerary ──────────────────────────────────────────────────
@@ -99,6 +125,8 @@ export interface Itinerary {
 
 // ─── A trip = one project (e.g. Spring Break 2026) ───────────────────────────
 
+export type TripType = 'road-trip' | 'group-tour';
+
 export interface TripMeta {
   id: string;
   name: string;             // e.g. "Spring Break 2026"
@@ -110,7 +138,8 @@ export interface TripMeta {
     placeId: string;
   };
   travelers: string[];
-  vehicle: string;          // e.g. "Tesla Model Y"
+  vehicle?: string;         // e.g. "Tesla Model Y" — omit for group tours
+  tripType?: TripType;      // defaults to 'road-trip' if absent
   coverImage?: string;
   itineraryIds: string[];
 }
@@ -134,6 +163,10 @@ export type ReservationCategory =
   | 'lift-tickets'
   | 'activity'
   | 'tour'
+  | 'flight'
+  | 'train'
+  | 'bus'
+  | 'concert-ticket'
   | 'other';
 
 export interface Reservation {
@@ -141,6 +174,7 @@ export interface Reservation {
   tripId: string;
   itineraryId?: string;       // null = applies to all itineraries
   placeId?: string;           // links to a Place if applicable
+  visitorId?: string;         // if set, this reservation belongs to a specific visitor plan
   name: string;               // e.g. "Hotel Vermont — 2 nights"
   category: ReservationCategory;
   status: ReservationStatus;

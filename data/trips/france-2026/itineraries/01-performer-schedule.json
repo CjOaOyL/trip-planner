@@ -1,0 +1,690 @@
+{
+  "id": "01-performer-schedule",
+  "name": "Performer Schedule",
+  "tagline": "The complete tour schedule — concerts, rehearsals, transfers, and free time",
+  "vibe": "Every event is pre-arranged. Follow the tour leaders. Enjoy the moments in between.",
+  "highlights": ["Concert at Martigny Place Centrale", "Aiguille du Midi cable car", "Concert at Château de La Tour d'Aigues", "Beach day at Le Grau-du-Roi", "Guided tour of Old Nice", "Farewell dinner at Villa Borghi"],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 0,
+  "days": [
+    {
+      "id": "dep-day",
+      "label": "Departure Day — Monday, July 27",
+      "theme": "Travel to Europe",
+      "legs": [
+        {
+          "id": "leg-jfk-milan",
+          "fromPlaceId": "jfk-airport",
+          "toPlaceId": "milan-malpensa-airport",
+          "distanceMiles": 4005,
+          "drivingMinutes": 510,
+          "travelMode": "flight",
+          "notes": "AA0198 departs JFK 18:59. Overnight flight."
+        }
+      ],
+      "segments": [
+        {
+          "time": "TBD",
+          "placeId": "jfk-airport",
+          "activity": "Meet at BCCC — transfer by bus to JFK",
+          "durationMinutes": 120,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"],
+          "notes": "Follow separate departure day schedule TBA."
+        },
+        {
+          "time": "6:59 PM",
+          "placeId": "jfk-airport",
+          "activity": "Flight AA0198 departs JFK",
+          "durationMinutes": 510,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "milan-malpensa-airport"
+    },
+    {
+      "id": "day1",
+      "label": "Day 1 — Tuesday, July 28",
+      "theme": "Arrive Milan → Transfer to Chamonix",
+      "legs": [
+        {
+          "id": "leg-milan-chamonix",
+          "fromPlaceId": "milan-malpensa-airport",
+          "toPlaceId": "chamonix",
+          "distanceMiles": 155,
+          "drivingMinutes": 165,
+          "travelMode": "bus",
+          "notes": "Transfer by tour bus. Stops en route at La Kiuva for welcome lunch."
+        }
+      ],
+      "segments": [
+        {
+          "time": "11:10 AM",
+          "placeId": "milan-malpensa-airport",
+          "activity": "Arrive Milan Malpensa — meet coaches and guides",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "12:30 PM",
+          "placeId": "la-kiuva-restaurant",
+          "activity": "Welcome lunch at La Kiuva",
+          "durationMinutes": 75,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "4:00 PM",
+          "placeId": "hotel-lykke-chamonix",
+          "activity": "Check in to Hotel Lykke Chamonix Spa",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "5:30 PM",
+          "placeId": "centre-des-congres-chamonix",
+          "activity": "Rehearsal — Centre des Congrès",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:30 PM",
+          "placeId": "hotel-lykke-chamonix",
+          "activity": "Dinner at the hotel",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "hotel-lykke-chamonix"
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Wednesday, July 29 ★ Concert #1",
+      "theme": "Aiguille du Midi + Concert at Martigny",
+      "legs": [
+        {
+          "id": "leg-chamonix-martigny",
+          "fromPlaceId": "chamonix",
+          "toPlaceId": "martigny-place-centrale",
+          "distanceMiles": 25,
+          "drivingMinutes": 40,
+          "travelMode": "bus",
+          "notes": "Short drive into Switzerland. Short free time in groups before sound check."
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:00 AM",
+          "placeId": "aiguille-du-midi",
+          "activity": "Visit Aiguille du Midi cable car",
+          "durationMinutes": 180,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "Book cable car tickets in advance — sells out quickly in summer."
+        },
+        {
+          "time": "12:30 PM",
+          "placeId": "hotel-lykke-chamonix",
+          "activity": "Lunch at hotel + change for concert",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "3:00 PM",
+          "placeId": "martigny-place-centrale",
+          "activity": "Transfer to Martigny, Switzerland — free time in groups",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "6:00 PM",
+          "placeId": "martigny-place-centrale",
+          "activity": "Sound check and rehearsal — Place Centrale",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "8:00 PM",
+          "placeId": "martigny-place-centrale",
+          "activity": "Concert #1 — Place Centrale, Martigny",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Open-air public concert. Visitors welcome — no ticket required."
+        }
+      ],
+      "overnightPlaceId": "hotel-lykke-chamonix",
+      "notes": "Return by bus to Chamonix after the concert."
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Thursday, July 30",
+      "theme": "Transfer to Arles via Pont du Gard",
+      "legs": [
+        {
+          "id": "leg-chamonix-arles",
+          "fromPlaceId": "chamonix",
+          "toPlaceId": "arles",
+          "distanceMiles": 310,
+          "drivingMinutes": 300,
+          "travelMode": "bus",
+          "notes": "Long transfer day. Stop at Pont du Gard en route."
+        }
+      ],
+      "segments": [
+        {
+          "time": "8:00 AM",
+          "placeId": "hotel-lykke-chamonix",
+          "activity": "Check out — load bus",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "12:00 PM",
+          "placeId": "pont-du-gard",
+          "activity": "Stop at Pont du Gard — stretch, explore, photos",
+          "durationMinutes": 60,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "One of the great Roman monuments. Worth the stop."
+        },
+        {
+          "time": "1:15 PM",
+          "placeId": "pont-du-gard",
+          "activity": "Lunch en route (service station)",
+          "durationMinutes": 45,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Arrive Arles — check in to hotel",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Dinner at the hotel",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "hotel-ibis-arles"
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Friday, July 31 ★ Concert #2",
+      "theme": "Les Baux-de-Provence + Concert at Château",
+      "legs": [
+        {
+          "id": "leg-arles-lesbaux",
+          "fromPlaceId": "arles",
+          "toPlaceId": "les-baux-de-provence",
+          "distanceMiles": 14,
+          "drivingMinutes": 25,
+          "travelMode": "bus"
+        },
+        {
+          "id": "leg-lesbaux-chateau",
+          "fromPlaceId": "les-baux-de-provence",
+          "toPlaceId": "chateau-tour-daigues",
+          "distanceMiles": 35,
+          "drivingMinutes": 50,
+          "travelMode": "bus"
+        }
+      ],
+      "segments": [
+        {
+          "time": "10:00 AM",
+          "placeId": "les-baux-de-provence",
+          "activity": "Guided tour of Les Baux-de-Provence",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "12:30 PM",
+          "placeId": "les-baux-de-provence",
+          "activity": "Lunch in Les Baux (in groups)",
+          "durationMinutes": 75,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "4:00 PM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Return to hotel — refresh for concert",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "6:00 PM",
+          "placeId": "restaurant-la-madone",
+          "activity": "Dinner at Restaurant La Madone",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:30 PM",
+          "placeId": "chateau-tour-daigues",
+          "activity": "Sound check at Château de La Tour d'Aigues",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "9:00 PM",
+          "placeId": "chateau-tour-daigues",
+          "activity": "Concert #2 — Château de La Tour d'Aigues",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": true,
+          "notes": "Outdoor château concert. Visitors should check for ticketing requirements in advance."
+        }
+      ],
+      "overnightPlaceId": "hotel-ibis-arles"
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Saturday, August 1",
+      "theme": "Beach Day + Free Time in Arles",
+      "legs": [
+        {
+          "id": "leg-arles-grau",
+          "fromPlaceId": "arles",
+          "toPlaceId": "grau-du-roi-beach",
+          "distanceMiles": 28,
+          "drivingMinutes": 40,
+          "travelMode": "bus"
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "grau-du-roi-beach",
+          "activity": "Morning at the beach — Le Grau-du-Roi",
+          "durationMinutes": 180,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"],
+          "notes": "Visitors can meet the group at the beach."
+        },
+        {
+          "time": "1:00 PM",
+          "placeId": "grau-du-roi-beach",
+          "activity": "Lunch in groups near the beach",
+          "durationMinutes": 75,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "3:30 PM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Return to hotel — shower and change",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "arles",
+          "activity": "Free time in Arles — Roman Arena, Van Gogh sites, shopping",
+          "durationMinutes": 150,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "7:30 PM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Dinner at the hotel",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "hotel-ibis-arles"
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Sunday, August 2 ★ Concert #3",
+      "theme": "Avignon + Concert",
+      "legs": [
+        {
+          "id": "leg-arles-avignon",
+          "fromPlaceId": "arles",
+          "toPlaceId": "avignon",
+          "distanceMiles": 22,
+          "drivingMinutes": 35,
+          "travelMode": "bus"
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "pont-saint-benezet",
+          "activity": "Morning in Avignon — visit Pont Saint-Bénézet",
+          "durationMinutes": 60,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "10:45 AM",
+          "placeId": "palais-des-papes",
+          "activity": "Visit Palais des Papes",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "1:00 PM",
+          "placeId": "avignon",
+          "activity": "Lunch — free time in Avignon",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "3:00 PM",
+          "placeId": "place-de-lhorloge-avignon",
+          "activity": "Sound check — Place de l'Horloge (or Aix-en-Provence)",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "place-de-lhorloge-avignon",
+          "activity": "Concert #3 — Avignon or Aix-en-Provence (afternoon/early evening)",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Exact venue TBC — Place de l'Horloge (Avignon) or Place de l'Église de la Madeleine (Aix-en-Provence). Open-air public concert."
+        },
+        {
+          "time": "7:30 PM",
+          "placeId": "avignon",
+          "activity": "Dinner in local restaurant",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "hotel-ibis-arles"
+    },
+    {
+      "id": "day7",
+      "label": "Day 7 — Monday, August 3",
+      "theme": "Transfer to Nice via Marseille",
+      "legs": [
+        {
+          "id": "leg-arles-marseille",
+          "fromPlaceId": "arles",
+          "toPlaceId": "marseille-o-beach",
+          "distanceMiles": 55,
+          "drivingMinutes": 65,
+          "travelMode": "bus"
+        },
+        {
+          "id": "leg-marseille-nice",
+          "fromPlaceId": "marseille-o-beach",
+          "toPlaceId": "nice",
+          "distanceMiles": 120,
+          "drivingMinutes": 120,
+          "travelMode": "bus"
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:00 AM",
+          "placeId": "hotel-ibis-arles",
+          "activity": "Check out — load bus",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "11:00 AM",
+          "placeId": "marseille-o-beach",
+          "activity": "Lunch stop at Marseille O Beach",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "1:30 PM",
+          "placeId": "saint-paul-de-vence",
+          "activity": "Afternoon in Saint-Paul-de-Vence or Nice (depending on concert location)",
+          "durationMinutes": 150,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "nh-hotel-nice",
+          "activity": "Check in to NH Hotel Nice",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "nice",
+          "activity": "Dinner on own — in groups",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        }
+      ],
+      "overnightPlaceId": "nh-hotel-nice"
+    },
+    {
+      "id": "day8",
+      "label": "Day 8 — Tuesday, August 4 ★ Concert #4",
+      "theme": "Old Nice + Final Concert",
+      "legs": [],
+      "segments": [
+        {
+          "time": "10:00 AM",
+          "placeId": "old-nice",
+          "activity": "Guided tour of Old Nice, ending at Cours Saleya Market",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "One of the great walking tours in France. Ends at the market."
+        },
+        {
+          "time": "12:30 PM",
+          "placeId": "cassa-nissa-nice",
+          "activity": "Lunch at Cassa Nissa — traditional Niçois cuisine",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"],
+          "notes": "Group lunch. Visitors may be able to join — confirm with tour leaders."
+        },
+        {
+          "time": "3:00 PM",
+          "placeId": "nh-hotel-nice",
+          "activity": "Return to hotel — change for concert",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "nice",
+          "activity": "Dinner on own — in groups",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "9:00 PM",
+          "placeId": "nice-bandstand-concert-venue",
+          "activity": "Concert #4 — Antibes, St-Raphaël, or Nice Bandstand",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Final concert of the tour. Exact venue TBC. Open-air public performance."
+        }
+      ],
+      "overnightPlaceId": "nh-hotel-nice"
+    },
+    {
+      "id": "day9",
+      "label": "Day 9 — Wednesday, August 5",
+      "theme": "Transfer to Italy — Farewell Dinner",
+      "legs": [
+        {
+          "id": "leg-nice-villa-borghi",
+          "fromPlaceId": "nice",
+          "toPlaceId": "hotel-villa-borghi",
+          "distanceMiles": 195,
+          "drivingMinutes": 225,
+          "travelMode": "bus",
+          "notes": "Transfer back to Italy. Final night at Hotel Villa Borghi."
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:00 AM",
+          "placeId": "nh-hotel-nice",
+          "activity": "Check out — load bus",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "1:00 PM",
+          "placeId": "hotel-villa-borghi",
+          "activity": "Arrive Hotel Villa Borghi — afternoon at pool and grounds",
+          "durationMinutes": 240,
+          "fixed": false,
+          "eventType": "rest",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "hotel-villa-borghi",
+          "activity": "Farewell Dinner",
+          "durationMinutes": 120,
+          "fixed": true,
+          "eventType": "meal",
+          "openTo": ["performer"],
+          "notes": "Private group farewell dinner. Performers and official tour participants only."
+        }
+      ],
+      "overnightPlaceId": "hotel-villa-borghi"
+    },
+    {
+      "id": "day10",
+      "label": "Day 10 — Thursday, August 6",
+      "theme": "Fly Home",
+      "legs": [
+        {
+          "id": "leg-milan-jfk",
+          "fromPlaceId": "milan-malpensa-airport",
+          "toPlaceId": "jfk-airport",
+          "distanceMiles": 4005,
+          "drivingMinutes": 480,
+          "travelMode": "flight",
+          "notes": "AA0199 departs Milan Malpensa 11:10am, arrives JFK 14:10."
+        }
+      ],
+      "segments": [
+        {
+          "time": "7:00 AM",
+          "placeId": "hotel-villa-borghi",
+          "activity": "Depart for Milan Malpensa airport",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "11:10 AM",
+          "placeId": "milan-malpensa-airport",
+          "activity": "Flight AA0199 departs Milan — arrives JFK 2:10 PM",
+          "durationMinutes": 480,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        },
+        {
+          "time": "2:10 PM",
+          "placeId": "jfk-airport",
+          "activity": "Arrive JFK — bus back to BCCC",
+          "durationMinutes": 120,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"]
+        }
+      ],
+      "overnightPlaceId": "jfk-airport"
+    }
+  ]
+}

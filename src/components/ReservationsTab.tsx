@@ -15,17 +15,22 @@ interface Props {
 }
 
 const CATEGORY_ORDER: ReservationCategory[] = [
-  'hotel', 'lift-tickets', 'ski-rental', 'restaurant', 'activity', 'tour', 'other',
+  'flight', 'hotel', 'train', 'bus', 'lift-tickets', 'ski-rental',
+  'restaurant', 'concert-ticket', 'activity', 'tour', 'other',
 ];
 
 const CATEGORY_LABEL: Record<ReservationCategory, string> = {
-  hotel:          '🛏 Hotels & Lodging',
-  restaurant:     '🍽 Restaurants',
-  'ski-rental':   '🎿 Ski Rentals',
-  'lift-tickets': '🎟 Lift Tickets',
-  activity:       '🎯 Activities',
-  tour:           '🗺 Tours',
-  other:          '📌 Other',
+  hotel:            '🛏 Hotels & Lodging',
+  restaurant:       '🍽 Restaurants',
+  'ski-rental':     '🎿 Ski Rentals',
+  'lift-tickets':   '🎟 Lift Tickets',
+  activity:         '🎯 Activities',
+  tour:             '🗺 Tours',
+  flight:           '✈️ Flights',
+  train:            '🚂 Train / Transport',
+  bus:              '🚌 Bus',
+  'concert-ticket': '🎵 Concert Tickets',
+  other:            '📌 Other',
 };
 
 const STATUS_FILTER_OPTIONS: { value: ReservationStatus | 'all'; label: string }[] = [

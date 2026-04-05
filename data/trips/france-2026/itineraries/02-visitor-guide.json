@@ -1,0 +1,345 @@
+{
+  "id": "02-visitor-guide",
+  "name": "Visitor Guide",
+  "tagline": "Which concerts and events are open to visitors — and what you need to book to be there",
+  "vibe": "You're booking independently. Use this to decide which parts of the tour to join, then let the app tell you what to book.",
+  "highlights": ["Concert #1 — Martigny, Switzerland (Jul 29)", "Concert #2 — Château de La Tour d'Aigues (Jul 31)", "Concert #3 — Avignon (Aug 2)", "Concert #4 — Nice Riviera (Aug 4)", "Aiguille du Midi", "Les Baux-de-Provence", "Old Nice tour"],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 0,
+  "days": [
+    {
+      "id": "dep-day",
+      "label": "Departure Day — Monday, July 27",
+      "theme": "Performers fly out — visitors travel independently",
+      "legs": [],
+      "segments": [
+        {
+          "time": "Evening",
+          "placeId": "jfk-airport",
+          "activity": "Performers depart JFK on AA0198 at 6:59 PM",
+          "durationMinutes": 0,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"],
+          "notes": "Visitors arrange their own flights. Consider flying into Geneva (GVA) or Lyon (LYS) to meet the group in Chamonix on Jul 28–29."
+        }
+      ],
+      "overnightPlaceId": "jfk-airport"
+    },
+    {
+      "id": "day1",
+      "label": "Day 1 — Tuesday, July 28",
+      "theme": "Group arrives in Chamonix — Rehearsal day",
+      "legs": [],
+      "segments": [
+        {
+          "time": "Afternoon",
+          "placeId": "chamonix",
+          "activity": "Group settles into Chamonix — rehearsal in evening",
+          "durationMinutes": 0,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": ["performer"],
+          "notes": "Rehearsal is closed to visitors. Good day to arrive and explore Chamonix independently."
+        },
+        {
+          "time": "All day",
+          "placeId": "chamonix",
+          "activity": "Explore Chamonix — cable cars, hiking, town",
+          "durationMinutes": 480,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["visitor"],
+          "notes": "Great day to arrive and get your bearings. Book Aiguille du Midi cable car now for tomorrow."
+        }
+      ],
+      "overnightPlaceId": "chamonix"
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Wednesday, July 29 ★ Concert #1",
+      "theme": "Aiguille du Midi + Concert at Martigny",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:00 AM",
+          "placeId": "aiguille-du-midi",
+          "activity": "Aiguille du Midi cable car — join the group",
+          "durationMinutes": 180,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "Visitors can join the group for the morning cable car visit. Book tickets in advance — sells out in summer."
+        },
+        {
+          "time": "3:00 PM",
+          "placeId": "martigny-place-centrale",
+          "activity": "Free time in Martigny before the concert",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"],
+          "notes": "Meet the group in Martigny. The town has a Roman amphitheatre and the Fondation Gianadda art museum worth visiting."
+        },
+        {
+          "time": "8:00 PM",
+          "placeId": "martigny-place-centrale",
+          "activity": "★ Concert #1 — Place Centrale, Martigny, Switzerland",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Free open-air public concert. Just show up. Bring a light jacket — evenings cool in the Alps."
+        }
+      ],
+      "overnightPlaceId": "chamonix",
+      "notes": "Visitors staying in Chamonix: return independently after the concert (~40 min drive/train to Chamonix). Or stay overnight in Martigny."
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Thursday, July 30",
+      "theme": "Group transfers to Arles — visitors travel south",
+      "legs": [],
+      "segments": [
+        {
+          "time": "All day",
+          "placeId": "pont-du-gard",
+          "activity": "Pont du Gard — recommended stop en route to Provence",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["visitor"],
+          "notes": "The group bus stops here. Visitors driving or taking the train south should try to include it — extraordinary Roman monument."
+        },
+        {
+          "time": "Evening",
+          "placeId": "arles",
+          "activity": "Arrive in Arles — group settles in",
+          "durationMinutes": 60,
+          "fixed": false,
+          "eventType": "rest",
+          "openTo": ["visitor"],
+          "notes": "Book your hotel in Arles for Jul 30–Aug 2 if attending Concerts #2 and #3."
+        }
+      ],
+      "overnightPlaceId": "arles"
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Friday, July 31 ★ Concert #2",
+      "theme": "Les Baux + Concert at Château de La Tour d'Aigues",
+      "legs": [],
+      "segments": [
+        {
+          "time": "10:00 AM",
+          "placeId": "les-baux-de-provence",
+          "activity": "Les Baux-de-Provence — join the group for guided tour",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "Visitors can join the group here. Magnificent medieval village — one of the best in France."
+        },
+        {
+          "time": "12:30 PM",
+          "placeId": "les-baux-de-provence",
+          "activity": "Lunch in Les Baux — on your own or with the group",
+          "durationMinutes": 75,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "9:00 PM",
+          "placeId": "chateau-tour-daigues",
+          "activity": "★ Concert #2 — Château de La Tour d'Aigues",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": true,
+          "notes": "Tickets may be required — check the venue website closer to the date. A stunning outdoor concert in a Renaissance château."
+        }
+      ],
+      "overnightPlaceId": "arles"
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Saturday, August 1",
+      "theme": "Beach Day — Le Grau-du-Roi",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "grau-du-roi-beach",
+          "activity": "Beach day at Le Grau-du-Roi — visitors welcome",
+          "durationMinutes": 300,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"],
+          "notes": "The whole group heads to the beach. Great opportunity to spend a relaxed day with the performers."
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "arles",
+          "activity": "Free time in Arles — Roman Arena, Van Gogh sites, shopping",
+          "durationMinutes": 150,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["performer", "visitor"]
+        }
+      ],
+      "overnightPlaceId": "arles"
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Sunday, August 2 ★ Concert #3",
+      "theme": "Avignon — Palais des Papes + Concert",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "pont-saint-benezet",
+          "activity": "Visit Pont Saint-Bénézet with the group",
+          "durationMinutes": 60,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "10:45 AM",
+          "placeId": "palais-des-papes",
+          "activity": "Palais des Papes — join the group",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "One of the great medieval monuments in Europe. Book tickets in advance."
+        },
+        {
+          "time": "5:00 PM",
+          "placeId": "place-de-lhorloge-avignon",
+          "activity": "★ Concert #3 — Avignon or Aix-en-Provence",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Free open-air public concert. Venue TBC — Place de l'Horloge (Avignon) or Place de l'Église de la Madeleine (Aix-en-Provence)."
+        }
+      ],
+      "overnightPlaceId": "arles",
+      "notes": "Last night in Arles. Group moves to Nice tomorrow."
+    },
+    {
+      "id": "day7",
+      "label": "Day 7 — Monday, August 3",
+      "theme": "Group moves to Nice",
+      "legs": [],
+      "segments": [
+        {
+          "time": "11:00 AM",
+          "placeId": "marseille-o-beach",
+          "activity": "Optional: Marseille O Beach lunch stop",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["visitor"],
+          "notes": "The group bus stops here for lunch. Visitors can meet them or travel independently."
+        },
+        {
+          "time": "1:30 PM",
+          "placeId": "saint-paul-de-vence",
+          "activity": "Optional: Saint-Paul-de-Vence afternoon",
+          "durationMinutes": 150,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "Highly recommended detour — stunning medieval hill village just above Nice."
+        },
+        {
+          "time": "Evening",
+          "placeId": "nice",
+          "activity": "Arrive Nice — dinner on own in groups",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"],
+          "notes": "Book your Nice hotel for Aug 3–5. The Old Town has excellent restaurants."
+        }
+      ],
+      "overnightPlaceId": "nice"
+    },
+    {
+      "id": "day8",
+      "label": "Day 8 — Tuesday, August 4 ★ Concert #4",
+      "theme": "Old Nice + Final Concert",
+      "legs": [],
+      "segments": [
+        {
+          "time": "10:00 AM",
+          "placeId": "old-nice",
+          "activity": "Guided tour of Old Nice + Cours Saleya Market — join the group",
+          "durationMinutes": 120,
+          "fixed": false,
+          "eventType": "activity",
+          "openTo": ["performer", "visitor"],
+          "notes": "The best morning in Nice. Join the group for the guided tour or explore the market independently."
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "nice",
+          "activity": "Dinner on own — last evening on the Riviera",
+          "durationMinutes": 90,
+          "fixed": false,
+          "eventType": "meal",
+          "openTo": ["performer", "visitor"]
+        },
+        {
+          "time": "9:00 PM",
+          "placeId": "nice-bandstand-concert-venue",
+          "activity": "★ Concert #4 — Nice Riviera (final concert of the tour)",
+          "durationMinutes": 90,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": ["performer", "visitor"],
+          "ticketed": false,
+          "notes": "Free open-air public concert. The final performance. Venue TBC — Nice Bandstand, Antibes, or St-Raphaël."
+        }
+      ],
+      "overnightPlaceId": "nice"
+    },
+    {
+      "id": "day9",
+      "label": "Day 9 — Wednesday, August 5",
+      "theme": "Group departs for Italy — visitors head home",
+      "legs": [],
+      "segments": [
+        {
+          "time": "Morning",
+          "placeId": "nice",
+          "activity": "Group departs Nice for Italy — farewell to performers",
+          "durationMinutes": 0,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": ["performer"],
+          "notes": "The group has a private farewell dinner in Italy tonight. Visitors fly home from Nice (NCE) or continue exploring independently."
+        },
+        {
+          "time": "All day",
+          "placeId": "nice",
+          "activity": "Visitors: last day on the Riviera — Nice, Antibes, Monaco nearby",
+          "durationMinutes": 480,
+          "fixed": false,
+          "eventType": "free-time",
+          "openTo": ["visitor"],
+          "notes": "Great day for Monaco (~30 min), Antibes (20 min), or a final Promenade des Anglais walk before your flight home."
+        }
+      ],
+      "overnightPlaceId": "nice"
+    }
+  ]
+}
