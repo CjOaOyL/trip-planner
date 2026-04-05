@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Polyline, CircleMarker, Tooltip, useMap } from
 import type { Itinerary, Place } from '../types';
 import { buildRouteData } from '../utils/routeUtils';
 import { TYPE_COLOR, TYPE_EMOJI } from '../utils/placeStyles';
+import CountryBorders from './CountryBorders';
 
 // ── Auto-fit bounds ───────────────────────────────────────────────────────────
 
@@ -50,6 +51,9 @@ export default function RouteMap({ itinerary, places, onPlaceClick }: Props) {
 
       {/* Auto-fit */}
       <BoundsFitter bounds={route.bounds} />
+
+      {/* Country borders */}
+      <CountryBorders />
 
       {/* Route polylines */}
       {route.legs.map((leg, i) => (

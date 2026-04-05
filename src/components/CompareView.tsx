@@ -2,6 +2,7 @@ import { useMemo, useState, useCallback } from 'react';
 import type { Itinerary, Place, Segment, TimeSlot, Day } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
 import { uid } from './SlotDnD';
+import MiniMap from './MiniMap';
 
 /* ─── Props ─────────────────────────────────────────────────────────────────── */
 
@@ -245,6 +246,24 @@ export default function CompareView({ currentItinerary, allItineraries, places, 
       </div>
 
       {/* ── Main grid ── */}
+      {/* ── Mini route maps for selected itineraries ── */}
+      {selectedItineraries.length > 0 && (
+        <section>
+          <h2 className="text-sm font-semibold text-stone-600 mb-2">Route snapshots</h2>
+          <div className="flex gap-3 overflow-x-auto pb-2">
+            {selectedItineraries.map((it) => (
+              <div key={it.id} className="shrink-0 w-64">
+                <div className="flex items-center gap-1.5 mb-1">
+                  <span className={`w-2 h-2 rounded-full ${itineraryColors[it.id]}`} />
+                  <span className="text-xs font-medium text-stone-600 truncate">{it.name}</span>
+                </div>
+                <MiniMap itinerary={it} places={places} height={160} />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {viewMode === 'side-by-side' && (
         <SideBySideGrid
           selectedItineraries={selectedItineraries}
@@ -329,7 +348,7 @@ function SideBySideGrid({
               <th
                 key={di}
                 colSpan={selectedItineraries.length}
-                className="border-b border-r border-stone-200 bg-stone-100 text-center py-1.5 font-bold text-stone-600"
+                className="border-b border-r-2 border-stone-500 bg-stone-100 text-center py-1.5 font-bold text-stone-600"
               >
                 Day {di + 1}
               </th>
@@ -338,18 +357,23 @@ function SideBySideGrid({
           {/* Itinerary labels within each day */}
           <tr>
             {Array.from({ length: maxDays }, (_, di) =>
-              selectedItineraries.map((it) => (
-                <th
-                  key={`${di}-${it.id}`}
-                  className="border-b border-r border-stone-200 bg-white min-w-[160px] max-w-[200px]"
-                >
-                  <div className="flex items-center gap-1.5 px-2 py-1 text-[10px] text-stone-400 font-medium truncate">
-                    <span className={`w-2 h-2 rounded-full shrink-0 ${itineraryColors[it.id]}`} />
-                    <span className="truncate">{it.name}</span>
-                  </div>
-                </th>
-              ),
-            ))}
+              selectedItineraries.map((it, itIdx) => {
+                const isLastInDay = itIdx === selectedItineraries.length - 1;
+                return (
+                  <th
+                    key={`${di}-${it.id}`}
+                    className={`border-b bg-white min-w-[160px] max-w-[200px] ${
+                      isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
+                    }`}
+                  >
+                    <div className="flex items-center gap-1.5 px-2 py-1 text-[10px] text-stone-400 font-medium truncate">
+                      <span className={`w-2 h-2 rounded-full shrink-0 ${itineraryColors[it.id]}`} />
+                      <span className="truncate">{it.name}</span>
+                    </div>
+                  </th>
+                );
+              }),
+            )}
           </tr>
         </thead>
 
@@ -363,19 +387,20 @@ function SideBySideGrid({
                 </div>
               </td>
               {Array.from({ length: maxDays }, (_, di) =>
-                selectedItineraries.map((it) => {
+                selectedItineraries.map((it, itIdx) => {
                   const days = slottedByItinerary.get(it.id);
                   const slottedDay = days?.[di];
                   const segs = slottedDay?.bySlot.get(slot) ?? [];
                   const draftKey = `${di}:${slot}`;
                   const isDrafted = draft.get(draftKey)?.sourceItineraryId === it.id;
+                  const isLastInDay = itIdx === selectedItineraries.length - 1;
 
                   return (
                     <td
                       key={`${di}-${it.id}-${slot}`}
-                      className={`border-b border-r border-stone-200 align-top ${SLOT_BG[slot]} min-w-[160px] relative group ${
-                        isDrafted ? 'ring-2 ring-amber-400 ring-inset' : ''
-                      }`}
+                      className={`border-b align-top ${SLOT_BG[slot]} min-w-[160px] relative group ${
+                        isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
+                      } ${isDrafted ? 'ring-2 ring-amber-400 ring-inset' : ''}`}
                     >
                       {!slottedDay ? (
                         <div className="px-2 py-2 text-stone-200 italic text-center">—</div>
@@ -417,12 +442,15 @@ function SideBySideGrid({
               <div className="w-28 px-3 py-2 font-semibold text-indigo-700 whitespace-nowrap">🛏 Overnight</div>
             </td>
             {Array.from({ length: maxDays }, (_, di) =>
-              selectedItineraries.map((it) => {
+              selectedItineraries.map((it, itIdx) => {
                 const days = slottedByItinerary.get(it.id);
                 const slottedDay = days?.[di];
                 const place = slottedDay ? places[slottedDay.day.overnightPlaceId] : undefined;
+                const isLastInDay = itIdx === selectedItineraries.length - 1;
                 return (
-                  <td key={`${di}-${it.id}-overnight`} className="border-b border-r border-stone-200 bg-indigo-50 align-middle">
+                  <td key={`${di}-${it.id}-overnight`} className={`border-b bg-indigo-50 align-middle ${
+                    isLastInDay ? 'border-r-2 border-stone-500' : 'border-r border-stone-200'
+                  }`}>
                     {place ? (
                       <button
                         onClick={() => onPlaceClick(place)}
@@ -478,7 +506,7 @@ function SlotFocusGrid({
                 {SLOT_LABEL[slot]}
               </th>
               {Array.from({ length: maxDays }, (_, di) => (
-                <th key={di} className="border-b border-r border-stone-200 bg-stone-100 text-center py-2 font-bold text-stone-600 min-w-[180px]">
+                <th key={di} className="border-b border-r-2 border-stone-500 bg-stone-100 text-center py-2 font-bold text-stone-600 min-w-[180px]">
                   Day {di + 1}
                 </th>
               ))}
@@ -504,7 +532,7 @@ function SlotFocusGrid({
                     return (
                       <td
                         key={di}
-                        className={`border-b border-r border-stone-200 align-top ${SLOT_BG[slot]} min-w-[180px] relative group ${
+                        className={`border-b border-r-2 border-stone-500 align-top ${SLOT_BG[slot]} min-w-[180px] relative group ${
                           isDrafted ? 'ring-2 ring-amber-400 ring-inset' : ''
                         }`}
                       >

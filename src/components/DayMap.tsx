@@ -11,6 +11,7 @@ import {
 import L from 'leaflet';
 import type { Day, Place, Coordinates } from '../types';
 import { TYPE_COLOR, TYPE_EMOJI } from '../utils/placeStyles';
+import CountryBorders from './CountryBorders';
 
 // ── Auto-fit bounds ───────────────────────────────────────────────────────────
 
@@ -157,6 +158,9 @@ export default function DayMap({ day, places, onPlaceClick }: Props) {
       />
 
       <BoundsFitter coords={allCoords} />
+
+      {/* Country borders */}
+      <CountryBorders />
 
       {/* Route lines */}
       {lines.map((line, i) => (

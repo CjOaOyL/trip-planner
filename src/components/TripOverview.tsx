@@ -307,7 +307,7 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                   <div className="w-28 h-14" />
                 </th>
                 {grid.map(({ day }, i) => (
-                  <th key={day.id} className="border-b border-r border-stone-200 bg-white min-w-[180px] max-w-[220px]">
+                  <th key={day.id} className="border-b border-r-2 border-stone-400 bg-white min-w-[180px] max-w-[220px]">
                     <div className="px-3 py-2 text-left">
                       <div className="font-bold text-stone-700">Day {i + 1}</div>
                       <div className="text-stone-400 font-normal truncate">{day.theme}</div>
@@ -334,7 +334,7 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                         key={day.id}
                         id={dropId}
                         dropData={{ dayIndex: di, slot, location: 'grid' }}
-                        className={`border-b border-r border-stone-200 align-top ${SLOT_BG[slot]} min-w-[180px]`}
+                        className={`border-b border-r-2 border-stone-400 align-top ${SLOT_BG[slot]} min-w-[180px]`}
                       >
                         {segs.length === 0 ? (
                           <div className="px-3 py-2 text-stone-300 italic">—</div>
@@ -385,7 +385,7 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                 {grid.map(({ day }) => {
                   const place = places[day.overnightPlaceId];
                   return (
-                    <td key={day.id} className="border-b border-r border-stone-200 bg-indigo-50 align-middle">
+                    <td key={day.id} className="border-b border-r-2 border-stone-400 bg-indigo-50 align-middle">
                       <div className="px-2 py-1.5">
                         {place ? (
                           <button
