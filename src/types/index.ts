@@ -169,6 +169,34 @@ export type ReservationCategory =
   | 'concert-ticket'
   | 'other';
 
+// ─── Booking options (alternatives being compared for a reservation) ──────────
+
+export type BookingOptionStatus = 'shortlist' | 'rejected' | 'chosen';
+
+export interface BookingOption {
+  id: string;
+  url: string;
+  title: string;
+  status: BookingOptionStatus;
+  // Pricing
+  totalPrice?: number;
+  currency?: string;          // ISO code, e.g. "USD", "EUR"
+  pricePerNight?: number;
+  // Lodging-specific
+  location?: string;          // address or neighborhood
+  beds?: number;
+  bedrooms?: number;
+  bathrooms?: number;
+  guests?: number;            // max occupancy
+  amenities?: string[];
+  imageUrl?: string;
+  // Catch-all
+  notes?: string;
+  scrapedAt?: string;         // when AI auto-fill last ran
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface Reservation {
   id: string;
   tripId: string;
@@ -185,6 +213,7 @@ export interface Reservation {
   cost?: number;
   notes?: string;
   bookingUrl?: string;
+  options?: BookingOption[];  // alternatives being compared before booking
   createdAt: string;          // ISO datetime
   updatedAt: string;
 }

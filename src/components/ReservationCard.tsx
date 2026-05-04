@@ -1,5 +1,8 @@
-import type { Reservation, ReservationStatus } from '../types';
+import { useState } from 'react';
+import type { BookingOption, Reservation, ReservationStatus } from '../types';
 import { saveReservation, deleteReservation } from '../utils/reservations';
+import BookingOptionsCompare from './BookingOptionsCompare';
+import BookingOptionModal from './BookingOptionModal';
 
 interface Props {
   reservation: Reservation;
@@ -39,6 +42,11 @@ function nextStatus(current: ReservationStatus): ReservationStatus {
 export default function ReservationCard({ reservation, onUpdate, onEdit }: Props) {
   const style = STATUS_STYLE[reservation.status];
   const emoji = CATEGORY_EMOJI[reservation.category] ?? '📌';
+  const options = reservation.options ?? [];
+
+  const [optionsOpen, setOptionsOpen] = useState(false);
+  const [editingOption, setEditingOption] = useState<BookingOption | null>(null);
+  const [adding, setAdding] = useState(false);
 
   function advanceStatus() {
     const updated: Reservation = {
@@ -55,6 +63,11 @@ export default function ReservationCard({ reservation, onUpdate, onEdit }: Props
       deleteReservation(reservation.tripId, reservation.id);
       onUpdate();
     }
+  }
+
+  function closeModal() {
+    setEditingOption(null);
+    setAdding(false);
   }
 
   return (
@@ -115,6 +128,47 @@ export default function ReservationCard({ reservation, onUpdate, onEdit }: Props
         {reservation.notes && (
           <p className="text-xs text-stone-400 italic mt-1.5">{reservation.notes}</p>
         )}
+
+        {/* Options toggle + content */}
+        <div className="mt-2.5 border-t border-stone-100 pt-2">
+          <div className="flex items-center justify-between">
+            <button
+              onClick={() => setOptionsOpen((o) => !o)}
+              className="text-xs font-medium text-stone-500 hover:text-stone-700 flex items-center gap-1"
+            >
+              <span>{optionsOpen ? '▾' : '▸'}</span>
+              {options.length > 0
+                ? `Compare options (${options.length})`
+                : 'Add options to compare'}
+            </button>
+            {optionsOpen && (
+              <button
+                onClick={() => setAdding(true)}
+                className="text-xs font-medium text-blue-600 hover:text-blue-700"
+              >
+                + Add option
+              </button>
+            )}
+          </div>
+
+          {optionsOpen && (
+            <div className="mt-2">
+              {options.length > 0 ? (
+                <BookingOptionsCompare
+                  tripId={reservation.tripId}
+                  reservationId={reservation.id}
+                  options={options}
+                  onChange={onUpdate}
+                  onEdit={setEditingOption}
+                />
+              ) : (
+                <p className="text-xs text-stone-400 italic">
+                  No options yet. Click <span className="font-semibold">+ Add option</span> to paste a listing URL and auto-fill details with AI.
+                </p>
+              )}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Actions */}
@@ -132,6 +186,17 @@ export default function ReservationCard({ reservation, onUpdate, onEdit }: Props
           Delete
         </button>
       </div>
+
+      {(adding || editingOption) && (
+        <BookingOptionModal
+          tripId={reservation.tripId}
+          reservationId={reservation.id}
+          category={reservation.category}
+          existing={editingOption}
+          onSave={() => { closeModal(); onUpdate(); }}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 }
