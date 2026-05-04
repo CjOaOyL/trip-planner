@@ -1,9 +1,10 @@
 import { useState, useCallback, useEffect } from 'react';
 import type { Reservation, ReservationCategory, ReservationStatus, Place, Trip, Itinerary } from '../types';
-import { listReservations } from '../utils/reservations';
+import { exportReservations, listReservations } from '../utils/reservations';
 import { seedReservations } from '../utils/seedReservations';
 import ReservationCard from './ReservationCard';
 import ReservationModal from './ReservationModal';
+import ImportReservationsModal from './ImportReservationsModal';
 
 interface Props {
   tripId: string;
@@ -45,6 +46,8 @@ export default function ReservationsTab({ tripId, itineraryId, itineraryName, tr
   const [statusFilter, setStatusFilter] = useState<ReservationStatus | 'all'>('all');
   const [editTarget, setEditTarget] = useState<Reservation | null | 'new'>('new' as unknown as null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [importOpen, setImportOpen] = useState(false);
+  const [exportFeedback, setExportFeedback] = useState<string | null>(null);
   const [tick, setTick] = useState(0); // increment to re-read localStorage
 
   const refresh = useCallback(() => setTick((t) => t + 1), []);
@@ -85,6 +88,30 @@ export default function ReservationsTab({ tripId, itineraryId, itineraryName, tr
 
   function handleSave() {
     setModalOpen(false);
+    refresh();
+  }
+
+  async function handleExport() {
+    const json = exportReservations(tripId);
+    try {
+      await navigator.clipboard.writeText(json);
+      setExportFeedback(`Copied ${allReservations.length} reservations to clipboard`);
+    } catch {
+      // Fallback: download as a file
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `reservations-${tripId}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      setExportFeedback('Downloaded reservations.json');
+    }
+    setTimeout(() => setExportFeedback(null), 3000);
+  }
+
+  function handleImportSave() {
+    setImportOpen(false);
     refresh();
   }
 
@@ -134,13 +161,33 @@ export default function ReservationsTab({ tripId, itineraryId, itineraryName, tr
           ))}
         </div>
 
-        {/* Add button */}
-        <button
-          onClick={openNew}
-          className="ml-auto bg-stone-800 hover:bg-stone-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
-        >
-          + Add Reservation
-        </button>
+        {/* Right-aligned actions */}
+        <div className="ml-auto flex items-center gap-2">
+          {exportFeedback && (
+            <span className="text-xs text-green-600 font-medium">{exportFeedback}</span>
+          )}
+          <button
+            onClick={handleExport}
+            disabled={allReservations.length === 0}
+            title="Copy reservations JSON to clipboard"
+            className="text-stone-500 hover:text-stone-800 disabled:text-stone-300 text-sm font-medium px-3 py-2 rounded-lg hover:bg-stone-100 transition-colors"
+          >
+            Export
+          </button>
+          <button
+            onClick={() => setImportOpen(true)}
+            title="Paste reservations JSON to merge in"
+            className="text-stone-500 hover:text-stone-800 text-sm font-medium px-3 py-2 rounded-lg hover:bg-stone-100 transition-colors"
+          >
+            Import
+          </button>
+          <button
+            onClick={openNew}
+            className="bg-stone-800 hover:bg-stone-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
+          >
+            + Add Reservation
+          </button>
+        </div>
       </div>
 
       {/* ── Empty state ── */}
@@ -196,6 +243,14 @@ export default function ReservationsTab({ tripId, itineraryId, itineraryName, tr
           existing={editTarget as Reservation | null}
           onSave={handleSave}
           onClose={() => setModalOpen(false)}
+        />
+      )}
+
+      {importOpen && (
+        <ImportReservationsModal
+          tripId={tripId}
+          onSave={handleImportSave}
+          onClose={() => setImportOpen(false)}
         />
       )}
     </div>
