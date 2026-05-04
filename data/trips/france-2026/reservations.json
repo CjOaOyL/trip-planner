@@ -191,5 +191,42 @@
         "notes": "⚠️ UNAVAILABLE for Aug 3-6 per site ('property not available at that time'). ⚠️ Located in BEAULIEU-SUR-MER, ~20-min drive from Nice city — different town despite the URL path. Near Beaulieu harbor, beaches, train terminal. 35 min to Nice airport. No pets, no smoking."
       }
     ]
+  },
+  {
+    "id": "auto-02-visitor-guide-hotel-arles",
+    "name": "Hotel near Arles — 4 nights",
+    "category": "hotel",
+    "status": "needed",
+    "itineraryId": "02-visitor-guide",
+    "placeId": "arles",
+    "checkIn": "2026-07-30",
+    "checkOut": "2026-08-03",
+    "options": [
+      {
+        "id": "c8756a73-ece0-4f98-8e0e-a6d54d6dc036",
+        "url": "https://www.airbnb.com/rooms/1496343542172938084?adults=2&children=3&infants=0&pets=0&wishlist_item_id=11006268284983&check_in=2026-07-31&check_out=2026-08-07&source_impression_id=p3_1777894121_P34dJIQCjlMWr1GP&previous_page_section_name=1000",
+        "title": "Villa Barbara",
+        "status": "shortlist",
+        "totalPrice": 1001,
+        "currency": "USD",
+        "pricePerNight": 250,
+        "location": "Arles, Provence-Alpes-Côte d'Azur, France — 5-min walk from train station; 1 min from the Arles arenas and historic center",
+        "beds": 3,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Kitchen",
+          "Wi-Fi",
+          "Free parking nearby",
+          "TV",
+          "Washer",
+          "Large terrace with barbecue",
+          "Walking distance to train station"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1496343542172938084/original/c25f21fd-b23d-483a-ab37-215943a77b00.jpeg",
+        "notes": "95 m² house over 2 floors. Bedrooms: queen + double + queen, plus a single-bed area. Hosted by Claire (only 3 months hosting — new host). ★3.5 from just 2 reviews — limited data. ⚠️ One reviewer flagged bedding quality and general upkeep. ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: the URL the option was added with embeds dates Jul 31-Aug 7; price above is for the actual reservation window Jul 30-Aug 3."
+      }
+    ]
   }
 ]
