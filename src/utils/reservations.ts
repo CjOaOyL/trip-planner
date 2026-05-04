@@ -4,6 +4,18 @@ function storageKey(tripId: string) {
   return `reservations:${tripId}`;
 }
 
+function seedConsumedKey(tripId: string) {
+  return `reservations-seed-consumed:${tripId}`;
+}
+
+// ─── Seed reservation type (for repo-defined defaults) ────────────────────────
+
+export type SeedOption = Omit<BookingOption, 'createdAt' | 'updatedAt'>;
+export type SeedReservation = Omit<
+  Reservation,
+  'tripId' | 'createdAt' | 'updatedAt' | 'options'
+> & { options?: SeedOption[] };
+
 export function getReservations(tripId: string): ReservationStore {
   try {
     const raw = localStorage.getItem(storageKey(tripId));
@@ -130,6 +142,88 @@ export function chooseOption(tripId: string, reservationId: string, optionId: st
     updatedAt: now,
   };
   saveReservation(tripId, updated);
+}
+
+// ─── Seed merge ──────────────────────────────────────────────────────────────
+
+function getSeedConsumed(tripId: string): Set<string> {
+  try {
+    const raw = localStorage.getItem(seedConsumedKey(tripId));
+    return new Set(raw ? (JSON.parse(raw) as string[]) : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveSeedConsumed(tripId: string, ids: Set<string>): void {
+  localStorage.setItem(seedConsumedKey(tripId), JSON.stringify([...ids]));
+}
+
+/**
+ * Merges repo-defined seed reservations into localStorage.
+ *
+ * Behavior:
+ * - Seed entries with new IDs are added to localStorage.
+ * - Seed entries already present (by ID) are not re-applied — local edits win.
+ * - Seed entries the user has deleted stay deleted (tracked in `seedConsumed`).
+ * - Calling this multiple times is idempotent.
+ */
+export function mergeSeedReservations(tripId: string, seed: SeedReservation[]): void {
+  if (!seed?.length) return;
+  const store = getReservations(tripId);
+  const consumed = getSeedConsumed(tripId);
+  const now = new Date().toISOString();
+  let dirty = false;
+
+  for (const seedRes of seed) {
+    const existing = store[seedRes.id];
+
+    if (!existing) {
+      // Reservation not in localStorage. If we've already added it once, skip
+      // (user deleted it). Otherwise, add it wholesale.
+      if (consumed.has(seedRes.id)) continue;
+      const { options: seedOptions, ...rest } = seedRes;
+      const newRes: Reservation = {
+        ...rest,
+        tripId,
+        createdAt: now,
+        updatedAt: now,
+        options: (seedOptions ?? []).map((opt) => ({ ...opt, createdAt: now, updatedAt: now })),
+      };
+      store[seedRes.id] = newRes;
+      consumed.add(seedRes.id);
+      for (const opt of seedOptions ?? []) consumed.add(opt.id);
+      dirty = true;
+      continue;
+    }
+
+    // Reservation already present locally — only merge new options.
+    consumed.add(seedRes.id);
+    const existingOptionIds = new Set((existing.options ?? []).map((o) => o.id));
+    const newOptions: BookingOption[] = [];
+    for (const seedOpt of seedRes.options ?? []) {
+      if (existingOptionIds.has(seedOpt.id)) {
+        consumed.add(seedOpt.id);
+        continue;
+      }
+      if (consumed.has(seedOpt.id)) continue; // user deleted this option previously
+      newOptions.push({ ...seedOpt, createdAt: now, updatedAt: now });
+      consumed.add(seedOpt.id);
+    }
+    if (newOptions.length) {
+      store[seedRes.id] = {
+        ...existing,
+        options: [...(existing.options ?? []), ...newOptions],
+        updatedAt: now,
+      };
+      dirty = true;
+    }
+  }
+
+  if (dirty) {
+    localStorage.setItem(storageKey(tripId), JSON.stringify(store));
+  }
+  saveSeedConsumed(tripId, consumed);
 }
 
 /** Returns all reservations sorted by date, then category */

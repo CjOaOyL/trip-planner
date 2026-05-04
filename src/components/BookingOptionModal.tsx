@@ -130,7 +130,17 @@ export default function BookingOptionModal({
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!form.url.trim() || !form.title.trim()) return;
+    const url = form.url.trim();
+    if (!url) return;
+
+    let title = form.title.trim();
+    if (!title) {
+      try {
+        title = new URL(url).hostname.replace(/^www\./, '');
+      } catch {
+        title = 'Untitled option';
+      }
+    }
 
     const amenities = form.amenities
       .split(',')
@@ -138,8 +148,8 @@ export default function BookingOptionModal({
       .filter(Boolean);
 
     const partial = {
-      url: form.url.trim(),
-      title: form.title.trim(),
+      url,
+      title,
       totalPrice: num(form.totalPrice),
       currency: form.currency.trim() || undefined,
       pricePerNight: num(form.pricePerNight),
@@ -202,9 +212,10 @@ export default function BookingOptionModal({
 
             {/* Title */}
             <div>
-              <label className="block text-xs font-semibold text-stone-500 mb-1">Title *</label>
+              <label className="block text-xs font-semibold text-stone-500 mb-1">
+                Title <span className="text-stone-400 font-normal">(optional — defaults to URL hostname)</span>
+              </label>
               <input
-                required
                 value={form.title}
                 onChange={(e) => set('title', e.target.value)}
                 placeholder="e.g. Studio apartment near Old Town"
