@@ -381,6 +381,57 @@
         "updatedAt": "2026-05-10T21:00:00Z"
       },
       {
+        "id": "o-vrbo-6944213ha-opus-nice",
+        "url": "https://www.vrbo.com/6944213ha?chkin=2026-08-03&chkout=2026-08-06&adults=4&children=2",
+        "title": "Opus 3 bedroom apartment (Vrbo) — central, near Place Masséna",
+        "status": "shortlist",
+        "totalPrice": 2004,
+        "currency": "USD",
+        "pricePerNight": 668,
+        "location": "Central Nice — 1 block from Place Masséna, 5 min walk to Avenue Jean Médecin, 8 min walk to Promenade des Anglais, 6 min walk to Place Masséna",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Air conditioning",
+          "Kitchen",
+          "Washer + dryer",
+          "Internet",
+          "Fireplace",
+          "Free cancellation until June 4"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:17:00Z",
+        "notes": "Vrbo 3BR/2BA, sleeps 6. Confirmed bedrooms: BR1 1 Double + BR2 1 Double — third bedroom config not shown in scrape but listing confirms 3 bedrooms sleeps 6 (likely 2 singles or sofa bed in BR3). 2 doubles meets the user's bed criteria. ★9.6 (7 reviews) — small review count. Located in central Nice between Place Masséna and Avenue Jean Médecin — excellent walking access to old town, beach, and shopping. Total $2,004 (all fees included). Free cancellation until June 4, 2026."
+      },
+      {
+        "id": "o-vrbo-8912660ha-dum-house-nice",
+        "url": "https://www.vrbo.com/8912660ha?chkin=2026-08-03&chkout=2026-08-06&adults=4&children=2",
+        "title": "Dum House & Spa — Old Town (★10, Premier Host)",
+        "status": "shortlist",
+        "totalPrice": 2585,
+        "currency": "USD",
+        "pricePerNight": 862,
+        "location": "Old Town (Vieux Nice), Nice — 3 min walk to beach, above the main old-town street, near the flower market",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Air conditioning",
+          "Steam room / private spa",
+          "Kitchen",
+          "Dining area",
+          "Deck / patio",
+          "Free cancellation until July 20",
+          "Premier Host"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:17:00Z",
+        "notes": "★10/10 (21 reviews), Premier Host — highest-rated Nice rental I found across Airbnb/Vrbo/TopVillas for these dates. Bedrooms: BR1 1 Queen + BR2 1 Queen — 2 baths (shower-only + shower+toilet). ⚠ Sleeps 6 is claimed but only 4 dedicated beds shown — the additional 2 sleepers would be on sofa beds in the living area (not a private kid bedroom). 4th floor in historic building, NO ELEVATOR — possible accessibility consideration. Partial sea view + Steam room spa included. Total $2,585 all-in (vs Airbnb totals which are typically pre-final-fee). Free cancellation until July 20. TopVillas had no Nice properties available for these dates."
+      },
+      {
         "id": "o-airbnb-12640383-nice-trendy-3br",
         "url": "https://www.airbnb.com/rooms/12640383?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-06",
         "title": "3-Brd Apt in trendy neighborhood (2 queens + 2 singles)",
