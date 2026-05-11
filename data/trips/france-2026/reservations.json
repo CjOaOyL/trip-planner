@@ -218,6 +218,74 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-05-11T02:23:00Z",
         "notes": "Most expensive of the three but in the absolute center of Chamonix with on-site parking — biggest convenience win. Bedrooms: BR1 1 double + BR2 1 double + BR3 1 bunk; 5 beds total suggests an additional sofa bed in the living area. 2 doubles + bunk for kids = fits the family well. ★4.69 (107 reviews). Hosted by Lisa. Free cancellation before June 28, 2026. Availability + total confirmed for Jul 28-30, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-649048908801260708-cham-center-2br",
+        "url": "https://www.airbnb.com/rooms/649048908801260708?adults=2&children=2&check_in=2026-07-28&check_out=2026-07-30",
+        "title": "Center town beautiful apartment (2BR/2 doubles) — 4-person config",
+        "status": "shortlist",
+        "totalPrice": 457,
+        "currency": "USD",
+        "pricePerNight": 229,
+        "location": "Central Chamonix-Mont-Blanc, France (45.9227, 6.8692)",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "2 double beds",
+          "Central Chamonix",
+          "Free cancellation before July 23"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-649048908801260708/original/4d8e38b0-057f-43fe-af27-3d31f2cad29d.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T06:36:00Z",
+        "notes": "Cheapest Chamonix 2BR option for the trimmer family-of-4 scenario (parents + 2 kids). Bedrooms: BR1 1 double + BR2 1 double — kids share the 2nd double. ★4.68. Hosted by Clémentine (not Superhost). Central Chamonix walking distance to everything. Free cancellation before July 23, 2026. Confirmed available for Jul 28-30, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-1579466664795980256-lannexe-du-by",
+        "url": "https://www.airbnb.com/rooms/1579466664795980256?adults=2&children=2&check_in=2026-07-28&check_out=2026-07-30",
+        "title": "L'Annexe du By — Mont Blanc view + parking (2BR/double+bunk) — 4-person",
+        "status": "shortlist",
+        "totalPrice": 543,
+        "currency": "USD",
+        "pricePerNight": 272,
+        "location": "Chamonix Sud, Chamonix-Mont-Blanc, France (45.9158, 6.8660) — south side with Mont Blanc views",
+        "beds": 3,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Mont Blanc view",
+          "Private parking",
+          "Free cancellation before June 28"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1579466664795980256/original/03a37c18-f30d-46f6-85ae-6c6c2898726f.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T06:36:00Z",
+        "notes": "Strong 4-person fit: BR1 1 double for parents + BR2 1 bunk bed for the 2 kids — gives kids their own room. ★4.89. Hosted by Perrine Et Baptiste. Includes parking (handy with a rental car) + Mont Blanc view. Free cancellation before June 28, 2026. South side of Chamonix (Chamonix Sud) — ~10 min walk to Hotel Lykke / town center. Confirmed available for Jul 28-30, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-50334794-cham-new-terrace",
+        "url": "https://www.airbnb.com/rooms/50334794?adults=2&children=2&check_in=2026-07-28&check_out=2026-07-30",
+        "title": "New apartment — large terrace overlooking Mont Blanc (2BR/4 beds)",
+        "status": "shortlist",
+        "totalPrice": 855,
+        "currency": "USD",
+        "pricePerNight": 428,
+        "location": "Chamonix-Mont-Blanc, France — Mont Blanc terrace view",
+        "beds": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Large terrace",
+          "Mont Blanc view"
+        ],
+        "imageUrl": "",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:21:00Z",
+        "notes": "Guest favorite per Airbnb search listing. 2BR/4 beds for 4 guests — bed config not individually verified but appears to match the parents-and-2-kids scenario. Larger and more expensive than the cheaper 2 options above. Availability + price ($855 for 2 nights) confirmed from search results on 2026-05-11."
       }
     ]
   },
@@ -500,6 +568,75 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-05-11T03:08:00Z",
         "notes": "Most expensive of the new Airbnb adds but best rated. Bedrooms: BR1 1 queen + BR2 1 queen + BR3 1 queen — 3 queens (4 beds total per overview suggests 1 sofa bed). 2.5 baths for sleeps-8 capacity is generous. ★5.0 (Top Guest Favorite). Hosted by Charles (not Superhost). Port district is east of Vieux Nice — slightly less central than Carré d'Or, but residential vibe with a park nearby and walking distance to the harbor. Free cancellation before July 4, 2026. Availability + total confirmed for Aug 3-6, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-1653627791866500474-magical-nice-2br",
+        "url": "https://www.airbnb.com/rooms/1653627791866500474?adults=2&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "Magical view of Nice — Sunny balcony, Central (2BR/2 doubles) — 4-person",
+        "status": "shortlist",
+        "totalPrice": 1152,
+        "currency": "USD",
+        "pricePerNight": 384,
+        "location": "Central Nice (43.7012, 7.2775) — sunny balcony with city view",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 1.5,
+        "guests": 4,
+        "amenities": [
+          "2 double beds",
+          "Sunny balcony",
+          "City view",
+          "Free cancellation before July 29"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1653627791866500474/original/e0a67a6d-5a6c-4155-9a73-1f5b978fae77.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T06:37:00Z",
+        "notes": "Cheapest Nice 2BR for the family-of-4 scenario by ~$800 vs the 3BR options. Bedrooms: BR1 1 double + BR2 1 double — parents in one, kids share the other. ★4.77. Hosted by Adrien (not Superhost). 1.5 baths (one full + one half). Central Nice walking distance to attractions. Free cancellation before July 29, 2026. Confirmed available for Aug 3-6, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-23429188-nice-classic-chic",
+        "url": "https://www.airbnb.com/rooms/23429188?adults=2&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "Classic Chic Elegance — Close to Everything (2BR/3 beds, ★4.9)",
+        "status": "shortlist",
+        "totalPrice": 1276,
+        "currency": "USD",
+        "pricePerNight": 425,
+        "location": "Thiers neighborhood, Nice — central, close to everything",
+        "beds": 3,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Free cancellation",
+          "Central Nice"
+        ],
+        "imageUrl": "",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:22:00Z",
+        "notes": "★4.9 with free cancellation. 2BR/3 beds for 4 guests — bed config not individually verified but should fit the family-of-4 scenario (1 double + likely 2 singles or another small bed). Located in Thiers (central Nice). Availability + price ($1,276 for 3 nights) confirmed from search results on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-1471219098450909547-nice-seaview-loft",
+        "url": "https://www.airbnb.com/rooms/1471219098450909547?adults=2&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "Nice Seaview Loft Promenade (★5.0 Superhost) — 2BR/3 beds",
+        "status": "shortlist",
+        "totalPrice": 1413,
+        "currency": "USD",
+        "pricePerNight": 471,
+        "location": "Baumettes neighborhood, Nice — Promenade-adjacent with sea view",
+        "beds": 3,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Sea view",
+          "Promenade location",
+          "Superhost"
+        ],
+        "imageUrl": "",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:22:00Z",
+        "notes": "★5.0 from a Superhost — highest-rated Nice 4-person 2BR I found. 2BR/3 beds for 4 guests. Located in Baumettes (west-central Nice), near the Promenade des Anglais with sea views. Bed config not individually verified — search snippet shows '3 beds' but specific layout TBD. Availability + price ($1,413 for 3 nights) confirmed from search results on 2026-05-11."
       }
     ]
   },
@@ -853,6 +990,76 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-05-10T22:35:00Z",
         "notes": "100 m² stone house in Arles's historic La Roquette quarter. Bedrooms: BR1 queen + BR2 double + BR3 double, plus 2 singles in the living room (sleeps 6). ★4.79 (121 reviews). Hosted by Aline (Superhost). 'Rare find — this place is usually booked.' ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: URL the user shared embedded dates Jul 31-Aug 3; price above is for the full reservation window Jul 30-Aug 3 (4 nights). Availability confirmed for Jul 30-Aug 3, 2026 (total $1,313) on 2026-05-10."
+      },
+      {
+        "id": "o-airbnb-647790051097171017-arles-central-arena",
+        "url": "https://www.airbnb.com/rooms/647790051097171017?adults=2&children=2&check_in=2026-07-30&check_out=2026-08-03",
+        "title": "Central Arena — A/C townhouse with patio (★4.94 Superhost) — 4-person",
+        "status": "shortlist",
+        "totalPrice": 889,
+        "currency": "USD",
+        "pricePerNight": 222,
+        "location": "Arles center near the Roman Arena (43.6785, 4.6302)",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Air conditioning",
+          "Private patio",
+          "Townhouse",
+          "Near the Roman Arena",
+          "Free cancellation before July 25"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-647790051097171017/original/420a781f-f187-47a0-a751-bd6daf601201.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T06:36:00Z",
+        "notes": "Cheapest Arles 2BR option for family-of-4 scenario. 2BR/2 beds with A/C and private patio. ★4.94 — highest rating in Arles. Hosted by Jean Christophe (Superhost). Steps from the Roman Arena. Bedroom-level bed config (queen/double/single mix) not fully scraped — overview '2 beds' suggests 1 main bed per room. Free cancellation before July 25, 2026. Confirmed available for Jul 30-Aug 3, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-2677275-arles-theatre-antique",
+        "url": "https://www.airbnb.com/rooms/2677275?adults=2&children=2&check_in=2026-07-30&check_out=2026-08-03",
+        "title": "Holiday in Arles — Apartment Théâtre Antique 2 (2BR/4 beds)",
+        "status": "shortlist",
+        "totalPrice": 985,
+        "currency": "USD",
+        "pricePerNight": 246,
+        "location": "Near the Théâtre Antique, Arles historic center",
+        "beds": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 4,
+        "amenities": [
+          "Guest favorite",
+          "Near the Roman Theatre",
+          "Historic center"
+        ],
+        "imageUrl": "",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:21:00Z",
+        "notes": "Guest favorite per Airbnb search. 2BR/4 beds for 4 guests — bed config not individually verified. Located near the Théâtre Antique in the Arles historic center. Availability + price ($985 for 4 nights) confirmed from search results on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-674362316000088406-arles-apt26-centre",
+        "url": "https://www.airbnb.com/rooms/674362316000088406?adults=2&children=2&check_in=2026-07-30&check_out=2026-08-03",
+        "title": "Apartment 26 Centre Arles (2BR/2.5BA, ★4.95, free cancel)",
+        "status": "shortlist",
+        "totalPrice": 1025,
+        "currency": "USD",
+        "pricePerNight": 256,
+        "location": "Centre Arles",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 2.5,
+        "guests": 4,
+        "amenities": [
+          "Free cancellation",
+          "2.5 baths"
+        ],
+        "imageUrl": "",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:21:00Z",
+        "notes": "★4.95 with free cancellation. 2BR/2 beds/2.5 baths — generous bathroom count. Bed config not individually verified; '2 beds' suggests 1 main bed per bedroom. Located in central Arles. Availability + price ($1,025 for 4 nights) confirmed from search results on 2026-05-11."
       }
     ]
   }
