@@ -384,55 +384,72 @@
   },
   {
     "id": "f-visitor-outbound-ewr-gva-2026",
-    "name": "Flight EWR → GVA (outbound, family of 4)",
+    "name": "Flight EWR → GVA (outbound) — Option A ★",
     "category": "flight",
     "status": "needed",
     "itineraryId": "02-visitor-guide",
     "placeId": "gva-airport",
     "date": "2026-07-27",
-    "notes": "Independent visitor outbound — 2 adults + 1 adult-fare teen (12+) + 1 child (2–11). Strategy: overnight transatlantic, sleep on plane, land Geneva morning to drive 1 hour to Chamonix (vs. ~5 hours from Milan). Family has Chase Sapphire Reserve — UR points transfer 1:1 to United MileagePlus; consider points-vs-cash on the outbound leg. Trip cancellation insurance applies if charged to the card.",
+    "cost": 3300,
+    "notes": "★ PREFERRED — Option A: All-EWR via United (best UR redemption play). 2 adults + 1 adult-fare teen (12+) + 1 child (2–11). Overnight transatlantic, sleep on plane, land Geneva morning, drive 1 hour to Chamonix (vs. 5 hours from Milan). Chase Sapphire Reserve: UR transfers 1:1 to United MileagePlus — Premium Plus saver typically 70–90k miles/seat one-way. Pay cash to earn 3x UR (8x via Chase Travel portal); apply $300 annual travel credit. Trip cancellation insurance applies. ⚠️ Departure-day note: drop Thandi at BCCC (Newtown, PA) by noon Mon Jul 27 for the YOBC group bus to JFK; then drive ~1h to EWR for your own 17:20 departure — tight but doable, leave by 2 PM at the latest.",
     "options": [
       {
         "id": "o-ua956-premium-plus-2026-07-27",
         "url": "https://www.united.com/en/us/fsr/choose-flights?f=EWR&t=GVA&d=2026-07-27&tt=1&px=4&taxng=1&newHP=True&clm=7&st=bestmatches",
-        "title": "United UA956 — EWR → GVA, Premium Plus",
-        "status": "shortlist",
+        "title": "United UA956 — EWR → GVA, Premium Plus (preferred)",
+        "status": "chosen",
         "currency": "USD",
+        "totalPrice": 3300,
         "availability": "unknown",
         "availabilityCheckedAt": "2026-05-10T20:00:00Z",
-        "notes": "Nonstop overnight. Depart EWR 17:20 (Terminal C, gate ~130) → arrive GVA 07:30+1 (Terminal 1). Boeing 767-300, ~8h 10m. Premium Plus cabin = United's premium economy. Estimated $2,800–$3,800 total for 4 seats in peak summer. Alternative: book with UR points transferred 1:1 to United MileagePlus — saver Premium Plus typically 70–90k miles/seat one-way when space opens (check united.com 'use miles' view).",
+        "notes": "Nonstop overnight. Depart EWR 17:20 (Terminal C, gate ~130) → arrive GVA 07:30+1 (Terminal 1). Boeing 767-300, ~8h 10m. Premium Plus cabin = United's premium economy (2-3-2 layout, family of 4 fits cleanly across row + side pair). Estimated $2,800–$3,800 total for 4 seats in peak summer; midpoint ~$3,300. Award alternative: 70–90k UR transferred to MileagePlus per seat one-way when saver space opens — check united.com 'use miles' view.",
         "createdAt": "2026-05-10T20:00:00Z",
-        "updatedAt": "2026-05-10T20:00:00Z"
+        "updatedAt": "2026-05-10T21:30:00Z"
       }
     ],
     "createdAt": "2026-05-10T20:00:00Z",
-    "updatedAt": "2026-05-10T20:00:00Z"
+    "updatedAt": "2026-05-10T21:30:00Z"
   },
   {
-    "id": "f-visitor-return-mxp-jfk-2026",
-    "name": "Flight MXP → JFK (return, family of 4)",
+    "id": "f-visitor-return-nce-ewr-2026",
+    "name": "Flight NCE → EWR (return, 1 stop CDG) — Option A ★",
     "category": "flight",
     "status": "needed",
     "itineraryId": "02-visitor-guide",
-    "placeId": "jfk-airport",
+    "placeId": "ewr-airport",
     "date": "2026-08-06",
-    "notes": "Independent visitor return — open-jaw with the EWR→GVA outbound. Westbound transatlantic is naturally daytime: depart late morning Milan, arrive NYC afternoon. Family flies home from Milan with the tour group rather than backtracking to Geneva.",
+    "cost": 3400,
+    "notes": "★ PREFERRED — Option A return: Nice (NCE) → Paris (CDG) on Air France, connect to United Premium Plus CDG → Newark (EWR). Matches the EWR-out outbound airport so parking/commute is symmetric from Hopewell. Two-ticket vs single-ticket trade-off below; single-ticket is safer (protected connection) but Air France is SkyTeam not Star Alliance so single-ticket pricing may be higher. Chase Sapphire Reserve trip-delay protection covers the connection if separate tickets. Pickup Thandi at BCCC (Newtown, PA) in evening after YOBC bus returns from JFK.",
     "options": [
       {
-        "id": "o-dl185-premium-select-2026-08-06",
-        "url": "https://www.delta.com/flight-search/book-a-flight?cacheKeySuffix=&tripType=ONE_WAY&priceSchedule=PRICE&originCity=MXP&destinationCity=JFK&departureDate=2026-08-06&passengerCount=4&fareFamily=PREMIUM_SELECT",
-        "title": "Delta DL185 — MXP → JFK, Premium Select",
+        "id": "o-nce-cdg-ewr-single-ticket-2026-08-06",
+        "url": "https://www.united.com/en/us/book-flight/united-reservations.html",
+        "title": "NCE → CDG → EWR — single multi-city ticket (recommended)",
+        "status": "chosen",
+        "currency": "USD",
+        "totalPrice": 3400,
+        "availability": "unknown",
+        "availabilityCheckedAt": "2026-05-10T21:30:00Z",
+        "notes": "Single ticket via united.com multi-city or Chase Travel portal — protected connection if AF delay causes missed CDG→EWR. Leg 1: Air France NCE → CDG ~6:00 AM → 7:35 AM, A320, 1h 35m. Leg 2: United Premium Plus CDG → EWR daytime ~11:30 AM → 14:00, 767-300, 8h 30m. Estimated total ~$3,200–$3,800 for 4 seats; midpoint ~$3,400. Earns 3x UR per dollar; 8x via Chase Travel portal. Book through chase.com/travel for 1.5x point redemption and 5x earn.",
+        "createdAt": "2026-05-10T21:30:00Z",
+        "updatedAt": "2026-05-10T21:30:00Z"
+      },
+      {
+        "id": "o-nce-cdg-ewr-separate-tickets-2026-08-06",
+        "url": "https://www.airfrance.com",
+        "title": "NCE → CDG (AF) + CDG → EWR (UA) — two separate tickets",
         "status": "shortlist",
         "currency": "USD",
+        "totalPrice": 3000,
         "availability": "unknown",
-        "availabilityCheckedAt": "2026-05-10T20:00:00Z",
-        "notes": "Nonstop daytime. Depart MXP 11:10 → arrive JFK 14:25, ~9h. Airbus A330-900neo, Premium Select cabin = Delta's premium economy. Estimated $2,800–$3,800 total for 4 seats in peak summer. UR does not transfer to Delta SkyMiles directly — best paid with cash on Sapphire Reserve for 3x UR (8x if booked via Chase Travel portal).",
-        "createdAt": "2026-05-10T20:00:00Z",
-        "updatedAt": "2026-05-10T20:00:00Z"
+        "availabilityCheckedAt": "2026-05-10T21:30:00Z",
+        "notes": "Two separate tickets: AF NCE→CDG ~$100–$150/pp × 4 = $400–$600. UA Premium Plus CDG→EWR ~$700–$1,000/pp × 4 = $2,800–$4,000. Total ~$3,200–$4,600; usually ~$200–$400 cheaper than single ticket. ⚠️ Risk: no protected connection — if AF flight is late, UA isn't obligated to rebook. Sapphire Reserve trip-delay insurance helps but doesn't eliminate the hassle. Allow 3+ hour CDG layover if booking separately.",
+        "createdAt": "2026-05-10T21:30:00Z",
+        "updatedAt": "2026-05-10T21:30:00Z"
       }
     ],
-    "createdAt": "2026-05-10T20:00:00Z",
-    "updatedAt": "2026-05-10T20:00:00Z"
+    "createdAt": "2026-05-10T21:30:00Z",
+    "updatedAt": "2026-05-10T21:30:00Z"
   },
   {
     "id": "auto-02-visitor-guide-hotel-arles",

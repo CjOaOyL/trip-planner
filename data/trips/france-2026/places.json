@@ -33,6 +33,28 @@
     "tags": ["arrival", "visitor", "chamonix-gateway"]
   },
   {
+    "id": "nce-airport",
+    "name": "Nice Côte d'Azur Airport",
+    "type": "airport",
+    "description": "Nice's seaside international airport on the Mediterranean — the natural exit airport from the Riviera leg of the tour. 15 minutes from central Nice; Air France runs hourly hops to Paris CDG for transatlantic connections.",
+    "address": "Rue Costes et Bellonte, 06206 Nice, France",
+    "coordinates": [43.6584, 7.2159],
+    "googleMapsUrl": "https://maps.google.com/?q=Nice+Cote+d'Azur+Airport",
+    "website": "https://en.nice.aeroport.fr",
+    "tags": ["departure", "visitor", "riviera-gateway"]
+  },
+  {
+    "id": "cdg-airport",
+    "name": "Paris Charles de Gaulle Airport",
+    "type": "airport",
+    "description": "Paris CDG — Air France's hub and France's primary international gateway. Connection point for transatlantic flights to Newark via United Premium Plus on the homeward leg.",
+    "address": "95700 Roissy-en-France, France",
+    "coordinates": [49.0097, 2.5479],
+    "googleMapsUrl": "https://maps.google.com/?q=Paris+Charles+de+Gaulle+Airport",
+    "website": "https://www.parisaeroport.fr",
+    "tags": ["connection", "visitor"]
+  },
+  {
     "id": "milan-malpensa-airport",
     "name": "Milan Malpensa Airport",
     "type": "airport",
