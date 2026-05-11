@@ -379,6 +379,76 @@
         "notes": "5-star Hyatt on the Promenade. Family Suite is a King Room + connected Twin Room — two separate bedrooms with a door between, two bathrooms — meets the privacy filter cleanly. Custom 2BR/3BR junior-suite configurations also available on request for the flex 5th adult. Estimated total: $1,500–$2,500 for 3 nights in peak August (rooms start ~$247/night; Family Suite premium adds 50–100%). ⚠️ Verify live price on hyatt.com — Hyatt isn't a Chase UR transfer partner, but World of Hyatt earn rate on the stay is solid. Cash booking earns 3x UR on Sapphire Reserve.",
         "createdAt": "2026-05-10T21:00:00Z",
         "updatedAt": "2026-05-10T21:00:00Z"
+      },
+      {
+        "id": "o-airbnb-12640383-nice-trendy-3br",
+        "url": "https://www.airbnb.com/rooms/12640383?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "3-Brd Apt in trendy neighborhood (2 queens + 2 singles)",
+        "status": "shortlist",
+        "totalPrice": 1936,
+        "currency": "USD",
+        "pricePerNight": 645,
+        "location": "Nice, Provence-Alpes-Côte d'Azur, France — trendy neighborhood, walking distance to main attractions (~43.6999, 7.28153, east of Vieux Nice)",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Air conditioning",
+          "Walking distance to main attractions",
+          "Free cancellation before July 4"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/90b928ab-e769-4740-bb94-3ddc939478bb.jpg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:07:00Z",
+        "notes": "Best match for the family bed criteria. Bedrooms: BR1 1 queen + BR2 1 queen + BR3 2 single beds — 2 queens for adults, kid bedroom with 2 singles. ★4.86 (282 reviews). Hosted by Morgan (Superhost). 2 bathrooms. 'Trendiest neighborhood' per listing — coordinates [43.6999, 7.28153] place it east of Vieux Nice, walking distance to main attractions. Free cancellation before July 4, 2026. Availability + total confirmed for Aug 3-6, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-24449603-nice-jean-medecin-duplex",
+        "url": "https://www.airbnb.com/rooms/24449603?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "Super Central Duplex — Jean Médecin, sleeps 8",
+        "status": "shortlist",
+        "totalPrice": 2015,
+        "currency": "USD",
+        "pricePerNight": 672,
+        "location": "Jean Médecin, central Nice (43.7003, 7.2685) — walking distance to Promenade des Anglais, Vieux Nice, Cours Saleya, Place Garibaldi, Port de Nice",
+        "beds": 7,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 8,
+        "amenities": [
+          "5 min to the beach",
+          "Easy public transportation",
+          "Walking distance to all main attractions",
+          "Free cancellation before July 4"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-24449603/original/2b7a549a-721a-4662-ad2d-a7a2255076cf.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:07:00Z",
+        "notes": "Spacious duplex near Avenue Jean Médecin (main shopping artery). Bedrooms: BR1 1 double + crib + BR2 1 double + 1 single + BR3 1 double + 1 single = 3 doubles + 2 singles (sleeps up to 8). Excellent for family of 6 with bed flexibility. ★4.8 (107 reviews). Hosted by Sandrine (Superhost). <10 min walk to Vieux Nice, Cours Saleya, Promenade des Anglais. Free cancellation before July 4, 2026. Availability + total confirmed for Aug 3-6, 2026 on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-1615266894834739307-nice-port-luxe",
+        "url": "https://www.airbnb.com/rooms/1615266894834739307?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-06",
+        "title": "Luxurious 3BR — Port district (3 queens, ★5.0)",
+        "status": "shortlist",
+        "totalPrice": 2124,
+        "currency": "USD",
+        "pricePerNight": 708,
+        "location": "Port district, Nice (43.70652, 7.28857) — east of Vieux Nice, near Port de Nice and a park",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "guests": 8,
+        "amenities": [
+          "Air conditioning",
+          "Park nearby",
+          "Free cancellation before July 4"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1518714628171904540/original/65903aba-783f-4a68-b8b0-7b2b0c6b375a.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T03:08:00Z",
+        "notes": "Most expensive of the new Airbnb adds but best rated. Bedrooms: BR1 1 queen + BR2 1 queen + BR3 1 queen — 3 queens (4 beds total per overview suggests 1 sofa bed). 2.5 baths for sleeps-8 capacity is generous. ★5.0 (Top Guest Favorite). Hosted by Charles (not Superhost). Port district is east of Vieux Nice — slightly less central than Carré d'Or, but residential vibe with a park nearby and walking distance to the harbor. Free cancellation before July 4, 2026. Availability + total confirmed for Aug 3-6, 2026 on 2026-05-11."
       }
     ]
   },
