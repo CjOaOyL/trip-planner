@@ -30,7 +30,9 @@
           "Mountain views"
         ],
         "imageUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-1371903667891903389/original/59ab4706-4359-4c88-9c7f-85d3eba6c287.jpeg",
-        "notes": "Triplex, 40-45 m². ★4.85 (75 reviews). Hosted by Antoine (Superhost, 8 yrs). Walking distance to shops and SUD bus station. Heads-up from a guest review: spiral staircase to bedrooms, no smoke/CO detectors."
+        "availability": "unavailable",
+        "availabilityCheckedAt": "2026-05-10T19:40:00Z",
+        "notes": "Triplex, 40-45 m². ★4.85 (75 reviews). Hosted by Antoine (Superhost, 8 yrs). Walking distance to shops and SUD bus station. Heads-up from a guest review: spiral staircase to bedrooms, no smoke/CO detectors. UNAVAILABLE for Jul 28-30, 2026 (booking widget shows 'Those dates are not available' as of 2026-05-10)."
       },
       {
         "id": "85fa246f-e87d-473d-b54d-b2661680c2ed",
@@ -55,7 +57,9 @@
           "Steps from Aiguille du Midi gondola"
         ],
         "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE4NDYzMDA%3D/original/05e8b796-08ff-4db3-ad54-42b0b0c9fc1e.jpeg",
-        "notes": "600 sq ft 1BR. ★4.91 (299 reviews). Hosted by Alexandra (Superhost, 10 yrs). Sleeps 5 max: king + queen sofa bed + bunk beds. Caveat: limited hot water — water heater can't accommodate >4 showers in succession."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T19:41:00Z",
+        "notes": "600 sq ft 1BR. ★4.91 (299 reviews). Hosted by Alexandra (Superhost, 10 yrs). Sleeps 5 max: king + queen sofa bed + bunk beds. Caveat: limited hot water — water heater can't accommodate >4 showers in succession. Availability confirmed for Jul 28-30, 2026 (total $1,042) on 2026-05-10."
       },
       {
         "id": "ed3e1bd6-bdb3-4733-8b2d-27dc75a988f3",
@@ -82,7 +86,40 @@
           "Child-friendly"
         ],
         "imageUrl": "https://img.thetopvillas.com/119347/crop/1920x1080/695bd3dce835e.jpg",
-        "notes": "2BR/1BA between Les Houches and Chamonix. Bedrooms: double on mezzanine + bunk room with pullout single. Fireplace, ski locker, free Mont Blanc Express access from nearby station. Geneva Airport ~1h15. Price includes taxes & fees."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T19:42:00Z",
+        "notes": "2BR/1BA between Les Houches and Chamonix. Bedrooms: double on mezzanine + bunk room with pullout single. Fireplace, ski locker, free Mont Blanc Express access from nearby station. Geneva Airport ~1h15. Price includes taxes & fees. Availability confirmed for Jul 28-30, 2026 ($672.80, Book Now active) on 2026-05-10."
+      },
+      {
+        "id": "o-argentiere-7-topvillas",
+        "url": "https://www.thetopvillas.com/en_us/destinations/france/french-alps/chamonix/argentiere/argentiere-7?checkin=2026-07-28&checkout=2026-07-30&currency=USD",
+        "title": "Argentiere 7 — 4BR chalet, sleeps 10",
+        "status": "shortlist",
+        "currency": "USD",
+        "pricePerNight": 173,
+        "location": "Argentière, Chamonix-Mont-Blanc, France — up-valley village (~10 min drive / train to Chamonix center, ~1h 10m to Geneva Airport)",
+        "beds": 7,
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "guests": 10,
+        "amenities": [
+          "Elevator access",
+          "Ski locker",
+          "Shuttle service to slopes",
+          "Wi-Fi",
+          "Flat-screen TV",
+          "Balcony",
+          "Alfresco dining",
+          "Washer/dryer",
+          "Underfloor heating",
+          "Private parking"
+        ],
+        "imageUrl": "https://img.thetopvillas.com/125423/crop/1000x667/6700a57423849.jpg",
+        "availability": "unknown",
+        "availabilityCheckedAt": "2026-05-10T20:30:00Z",
+        "notes": "4BR/2BA chalet in Argentière village, registration 74056000826RC. Beds: 2 doubles + 4 twins + 1 bunk (twin/twin). Capacity 10 is well over the family of 4 — could fit extended family/visitors if needed. ⚠️ NO ONLINE BOOKING — site shows 'Make Enquiry' button, requires calling 1-407-495-2595 or live chat for an actual quote. Base rate 'from $173/nt' shown but no firm total for Jul 28-30. Site indicated the dates 'cannot be booked' online — could mean unavailable, or just that this property always requires inquiry; needs phone confirmation. Argentière → Hotel Lykke ~10 min; Argentière → GVA ~1h 10m.",
+        "createdAt": "2026-05-10T20:30:00Z",
+        "updatedAt": "2026-05-10T20:30:00Z"
       },
       {
         "id": "1c21108b-559f-4d86-b7b6-557095ba85a2",
@@ -107,7 +144,9 @@
           "Pet-friendly"
         ],
         "imageUrl": "https://img.thetopvillas.com/111325/crop/1920x1080/68d653e3e1131.jpg",
-        "notes": "3BR/2BA condo. Beds: 2 doubles + twin + trundle. Located in Argentière village, not central Chamonix — bus shuttle to slopes. ⚠️ NO WIFI per the listing. Price includes taxes & fees."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T19:42:00Z",
+        "notes": "3BR/2BA condo. Beds: 2 doubles + twin + trundle. Located in Argentière village, not central Chamonix — bus shuttle to slopes. ⚠️ NO WIFI per the listing. Price includes taxes & fees. Availability confirmed for Jul 28-30, 2026 ($789.43, Book Now active) on 2026-05-10."
       }
     ]
   },
@@ -143,7 +182,9 @@
           "High ceilings (3.5 m main rooms)"
         ],
         "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1029628701198556978/original/10a86ee3-f487-43bd-a551-2a9f1e8e8bf6.jpeg",
-        "notes": "★4.99 (141 reviews), Top 5% of homes. Hosted by Bertrand (Superhost). Sleeping: queen in BR1, mezzanine with 2 singles (joinable to king) in BR2 — mezzanine ceiling 1.20 m (sleeping height only); plus sofa bed. Heads-up: Old Town can be noisy at night (host provides earplugs)."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T19:41:00Z",
+        "notes": "★4.99 (141 reviews), Top 5% of homes. Hosted by Bertrand (Superhost). Sleeping: queen in BR1, mezzanine with 2 singles (joinable to king) in BR2 — mezzanine ceiling 1.20 m (sleeping height only); plus sofa bed. Heads-up: Old Town can be noisy at night (host provides earplugs). Availability confirmed for Aug 3-6, 2026 (total $2,476) on 2026-05-10."
       },
       {
         "id": "1b8847e1-eb04-4975-9356-68228e49c31c",
@@ -165,7 +206,9 @@
           "Modern kitchen (Nespresso, induction, dishwasher)"
         ],
         "imageUrl": "https://img.thetopvillas.com/148171/crop/1920x1080/697b42bf27f89.jpg",
-        "notes": "⚠️ Site shows no price for Aug 3-6 — likely UNAVAILABLE for these dates. Verify via the URL. Sleeps 4 (2 double beds, BR1 has balcony access). 20-min walk to Vieux Nice, 10-min walk to tramway → 20 min to airport. No pets, no smoking."
+        "availability": "unavailable",
+        "availabilityCheckedAt": "2026-05-10T19:42:00Z",
+        "notes": "Sleeps 4 (2 double beds, BR1 has balcony access). 20-min walk to Vieux Nice, 10-min walk to tramway → 20 min to airport. No pets, no smoking. UNAVAILABLE for Aug 3-6, 2026 (site message: 'The property you've chosen is not available at that time' as of 2026-05-10)."
       },
       {
         "id": "bccd46bb-dc98-4b57-a2d9-8a7e883a5179",
@@ -188,9 +231,63 @@
           "Child-friendly"
         ],
         "imageUrl": "https://img.thetopvillas.com/77005/crop/1920x1080/697b7b3d08276.jpg",
-        "notes": "⚠️ UNAVAILABLE for Aug 3-6 per site ('property not available at that time'). ⚠️ Located in BEAULIEU-SUR-MER, ~20-min drive from Nice city — different town despite the URL path. Near Beaulieu harbor, beaches, train terminal. 35 min to Nice airport. No pets, no smoking."
+        "availability": "unavailable",
+        "availabilityCheckedAt": "2026-05-10T19:42:00Z",
+        "notes": "⚠️ Located in BEAULIEU-SUR-MER, ~20-min drive from Nice city — different town despite the URL path. Near Beaulieu harbor, beaches, train terminal. 35 min to Nice airport. No pets, no smoking. UNAVAILABLE for Aug 3-6, 2026 (site message: 'The property you've chosen is not available at that time' as of 2026-05-10)."
       }
     ]
+  },
+  {
+    "id": "f-visitor-outbound-ewr-gva-2026",
+    "name": "Flight EWR → GVA (outbound, family of 4)",
+    "category": "flight",
+    "status": "needed",
+    "itineraryId": "02-visitor-guide",
+    "placeId": "gva-airport",
+    "date": "2026-07-27",
+    "notes": "Independent visitor outbound — 2 adults + 1 adult-fare teen (12+) + 1 child (2–11). Strategy: overnight transatlantic, sleep on plane, land Geneva morning to drive 1 hour to Chamonix (vs. ~5 hours from Milan). Family has Chase Sapphire Reserve — UR points transfer 1:1 to United MileagePlus; consider points-vs-cash on the outbound leg. Trip cancellation insurance applies if charged to the card.",
+    "options": [
+      {
+        "id": "o-ua956-premium-plus-2026-07-27",
+        "url": "https://www.united.com/en/us/fsr/choose-flights?f=EWR&t=GVA&d=2026-07-27&tt=1&px=4&taxng=1&newHP=True&clm=7&st=bestmatches",
+        "title": "United UA956 — EWR → GVA, Premium Plus",
+        "status": "shortlist",
+        "currency": "USD",
+        "availability": "unknown",
+        "availabilityCheckedAt": "2026-05-10T20:00:00Z",
+        "notes": "Nonstop overnight. Depart EWR 17:20 (Terminal C, gate ~130) → arrive GVA 07:30+1 (Terminal 1). Boeing 767-300, ~8h 10m. Premium Plus cabin = United's premium economy. Estimated $2,800–$3,800 total for 4 seats in peak summer. Alternative: book with UR points transferred 1:1 to United MileagePlus — saver Premium Plus typically 70–90k miles/seat one-way when space opens (check united.com 'use miles' view).",
+        "createdAt": "2026-05-10T20:00:00Z",
+        "updatedAt": "2026-05-10T20:00:00Z"
+      }
+    ],
+    "createdAt": "2026-05-10T20:00:00Z",
+    "updatedAt": "2026-05-10T20:00:00Z"
+  },
+  {
+    "id": "f-visitor-return-mxp-jfk-2026",
+    "name": "Flight MXP → JFK (return, family of 4)",
+    "category": "flight",
+    "status": "needed",
+    "itineraryId": "02-visitor-guide",
+    "placeId": "jfk-airport",
+    "date": "2026-08-06",
+    "notes": "Independent visitor return — open-jaw with the EWR→GVA outbound. Westbound transatlantic is naturally daytime: depart late morning Milan, arrive NYC afternoon. Family flies home from Milan with the tour group rather than backtracking to Geneva.",
+    "options": [
+      {
+        "id": "o-dl185-premium-select-2026-08-06",
+        "url": "https://www.delta.com/flight-search/book-a-flight?cacheKeySuffix=&tripType=ONE_WAY&priceSchedule=PRICE&originCity=MXP&destinationCity=JFK&departureDate=2026-08-06&passengerCount=4&fareFamily=PREMIUM_SELECT",
+        "title": "Delta DL185 — MXP → JFK, Premium Select",
+        "status": "shortlist",
+        "currency": "USD",
+        "availability": "unknown",
+        "availabilityCheckedAt": "2026-05-10T20:00:00Z",
+        "notes": "Nonstop daytime. Depart MXP 11:10 → arrive JFK 14:25, ~9h. Airbus A330-900neo, Premium Select cabin = Delta's premium economy. Estimated $2,800–$3,800 total for 4 seats in peak summer. UR does not transfer to Delta SkyMiles directly — best paid with cash on Sapphire Reserve for 3x UR (8x if booked via Chase Travel portal).",
+        "createdAt": "2026-05-10T20:00:00Z",
+        "updatedAt": "2026-05-10T20:00:00Z"
+      }
+    ],
+    "createdAt": "2026-05-10T20:00:00Z",
+    "updatedAt": "2026-05-10T20:00:00Z"
   },
   {
     "id": "auto-02-visitor-guide-hotel-arles",
@@ -225,7 +322,228 @@
           "Walking distance to train station"
         ],
         "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-1496343542172938084/original/c25f21fd-b23d-483a-ab37-215943a77b00.jpeg",
-        "notes": "95 m² house over 2 floors. Bedrooms: queen + double + queen, plus a single-bed area. Hosted by Claire (only 3 months hosting — new host). ★3.5 from just 2 reviews — limited data. ⚠️ One reviewer flagged bedding quality and general upkeep. ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: the URL the option was added with embeds dates Jul 31-Aug 7; price above is for the actual reservation window Jul 30-Aug 3."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T19:41:00Z",
+        "notes": "95 m² house over 2 floors. Bedrooms: queen + double + queen, plus a single-bed area. Hosted by Claire (only 3 months hosting — new host). ★3.5 from just 2 reviews — limited data. ⚠️ One reviewer flagged bedding quality and general upkeep. ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: the URL the option was added with embeds dates Jul 31-Aug 7; price above is for the actual reservation window Jul 30-Aug 3. Availability confirmed for Jul 30-Aug 3, 2026 (total $1,006) on 2026-05-10."
+      },
+      {
+        "id": "o-airbnb-478340-arles-arelate-sejour",
+        "url": "https://www.airbnb.com/rooms/478340?adults=4&children=2&check_in=2026-07-31&check_out=2026-08-03&guests=6",
+        "title": "Large apartment Arelate Sejour (3 nights only)",
+        "status": "shortlist",
+        "totalPrice": 1651,
+        "currency": "USD",
+        "pricePerNight": 550,
+        "location": "Arles, Provence-Alpes-Côte d'Azur, France",
+        "bedrooms": 4,
+        "beds": 4,
+        "bathrooms": 2.5,
+        "guests": 7,
+        "amenities": [
+          "City skyline view",
+          "Kitchen",
+          "Fast Wi-Fi (331 Mbps)",
+          "Pets allowed",
+          "TV",
+          "41 amenities total"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/8ad95ff8-d4a5-4d7e-8674-2901e1239dae.jpg",
+        "availability": "unavailable",
+        "availabilityCheckedAt": "2026-05-11T00:14:00Z",
+        "notes": "Entire 4BR / 2.5BA rental, sleeps 7. Bedrooms: BR1 king + BR2 king + BR3 king + BR4 single. ★4.72 (164 reviews). Hosted by Damien. ⚠ Does NOT cover the full Arles reservation window: available only Jul 31-Aug 3 (3 nights, $1,651), NOT Jul 30. The Jul 30 → 31 night blocks booking the whole 4-night stay here in a single reservation. To use this property, you'd need a separate Jul 30→31 booking elsewhere. 3-night availability + price confirmed on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-1365362759911290274-arles-arenas",
+        "url": "https://www.airbnb.com/rooms/1365362759911290274?adults=4&children=2&check_in=2026-07-30&check_out=2026-08-03&guests=6",
+        "title": "The Arlesian of the Arenas — Arles Center + Terrace",
+        "status": "shortlist",
+        "totalPrice": 1303,
+        "currency": "USD",
+        "pricePerNight": 326,
+        "location": "Arles Center, near the Roman Arena (Amphithéâtre), Provence-Alpes-Côte d'Azur, France",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Kitchen",
+          "Wi-Fi",
+          "TV",
+          "Washer",
+          "Bathtub",
+          "Patio / balcony",
+          "Private backyard",
+          "Pack 'n play / travel crib",
+          "Hair dryer",
+          "39 amenities total"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM2NTM2Mjc1OTkxMTI5MDI3NA==/original/691ba941-1947-4a5f-adc7-f378d83966aa.png",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:11:00Z",
+        "notes": "Entire townhouse in Arles center, walking distance to the Roman Arena. Bedrooms: BR1 queen + BR2 double + BR3 2 singles (sleeps 6). ★4.87 out of 5. Hosted by Philippe & Liz (Superhost). Private backyard + terrace. Free cancellation before June 30. ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: URL the user shared embedded dates Jul 31-Aug 3; price above is for the full reservation window Jul 30-Aug 3 (4 nights). Availability confirmed for Jul 30-Aug 3, 2026 (total $1,303) on 2026-05-10."
+      },
+      {
+        "id": "o-booking-le-regence-arles",
+        "url": "https://www.booking.com/hotel/fr/hotelleregence.html?checkin=2026-07-30&checkout=2026-08-03&group_adults=4&group_children=2&no_rooms=2&age=10&age=12",
+        "title": "Le Régence (hotel — 2 rooms)",
+        "status": "shortlist",
+        "totalPrice": 1016,
+        "currency": "USD",
+        "pricePerNight": 254,
+        "location": "5 Rue Marius Jouveau, 13200 Arles — riverside, walking distance to the Roman arena (~5 min)",
+        "beds": 2,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 4,
+        "amenities": [
+          "Air conditioning",
+          "Soundproof rooms",
+          "Free Wi-Fi",
+          "Flat-screen TV",
+          "Free toiletries",
+          "Breakfast available ($14)"
+        ],
+        "imageUrl": "https://r-xx.bstatic.com/xdata/images/hotel/608x352/273600118.webp",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:29:00Z",
+        "notes": "3-star hotel by the Rhône, ~5-min walk to the group's Ibis Styles and the historic center. ★8.6 (430 reviews) on Booking. Quoted total is 2 × Comfort Double (max 2 adults each) — fits 4 adults + 2 kids if kids share rooms; some rooms tight at 172 sqft. Excludes €1.5/person/night city tax + 10% VAT (~$130 extra). Free cancellation before July 16, 2026 (non-refundable rate is $922). Hotel walking distance from group; not a family-suite-style hotel so room configs are smaller than the Airbnbs."
+      },
+      {
+        "id": "o-booking-le-mas-des-ponts-arles",
+        "url": "https://www.booking.com/hotel/fr/inter-le-mas-des-piboules.html?checkin=2026-07-30&checkout=2026-08-03&group_adults=4&group_children=2&no_rooms=2&age=10&age=12",
+        "title": "Hôtel le Mas des Ponts d'Arles (hotel — 2 family rooms)",
+        "status": "shortlist",
+        "totalPrice": 1440,
+        "currency": "USD",
+        "pricePerNight": 360,
+        "location": "10 Avenue des Prés d'Arlac, 30300 Fourques (across the Rhône from Arles, ~10 min drive to Ibis Styles group hotel)",
+        "beds": 6,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 8,
+        "amenities": [
+          "Air conditioning",
+          "Family rooms (sleeps 4)",
+          "Garden view",
+          "Free Wi-Fi",
+          "Flat-screen TV",
+          "Free parking (roadside hotel)",
+          "Wheelchair accessible"
+        ],
+        "imageUrl": "https://q-xx.bstatic.com/xdata/images/hotel/608x352/600360319.webp",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:30:00Z",
+        "notes": "★8.4 (625 reviews). 2 × Family Room (each sleeps 4: full + 2 bunks, OR 2 twins + 1 bunk). Total $1,440 refundable / $1,400 non-refundable. ⚠ Address is in FOURQUES (30300), across the Rhône from Arles proper — postal code is Gard département, not Bouches-du-Rhône. ~10 min drive to the group's Ibis Styles + historic center; not walkable. Best for road-trippers who'd rather drive in and out. Excludes €0.83/person/night city tax + 10% VAT (~$140 extra)."
+      },
+      {
+        "id": "o-booking-le-calendal-arles",
+        "url": "https://www.booking.com/hotel/fr/le-calendal-arles.html?checkin=2026-07-30&checkout=2026-08-03&group_adults=4&group_children=2&no_rooms=2&age=10&age=12",
+        "title": "Hotel Spa Le Calendal (hotel — Family + Double)",
+        "status": "shortlist",
+        "totalPrice": 1875,
+        "currency": "USD",
+        "pricePerNight": 469,
+        "location": "5 Rue Porte de Laure, 13200 Arles — steps from the Roman arena and theatre, in the historic center",
+        "beds": 4,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Spa access (adults only)",
+          "Air conditioning",
+          "Bathtub (in family room)",
+          "Free Wi-Fi",
+          "Flat-screen TV",
+          "Excellent breakfast ($19)"
+        ],
+        "imageUrl": "https://r-xx.bstatic.com/xdata/images/hotel/608x352/90385809.webp",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:30:00Z",
+        "notes": "3-star boutique with spa, literally next to the Roman arena (~3 min walk to Ibis Styles group hotel). ★9.0 (790 reviews) — best-reviewed hotel of the four. Quoted total: 1 Family Room ($1,127, sleeps 4: 2 twins + queen) + 1 Triple Room ($748, sleeps 3: twin + queen) = $1,875 — fits all 6. Excludes €2.45/person/night city tax + 10% VAT (~$250 extra). Free cancellation through 6 PM on July 30. Note: spa access listed as adults-only."
+      },
+      {
+        "id": "o-booking-hotel-amphitheatre-arles",
+        "url": "https://www.booking.com/hotel/fr/ha-tel-de-l-amphitha-c-ac-tre.html?checkin=2026-07-30&checkout=2026-08-03&group_adults=4&group_children=2&no_rooms=2&age=10&age=12",
+        "title": "Hôtel Amphithéâtre (hotel — 2 Deluxe Triples)",
+        "status": "shortlist",
+        "totalPrice": 1999,
+        "currency": "USD",
+        "pricePerNight": 500,
+        "location": "5-7 Rue Diderot, 13200 Arles — next to the Roman arena, in the historic center",
+        "beds": 4,
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Air conditioning",
+          "Soundproof rooms",
+          "Minibar",
+          "Free Wi-Fi",
+          "Flat-screen TV",
+          "Free toiletries",
+          "Junior suites also available",
+          "Excellent breakfast ($18)"
+        ],
+        "imageUrl": "https://q-xx.bstatic.com/xdata/images/hotel/608x352/689326260.webp",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:30:00Z",
+        "notes": "Boutique 3-star hotel right next to the Roman arena (~3 min walk to Ibis Styles group hotel). ★8.6 (1,618 reviews) — by far the most reviewed of the four. Quoted total: 2 × Deluxe Triple Room (each sleeps 3, 377 sqft, beds reconfigurable to 1 twin + 1 queen OR 3 twins). Excludes €2.45/person/night city tax + 10% VAT (~$260 extra). Free cancellation through July 25, 2026. Most expensive of the hotel set, but biggest rooms and best location for sightseeing."
+      },
+      {
+        "id": "o-airbnb-43811621-le-mas-sivan",
+        "url": "https://www.airbnb.com/rooms/43811621?adults=4&children=2&check_in=2026-07-30&check_out=2026-08-03&guests=6",
+        "title": "Le Mas Sivan — terrace, secure parking, A/C",
+        "status": "shortlist",
+        "totalPrice": 1448,
+        "currency": "USD",
+        "pricePerNight": 362,
+        "location": "Arles, Provence-Alpes-Côte d'Azur, France",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Kitchen",
+          "Wi-Fi",
+          "Dedicated workspace",
+          "Free driveway parking (1 space)",
+          "HDTV with cable",
+          "Free washer (in-unit)",
+          "Central air conditioning",
+          "Private patio / balcony",
+          "Private backyard",
+          "56 amenities total"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NDM4MTE2MjE=/original/cf82885f-deaf-48c9-ad04-8c714a71fead.jpeg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-11T00:16:00Z",
+        "notes": "Entire townhouse in Arles with private patio + backyard. Bedrooms: BR1 queen + BR2 2 singles + BR3 queen (sleeps 6). ★4.97 out of 5 (35 reviews) — exceptional rating. Hosted by Djema. Secure driveway parking on site. Free cancellation before July 29. ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: URL the user shared embedded dates Jul 31-Aug 3; price above is for the full reservation window Jul 30-Aug 3 (4 nights). Availability confirmed for Jul 30-Aug 3, 2026 (total $1,448) on 2026-05-10."
+      },
+      {
+        "id": "o-airbnb-1239920-arles-roquette",
+        "url": "https://www.airbnb.com/rooms/1239920?adults=4&children=2&check_in=2026-07-30&check_out=2026-08-03&guests=6",
+        "title": "Arles Centre — HistoRoquette Stone house (100 m²)",
+        "status": "shortlist",
+        "totalPrice": 1313,
+        "currency": "USD",
+        "pricePerNight": 328,
+        "location": "La Roquette, Arles historic center, Provence-Alpes-Côte d'Azur, France",
+        "beds": 5,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Kitchen",
+          "Wi-Fi",
+          "Central air conditioning",
+          "Free washer (in-unit)",
+          "Free dryer (in-unit)",
+          "42 amenities total"
+        ],
+        "imageUrl": "https://a0.muscache.com/im/pictures/93722e87-15e1-470f-9d6e-5af8af4a7b48.jpg",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-10T22:35:00Z",
+        "notes": "100 m² stone house in Arles's historic La Roquette quarter. Bedrooms: BR1 queen + BR2 double + BR3 double, plus 2 singles in the living room (sleeps 6). ★4.79 (121 reviews). Hosted by Aline (Superhost). 'Rare find — this place is usually booked.' ⚠️ Listing notes 'Carbon monoxide alarm: Unavailable' — no CO alarm in the unit. Note: URL the user shared embedded dates Jul 31-Aug 3; price above is for the full reservation window Jul 30-Aug 3 (4 nights). Availability confirmed for Jul 30-Aug 3, 2026 (total $1,313) on 2026-05-10."
       }
     ]
   }

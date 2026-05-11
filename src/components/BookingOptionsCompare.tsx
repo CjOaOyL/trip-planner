@@ -80,15 +80,17 @@ export default function BookingOptionsCompare({
           {options.map((o) => {
             const style = STATUS_STYLE[o.status];
             const dimmed = o.status === 'rejected';
+            const unavailable = o.availability === 'unavailable';
+            const rowBg = unavailable ? 'bg-red-50 ring-1 ring-red-200' : 'bg-stone-50';
             return (
-              <tr key={o.id} className={`bg-stone-50 ${dimmed ? 'opacity-50' : ''}`}>
+              <tr key={o.id} className={`${rowBg} ${dimmed ? 'opacity-50' : ''}`}>
                 <td className="px-2 py-1.5 rounded-l-lg align-top">
                   <div className="flex items-start gap-2">
                     {o.imageUrl && (
                       <img
                         src={o.imageUrl}
                         alt=""
-                        className="w-10 h-10 object-cover rounded shrink-0"
+                        className={`w-10 h-10 object-cover rounded shrink-0 ${unavailable ? 'grayscale opacity-60' : ''}`}
                         onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                       />
                     )}
@@ -97,14 +99,33 @@ export default function BookingOptionsCompare({
                         href={o.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-medium text-stone-700 hover:text-blue-600 hover:underline block truncate max-w-[180px]"
+                        className={`font-medium hover:underline block truncate max-w-[180px] ${
+                          unavailable
+                            ? 'text-red-700 line-through hover:text-red-800'
+                            : 'text-stone-700 hover:text-blue-600'
+                        }`}
                         title={o.title}
                       >
                         {o.title} ↗
                       </a>
-                      <span className={`inline-block mt-0.5 px-1.5 py-0.5 rounded-full ${style.bg} ${style.text}`}>
-                        {style.label}
-                      </span>
+                      <div className="flex flex-wrap gap-1 mt-0.5">
+                        {unavailable ? (
+                          <span
+                            className="inline-block px-1.5 py-0.5 rounded-full bg-red-100 text-red-700 font-semibold"
+                            title={
+                              o.availabilityCheckedAt
+                                ? `Checked ${new Date(o.availabilityCheckedAt).toLocaleDateString()}`
+                                : 'Marked unavailable'
+                            }
+                          >
+                            ⚠ Unavailable
+                          </span>
+                        ) : (
+                          <span className={`inline-block px-1.5 py-0.5 rounded-full ${style.bg} ${style.text}`}>
+                            {style.label}
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </td>

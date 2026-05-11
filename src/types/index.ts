@@ -173,6 +173,8 @@ export type ReservationCategory =
 
 export type BookingOptionStatus = 'shortlist' | 'rejected' | 'chosen';
 
+export type BookingOptionAvailability = 'available' | 'unavailable' | 'unknown';
+
 export interface BookingOption {
   id: string;
   url: string;
@@ -190,6 +192,9 @@ export interface BookingOption {
   guests?: number;            // max occupancy
   amenities?: string[];
   imageUrl?: string;
+  // Availability for the reservation's dates
+  availability?: BookingOptionAvailability;
+  availabilityCheckedAt?: string;   // ISO datetime of last check
   // Catch-all
   notes?: string;
   scrapedAt?: string;         // when AI auto-fill last ran

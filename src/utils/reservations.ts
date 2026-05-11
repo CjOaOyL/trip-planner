@@ -157,6 +157,7 @@ const OPTION_FILLABLE_FIELDS: (keyof BookingOption)[] = [
   'title', 'totalPrice', 'currency', 'pricePerNight',
   'location', 'beds', 'bedrooms', 'bathrooms', 'guests',
   'amenities', 'imageUrl', 'notes', 'scrapedAt',
+  'availability', 'availabilityCheckedAt',
 ];
 
 const RESERVATION_FILLABLE_FIELDS: (keyof Reservation)[] = [

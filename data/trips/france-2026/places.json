@@ -11,6 +11,28 @@
     "tags": ["departure", "arrival"]
   },
   {
+    "id": "ewr-airport",
+    "name": "Newark Liberty International Airport",
+    "type": "airport",
+    "description": "Newark Liberty International Airport in New Jersey — United Airlines' main transatlantic hub. Terminal C handles long-haul departures including nonstops to Geneva.",
+    "address": "3 Brewster Rd, Newark, NJ 07114",
+    "coordinates": [40.6895, -74.1745],
+    "googleMapsUrl": "https://maps.google.com/?q=Newark+Liberty+Airport",
+    "website": "https://www.newarkairport.com",
+    "tags": ["departure", "visitor", "united-hub"]
+  },
+  {
+    "id": "gva-airport",
+    "name": "Geneva Airport (Cointrin)",
+    "type": "airport",
+    "description": "Geneva International Airport — the closest major airport to Chamonix (~1 hour by car or shuttle). Strategic arrival point for visitors heading to the Alps.",
+    "address": "Route de l'Aéroport 21, 1215 Le Grand-Saconnex, Switzerland",
+    "coordinates": [46.2381, 6.1090],
+    "googleMapsUrl": "https://maps.google.com/?q=Geneva+Airport",
+    "website": "https://www.gva.ch",
+    "tags": ["arrival", "visitor", "chamonix-gateway"]
+  },
+  {
     "id": "milan-malpensa-airport",
     "name": "Milan Malpensa Airport",
     "type": "airport",
