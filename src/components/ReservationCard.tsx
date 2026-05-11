@@ -39,6 +39,36 @@ function nextStatus(current: ReservationStatus): ReservationStatus {
   return STATUS_ORDER[idx + 1];
 }
 
+function cancelDeadlineInfo(iso: string) {
+  const deadline = new Date(iso);
+  const now = new Date();
+  const msLeft = deadline.getTime() - now.getTime();
+  const daysLeft = Math.ceil(msLeft / (1000 * 60 * 60 * 24));
+  const expired = msLeft < 0;
+  const display = deadline.toLocaleString('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+  });
+  const style = expired
+    ? { bg: 'bg-stone-100', text: 'text-stone-400', icon: '🔒' }
+    : daysLeft <= 7
+    ? { bg: 'bg-red-50',    text: 'text-red-700',   icon: '⏰' }
+    : daysLeft <= 14
+    ? { bg: 'bg-amber-50',  text: 'text-amber-700', icon: '🔓' }
+    : { bg: 'bg-green-50',  text: 'text-green-700', icon: '🔓' };
+  const countdown = expired
+    ? 'expired'
+    : daysLeft === 0
+    ? 'today'
+    : daysLeft === 1
+    ? '1 day left'
+    : `${daysLeft} days left`;
+  return { display, expired, ...style, countdown };
+}
+
 export default function ReservationCard({ reservation, onUpdate, onEdit }: Props) {
   const style = STATUS_STYLE[reservation.status];
   const emoji = CATEGORY_EMOJI[reservation.category] ?? '📌';
@@ -99,6 +129,21 @@ export default function ReservationCard({ reservation, onUpdate, onEdit }: Props
               : reservation.date}
           </div>
         )}
+
+        {/* Cancellation deadline */}
+        {reservation.cancellationDeadline && (() => {
+          const c = cancelDeadlineInfo(reservation.cancellationDeadline);
+          return (
+            <div className={`mt-1.5 inline-flex items-center gap-1.5 text-xs font-medium px-2 py-1 rounded-md ${c.bg} ${c.text}`}>
+              <span>{c.icon}</span>
+              <span>
+                {c.expired ? 'Free-cancel window closed' : 'Free cancel until'}{' '}
+                <span className={c.expired ? 'line-through' : 'font-semibold'}>{c.display}</span>
+              </span>
+              <span className="opacity-70">· {c.countdown}</span>
+            </div>
+          );
+        })()}
 
         {/* Confirmation + cost row */}
         <div className="flex flex-wrap gap-3 mt-1.5 text-xs">

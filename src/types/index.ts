@@ -218,6 +218,7 @@ export interface Reservation {
   cost?: number;
   notes?: string;
   bookingUrl?: string;
+  cancellationDeadline?: string; // ISO datetime — last moment for full refund (local time of listing)
   options?: BookingOption[];  // alternatives being compared before booking
   createdAt: string;          // ISO datetime
   updatedAt: string;

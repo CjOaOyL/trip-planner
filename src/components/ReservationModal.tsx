@@ -38,6 +38,7 @@ type FormState = {
   confirmationNumber: string;
   cost: string;
   bookingUrl: string;
+  cancellationDeadline: string;
   notes: string;
 };
 
@@ -52,8 +53,18 @@ function blankForm(): FormState {
     confirmationNumber: '',
     cost: '',
     bookingUrl: '',
+    cancellationDeadline: '',
     notes: '',
   };
+}
+
+// Convert an ISO datetime (with offset) to the YYYY-MM-DDTHH:MM format
+// a datetime-local input expects (always in browser-local time).
+function isoToDatetimeLocal(iso: string): string {
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
 }
 
 function reservationToForm(r: Reservation): FormState {
@@ -67,6 +78,7 @@ function reservationToForm(r: Reservation): FormState {
     confirmationNumber: r.confirmationNumber ?? '',
     cost: r.cost != null ? String(r.cost) : '',
     bookingUrl: r.bookingUrl ?? '',
+    cancellationDeadline: r.cancellationDeadline ? isoToDatetimeLocal(r.cancellationDeadline) : '',
     notes: r.notes ?? '',
   };
 }
@@ -104,6 +116,9 @@ export default function ReservationModal({ tripId, itineraryId, existing, onSave
       confirmationNumber: form.confirmationNumber || undefined,
       cost: form.cost ? parseFloat(form.cost) : undefined,
       bookingUrl: form.bookingUrl || undefined,
+      cancellationDeadline: form.cancellationDeadline
+        ? new Date(form.cancellationDeadline).toISOString()
+        : undefined,
       notes: form.notes || undefined,
     };
 
@@ -228,6 +243,20 @@ export default function ReservationModal({ tripId, itineraryId, existing, onSave
                 value={form.bookingUrl}
                 onChange={(e) => set('bookingUrl', e.target.value)}
                 placeholder="https://..."
+                className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-300"
+              />
+            </div>
+
+            {/* Free-cancel deadline */}
+            <div>
+              <label className="block text-xs font-semibold text-stone-500 mb-1">
+                Free-cancel deadline
+                <span className="text-stone-400 font-normal italic ml-1">— last moment for a full refund</span>
+              </label>
+              <input
+                type="datetime-local"
+                value={form.cancellationDeadline}
+                onChange={(e) => set('cancellationDeadline', e.target.value)}
                 className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-300"
               />
             </div>

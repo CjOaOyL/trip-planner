@@ -162,7 +162,7 @@ const OPTION_FILLABLE_FIELDS: (keyof BookingOption)[] = [
 
 const RESERVATION_FILLABLE_FIELDS: (keyof Reservation)[] = [
   'placeId', 'date', 'checkIn', 'checkOut', 'confirmationNumber',
-  'cost', 'notes', 'bookingUrl', 'visitorId',
+  'cost', 'notes', 'bookingUrl', 'cancellationDeadline', 'visitorId',
 ];
 
 /**
