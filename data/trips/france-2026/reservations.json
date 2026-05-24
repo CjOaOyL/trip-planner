@@ -302,13 +302,14 @@
   },
   {
     "id": "auto-02-visitor-guide-hotel-nice",
-    "name": "Hotel near Nice — 3 nights",
+    "name": "Hotel near Nice — 2 nights (Aug 3-5; visitor trip ends Aug 5)",
     "category": "hotel",
     "status": "needed",
     "itineraryId": "02-visitor-guide",
     "placeId": "nice",
     "checkIn": "2026-08-03",
-    "checkOut": "2026-08-06",
+    "checkOut": "2026-08-05",
+    "notes": "Visitor trip end was shifted from Aug 6 → Aug 5 (decided 2026-05-24). Group performers stay until Aug 6 per the performer schedule. Existing options below are mostly priced for the original 3-night Aug 3-6 window — recheck prices for the new 2-night Aug 3-5 window. New 2-night-specific options (CosyMoon, Charming 3BR Rossetti) added at bottom.",
     "options": [
       {
         "id": "22a97544-1e34-423b-aa59-8aa1a8af299b",
@@ -356,9 +357,11 @@
           "Modern kitchen (Nespresso, induction, dishwasher)"
         ],
         "imageUrl": "https://img.thetopvillas.com/148171/crop/1920x1080/697b42bf27f89.jpg",
-        "availability": "unavailable",
-        "availabilityCheckedAt": "2026-05-10T19:42:00Z",
-        "notes": "Sleeps 4 (2 double beds, BR1 has balcony access). 20-min walk to Vieux Nice, 10-min walk to tramway → 20 min to airport. No pets, no smoking. UNAVAILABLE for Aug 3-6, 2026 (site message: 'The property you've chosen is not available at that time' as of 2026-05-10)."
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-24T21:18:00Z",
+        "totalPrice": 989,
+        "pricePerNight": 495,
+        "notes": "Sleeps 4 (2 double beds, BR1 has balcony access). 20-min walk to Vieux Nice, 10-min walk to tramway → 20 min to airport. No pets, no smoking. Was unavailable for the 3-night Aug 3-6 window (2026-05-10); ✅ NOW AVAILABLE for the new 2-night Aug 3-5 window at $989.44 (re-checked 2026-05-24)."
       },
       {
         "id": "bccd46bb-dc98-4b57-a2d9-8a7e883a5179",
@@ -734,7 +737,7 @@
     "status": "needed",
     "itineraryId": "02-visitor-guide",
     "placeId": "ewr-airport",
-    "date": "2026-08-06",
+    "date": "2026-08-05",
     "cost": 3400,
     "notes": "★ PREFERRED — Option A return: Nice (NCE) → Paris (CDG) on Air France, connect to United Premium Plus CDG → Newark (EWR). Matches the EWR-out outbound airport so parking/commute is symmetric from Hopewell. Two-ticket vs single-ticket trade-off below; single-ticket is safer (protected connection) but Air France is SkyTeam not Star Alliance so single-ticket pricing may be higher. Chase Sapphire Reserve trip-delay protection covers the connection if separate tickets. Pickup Thandi at BCCC (Newtown, PA) in evening after YOBC bus returns from JFK.",
     "options": [
