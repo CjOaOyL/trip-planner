@@ -192,6 +192,11 @@ export interface BookingOption {
   guests?: number;            // max occupancy
   amenities?: string[];
   imageUrl?: string;
+  // Ratings
+  rating?: number;            // e.g. 4.94 (out of 5)
+  reviewCount?: number;       // number of reviews backing the rating
+  isSuperhost?: boolean;      // Airbnb Superhost / Vrbo Premier Host equivalent
+  isGuestFavorite?: boolean;  // Airbnb Guest Favorite badge
   // Availability for the reservation's dates
   availability?: BookingOptionAvailability;
   availabilityCheckedAt?: string;   // ISO datetime of last check

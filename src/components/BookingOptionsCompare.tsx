@@ -72,6 +72,7 @@ export default function BookingOptionsCompare({
             <th className="px-2 font-medium">Option</th>
             <th className="px-2 font-medium text-right">Price</th>
             <th className="px-2 font-medium">Beds / Layout</th>
+            <th className="px-2 font-medium">Rating</th>
             <th className="px-2 font-medium">Location</th>
             <th className="px-2 font-medium"></th>
           </tr>
@@ -139,6 +140,32 @@ export default function BookingOptionsCompare({
                   {formatBeds(o)}
                   {o.guests != null && (
                     <div className="text-stone-400">Sleeps {o.guests}</div>
+                  )}
+                </td>
+                <td className="px-2 py-1.5 text-stone-600 align-top whitespace-nowrap">
+                  {o.rating != null ? (
+                    <>
+                      <div className="font-semibold text-stone-700">
+                        ★ {o.rating.toFixed(2)}
+                      </div>
+                      {o.reviewCount != null && (
+                        <div className="text-stone-400">{o.reviewCount} review{o.reviewCount === 1 ? '' : 's'}</div>
+                      )}
+                      <div className="flex flex-wrap gap-1 mt-0.5">
+                        {o.isGuestFavorite && (
+                          <span className="inline-block px-1 py-0 rounded bg-amber-100 text-amber-700 text-[10px] font-semibold" title="Airbnb Guest Favorite">
+                            ♥ Favorite
+                          </span>
+                        )}
+                        {o.isSuperhost && (
+                          <span className="inline-block px-1 py-0 rounded bg-rose-100 text-rose-700 text-[10px] font-semibold" title="Superhost / Premier Host">
+                            Superhost
+                          </span>
+                        )}
+                      </div>
+                    </>
+                  ) : (
+                    <span className="text-stone-400">—</span>
                   )}
                 </td>
                 <td className="px-2 py-1.5 text-stone-600 align-top max-w-[180px]">
