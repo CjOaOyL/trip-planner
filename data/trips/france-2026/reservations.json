@@ -648,6 +648,54 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-05-23T21:44:00Z",
         "notes": "★5.0 from a Superhost — highest-rated Nice 4-person 2BR I found. 2BR/3 beds for 4 guests. Located in Baumettes (west-central Nice), near the Promenade des Anglais with sea views. Bed config not individually verified — search snippet shows '3 beds' but specific layout TBD. Re-checked 2026-05-23: still available, total dropped to $1,394 (from $1,413)."
+      },
+      {
+        "id": "o-airbnb-1303021235310276792-cosymoon-nice",
+        "url": "https://www.airbnb.com/rooms/1303021235310276792?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-05",
+        "title": "CosyMoon Nice — Le Port (2-night Aug 3-5)",
+        "status": "shortlist",
+        "totalPrice": 1028,
+        "currency": "USD",
+        "pricePerNight": 514,
+        "location": "Le Port district, Nice — east of Vieux Nice, near the harbor",
+        "beds": 4,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "guests": 6,
+        "amenities": [
+          "Superhost",
+          "Walkable to Vieux Nice",
+          "Near harbor"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-24T20:58:00Z",
+        "notes": "⚠️ Priced for 2 NIGHTS (Aug 3-5) — assumes trip terminates Aug 5 (under consideration as of 2026-05-24). NOT available for the original Aug 3-6 3-night window. 2BR/4 beds/1 bath, sleeps 6. ★4.81 (36 reviews), Superhost (Martin). Le Port district — east of Vieux Nice, same neighborhood as the (now-unavailable) Luxurious Port 3BR. Cheapest Nice option in the 6-guest tier. Trade-off: only 1 bathroom for 6 guests, less central than Carré d'Or / Vieux Nice.",
+        "createdAt": "2026-05-24T20:58:00Z",
+        "updatedAt": "2026-05-24T20:58:00Z"
+      },
+      {
+        "id": "o-airbnb-1615198108259683775-charming-3br-rossetti",
+        "url": "https://www.airbnb.com/rooms/1615198108259683775?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-05",
+        "title": "Charming 3BR steps from Place Rossetti — Vieux Nice (2-night Aug 3-5)",
+        "status": "shortlist",
+        "totalPrice": 1603,
+        "currency": "USD",
+        "pricePerNight": 801,
+        "location": "Vieux Nice (Old Town) — steps from Place Rossetti, walkable to dining and main attractions",
+        "beds": 6,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "Self check-in (lockbox)",
+          "Walkable vibrant neighborhood",
+          "Family-friendly (100% of family stays rated 5 stars)"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-24T21:16:00Z",
+        "notes": "⚠️ Priced for 2 NIGHTS (Aug 3-5) — assumes trip terminates Aug 5 (under consideration as of 2026-05-24). 3BR/6 beds/2 baths, sleeps 6. ★4.8 (5 reviews — small sample, but 100% of family stays rated 5 stars). Hosted by Valery (2 years, not Superhost). Located in Vieux Nice (Old Town), steps from Place Rossetti — vibrant, walkable, lots of dining nearby. Self check-in via lockbox. Best 3BR location of all the Nice options if Old Town is the priority.",
+        "createdAt": "2026-05-24T21:16:00Z",
+        "updatedAt": "2026-05-24T21:16:00Z"
       }
     ]
   },
