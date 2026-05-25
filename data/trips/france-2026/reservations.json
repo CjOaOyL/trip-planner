@@ -309,7 +309,9 @@
     "placeId": "nice",
     "checkIn": "2026-08-03",
     "checkOut": "2026-08-05",
-    "notes": "Visitor trip end was shifted from Aug 6 → Aug 5 (decided 2026-05-24). Group performers stay until Aug 6 per the performer schedule. Existing options below are mostly priced for the original 3-night Aug 3-6 window — recheck prices for the new 2-night Aug 3-5 window. New 2-night-specific options (CosyMoon, Charming 3BR Rossetti) added at bottom.",
+    "cost": 1557,
+    "bookingUrl": "https://www.airbnb.com/rooms/1378841622631313768?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-05",
+    "notes": "★ FAVORITE: Exclusive 4 min. Beach 3 BR 2 BA City Center — ★5.0 Guest Favorite, $1,557. Visitor trip end was shifted from Aug 6 → Aug 5 (decided 2026-05-24). Group performers stay until Aug 6 per the performer schedule. Existing options below are mostly priced for the original 3-night Aug 3-6 window — recheck prices for the new 2-night Aug 3-5 window. New 2-night-specific options (CosyMoon, Charming 3BR Rossetti, Luxury Stay Terrace, Urban4, Belle Époque, Exclusive Beach 3BR) added.",
     "options": [
       {
         "id": "22a97544-1e34-423b-aa59-8aa1a8af299b",
@@ -817,6 +819,35 @@
         "notes": "Priced for 2 NIGHTS (Aug 3-5) at $1,205. Serviced apartment in a historic Belle Époque building. 3BR/3 beds/2.5 baths, sleeps 5 (tight for 6 — only 5-guest capacity). ★4.94 (110 reviews) — Airbnb Guest Favorite + Superhost (Masha, 10 years hosting). AC + portable fan, 24-hour self check-in. Strongest value pick: same rating as Urban4 but $307 cheaper. Trade-off: capacity capped at 5, not 6.",
         "createdAt": "2026-05-24T21:40:00Z",
         "updatedAt": "2026-05-24T21:40:00Z"
+      },
+      {
+        "id": "o-airbnb-1378841622631313768-exclusive-beach-3br",
+        "url": "https://www.airbnb.com/rooms/1378841622631313768?adults=4&children=2&check_in=2026-08-03&check_out=2026-08-05",
+        "title": "Exclusive 4 min. Beach 3 BR 2 BA City Center (CHOSEN ★)",
+        "status": "chosen",
+        "totalPrice": 1557,
+        "currency": "USD",
+        "pricePerNight": 779,
+        "location": "Nice — 4 min walk to beach, city center",
+        "beds": 3,
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "guests": 6,
+        "amenities": [
+          "4-min walk to beach",
+          "City center",
+          "Guest Favorite",
+          "Rare find — usually booked"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-25T14:48:00Z",
+        "rating": 5.0,
+        "reviewCount": 13,
+        "isSuperhost": false,
+        "isGuestFavorite": true,
+        "notes": "★ FAVORITE / CHOSEN. Priced for 2 NIGHTS (Aug 3-5) at $1,557 (discounted from $1,860). 3BR/3 beds/2 baths, sleeps 6. ★5.0 (13 reviews) — Airbnb Guest Favorite + 'Rare find! This place is usually booked' badge. Not Superhost (smaller review base), but perfect rating across 13 stays. 4-minute walk to beach + city center location is the strongest combo of any Nice option. Picked as the chosen option 2026-05-25.",
+        "createdAt": "2026-05-25T14:48:00Z",
+        "updatedAt": "2026-05-25T14:48:00Z"
       }
     ]
   },
