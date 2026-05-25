@@ -626,9 +626,22 @@
         "totalPrice": 3300,
         "availability": "unknown",
         "availabilityCheckedAt": "2026-05-10T20:00:00Z",
-        "notes": "Nonstop overnight. Depart EWR 17:20 (Terminal C, gate ~130) → arrive GVA 07:30+1 (Terminal 1). Boeing 767-300, ~8h 10m. Premium Plus cabin = United's premium economy (2-3-2 layout, family of 4 fits cleanly across row + side pair). Estimated $2,800–$3,800 total for 4 seats in peak summer; midpoint ~$3,300. Award alternative: 70–90k UR transferred to MileagePlus per seat one-way when saver space opens — check united.com 'use miles' view.",
+        "notes": "Nonstop overnight from EWR. Depart EWR 17:20 (Terminal C, gate ~130) → arrive GVA 07:30+1 (Terminal 1). Boeing 767-300, ~8h 10m. Premium Plus cabin = United's premium economy (2-3-2 layout, family of 4 fits cleanly across row + side pair). Estimated $2,800–$3,800 total for 4 seats in peak summer; midpoint ~$3,300. Award alternative: 70–90k UR transferred to MileagePlus per seat one-way when saver space opens — check united.com 'use miles' view. Departure-day flow: drop Thandi at BCCC ~noon → drive ~1h30 to EWR → ~3h cushion before 17:20 departure.",
         "createdAt": "2026-05-10T20:00:00Z",
         "updatedAt": "2026-05-10T21:30:00Z"
+      },
+      {
+        "id": "o-lh-phl-fra-gva-premium-economy-2026-07-27",
+        "url": "https://www.lufthansa.com/us/en/homepage",
+        "title": "Lufthansa PHL → FRA → GVA, Premium Economy (Option C — PHL alternative)",
+        "status": "shortlist",
+        "currency": "USD",
+        "totalPrice": 3700,
+        "availability": "unknown",
+        "availabilityCheckedAt": "2026-05-10T22:00:00Z",
+        "notes": "Departure-day flow: drop Thandi at BCCC ~noon → ~45 min drive to PHL (vs ~1h30 to EWR) → use the Chase Sapphire Lounge by The Club at PHL (D/E connector, 20,000 sq ft, included with Sapphire Reserve + 1 guest free) for several hours pre-flight. Lufthansa operates PHL → FRA ~5x weekly; specific flight # and time for Jul 27, 2026 needs lufthansa.com confirmation (typically evening 19:00–21:00 departure, ~7h 55m flight, arrives FRA next morning). Connection: LH/Swiss FRA → GVA, ~1h 15m, multiple morning options 07:05–10:00. Aircraft: A330-300 or A340-300 on transatlantic leg, A320/A321 short-haul. Total trip ~12–14h door to door. Estimated total ~$3,400–$4,000 for 4 Premium Economy seats; midpoint ~$3,700. All Star Alliance — UR transfers to Miles & More 1:1 (Premium Economy saver ~70k miles/seat one-way). 8x UR earn via Chase Travel portal. ⚠️ Specific schedule and price NOT yet verified on lufthansa.com — open lufthansa.com directly with dates Jul 27 (PHL→FRA) and Jul 28 (FRA→GVA) for live pricing.",
+        "createdAt": "2026-05-10T22:00:00Z",
+        "updatedAt": "2026-05-10T22:00:00Z"
       }
     ],
     "createdAt": "2026-05-10T20:00:00Z",
