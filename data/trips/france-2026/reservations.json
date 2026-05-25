@@ -786,6 +786,37 @@
         "notes": "Priced for 2 NIGHTS (Aug 3-5) at $1,512. 3BR/3 beds/2 baths, sleeps 6. ★4.94 (104 reviews) — Airbnb Guest Favorite, Superhost (Ludovic, 12 years hosting). One of the highest-rated Nice 3BRs across all dates. Strong contender if you want maximum host reliability + a proven track record.",
         "createdAt": "2026-05-24T21:30:00Z",
         "updatedAt": "2026-05-24T21:30:00Z"
+      },
+      {
+        "id": "o-airbnb-14370087-belle-epoque",
+        "url": "https://www.airbnb.com/rooms/14370087?adults=2&children=2&check_in=2026-08-03&check_out=2026-08-05",
+        "title": "App in Belle Époque building — Guest Favorite, Superhost (2-night Aug 3-5)",
+        "status": "shortlist",
+        "totalPrice": 1205,
+        "currency": "USD",
+        "pricePerNight": 603,
+        "location": "Nice, France — historic Belle Époque building, walkable",
+        "beds": 3,
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "guests": 5,
+        "amenities": [
+          "Air conditioning",
+          "Portable fan",
+          "24-hour self check-in (lockbox)",
+          "Superhost",
+          "Guest Favorite",
+          "Beautiful + walkable area"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-05-24T21:40:00Z",
+        "rating": 4.94,
+        "reviewCount": 110,
+        "isSuperhost": true,
+        "isGuestFavorite": true,
+        "notes": "Priced for 2 NIGHTS (Aug 3-5) at $1,205. Serviced apartment in a historic Belle Époque building. 3BR/3 beds/2.5 baths, sleeps 5 (tight for 6 — only 5-guest capacity). ★4.94 (110 reviews) — Airbnb Guest Favorite + Superhost (Masha, 10 years hosting). AC + portable fan, 24-hour self check-in. Strongest value pick: same rating as Urban4 but $307 cheaper. Trade-off: capacity capped at 5, not 6.",
+        "createdAt": "2026-05-24T21:40:00Z",
+        "updatedAt": "2026-05-24T21:40:00Z"
       }
     ]
   },
