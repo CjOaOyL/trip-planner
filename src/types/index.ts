@@ -121,6 +121,7 @@ export interface Itinerary {
   includesPortland: boolean;
   totalMiles: number;
   archived?: boolean;       // hidden from main list; shown in collapsed section
+  locked?: boolean;         // official schedule — editing/forking disabled in the UI
   days: Day[];
 }
 

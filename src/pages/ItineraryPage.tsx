@@ -222,7 +222,14 @@ export default function ItineraryPage() {
 
         {/* ── Edit / Save / Discard bar ── */}
         <div className="flex items-center gap-2 mb-4">
-          {!editing ? (
+          {liveItinerary.locked ? (
+            <span
+              className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-stone-100 text-stone-500 border border-stone-200"
+              title="This is the official tour schedule — it can't be edited. Build your own plan in the Visitor Guide."
+            >
+              🔒 Official schedule — locked
+            </span>
+          ) : !editing ? (
             <button
               onClick={startEditing}
               className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-stone-200 text-stone-500 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-colors"

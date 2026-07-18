@@ -196,20 +196,36 @@ export default function SegmentRow({ segment, place, onPlaceClick, reservationSt
         )}
 
         {place && (
-          <button
-            onClick={() => onPlaceClick(place)}
-            className="mt-0.5 flex items-center gap-1.5 text-xs hover:underline"
-          >
-            {place.blackOwned && (
-              <span className="bg-black text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
-                Black-owned
+          <div className="mt-0.5 flex items-center gap-1.5 flex-wrap">
+            <button
+              onClick={() => onPlaceClick(place)}
+              className="flex items-center gap-1.5 text-xs hover:underline"
+            >
+              {place.blackOwned && (
+                <span className="bg-black text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
+                  Black-owned
+                </span>
+              )}
+              <span className={`px-2 py-0.5 rounded-full font-medium ${typeStyle.bg}`}>
+                {typeStyle.label || place.type}
               </span>
-            )}
-            <span className={`px-2 py-0.5 rounded-full font-medium ${typeStyle.bg}`}>
-              {typeStyle.label || place.type}
-            </span>
-            <span className="text-stone-500">{place.name}</span>
-          </button>
+              <span className="text-stone-500">{place.name}</span>
+            </button>
+            <a
+              href={
+                place.coordinates
+                  ? `https://www.google.com/maps/search/things+to+do/@${place.coordinates[0]},${place.coordinates[1]},15z`
+                  : `https://www.google.com/maps/search/${encodeURIComponent('things to do near ' + place.name)}`
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Explore things to do near ${place.name} — then add what you find as a new segment`}
+              className="text-[11px] text-stone-400 hover:text-blue-600 hover:bg-blue-50 px-1.5 py-0.5 rounded-full border border-transparent hover:border-blue-200 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+            >
+              🔍 Explore area
+            </a>
+          </div>
         )}
 
         {segment.notes && (

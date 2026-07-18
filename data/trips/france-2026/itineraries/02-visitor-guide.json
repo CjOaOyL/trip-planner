@@ -27,7 +27,8 @@
           "fromPlaceId": "bccc-newtown",
           "toPlaceId": "bccc-newtown",
           "travelMode": "car",
-          "notes": "Drive performer + instrument + luggage to BCCC (275 Swamp Rd, Newtown PA). Performer report time still TBD — YOBC departure-day schedule TBA; watch email the week of Jul 20."
+          "notes": "Drive performer + instrument + luggage to BCCC (275 Swamp Rd, Newtown PA). Performer report time still TBD — YOBC departure-day schedule TBA; watch email the week of Jul 20.",
+          "drivingMinutes": 30
         },
         {
           "id": "vleg-bccc-ewr",

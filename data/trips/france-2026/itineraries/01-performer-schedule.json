@@ -815,5 +815,6 @@
       ],
       "overnightPlaceId": "jfk-airport"
     }
-  ]
+  ],
+  "locked": true
 }

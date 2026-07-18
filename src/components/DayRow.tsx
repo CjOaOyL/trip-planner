@@ -19,7 +19,7 @@ interface Props {
 
 /** Total drive minutes across all legs in a day */
 function totalDriveMinutes(day: Day): number {
-  return day.legs.reduce((sum, leg) => sum + leg.drivingMinutes, 0);
+  return day.legs.reduce((sum, leg) => sum + (leg.drivingMinutes ?? 0), 0);
 }
 
 function formatMinutes(minutes: number): string {
@@ -168,9 +168,9 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
             </div>
           )}
 
-          {/* Add segment button (edit mode) */}
+          {/* Add block + explore (edit mode) */}
           {editing && onUpdateDay && (
-            <div className="px-5 py-2 border-t border-stone-100">
+            <div className="px-5 py-2 border-t border-stone-100 flex items-center gap-2 flex-wrap">
               <button
                 onClick={() => {
                   const newSeg: Segment = {
@@ -183,8 +183,23 @@ export default function DayRow({ day, dayNumber, places, isOpen, onToggle, onPla
                 }}
                 className="text-xs text-blue-600 hover:text-blue-800 font-medium flex items-center gap-1 hover:bg-blue-50 px-2 py-1 rounded transition-colors"
               >
-                + Add segment
+                + Add block
               </button>
+              {overnight && (
+                <a
+                  href={
+                    overnight.coordinates
+                      ? `https://www.google.com/maps/search/things+to+do/@${overnight.coordinates[0]},${overnight.coordinates[1]},14z`
+                      : `https://www.google.com/maps/search/${encodeURIComponent('things to do near ' + overnight.name)}`
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={`Find things to do around ${overnight.name}, then add them as blocks`}
+                  className="text-xs text-stone-500 hover:text-blue-700 font-medium flex items-center gap-1 hover:bg-blue-50 px-2 py-1 rounded transition-colors"
+                >
+                  🔍 Explore {overnight.name.split(',')[0]} for ideas
+                </a>
+              )}
             </div>
           )}
 
