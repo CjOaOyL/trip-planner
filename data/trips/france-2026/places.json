@@ -5,10 +5,16 @@
     "type": "airport",
     "description": "John F. Kennedy International Airport in Queens, New York. American Airlines terminal for transatlantic flights.",
     "address": "Queens, NY 11430",
-    "coordinates": [40.6413, -73.7781],
+    "coordinates": [
+      40.6413,
+      -73.7781
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=JFK+Airport",
     "website": "https://www.jfkairport.com",
-    "tags": ["departure", "arrival"]
+    "tags": [
+      "departure",
+      "arrival"
+    ]
   },
   {
     "id": "ewr-airport",
@@ -16,10 +22,17 @@
     "type": "airport",
     "description": "Newark Liberty International Airport in New Jersey — United Airlines' main transatlantic hub. Terminal C handles long-haul departures including nonstops to Geneva.",
     "address": "3 Brewster Rd, Newark, NJ 07114",
-    "coordinates": [40.6895, -74.1745],
+    "coordinates": [
+      40.6895,
+      -74.1745
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Newark+Liberty+Airport",
     "website": "https://www.newarkairport.com",
-    "tags": ["departure", "visitor", "united-hub"]
+    "tags": [
+      "departure",
+      "visitor",
+      "united-hub"
+    ]
   },
   {
     "id": "gva-airport",
@@ -27,10 +40,17 @@
     "type": "airport",
     "description": "Geneva International Airport — the closest major airport to Chamonix (~1 hour by car or shuttle). Strategic arrival point for visitors heading to the Alps.",
     "address": "Route de l'Aéroport 21, 1215 Le Grand-Saconnex, Switzerland",
-    "coordinates": [46.2381, 6.1090],
+    "coordinates": [
+      46.2381,
+      6.109
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Geneva+Airport",
     "website": "https://www.gva.ch",
-    "tags": ["arrival", "visitor", "chamonix-gateway"]
+    "tags": [
+      "arrival",
+      "visitor",
+      "chamonix-gateway"
+    ]
   },
   {
     "id": "nce-airport",
@@ -38,10 +58,17 @@
     "type": "airport",
     "description": "Nice's seaside international airport on the Mediterranean — the natural exit airport from the Riviera leg of the tour. 15 minutes from central Nice; Air France runs hourly hops to Paris CDG for transatlantic connections.",
     "address": "Rue Costes et Bellonte, 06206 Nice, France",
-    "coordinates": [43.6584, 7.2159],
+    "coordinates": [
+      43.6584,
+      7.2159
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Nice+Cote+d'Azur+Airport",
     "website": "https://en.nice.aeroport.fr",
-    "tags": ["departure", "visitor", "riviera-gateway"]
+    "tags": [
+      "departure",
+      "visitor",
+      "riviera-gateway"
+    ]
   },
   {
     "id": "cdg-airport",
@@ -49,10 +76,16 @@
     "type": "airport",
     "description": "Paris CDG — Air France's hub and France's primary international gateway. Connection point for transatlantic flights to Newark via United Premium Plus on the homeward leg.",
     "address": "95700 Roissy-en-France, France",
-    "coordinates": [49.0097, 2.5479],
+    "coordinates": [
+      49.0097,
+      2.5479
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Paris+Charles+de+Gaulle+Airport",
     "website": "https://www.parisaeroport.fr",
-    "tags": ["connection", "visitor"]
+    "tags": [
+      "connection",
+      "visitor"
+    ]
   },
   {
     "id": "milan-malpensa-airport",
@@ -60,9 +93,16 @@
     "type": "airport",
     "description": "Milan's main international airport, gateway to Northern Italy and the Alps. Flight AA0198 arrives here from JFK.",
     "address": "Via dell'Aeroporto, 21013 Casorate Sempione VA, Italy",
-    "coordinates": [45.6306, 8.7281],
+    "coordinates": [
+      45.6306,
+      8.7281
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Milan+Malpensa+Airport",
-    "tags": ["arrival", "departure", "italy"]
+    "tags": [
+      "arrival",
+      "departure",
+      "italy"
+    ]
   },
   {
     "id": "chamonix",
@@ -70,12 +110,19 @@
     "type": "attraction",
     "description": "A legendary alpine resort town at the foot of Mont Blanc in the French Alps. Stunning glaciers, world-class skiing, and a vibrant mountain town atmosphere.",
     "address": "Chamonix-Mont-Blanc, Haute-Savoie, France",
-    "coordinates": [45.9237, 6.8694],
+    "coordinates": [
+      45.9237,
+      6.8694
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Chamonix,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Chamonix_valley.jpg/1280px-Chamonix_valley.jpg"
     ],
-    "tags": ["alps", "france", "mountain"]
+    "tags": [
+      "alps",
+      "france",
+      "mountain"
+    ]
   },
   {
     "id": "hotel-lykke-chamonix",
@@ -83,10 +130,17 @@
     "type": "hotel",
     "description": "The group hotel in Chamonix. Nordic-inspired spa hotel in the heart of the town, steps from the main street and cable car stations.",
     "address": "290 Rue Joseph Vallot, 74400 Chamonix-Mont-Blanc, France",
-    "coordinates": [45.9238, 6.8703],
+    "coordinates": [
+      45.9238,
+      6.8703
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+Lykke+Chamonix",
     "website": "https://www.hotellykke.com",
-    "tags": ["lodging", "chamonix", "group-hotel"]
+    "tags": [
+      "lodging",
+      "chamonix",
+      "group-hotel"
+    ]
   },
   {
     "id": "aiguille-du-midi",
@@ -94,13 +148,21 @@
     "type": "attraction",
     "description": "A 3,842-meter peak above Chamonix reached by the world's highest vertical ascent cable car. Panoramic views of Mont Blanc and the entire Mont Blanc Massif — one of the most spectacular viewpoints in Europe.",
     "address": "Plan de l'Aiguille, 74400 Chamonix-Mont-Blanc, France",
-    "coordinates": [45.8793, 6.8877],
+    "coordinates": [
+      45.8793,
+      6.8877
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Aiguille+du+Midi,Chamonix",
     "website": "https://www.montblancnaturalresort.com",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Aiguille_du_Midi_from_Chamonix.jpg/1280px-Aiguille_du_Midi_from_Chamonix.jpg"
     ],
-    "tags": ["viewpoint", "cable-car", "alps", "must-see"]
+    "tags": [
+      "viewpoint",
+      "cable-car",
+      "alps",
+      "must-see"
+    ]
   },
   {
     "id": "centre-des-congres-chamonix",
@@ -108,9 +170,16 @@
     "type": "concert-venue",
     "description": "Chamonix's main convention and performance center. Used for rehearsals during the tour's first days in the Alps.",
     "address": "52 Rue Joseph Vallot, 74400 Chamonix-Mont-Blanc, France",
-    "coordinates": [45.9242, 6.8712],
+    "coordinates": [
+      45.9242,
+      6.8712
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Centre+des+Congres+Chamonix",
-    "tags": ["venue", "rehearsal", "performers-only"]
+    "tags": [
+      "venue",
+      "rehearsal",
+      "performers-only"
+    ]
   },
   {
     "id": "martigny-place-centrale",
@@ -118,12 +187,19 @@
     "type": "concert-venue",
     "description": "The central square of Martigny, Switzerland — a charming open-air concert setting in the Valais region. Concert #1 takes place here at 8pm on July 29.",
     "address": "Place Centrale, 1920 Martigny, Switzerland",
-    "coordinates": [46.1017, 7.0743],
+    "coordinates": [
+      46.1017,
+      7.0743
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Place+Centrale,Martigny,Switzerland",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Martigny-Ville_-_panoramio_%286%29.jpg/1280px-Martigny-Ville_-_panoramio_%286%29.jpg"
     ],
-    "tags": ["concert", "switzerland", "open-air"]
+    "tags": [
+      "concert",
+      "switzerland",
+      "open-air"
+    ]
   },
   {
     "id": "pont-du-gard",
@@ -131,13 +207,21 @@
     "type": "attraction",
     "description": "A UNESCO World Heritage Site and the best-preserved ancient Roman aqueduct in the world, built in the 1st century AD. Three tiers of arches span the Gardon River near Nîmes. An unmissable stop in Provence.",
     "address": "400 Route du Pont du Gard, 30210 Vers-Pont-du-Gard, France",
-    "coordinates": [43.9472, 4.5353],
+    "coordinates": [
+      43.9472,
+      4.5353
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Pont+du+Gard,France",
     "website": "https://www.pontdugard.fr",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Pont_du_Gard_Oct_2007.jpg/1280px-Pont_du_Gard_Oct_2007.jpg"
     ],
-    "tags": ["roman", "unesco", "must-see", "provence"]
+    "tags": [
+      "roman",
+      "unesco",
+      "must-see",
+      "provence"
+    ]
   },
   {
     "id": "arles",
@@ -145,12 +229,20 @@
     "type": "attraction",
     "description": "A UNESCO-listed city in Provence famous for its remarkably well-preserved Roman monuments, Van Gogh's most iconic paintings created here, and a vibrant arts scene. The Roman arena still hosts events today.",
     "address": "Arles, Bouches-du-Rhône, France",
-    "coordinates": [43.6767, 4.6277],
+    "coordinates": [
+      43.6767,
+      4.6277
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Arles,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Arles_Amphitheatre.jpg/1280px-Arles_Amphitheatre.jpg"
     ],
-    "tags": ["provence", "roman", "van-gogh", "france"]
+    "tags": [
+      "provence",
+      "roman",
+      "van-gogh",
+      "france"
+    ]
   },
   {
     "id": "hotel-ibis-arles",
@@ -158,9 +250,16 @@
     "type": "hotel",
     "description": "The group hotel in Arles, located near the Palais des Congrès convention center.",
     "address": "2 Rue de la Cavalerie, 13200 Arles, France",
-    "coordinates": [43.6798, 4.6243],
+    "coordinates": [
+      43.6798,
+      4.6243
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Ibis+Styles+Arles",
-    "tags": ["lodging", "arles", "group-hotel"]
+    "tags": [
+      "lodging",
+      "arles",
+      "group-hotel"
+    ]
   },
   {
     "id": "les-baux-de-provence",
@@ -168,12 +267,20 @@
     "type": "attraction",
     "description": "One of the most dramatic villages in France, perched on a rocky outcrop with a ruined medieval citadel overlooking the Alpilles. Stunning panoramic views, ancient streets, and the famous Carrières de Lumières light show nearby.",
     "address": "Les Baux-de-Provence, Bouches-du-Rhône, France",
-    "coordinates": [43.7443, 4.7957],
+    "coordinates": [
+      43.7443,
+      4.7957
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Les+Baux-de-Provence,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Les_Baux_-_panoramio.jpg/1280px-Les_Baux_-_panoramio.jpg"
     ],
-    "tags": ["village", "medieval", "provence", "must-see"]
+    "tags": [
+      "village",
+      "medieval",
+      "provence",
+      "must-see"
+    ]
   },
   {
     "id": "chateau-tour-daigues",
@@ -181,9 +288,17 @@
     "type": "concert-venue",
     "description": "A dramatic Renaissance château in the Luberon, partially ruined but majestically restored for cultural events. Concert #2 takes place here at 9pm on July 31 — an extraordinary outdoor setting.",
     "address": "Place du Château, 84240 La Tour-d'Aigues, France",
-    "coordinates": [43.7243, 5.5497],
+    "coordinates": [
+      43.7243,
+      5.5497
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Chateau+de+La+Tour+d'Aigues,France",
-    "tags": ["concert", "chateau", "outdoor", "luberon"]
+    "tags": [
+      "concert",
+      "chateau",
+      "outdoor",
+      "luberon"
+    ]
   },
   {
     "id": "grau-du-roi-beach",
@@ -191,9 +306,16 @@
     "type": "beach",
     "description": "A laid-back Mediterranean beach town at the mouth of the Rhône delta, about an hour from Arles. Wide sandy beaches, seafood restaurants, and a quintessential southern French coastal atmosphere.",
     "address": "Le Grau-du-Roi, Gard, France",
-    "coordinates": [43.5378, 4.1356],
+    "coordinates": [
+      43.5378,
+      4.1356
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Le+Grau-du-Roi,France",
-    "tags": ["beach", "mediterranean", "free-time"]
+    "tags": [
+      "beach",
+      "mediterranean",
+      "free-time"
+    ]
   },
   {
     "id": "avignon",
@@ -201,12 +323,20 @@
     "type": "attraction",
     "description": "The 'City of Popes' — a walled medieval city on the Rhône River with the magnificent Palais des Papes (Palace of the Popes), the famous Pont Saint-Bénézet bridge, and a UNESCO-listed historic center.",
     "address": "Avignon, Vaucluse, France",
-    "coordinates": [43.9493, 4.8055],
+    "coordinates": [
+      43.9493,
+      4.8055
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Avignon,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Avignon_Palais_des_Papes.jpg/1280px-Avignon_Palais_des_Papes.jpg"
     ],
-    "tags": ["medieval", "unesco", "provence", "must-see"]
+    "tags": [
+      "medieval",
+      "unesco",
+      "provence",
+      "must-see"
+    ]
   },
   {
     "id": "palais-des-papes",
@@ -214,13 +344,21 @@
     "type": "attraction",
     "description": "The largest Gothic palace in the world, built in the 14th century when Avignon was the seat of Western Christianity. A UNESCO World Heritage Site and one of the most important medieval monuments in Europe.",
     "address": "Place du Palais, 84000 Avignon, France",
-    "coordinates": [43.9517, 4.8085],
+    "coordinates": [
+      43.9517,
+      4.8085
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Palais+des+Papes,Avignon",
     "website": "https://www.palais-des-papes.com",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Avignon_Palais_des_Papes_by_JM_Rosier.jpg/1280px-Avignon_Palais_des_Papes_by_JM_Rosier.jpg"
     ],
-    "tags": ["unesco", "medieval", "must-see", "gothic"]
+    "tags": [
+      "unesco",
+      "medieval",
+      "must-see",
+      "gothic"
+    ]
   },
   {
     "id": "pont-saint-benezet",
@@ -228,9 +366,16 @@
     "type": "attraction",
     "description": "The famous medieval bridge of Avignon, immortalized in the French folk song 'Sur le pont d'Avignon.' Only four of the original 22 arches remain, jutting dramatically into the Rhône.",
     "address": "Rue Ferruce, 84000 Avignon, France",
-    "coordinates": [43.9543, 4.8047],
+    "coordinates": [
+      43.9543,
+      4.8047
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Pont+Saint-Benezet,Avignon",
-    "tags": ["landmark", "medieval", "avignon"]
+    "tags": [
+      "landmark",
+      "medieval",
+      "avignon"
+    ]
   },
   {
     "id": "place-de-lhorloge-avignon",
@@ -238,9 +383,17 @@
     "type": "concert-venue",
     "description": "Avignon's lively main square, fronted by the Town Hall and the opera house. One of two possible Concert #3 venues on August 2.",
     "address": "Place de l'Horloge, 84000 Avignon, France",
-    "coordinates": [43.9497, 4.8063],
+    "coordinates": [
+      43.9497,
+      4.8063
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Place+de+l'Horloge,Avignon",
-    "tags": ["concert", "square", "avignon", "open-air"]
+    "tags": [
+      "concert",
+      "square",
+      "avignon",
+      "open-air"
+    ]
   },
   {
     "id": "marseille-o-beach",
@@ -248,9 +401,16 @@
     "type": "beach",
     "description": "A popular beach club on the Marseille waterfront — good stop for lunch between Arles and Nice.",
     "address": "2 Promenade Georges Pompidou, 13008 Marseille, France",
-    "coordinates": [43.2619, 5.3819],
+    "coordinates": [
+      43.2619,
+      5.3819
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=O+Beach+Marseille",
-    "tags": ["beach", "lunch-stop", "marseille"]
+    "tags": [
+      "beach",
+      "lunch-stop",
+      "marseille"
+    ]
   },
   {
     "id": "nice",
@@ -258,12 +418,19 @@
     "type": "attraction",
     "description": "The capital of the French Riviera — a dazzling Mediterranean city of colorful architecture, a pebble beach promenade, an irresistible old town, and one of the great food markets in France.",
     "address": "Nice, Alpes-Maritimes, France",
-    "coordinates": [43.7102, 7.2620],
+    "coordinates": [
+      43.7102,
+      7.262
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Nice,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Nice_Baie_des_Anges.jpg/1280px-Nice_Baie_des_Anges.jpg"
     ],
-    "tags": ["riviera", "france", "must-see"]
+    "tags": [
+      "riviera",
+      "france",
+      "must-see"
+    ]
   },
   {
     "id": "nh-hotel-nice",
@@ -271,9 +438,16 @@
     "type": "hotel",
     "description": "The group hotel in Nice, centrally located for exploring the Riviera.",
     "address": "3 Avenue des Phocéens, 06000 Nice, France",
-    "coordinates": [43.6967, 7.2676],
+    "coordinates": [
+      43.6967,
+      7.2676
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=NH+Hotel+Nice",
-    "tags": ["lodging", "nice", "group-hotel"]
+    "tags": [
+      "lodging",
+      "nice",
+      "group-hotel"
+    ]
   },
   {
     "id": "old-nice",
@@ -281,12 +455,20 @@
     "type": "neighborhood",
     "description": "Nice's old town — a labyrinth of narrow lanes, baroque churches, vivid ochre and pink facades, and the famous Cours Saleya flower and food market. A sensory feast. The guided tour ends at the market.",
     "address": "Vieux-Nice, 06300 Nice, France",
-    "coordinates": [43.6961, 7.2769],
+    "coordinates": [
+      43.6961,
+      7.2769
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Vieux+Nice",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Nice_vieille_ville.jpg/1280px-Nice_vieille_ville.jpg"
     ],
-    "tags": ["neighborhood", "market", "nice", "must-see"]
+    "tags": [
+      "neighborhood",
+      "market",
+      "nice",
+      "must-see"
+    ]
   },
   {
     "id": "cours-saleya-market",
@@ -294,9 +476,16 @@
     "type": "attraction",
     "description": "One of the most beautiful open-air markets in France, held daily along a grand boulevard in Old Nice. Flowers, Provençal produce, cheese, olives, and socca — the famous Nice chickpea pancake.",
     "address": "Cours Saleya, 06300 Nice, France",
-    "coordinates": [43.6953, 7.2759],
+    "coordinates": [
+      43.6953,
+      7.2759
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Cours+Saleya,Nice",
-    "tags": ["market", "food", "nice"]
+    "tags": [
+      "market",
+      "food",
+      "nice"
+    ]
   },
   {
     "id": "cassa-nissa-nice",
@@ -304,9 +493,16 @@
     "type": "restaurant",
     "description": "A beloved restaurant in Old Nice serving traditional Niçois cuisine — pissaladière, salade niçoise, socca, and pasta with pistou. The group lunch spot on August 4.",
     "address": "8 Rue Sainte-Réparate, 06300 Nice, France",
-    "coordinates": [43.6970, 7.2762],
+    "coordinates": [
+      43.697,
+      7.2762
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Cassa+Nissa,Nice",
-    "tags": ["restaurant", "niçois", "group-meal"]
+    "tags": [
+      "restaurant",
+      "niçois",
+      "group-meal"
+    ]
   },
   {
     "id": "nice-bandstand-concert-venue",
@@ -314,9 +510,17 @@
     "type": "concert-venue",
     "description": "Concert #4 on August 4 — final venue TBD among Nice Bandstand, Antibes, or St-Raphaël. All are beautiful Riviera settings for an evening open-air performance.",
     "address": "Nice, Alpes-Maritimes, France",
-    "coordinates": [43.6953, 7.2660],
+    "coordinates": [
+      43.6953,
+      7.266
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Nice+Promenade+des+Anglais",
-    "tags": ["concert", "riviera", "open-air", "finale"]
+    "tags": [
+      "concert",
+      "riviera",
+      "open-air",
+      "finale"
+    ]
   },
   {
     "id": "hotel-villa-borghi",
@@ -324,10 +528,17 @@
     "type": "hotel",
     "description": "A beautiful lakeside villa hotel in Northern Italy for the tour's final night — pool, grounds, and a farewell dinner before the flight home.",
     "address": "Via per Varese, 6, 21020 Azzate VA, Italy",
-    "coordinates": [45.7746, 8.7914],
+    "coordinates": [
+      45.7746,
+      8.7914
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Hotel+Villa+Borghi+Varese",
     "website": "https://www.hotelvillaborghi.com",
-    "tags": ["lodging", "italy", "farewell"]
+    "tags": [
+      "lodging",
+      "italy",
+      "farewell"
+    ]
   },
   {
     "id": "la-kiuva-restaurant",
@@ -335,9 +546,17 @@
     "type": "restaurant",
     "description": "A traditional Valle d'Aosta mountain restaurant en route from Milan to Chamonix. Welcome lunch stop for the group on arrival day.",
     "address": "Arnad, Valle d'Aosta, Italy",
-    "coordinates": [45.6197, 7.7236],
+    "coordinates": [
+      45.6197,
+      7.7236
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=La+Kiuva,Arnad,Italy",
-    "tags": ["restaurant", "group-meal", "welcome-lunch", "italy"]
+    "tags": [
+      "restaurant",
+      "group-meal",
+      "welcome-lunch",
+      "italy"
+    ]
   },
   {
     "id": "restaurant-la-madone",
@@ -345,9 +564,16 @@
     "type": "restaurant",
     "description": "Restaurant for group dinner before Concert #2 on July 31 in the Provence region.",
     "address": "Provence, France",
-    "coordinates": [43.7200, 5.5400],
+    "coordinates": [
+      43.72,
+      5.54
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=La+Madone+restaurant+Provence",
-    "tags": ["restaurant", "group-meal", "dinner"]
+    "tags": [
+      "restaurant",
+      "group-meal",
+      "dinner"
+    ]
   },
   {
     "id": "saint-paul-de-vence",
@@ -355,12 +581,20 @@
     "type": "attraction",
     "description": "One of the most visited medieval villages in France — a perfectly preserved hilltop town with ramparts, art galleries, and stunning views over the Riviera. Home to the Fondation Maeght modern art museum.",
     "address": "Saint-Paul-de-Vence, Alpes-Maritimes, France",
-    "coordinates": [43.6973, 7.1210],
+    "coordinates": [
+      43.6973,
+      7.121
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Saint-Paul-de-Vence,France",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SaintPaulDeVence.jpg/1280px-SaintPaulDeVence.jpg"
     ],
-    "tags": ["village", "art", "riviera", "must-see"]
+    "tags": [
+      "village",
+      "art",
+      "riviera",
+      "must-see"
+    ]
   },
   {
     "id": "roman-arena-arles",
@@ -368,12 +602,20 @@
     "type": "attraction",
     "description": "A 1st-century Roman amphitheatre seating 20,000, still used today for bullfights and concerts. One of the best-preserved Roman arenas in the world and a UNESCO World Heritage Site.",
     "address": "Rond-Point des Arènes, 13200 Arles, France",
-    "coordinates": [43.6769, 4.6304],
+    "coordinates": [
+      43.6769,
+      4.6304
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Roman+Arena+Arles",
     "photos": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Arles_Amphitheatre.jpg/1280px-Arles_Amphitheatre.jpg"
     ],
-    "tags": ["roman", "unesco", "arles", "must-see"]
+    "tags": [
+      "roman",
+      "unesco",
+      "arles",
+      "must-see"
+    ]
   },
   {
     "id": "van-gogh-sites-arles",
@@ -381,8 +623,32 @@
     "type": "attraction",
     "description": "Arles is where Van Gogh lived and painted over 300 works, including The Yellow Room and Starry Night Over the Rhône. The Fondation Vincent van Gogh Arles has rotating exhibitions, and a walking trail marks his painting locations.",
     "address": "35 Rue du Docteur Fanton, 13200 Arles, France",
-    "coordinates": [43.6780, 4.6285],
+    "coordinates": [
+      43.678,
+      4.6285
+    ],
     "googleMapsUrl": "https://maps.google.com/?q=Fondation+Vincent+van+Gogh+Arles",
-    "tags": ["art", "van-gogh", "arles", "free-time"]
+    "tags": [
+      "art",
+      "van-gogh",
+      "arles",
+      "free-time"
+    ]
+  },
+  {
+    "id": "bccc-newtown",
+    "name": "Bucks County Community College (BCCC)",
+    "type": "landmark",
+    "description": "YOBC rehearsal home base and tour departure point. Performers meet here on Jul 27 for the group bus to JFK.",
+    "address": "275 Swamp Rd, Newtown, PA 18940",
+    "coordinates": [
+      40.2415,
+      -74.9438
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Bucks+County+Community+College+Newtown+PA",
+    "tags": [
+      "departure",
+      "yobc"
+    ]
   }
 ]

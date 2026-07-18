@@ -3,7 +3,15 @@
   "name": "Visitor Guide",
   "tagline": "Which concerts and events are open to visitors — and what you need to book to be there",
   "vibe": "You're booking independently. Use this to decide which parts of the tour to join, then let the app tell you what to book.",
-  "highlights": ["Concert #1 — Martigny, Switzerland (Jul 29)", "Concert #2 — Château de La Tour d'Aigues (Jul 31)", "Concert #3 — Avignon (Aug 2)", "Concert #4 — Nice Riviera (Aug 4)", "Aiguille du Midi", "Les Baux-de-Provence", "Old Nice tour"],
+  "highlights": [
+    "Concert #1 — Martigny, Switzerland (Jul 29)",
+    "Concert #2 — Château de La Tour d'Aigues (Jul 31)",
+    "Concert #3 — Avignon (Aug 2)",
+    "Concert #4 — Nice Riviera (Aug 4)",
+    "Aiguille du Midi",
+    "Les Baux-de-Provence",
+    "Old Nice tour"
+  ],
   "skiDays": 0,
   "includesMontreal": false,
   "includesPortland": false,
@@ -12,18 +20,75 @@
     {
       "id": "dep-day",
       "label": "Departure Day — Monday, July 27",
-      "theme": "Performers fly out — visitors travel independently",
-      "legs": [],
+      "theme": "Drop performer at BCCC → family drives to EWR → both fly out",
+      "legs": [
+        {
+          "id": "vleg-home-bccc",
+          "fromPlaceId": "bccc-newtown",
+          "toPlaceId": "bccc-newtown",
+          "travelMode": "car",
+          "notes": "Drive performer + instrument + luggage to BCCC (275 Swamp Rd, Newtown PA). Performer report time still TBD — YOBC departure-day schedule TBA; watch email the week of Jul 20."
+        },
+        {
+          "id": "vleg-bccc-ewr",
+          "fromPlaceId": "bccc-newtown",
+          "toPlaceId": "ewr-airport",
+          "distanceMiles": 62,
+          "drivingMinutes": 75,
+          "travelMode": "car",
+          "notes": "BCCC → EWR ~1h15 via I-95/NJ Tpk (allow 1h45 for Monday-afternoon turnpike traffic). ⚠️ DECIDE: long-term airport parking (~$18-25/day x 9 days, book EWR parking or offsite lot ahead) vs. car service/dropoff by relative. Family flight departs 5:30 PM — target EWR arrival by 2:30 PM for international check-in."
+        }
+      ],
       "segments": [
         {
-          "time": "Evening",
-          "placeId": "jfk-airport",
-          "activity": "Performers depart JFK on AA0198 at 6:59 PM",
-          "durationMinutes": 0,
+          "time": "TBD (AM/midday)",
+          "placeId": "bccc-newtown",
+          "activity": "Drop performer at BCCC — group bus takes performers to JFK (report time TBA by YOBC)",
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"],
-          "notes": "Visitors arrange their own flights. Consider flying into Geneva (GVA) or Lyon (LYS) to meet the group in Chamonix on Jul 28–29."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
+        },
+        {
+          "time": "~1:00 PM",
+          "placeId": "ewr-airport",
+          "activity": "Family drives BCCC → EWR (~1h15; buffer for traffic). Park or get dropped off",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "2:30 PM",
+          "placeId": "ewr-airport",
+          "activity": "Check in United international — bags, security",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "5:30 PM",
+          "placeId": "ewr-airport",
+          "activity": "✈ FAMILY: United EWR → GVA nonstop departs (booked, Chase Trip 1018046263)",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "6:59 PM",
+          "placeId": "jfk-airport",
+          "activity": "Performers depart JFK on AA0198",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "jfk-airport"
@@ -32,27 +97,45 @@
       "id": "day1",
       "label": "Day 1 — Tuesday, July 28",
       "theme": "Group arrives in Chamonix — Rehearsal day",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-gva-chamonix",
+          "fromPlaceId": "geneva-airport",
+          "toPlaceId": "chamonix",
+          "distanceMiles": 55,
+          "drivingMinutes": 75,
+          "travelMode": "car",
+          "notes": "⚠️ NOT BOOKED. Options: (a) rental car from GVA French sector — RECOMMENDED, keeps flexibility for Martigny & Château concerts; (b) AlpyBus/Mountain Drop-offs shared shuttle (~€30-35 pp, ~75 min). Trains GVA→Chamonix take 2.5-3h with 2 changes — not recommended after an overnight flight."
+        }
+      ],
       "segments": [
         {
-          "time": "Afternoon",
-          "placeId": "chamonix",
-          "activity": "Group settles into Chamonix — rehearsal in evening",
-          "durationMinutes": 0,
+          "time": "7:30 AM",
+          "placeId": "geneva-airport",
+          "activity": "Land GVA — collect car (rental NOT yet booked ⚠️)",
           "fixed": true,
-          "eventType": "rehearsal",
-          "openTo": ["performer"],
-          "notes": "Rehearsal is closed to visitors. Good day to arrive and explore Chamonix independently."
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "placeId": "chamonix",
+          "activity": "Arrive Chamonix — drop bags at Airbnb (Cozy apartment, check-in time TBC; free parking on premises)",
+          "eventType": "rest",
+          "openTo": [
+            "visitor"
+          ]
         },
         {
           "time": "All day",
           "placeId": "chamonix",
-          "activity": "Explore Chamonix — cable cars, hiking, town",
-          "durationMinutes": 480,
-          "fixed": false,
+          "activity": "Explore Chamonix town — group arrives ~4 PM, rehearsal 5:30 PM (not open to visitors)",
           "eventType": "free-time",
-          "openTo": ["visitor"],
-          "notes": "Great day to arrive and get your bearings. Book Aiguille du Midi cable car now for tomorrow."
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "chamonix"
@@ -61,38 +144,56 @@
       "id": "day2",
       "label": "Day 2 — Wednesday, July 29 ★ Concert #1",
       "theme": "Aiguille du Midi + Concert at Martigny",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-chamonix-martigny",
+          "fromPlaceId": "chamonix",
+          "toPlaceId": "martigny-place-centrale",
+          "distanceMiles": 25,
+          "drivingMinutes": 40,
+          "travelMode": "car",
+          "notes": "⚠️ TRANSPORT DECISION NEEDED. Car: 40 min via Col de la Forclaz (no Swiss motorway vignette needed on the pass road). Train: Mont-Blanc Express Chamonix→Martigny (~90 min, scenic) BUT concert ends ~9:30 PM and the last train back to Chamonix typically departs Martigny before 9 PM — DO NOT rely on the train for the return. Drive, or confirm late TMR/SBB times for late July."
+        }
+      ],
       "segments": [
         {
           "time": "9:00 AM",
           "placeId": "aiguille-du-midi",
-          "activity": "Aiguille du Midi cable car — join the group",
-          "durationMinutes": 180,
-          "fixed": false,
+          "activity": "Aiguille du Midi cable car — join the group (buy visitor tickets in advance in peak season ⚠️)",
           "eventType": "activity",
-          "openTo": ["performer", "visitor"],
-          "notes": "Visitors can join the group for the morning cable car visit. Book tickets in advance — sells out in summer."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         },
         {
-          "time": "3:00 PM",
+          "time": "3:30 PM",
           "placeId": "martigny-place-centrale",
-          "activity": "Free time in Martigny before the concert",
-          "durationMinutes": 120,
-          "fixed": false,
+          "activity": "Drive to Martigny — free time (Fondation Gianadda worth a visit)",
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"],
-          "notes": "Meet the group in Martigny. The town has a Roman amphitheatre and the Fondation Gianadda art museum worth visiting."
+          "openTo": [
+            "visitor"
+          ]
         },
         {
           "time": "8:00 PM",
           "placeId": "martigny-place-centrale",
-          "activity": "★ Concert #1 — Place Centrale, Martigny, Switzerland",
-          "durationMinutes": 90,
+          "activity": "★ Concert #1 — Place Centrale, Martigny",
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
-          "ticketed": false,
-          "notes": "Free open-air public concert. Just show up. Bring a light jacket — evenings cool in the Alps."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
+        },
+        {
+          "time": "10:00 PM",
+          "placeId": "chamonix",
+          "activity": "Drive back to Chamonix (40 min, mountain pass at night — fill tank beforehand)",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "chamonix",
@@ -102,27 +203,45 @@
       "id": "day3",
       "label": "Day 3 — Thursday, July 30",
       "theme": "Group transfers to Arles — visitors travel south",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-chamonix-arles",
+          "fromPlaceId": "chamonix",
+          "toPlaceId": "arles",
+          "distanceMiles": 270,
+          "drivingMinutes": 270,
+          "travelMode": "car",
+          "notes": "⚠️ Car strongly recommended: ~4.5h drive (A40/A7 via Lyon). Train alternative is 6.5-7.5h with 2-3 changes (St-Gervais + Lyon/Avignon) — impractical with kids and bags. Arles check-in after 5 PM, secured parking on site."
+        }
+      ],
       "segments": [
         {
-          "time": "All day",
-          "placeId": "pont-du-gard",
-          "activity": "Pont du Gard — recommended stop en route to Provence",
-          "durationMinutes": 90,
-          "fixed": false,
-          "eventType": "activity",
-          "openTo": ["visitor"],
-          "notes": "The group bus stops here. Visitors driving or taking the train south should try to include it — extraordinary Roman monument."
+          "time": "9:00 AM",
+          "placeId": "chamonix",
+          "activity": "Check out of Chamonix Airbnb — drive south",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         },
         {
-          "time": "Evening",
+          "time": "1:30 PM",
+          "placeId": "pont-du-gard",
+          "activity": "Pont du Gard stop — the group stops here too around noon",
+          "eventType": "activity",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "5:00 PM",
           "placeId": "arles",
-          "activity": "Arrive in Arles — group settles in",
-          "durationMinutes": 60,
-          "fixed": false,
+          "activity": "Check in Le Mas Sivan, Arles (conf HM9S8PCSBF, after 5 PM)",
+          "fixed": true,
           "eventType": "rest",
-          "openTo": ["visitor"],
-          "notes": "Book your hotel in Arles for Jul 30–Aug 2 if attending Concerts #2 and #3."
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "arles"
@@ -131,37 +250,56 @@
       "id": "day4",
       "label": "Day 4 — Friday, July 31 ★ Concert #2",
       "theme": "Les Baux + Concert at Château de La Tour d'Aigues",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-arles-chateau",
+          "fromPlaceId": "arles",
+          "toPlaceId": "chateau-la-tour-daigues",
+          "distanceMiles": 60,
+          "drivingMinutes": 75,
+          "travelMode": "car",
+          "notes": "⚠️ CAR REQUIRED — no practical public transit to La Tour d'Aigues (Luberon village). Concert 9 PM, ends ~10:30 PM; 75 min night drive back to Arles. Consider leaving Les Baux by 5 PM."
+        }
+      ],
       "segments": [
         {
           "time": "10:00 AM",
-          "placeId": "les-baux-de-provence",
-          "activity": "Les Baux-de-Provence — join the group for guided tour",
-          "durationMinutes": 120,
-          "fixed": false,
+          "placeId": "les-baux",
+          "activity": "Les Baux-de-Provence guided tour — join the group (25 min drive)",
           "eventType": "activity",
-          "openTo": ["performer", "visitor"],
-          "notes": "Visitors can join the group here. Magnificent medieval village — one of the best in France."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         },
         {
-          "time": "12:30 PM",
-          "placeId": "les-baux-de-provence",
-          "activity": "Lunch in Les Baux — on your own or with the group",
-          "durationMinutes": 75,
-          "fixed": false,
-          "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "time": "6:30 PM",
+          "placeId": "chateau-la-tour-daigues",
+          "activity": "Drive to Château de La Tour d'Aigues — dinner en route or picnic",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         },
         {
           "time": "9:00 PM",
-          "placeId": "chateau-tour-daigues",
+          "placeId": "chateau-la-tour-daigues",
           "activity": "★ Concert #2 — Château de La Tour d'Aigues",
-          "durationMinutes": 90,
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
-          "ticketed": true,
-          "notes": "Tickets may be required — check the venue website closer to the date. A stunning outdoor concert in a Renaissance château."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
+        },
+        {
+          "time": "10:45 PM",
+          "placeId": "arles",
+          "activity": "Night drive back to Arles (~75 min)",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "arles"
@@ -170,26 +308,36 @@
       "id": "day5",
       "label": "Day 5 — Saturday, August 1",
       "theme": "Beach Day — Le Grau-du-Roi",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-arles-graudoroi",
+          "fromPlaceId": "arles",
+          "toPlaceId": "le-grau-du-roi",
+          "distanceMiles": 28,
+          "drivingMinutes": 45,
+          "travelMode": "car",
+          "notes": "45 min drive. Summer Saturday beach traffic — leave by 9 AM. No booking needed."
+        }
+      ],
       "segments": [
         {
           "time": "9:30 AM",
-          "placeId": "grau-du-roi-beach",
-          "activity": "Beach day at Le Grau-du-Roi — visitors welcome",
-          "durationMinutes": 300,
-          "fixed": false,
+          "placeId": "le-grau-du-roi",
+          "activity": "Beach day with the group — Le Grau-du-Roi",
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"],
-          "notes": "The whole group heads to the beach. Great opportunity to spend a relaxed day with the performers."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         },
         {
           "time": "5:00 PM",
           "placeId": "arles",
-          "activity": "Free time in Arles — Roman Arena, Van Gogh sites, shopping",
-          "durationMinutes": 150,
-          "fixed": false,
+          "activity": "Free evening in Arles — Roman Arena, Van Gogh sites",
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "arles"
@@ -198,37 +346,47 @@
       "id": "day6",
       "label": "Day 6 — Sunday, August 2 ★ Concert #3",
       "theme": "Avignon — Palais des Papes + Concert",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-arles-avignon",
+          "fromPlaceId": "arles",
+          "toPlaceId": "avignon",
+          "distanceMiles": 22,
+          "drivingMinutes": 35,
+          "travelMode": "train",
+          "notes": "BEST TRAIN DAY: TER Arles→Avignon Centre ~20 min, roughly hourly, ~€8 pp. Concert is 5 PM at Place de l'Horloge (CONFIRMED Avignon per Jul 17 YOBC email) — evening trains back to Arles run until ~10 PM, so train works both ways. Driving also fine (35 min) but Avignon intramuros parking is tight on summer Sundays. ⚠️ Verify Sunday TER schedule ~1 week out; buy on SNCF Connect."
+        }
+      ],
       "segments": [
         {
           "time": "9:30 AM",
-          "placeId": "pont-saint-benezet",
-          "activity": "Visit Pont Saint-Bénézet with the group",
-          "durationMinutes": 60,
-          "fixed": false,
+          "placeId": "avignon",
+          "activity": "Pont Saint-Bénézet + Palais des Papes with the group",
           "eventType": "activity",
-          "openTo": ["performer", "visitor"]
-        },
-        {
-          "time": "10:45 AM",
-          "placeId": "palais-des-papes",
-          "activity": "Palais des Papes — join the group",
-          "durationMinutes": 90,
-          "fixed": false,
-          "eventType": "activity",
-          "openTo": ["performer", "visitor"],
-          "notes": "One of the great medieval monuments in Europe. Book tickets in advance."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         },
         {
           "time": "5:00 PM",
-          "placeId": "place-de-lhorloge-avignon",
-          "activity": "★ Concert #3 — Avignon or Aix-en-Provence",
-          "durationMinutes": 90,
+          "placeId": "avignon",
+          "activity": "★ Concert #3 — Place de l'Horloge, Avignon (confirmed — Aix option dropped)",
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
-          "ticketed": false,
-          "notes": "Free open-air public concert. Venue TBC — Place de l'Horloge (Avignon) or Place de l'Église de la Madeleine (Aix-en-Provence)."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
+        },
+        {
+          "time": "7:30 PM",
+          "placeId": "arles",
+          "activity": "Train or drive back to Arles — dinner in Arles",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "arles",
@@ -238,37 +396,46 @@
       "id": "day7",
       "label": "Day 7 — Monday, August 3",
       "theme": "Group moves to Nice",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-arles-nice",
+          "fromPlaceId": "arles",
+          "toPlaceId": "nice",
+          "distanceMiles": 160,
+          "drivingMinutes": 160,
+          "travelMode": "car",
+          "notes": "⚠️ DECISION: (a) Drive ~2.5-3h and RETURN RENTAL CAR IN NICE (one-way fee applies; Vieux Nice Airbnb has no parking — drop car at NCE airport or Nice Ville on arrival); or (b) drive 20 min to Avignon TGV, return car there, TGV Avignon→Nice direct ~3h (~€40-60 pp — book ahead, summer trains sell out). Checkout Arles 10 AM, Nice check-in ~3-4 PM."
+        }
+      ],
       "segments": [
         {
-          "time": "11:00 AM",
-          "placeId": "marseille-o-beach",
-          "activity": "Optional: Marseille O Beach lunch stop",
-          "durationMinutes": 90,
-          "fixed": false,
-          "eventType": "meal",
-          "openTo": ["visitor"],
-          "notes": "The group bus stops here for lunch. Visitors can meet them or travel independently."
+          "time": "10:00 AM",
+          "placeId": "arles",
+          "activity": "Check out Le Mas Sivan (by 10 AM)",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         },
         {
-          "time": "1:30 PM",
-          "placeId": "saint-paul-de-vence",
-          "activity": "Optional: Saint-Paul-de-Vence afternoon",
-          "durationMinutes": 150,
-          "fixed": false,
-          "eventType": "activity",
-          "openTo": ["performer", "visitor"],
-          "notes": "Highly recommended detour — stunning medieval hill village just above Nice."
-        },
-        {
-          "time": "Evening",
+          "time": "1:00 PM",
           "placeId": "nice",
-          "activity": "Arrive Nice — dinner on own in groups",
-          "durationMinutes": 90,
-          "fixed": false,
-          "eventType": "meal",
-          "openTo": ["performer", "visitor"],
-          "notes": "Book your Nice hotel for Aug 3–5. The Old Town has excellent restaurants."
+          "activity": "Optional stop en route (Cassis or Saint-Paul-de-Vence)",
+          "eventType": "free-time",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "4:00 PM",
+          "placeId": "nice",
+          "activity": "Check in — Charming 3BR Place Rossetti, Vieux Nice (booked)",
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "nice"
@@ -281,33 +448,24 @@
       "segments": [
         {
           "time": "10:00 AM",
-          "placeId": "old-nice",
-          "activity": "Guided tour of Old Nice + Cours Saleya Market — join the group",
-          "durationMinutes": 120,
-          "fixed": false,
-          "eventType": "activity",
-          "openTo": ["performer", "visitor"],
-          "notes": "The best morning in Nice. Join the group for the guided tour or explore the market independently."
-        },
-        {
-          "time": "7:00 PM",
           "placeId": "nice",
-          "activity": "Dinner on own — last evening on the Riviera",
-          "durationMinutes": 90,
-          "fixed": false,
-          "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "activity": "Old Nice guided tour + Cours Saleya with the group (walk from Airbnb)",
+          "eventType": "activity",
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         },
         {
           "time": "9:00 PM",
-          "placeId": "nice-bandstand-concert-venue",
-          "activity": "★ Concert #4 — Nice Riviera (final concert of the tour)",
-          "durationMinutes": 90,
+          "placeId": "nice",
+          "activity": "★ Concert #4 — Nice (confirmed final concert; walkable/tram from Vieux Nice)",
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
-          "ticketed": false,
-          "notes": "Free open-air public concert. The final performance. Venue TBC — Nice Bandstand, Antibes, or St-Raphaël."
+          "openTo": [
+            "visitor",
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "nice"
@@ -316,27 +474,37 @@
       "id": "day9",
       "label": "Day 9 — Wednesday, August 5",
       "theme": "Group departs for Italy — visitors head home",
-      "legs": [],
+      "legs": [
+        {
+          "id": "vleg-nice-nce",
+          "fromPlaceId": "nice",
+          "toPlaceId": "nice-airport",
+          "distanceMiles": 5,
+          "drivingMinutes": 25,
+          "travelMode": "tram",
+          "notes": "Tram Line 2 to NCE (~25 min, ~€1.50 pp) or taxi ~€35. Flight ~12:10 PM — leave Vieux Nice by 9:30 AM. No booking needed."
+        }
+      ],
       "segments": [
         {
-          "time": "Morning",
+          "time": "9:30 AM",
           "placeId": "nice",
-          "activity": "Group departs Nice for Italy — farewell to performers",
-          "durationMinutes": 0,
+          "activity": "Check out — tram/taxi to NCE airport",
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"],
-          "notes": "The group has a private farewell dinner in Italy tonight. Visitors fly home from Nice (NCE) or continue exploring independently."
+          "openTo": [
+            "visitor"
+          ]
         },
         {
-          "time": "All day",
-          "placeId": "nice",
-          "activity": "Visitors: last day on the Riviera — Nice, Antibes, Monaco nearby",
-          "durationMinutes": 480,
-          "fixed": false,
-          "eventType": "free-time",
-          "openTo": ["visitor"],
-          "notes": "Great day for Monaco (~30 min), Antibes (20 min), or a final Promenade des Anglais walk before your flight home."
+          "time": "12:10 PM",
+          "placeId": "nice-airport",
+          "activity": "✈ United NCE → (connection) → EWR, arrives 3:40 PM (booked)",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "nice"

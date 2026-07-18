@@ -66,7 +66,7 @@
         "url": "https://www.thetopvillas.com/en_us/destinations/france/french-alps/chamonix/chamonix-136?checkin=2026-07-28&checkout=2026-07-30&currency=USD",
         "title": "Chamonix 136 — Alpine retreat between Les Houches and Chamonix",
         "status": "shortlist",
-        "totalPrice": 672.80,
+        "totalPrice": 672.8,
         "currency": "USD",
         "pricePerNight": 336,
         "location": "67 Chem. des Granges, 74400 Chamonix-Mont-Blanc — between Les Houches and Chamonix; near Taconnaz station for free Mont Blanc Express rail",
@@ -286,6 +286,33 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-05-11T03:21:00Z",
         "notes": "Guest favorite per Airbnb search listing. 2BR/4 beds for 4 guests — bed config not individually verified but appears to match the parents-and-2-kids scenario. Larger and more expensive than the cheaper 2 options above. Availability + price ($855 for 2 nights) confirmed from search results on 2026-05-11."
+      },
+      {
+        "id": "o-airbnb-8589121",
+        "url": "https://www.airbnb.com/rooms/8589121?adults=2&children=3&check_in=2026-07-28&check_out=2026-07-30",
+        "title": "Cozy apartment - Chamonix! (Mont Blanc views, SW balcony)",
+        "status": "leading",
+        "totalPrice": 594,
+        "currency": "USD",
+        "pricePerNight": 297,
+        "location": "Chamonix, France",
+        "beds": 4,
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "guests": 5,
+        "amenities": [
+          "Wifi",
+          "Dedicated workspace",
+          "Free parking on premises",
+          "Kitchen",
+          "Mountain view",
+          "Valley view",
+          "43-inch TV with DVD player",
+          "Southwest Mont Blanc view balcony"
+        ],
+        "availability": "available",
+        "availabilityCheckedAt": "2026-07-18T16:45:00Z",
+        "notes": "★4.86 (133 reviews). Superhost. 3BR/4 beds/1 bath, sleeps 5+. $594 total for Jul 28-30 (discounted from $643) — cheapest well-rated option found in live search 2026-07-18. WiFi confirmed in amenities. Square footage not stated by host. Selected as LEADING option 2026-07-18."
       }
     ]
   },
@@ -1058,5 +1085,47 @@
         "notes": "★4.95 with free cancellation. 2BR/2 beds/2.5 baths — generous bathroom count. Bed config not individually verified; '2 beds' suggests 1 main bed per bedroom. Located in central Arles. Availability + price ($1,025 for 4 nights) confirmed from search results on 2026-05-11."
       }
     ]
+  },
+  {
+    "id": "t-rental-car-gva-nce-2026",
+    "name": "Rental car: GVA (Jul 28) → Nice (Aug 3)",
+    "category": "car",
+    "status": "needed",
+    "checkIn": "2026-07-28",
+    "checkOut": "2026-08-03",
+    "notes": "⚠️ TOP PRIORITY BOOKING. One-way rental, pick up Geneva Airport FRENCH sector ~8:00 AM Jul 28 (after 7:30 AM landing), drop Nice (NCE airport or Nice Ville) Aug 3. Needs to seat 5 + luggage (compact SUV/minivan). Covers: GVA→Chamonix, Chamonix↔Martigny concert (Jul 29 — last train back leaves before concert ends, car essential), Chamonix→Arles (Jul 30), Arles↔Château de La Tour d'Aigues concert (Jul 31 — NO transit option), beach day, Arles→Nice. French-sector pickup avoids Swiss registration/vignette issues; Col de la Forclaz route to Martigny avoids Swiss motorway vignette. One-way GVA→NCE drop fee applies (~€50-150). Book ASAP — 9 days out, summer inventory."
+  },
+  {
+    "id": "t-train-alt-arles-avignon-2026",
+    "name": "TER Arles ↔ Avignon (Aug 2, Concert #3)",
+    "category": "train",
+    "status": "optional",
+    "date": "2026-08-02",
+    "notes": "Only genuinely train-friendly concert day. TER ~20 min each way, ~€8 pp, buy on SNCF Connect. Concert 5 PM Place de l'Horloge (Avignon CONFIRMED per YOBC Jul 17 email); evening returns until ~10 PM. Alternative: drive (35 min) — Avignon intramuros parking tight on summer Sundays. Verify Sunday schedule ~1 week out."
+  },
+  {
+    "id": "t-tgv-alt-avignon-nice-2026",
+    "name": "ALTERNATIVE: TGV Avignon → Nice (Aug 3) if returning car early",
+    "category": "train",
+    "status": "optional",
+    "date": "2026-08-03",
+    "notes": "Alternative to one-way car drop in Nice: return car at Avignon TGV (20 min from Arles), direct TGV Avignon→Nice ~3h, ~€40-60 pp. ⚠️ If chosen, BOOK NOW — early-August TGVs to the coast sell out. Skip if keeping car to Nice (then no booking needed)."
+  },
+  {
+    "id": "t-aiguille-du-midi-tickets-2026",
+    "name": "Aiguille du Midi cable car tickets (Jul 29)",
+    "category": "activity",
+    "status": "needed",
+    "date": "2026-07-29",
+    "notes": "Visitors are not covered by the group booking. Buy timed tickets in advance on montblancnaturalresort.com — peak-season morning slots sell out. ~€75/adult, ~€64/child round trip."
+  },
+  {
+    "id": "t-ewr-parking-2026",
+    "name": "EWR long-term parking OR dropoff plan (Jul 27 - Aug 5)",
+    "category": "car",
+    "status": "needed",
+    "checkIn": "2026-07-27",
+    "checkOut": "2026-08-05",
+    "notes": "Family drives BCCC → EWR after dropping performer. 9 days of parking: EWR P4/P6 economy or offsite (Vista, Peachy) ~$13-25/day — reserve ahead for late-July. Alternative: relative drop-off/pickup (return flight lands EWR 3:40 PM Aug 5, but performer bus returns from JFK to BCCC on Aug 6 — someone must also collect the performer at BCCC on Aug 6 ⚠️)."
   }
 ]

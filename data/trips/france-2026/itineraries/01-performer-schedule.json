@@ -3,7 +3,14 @@
   "name": "Performer Schedule",
   "tagline": "The complete tour schedule — concerts, rehearsals, transfers, and free time",
   "vibe": "Every event is pre-arranged. Follow the tour leaders. Enjoy the moments in between.",
-  "highlights": ["Concert at Martigny Place Centrale", "Aiguille du Midi cable car", "Concert at Château de La Tour d'Aigues", "Beach day at Le Grau-du-Roi", "Guided tour of Old Nice", "Farewell dinner at Villa Borghi"],
+  "highlights": [
+    "Concert at Martigny Place Centrale",
+    "Aiguille du Midi cable car",
+    "Concert at Château de La Tour d'Aigues",
+    "Beach day at Le Grau-du-Roi",
+    "Guided tour of Old Nice",
+    "Farewell dinner at Villa Borghi"
+  ],
   "skiDays": 0,
   "includesMontreal": false,
   "includesPortland": false,
@@ -32,7 +39,9 @@
           "durationMinutes": 120,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"],
+          "openTo": [
+            "performer"
+          ],
           "notes": "Follow separate departure day schedule TBA."
         },
         {
@@ -42,7 +51,9 @@
           "durationMinutes": 510,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "milan-malpensa-airport"
@@ -70,7 +81,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "12:30 PM",
@@ -79,7 +92,9 @@
           "durationMinutes": 75,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "4:00 PM",
@@ -88,7 +103,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "5:30 PM",
@@ -97,7 +114,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "rehearsal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:30 PM",
@@ -106,7 +125,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "hotel-lykke-chamonix"
@@ -134,7 +155,10 @@
           "durationMinutes": 180,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "notes": "Book cable car tickets in advance — sells out quickly in summer."
         },
         {
@@ -144,7 +168,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "3:00 PM",
@@ -153,7 +179,10 @@
           "durationMinutes": 120,
           "fixed": false,
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "6:00 PM",
@@ -162,7 +191,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "rehearsal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "8:00 PM",
@@ -171,7 +202,10 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "ticketed": false,
           "notes": "Open-air public concert. Visitors welcome — no ticket required."
         }
@@ -202,7 +236,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "12:00 PM",
@@ -211,7 +247,10 @@
           "durationMinutes": 60,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "notes": "One of the great Roman monuments. Worth the stop."
         },
         {
@@ -221,7 +260,9 @@
           "durationMinutes": 45,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "5:00 PM",
@@ -230,7 +271,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:00 PM",
@@ -239,7 +282,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "hotel-ibis-arles"
@@ -274,7 +319,10 @@
           "durationMinutes": 120,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "12:30 PM",
@@ -283,7 +331,10 @@
           "durationMinutes": 75,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "4:00 PM",
@@ -292,7 +343,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "6:00 PM",
@@ -301,7 +354,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:30 PM",
@@ -310,7 +365,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "rehearsal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "9:00 PM",
@@ -319,7 +376,10 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "ticketed": true,
           "notes": "Outdoor château concert. Visitors should check for ticketing requirements in advance."
         }
@@ -348,7 +408,10 @@
           "durationMinutes": 180,
           "fixed": false,
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "notes": "Visitors can meet the group at the beach."
         },
         {
@@ -358,7 +421,10 @@
           "durationMinutes": 75,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "3:30 PM",
@@ -367,7 +433,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "5:00 PM",
@@ -376,7 +444,10 @@
           "durationMinutes": 150,
           "fixed": false,
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "7:30 PM",
@@ -385,7 +456,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "hotel-ibis-arles"
@@ -393,7 +466,7 @@
     {
       "id": "day6",
       "label": "Day 6 — Sunday, August 2 ★ Concert #3",
-      "theme": "Avignon + Concert",
+      "theme": "Avignon + Concert (Place de l'Horloge)",
       "legs": [
         {
           "id": "leg-arles-avignon",
@@ -412,7 +485,10 @@
           "durationMinutes": 60,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "10:45 AM",
@@ -421,7 +497,10 @@
           "durationMinutes": 90,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "1:00 PM",
@@ -430,27 +509,36 @@
           "durationMinutes": 90,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "3:00 PM",
           "placeId": "place-de-lhorloge-avignon",
-          "activity": "Sound check — Place de l'Horloge (or Aix-en-Provence)",
+          "activity": "Sound check — Place de l'Horloge, Avignon",
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "rehearsal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ],
+          "notes": "Confirmed via YOBC Bon Voyage email (Jul 17, 2026): tour stops are Chamonix, Martigny, Arles, Avignon, Nice."
         },
         {
           "time": "5:00 PM",
           "placeId": "place-de-lhorloge-avignon",
-          "activity": "Concert #3 — Avignon or Aix-en-Provence (afternoon/early evening)",
+          "activity": "Concert #3 — Place de l'Horloge, Avignon (afternoon/early evening)",
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "ticketed": false,
-          "notes": "Exact venue TBC — Place de l'Horloge (Avignon) or Place de l'Église de la Madeleine (Aix-en-Provence). Open-air public concert."
+          "notes": "Confirmed via YOBC Bon Voyage email (Jul 17, 2026): tour stops are Chamonix, Martigny, Arles, Avignon, Nice."
         },
         {
           "time": "7:30 PM",
@@ -459,7 +547,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "hotel-ibis-arles"
@@ -494,7 +584,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "11:00 AM",
@@ -503,7 +595,10 @@
           "durationMinutes": 90,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "1:30 PM",
@@ -512,7 +607,11 @@
           "durationMinutes": 150,
           "fixed": false,
           "eventType": "free-time",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
+          "notes": "Confirmed via YOBC Bon Voyage email (Jul 17, 2026): tour stops are Chamonix, Martigny, Arles, Avignon, Nice."
         },
         {
           "time": "5:00 PM",
@@ -521,7 +620,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:00 PM",
@@ -530,7 +631,10 @@
           "durationMinutes": 90,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         }
       ],
       "overnightPlaceId": "nh-hotel-nice"
@@ -538,7 +642,7 @@
     {
       "id": "day8",
       "label": "Day 8 — Tuesday, August 4 ★ Concert #4",
-      "theme": "Old Nice + Final Concert",
+      "theme": "Old Nice + Final Concert (Nice)",
       "legs": [],
       "segments": [
         {
@@ -548,7 +652,10 @@
           "durationMinutes": 120,
           "fixed": false,
           "eventType": "activity",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "notes": "One of the great walking tours in France. Ends at the market."
         },
         {
@@ -558,7 +665,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"],
+          "openTo": [
+            "performer"
+          ],
           "notes": "Group lunch. Visitors may be able to join — confirm with tour leaders."
         },
         {
@@ -568,7 +677,9 @@
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:00 PM",
@@ -577,18 +688,24 @@
           "durationMinutes": 90,
           "fixed": false,
           "eventType": "meal",
-          "openTo": ["performer", "visitor"]
+          "openTo": [
+            "performer",
+            "visitor"
+          ]
         },
         {
           "time": "9:00 PM",
           "placeId": "nice-bandstand-concert-venue",
-          "activity": "Concert #4 — Antibes, St-Raphaël, or Nice Bandstand",
+          "activity": "Concert #4 — Nice (bandstand, Promenade area)",
           "durationMinutes": 90,
           "fixed": true,
           "eventType": "concert",
-          "openTo": ["performer", "visitor"],
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
           "ticketed": false,
-          "notes": "Final concert of the tour. Exact venue TBC. Open-air public performance."
+          "notes": "Confirmed via YOBC Bon Voyage email (Jul 17, 2026): tour stops are Chamonix, Martigny, Arles, Avignon, Nice."
         }
       ],
       "overnightPlaceId": "nh-hotel-nice"
@@ -616,7 +733,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "1:00 PM",
@@ -625,7 +744,9 @@
           "durationMinutes": 240,
           "fixed": false,
           "eventType": "rest",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "7:00 PM",
@@ -634,7 +755,9 @@
           "durationMinutes": 120,
           "fixed": true,
           "eventType": "meal",
-          "openTo": ["performer"],
+          "openTo": [
+            "performer"
+          ],
           "notes": "Private group farewell dinner. Performers and official tour participants only."
         }
       ],
@@ -663,7 +786,9 @@
           "durationMinutes": 60,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "11:10 AM",
@@ -672,7 +797,9 @@
           "durationMinutes": 480,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         },
         {
           "time": "2:10 PM",
@@ -681,7 +808,9 @@
           "durationMinutes": 120,
           "fixed": true,
           "eventType": "travel",
-          "openTo": ["performer"]
+          "openTo": [
+            "performer"
+          ]
         }
       ],
       "overnightPlaceId": "jfk-airport"
