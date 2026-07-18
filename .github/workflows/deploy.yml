@@ -32,6 +32,10 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      # SPA fallback: Pages serves 404.html for unknown paths, so deep links
+      # and refreshes inside React Router routes work.
+      - run: cp dist/index.html dist/404.html
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
