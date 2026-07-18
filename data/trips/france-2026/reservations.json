@@ -1088,12 +1088,12 @@
   },
   {
     "id": "t-rental-car-gva-nce-2026",
-    "name": "Rental car: GVA (Jul 28) → Nice (Aug 3)",
+    "name": "Rental car: GVA -> Nice, Jul 28-Aug 3 (~$576-660 total, live-checked)",
     "category": "train",
     "status": "needed",
     "checkIn": "2026-07-28",
     "checkOut": "2026-08-03",
-    "notes": "⚠️ TOP PRIORITY BOOKING. One-way rental, pick up Geneva Airport FRENCH sector ~8:00 AM Jul 28 (after 7:30 AM landing), drop Nice (NCE airport or Nice Ville) Aug 3. Needs to seat 5 + luggage (compact SUV/minivan). Covers: GVA→Chamonix, Chamonix↔Martigny concert (Jul 29 — last train back leaves before concert ends, car essential), Chamonix→Arles (Jul 30), Arles↔Château de La Tour d'Aigues concert (Jul 31 — NO transit option), beach day, Arles→Nice. French-sector pickup avoids Swiss registration/vignette issues; Col de la Forclaz route to Martigny avoids Swiss motorway vignette. One-way GVA→NCE drop fee applies (~€50-150). Book ASAP — 9 days out, summer inventory."
+    "notes": "TOP PRIORITY BOOKING. One-way GVA (Jul 28, ~8 AM) -> Nice NCE (Aug 3). LIVE PRICES 2026-07-18 (Kayak, 6 days, one-way fee included): Peugeot 3008 Intermediate SUV (5 seats/3 bags) $576-606; Peugeot 508 Standard $576; Renault Megane Compact (3 bags) $537; Toyota Yaris Cross $594. ~$90-110/day — NOT $200/day (that quote was likely a minivan or walk-up rate). Early return at Avignon/Nimes priced IDENTICAL ($576) so keep car to Nice — dropping early just adds ~$160-240 of TGV fares. Pick: Peugeot 3008-class for 4 people + luggage. Note: cheapest offers are off-airport (call for pick-up, rated 7.3-7.7); French-sector airport-terminal desks ~$660 rated 10/10 — worth ~$80 after an overnight flight with kids. French-side pickup also avoids Swiss vignette hassle (Martigny via Col de la Forclaz needs no vignette)."
   },
   {
     "id": "t-train-alt-arles-avignon-2026",
@@ -1107,9 +1107,9 @@
     "id": "t-tgv-alt-avignon-nice-2026",
     "name": "OPTIONAL: ALTERNATIVE: TGV Avignon → Nice (Aug 3) if returning car early",
     "category": "train",
-    "status": "needed",
+    "status": "cancelled",
     "date": "2026-08-03",
-    "notes": "Alternative to one-way car drop in Nice: return car at Avignon TGV (20 min from Arles), direct TGV Avignon→Nice ~3h, ~€40-60 pp. ⚠️ If chosen, BOOK NOW — early-August TGVs to the coast sell out. Skip if keeping car to Nice (then no booking needed)."
+    "notes": "DROPPED 2026-07-18: early car return at Avignon/Nimes prices identical to Nice drop ($576 Kayak live check), so the TGV leg would be pure added cost (~$160-240 for 4). Keep the car to Nice."
   },
   {
     "id": "t-aiguille-du-midi-tickets-2026",
