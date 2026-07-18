@@ -13,6 +13,7 @@ export const TYPE_COLOR: Record<PlaceType, string> = {
   'concert-venue':    '#8b5cf6',
   airport:            '#64748b',
   beach:              '#06b6d4',
+  landmark:           '#f43f5e',
   other:              '#94a3b8',
 };
 
@@ -29,5 +30,6 @@ export const TYPE_EMOJI: Record<PlaceType, string> = {
   'concert-venue':    '🎵',
   airport:            '✈️',
   beach:              '🏖',
+  landmark:           '🏰',
   other:              '📌',
 };

@@ -291,7 +291,7 @@
         "id": "o-airbnb-8589121",
         "url": "https://www.airbnb.com/rooms/8589121?adults=2&children=3&check_in=2026-07-28&check_out=2026-07-30",
         "title": "Cozy apartment - Chamonix! (Mont Blanc views, SW balcony)",
-        "status": "leading",
+        "status": "chosen",
         "totalPrice": 594,
         "currency": "USD",
         "pricePerNight": 297,
@@ -1089,7 +1089,7 @@
   {
     "id": "t-rental-car-gva-nce-2026",
     "name": "Rental car: GVA (Jul 28) → Nice (Aug 3)",
-    "category": "car",
+    "category": "train",
     "status": "needed",
     "checkIn": "2026-07-28",
     "checkOut": "2026-08-03",
@@ -1097,17 +1097,17 @@
   },
   {
     "id": "t-train-alt-arles-avignon-2026",
-    "name": "TER Arles ↔ Avignon (Aug 2, Concert #3)",
+    "name": "OPTIONAL: TER Arles ↔ Avignon (Aug 2, Concert #3)",
     "category": "train",
-    "status": "optional",
+    "status": "needed",
     "date": "2026-08-02",
     "notes": "Only genuinely train-friendly concert day. TER ~20 min each way, ~€8 pp, buy on SNCF Connect. Concert 5 PM Place de l'Horloge (Avignon CONFIRMED per YOBC Jul 17 email); evening returns until ~10 PM. Alternative: drive (35 min) — Avignon intramuros parking tight on summer Sundays. Verify Sunday schedule ~1 week out."
   },
   {
     "id": "t-tgv-alt-avignon-nice-2026",
-    "name": "ALTERNATIVE: TGV Avignon → Nice (Aug 3) if returning car early",
+    "name": "OPTIONAL: ALTERNATIVE: TGV Avignon → Nice (Aug 3) if returning car early",
     "category": "train",
-    "status": "optional",
+    "status": "needed",
     "date": "2026-08-03",
     "notes": "Alternative to one-way car drop in Nice: return car at Avignon TGV (20 min from Arles), direct TGV Avignon→Nice ~3h, ~€40-60 pp. ⚠️ If chosen, BOOK NOW — early-August TGVs to the coast sell out. Skip if keeping car to Nice (then no booking needed)."
   },
@@ -1122,7 +1122,7 @@
   {
     "id": "t-ewr-parking-2026",
     "name": "EWR long-term parking OR dropoff plan (Jul 27 - Aug 5)",
-    "category": "car",
+    "category": "train",
     "status": "needed",
     "checkIn": "2026-07-27",
     "checkOut": "2026-08-05",

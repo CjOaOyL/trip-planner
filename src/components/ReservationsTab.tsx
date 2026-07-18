@@ -69,7 +69,9 @@ export default function ReservationsTab({ tripId, itineraryId, itineraryName, tr
   const grouped = new Map<ReservationCategory, Reservation[]>();
   for (const cat of CATEGORY_ORDER) grouped.set(cat, []);
   for (const r of filtered) {
-    grouped.get(r.category)?.push(r);
+    // Unknown categories (bad data / stale localStorage) fall into "other"
+    // rather than being silently dropped.
+    (grouped.get(r.category) ?? grouped.get('other'))!.push(r);
   }
 
   const totalCost = allReservations.reduce((sum, r) => sum + (r.cost ?? 0), 0);

@@ -79,7 +79,7 @@ export default function BookingOptionsCompare({
         </thead>
         <tbody>
           {options.map((o) => {
-            const style = STATUS_STYLE[o.status];
+            const style = STATUS_STYLE[o.status] ?? STATUS_STYLE.shortlist;
             const dimmed = o.status === 'rejected';
             const unavailable = o.availability === 'unavailable';
             const rowBg = unavailable ? 'bg-red-50 ring-1 ring-red-200' : 'bg-stone-50';

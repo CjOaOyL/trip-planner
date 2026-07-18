@@ -43,6 +43,7 @@ const TYPE_STYLES: Record<PlaceType, { bg: string; label: string }> = {
   'concert-venue':    { bg: 'bg-purple-100 text-purple-700', label: 'Venue' },
   airport:            { bg: 'bg-stone-100 text-stone-500',   label: 'Airport' },
   beach:              { bg: 'bg-cyan-100 text-cyan-700',     label: 'Beach' },
+  landmark:           { bg: 'bg-rose-100 text-rose-700',     label: 'Landmark' },
   other:              { bg: 'bg-stone-100 text-stone-500',   label: '' },
 };
 
@@ -61,10 +62,12 @@ const NEEDS_RESERVATION: PlaceType[] = [
 ];
 
 export default function SegmentRow({ segment, place, onPlaceClick, reservationStatus, showCost, editing, onUpdate, onRemove }: Props) {
-  const typeStyle = place ? TYPE_STYLES[place.type] : TYPE_STYLES.other;
+  // Fallback to "other" for any place type not in the style map — data files
+  // aren't typechecked, so an unknown type must not crash the row.
+  const typeStyle = (place && TYPE_STYLES[place.type]) ?? TYPE_STYLES.other;
   const duration = formatDuration(segment.durationMinutes);
   const showDot = place && NEEDS_RESERVATION.includes(place.type);
-  const dot = reservationStatus ? RES_DOT[reservationStatus] : null;
+  const dot = (reservationStatus && RES_DOT[reservationStatus]) || null;
   const hasCost = showCost && segment.costEstimate != null && segment.costEstimate > 0;
 
   // Inline editing state
@@ -142,7 +145,7 @@ export default function SegmentRow({ segment, place, onPlaceClick, reservationSt
     );
   }
 
-  const eventBadge = segment.eventType ? EVENT_BADGE[segment.eventType] : null;
+  const eventBadge = (segment.eventType && EVENT_BADGE[segment.eventType]) || null;
   const isFixed = segment.fixed === true;
   const isVisitorOpen = segment.openTo?.includes('visitor') ?? true;
   const isTicketed = segment.ticketed === true;

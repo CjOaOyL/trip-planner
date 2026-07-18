@@ -15,6 +15,7 @@ export type PlaceType =
   | 'concert-venue'
   | 'airport'
   | 'beach'
+  | 'landmark'
   | 'other';
 
 // ─── Participant types ─────────────────────────────────────────────────────────

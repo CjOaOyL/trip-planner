@@ -650,5 +650,81 @@
       "departure",
       "yobc"
     ]
+  },
+  {
+    "id": "geneva-airport",
+    "name": "Geneva Airport (GVA)",
+    "type": "airport",
+    "description": "Arrival airport for the family — French sector rental car pickup.",
+    "address": "Route de l'Aéroport 21, 1215 Le Grand-Saconnex, Switzerland",
+    "coordinates": [
+      46.2381,
+      6.109
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Geneva+Airport",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "nice-airport",
+    "name": "Nice Côte d'Azur Airport (NCE)",
+    "type": "airport",
+    "description": "Departure airport Aug 5 — Tram Line 2 from the city (~25 min).",
+    "address": "Rue Costes et Bellonte, 06206 Nice, France",
+    "coordinates": [
+      43.6584,
+      7.2159
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Nice+Cote+d+Azur+Airport",
+    "tags": [
+      "travel"
+    ]
+  },
+  {
+    "id": "les-baux",
+    "name": "Les Baux-de-Provence",
+    "type": "attraction",
+    "description": "Hilltop village + castle ruins — group guided tour Jul 31.",
+    "address": "13520 Les Baux-de-Provence, France",
+    "coordinates": [
+      43.7447,
+      4.7956
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Les+Baux-de-Provence",
+    "tags": [
+      "provence"
+    ]
+  },
+  {
+    "id": "le-grau-du-roi",
+    "name": "Le Grau-du-Roi",
+    "type": "beach",
+    "description": "Beach day with the group Aug 1 — Mediterranean seaside town.",
+    "address": "30240 Le Grau-du-Roi, France",
+    "coordinates": [
+      43.5385,
+      4.1361
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Le+Grau-du-Roi",
+    "tags": [
+      "beach"
+    ]
+  },
+  {
+    "id": "chateau-la-tour-daigues",
+    "name": "Château de La Tour d'Aigues",
+    "type": "concert-venue",
+    "description": "Renaissance château courtyard — Concert #2 venue (Jul 31, 9 PM). Ticketed.",
+    "address": "84240 La Tour-d'Aigues, France",
+    "coordinates": [
+      43.7266,
+      5.547
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Chateau+de+la+Tour+d+Aigues",
+    "tags": [
+      "concert",
+      "luberon"
+    ]
   }
 ]

@@ -70,7 +70,8 @@ function cancelDeadlineInfo(iso: string) {
 }
 
 export default function ReservationCard({ reservation, onUpdate, onEdit }: Props) {
-  const style = STATUS_STYLE[reservation.status];
+  // Fallback: data files / stale localStorage can carry unknown statuses.
+  const style = STATUS_STYLE[reservation.status] ?? STATUS_STYLE.needed;
   const emoji = CATEGORY_EMOJI[reservation.category] ?? '📌';
   const options = reservation.options ?? [];
 
