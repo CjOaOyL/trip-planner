@@ -106,14 +106,14 @@
           "distanceMiles": 55,
           "drivingMinutes": 75,
           "travelMode": "car",
-          "notes": "⚠️ NOT BOOKED. Options: (a) rental car from GVA French sector — RECOMMENDED, keeps flexibility for Martigny & Château concerts; (b) AlpyBus/Mountain Drop-offs shared shuttle (~€30-35 pp, ~75 min). Trains GVA→Chamonix take 2.5-3h with 2 changes — not recommended after an overnight flight."
+          "notes": "✅ BOOKED: Europcar (Renault Symbioz or similar, intermediate) from GVA French Sector, pickup 9:00 AM (conf 732925877). Land 7:30 AM -> follow Secteur France signs. One-way fee ~\\$136 due at counter. Drive 75 min to Chamonix."
         }
       ],
       "segments": [
         {
           "time": "7:30 AM",
           "placeId": "geneva-airport",
-          "activity": "Land GVA — collect car (rental NOT yet booked ⚠️)",
+          "activity": "Land GVA — exit via Secteur France to Europcar desk",
           "fixed": true,
           "eventType": "travel",
           "openTo": [
@@ -121,19 +121,30 @@
           ]
         },
         {
-          "time": "10:00 AM",
-          "placeId": "chamonix",
-          "activity": "Arrive Chamonix — drop bags at Airbnb (Cozy apartment, check-in time TBC; free parking on premises)",
-          "eventType": "rest",
+          "time": "9:00 AM",
+          "placeId": "geneva-airport",
+          "activity": "Pick up Europcar rental (conf 732925877) — Renault Symbioz class, French sector, Route Douaniere P21",
+          "fixed": true,
+          "eventType": "travel",
           "openTo": [
             "visitor"
           ]
         },
         {
-          "time": "All day",
+          "time": "10:30 AM",
           "placeId": "chamonix",
-          "activity": "Explore Chamonix town — group arrives ~4 PM, rehearsal 5:30 PM (not open to visitors)",
+          "activity": "Arrive Chamonix — Airbnb check-in is 4 PM; ask host Louise re: early bag drop, else explore town first",
           "eventType": "free-time",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "4:00 PM",
+          "placeId": "chamonix",
+          "activity": "Check in: Magnifique 3 chambres vue Mont Blanc — 73 Chemin des Gires des Carterins (lockbox, conf HMKEWFASSS)",
+          "fixed": true,
+          "eventType": "rest",
           "openTo": [
             "visitor"
           ]
@@ -217,9 +228,9 @@
       ],
       "segments": [
         {
-          "time": "9:00 AM",
+          "time": "9:30 AM",
           "placeId": "chamonix",
-          "activity": "Check out of Chamonix Airbnb — drive south",
+          "activity": "Check out of Chamonix Airbnb by 10:00 AM (checkout time) — drive south",
           "eventType": "travel",
           "openTo": [
             "visitor"

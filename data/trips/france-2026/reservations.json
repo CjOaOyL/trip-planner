@@ -1,12 +1,12 @@
 [
   {
     "id": "r-chamonix-lodging-2026",
-    "name": "Chamonix lodging (Jul 28-30)",
+    "name": "Chamonix: Magnifique 3 chambres vue Mont Blanc (BOOKED, Jul 28-30)",
     "category": "hotel",
-    "status": "needed",
+    "status": "confirmed",
     "checkIn": "2026-07-28",
     "checkOut": "2026-07-30",
-    "notes": "Independent visitor lodging — 2 nights covering Concert #1 (Martigny, Jul 29).",
+    "notes": "BOOKED 2026-07-18 on Airbnb — conf HMKEWFASSS. \"Magnifique 3 chambres vue Mont Blanc\" (listing 793267985702494405), hosted by Louise. 73 Chemin des Gires des Carterins, 2e gauche, 74400 Chamonix. 3BR/6 beds/1.5 bath, 2 adults + 3 children. PAID \\$668.64. Check-in Tue Jul 28 4:00 PM (lockbox self check-in; codes + wifi released 48h before). Checkout Thu Jul 30 10:00 AM. Cancellation: free 24h; partial refund before 4 PM Jul 21. NOTE: check-in is 4 PM but family lands GVA 7:30 AM — plan Chamonix town time / Aiguille day before entry; ask Louise about early bag drop.",
     "options": [
       {
         "id": "o-airbnb-1371903667891903389",
@@ -177,7 +177,7 @@
         "id": "o-airbnb-793267985702494405-mont-blanc-view",
         "url": "https://www.airbnb.com/rooms/793267985702494405?adults=4&children=2&check_in=2026-07-28&check_out=2026-07-30",
         "title": "Beautiful 3 bedrooms with Mont Blanc view (Argentière)",
-        "status": "shortlist",
+        "status": "chosen",
         "totalPrice": 723,
         "currency": "USD",
         "pricePerNight": 362,
@@ -194,7 +194,7 @@
         "imageUrl": "https://a0.muscache.com/im/pictures/hosting/Hosting-793267985702494405/original/fcb84af9-be8d-41c2-90d7-06b095cd066a.jpeg",
         "availability": "available",
         "availabilityCheckedAt": "2026-05-11T02:23:00Z",
-        "notes": "Strong fit. Bedrooms: BR1 1 queen + BR2 1 queen + BR3 2 single beds + 1 bunk — 2 queens for adults, BR3 sleeps up to 4 kids. ★4.83 (41 reviews). Hosted by Louise (not Superhost). ⚠️ Despite the listing title and 'Apartment in Chamonix' label, location is actually in ARGENTIÈRE (~9 km NE of Chamonix center, near Grands Montets lifts) per coordinates [45.968, 6.916]. ~10 min drive to Hotel Lykke / Chamonix center; on the Mont Blanc Express train line. Only 1.5 baths for sleeps-8 capacity. Free cancellation before June 28, 2026. Availability + total confirmed for Jul 28-30, 2026 on 2026-05-11."
+        "notes": "Strong fit. Bedrooms: BR1 1 queen + BR2 1 queen + BR3 2 single beds + 1 bunk — 2 queens for adults, BR3 sleeps up to 4 kids. ★4.83 (41 reviews). Hosted by Louise (not Superhost). ⚠️ Despite the listing title and 'Apartment in Chamonix' label, location is actually in ARGENTIÈRE (~9 km NE of Chamonix center, near Grands Montets lifts) per coordinates [45.968, 6.916]. ~10 min drive to Hotel Lykke / Chamonix center; on the Mont Blanc Express train line. Only 1.5 baths for sleeps-8 capacity. Free cancellation before June 28, 2026. Availability + total confirmed for Jul 28-30, 2026 on 2026-05-11. ✅ BOOKED 2026-07-18 — conf HMKEWFASSS, \\$668.64 paid."
       },
       {
         "id": "o-airbnb-54304351-chamonix-hypercentre",
@@ -291,7 +291,7 @@
         "id": "o-airbnb-8589121",
         "url": "https://www.airbnb.com/rooms/8589121?adults=2&children=3&check_in=2026-07-28&check_out=2026-07-30",
         "title": "Cozy apartment - Chamonix! (Mont Blanc views, SW balcony)",
-        "status": "chosen",
+        "status": "shortlist",
         "totalPrice": 594,
         "currency": "USD",
         "pricePerNight": 297,
@@ -314,7 +314,8 @@
         "availabilityCheckedAt": "2026-07-18T16:45:00Z",
         "notes": "★4.86 (133 reviews). Superhost. 3BR/4 beds/1 bath, sleeps 5+. $594 total for Jul 28-30 (discounted from $643) — cheapest well-rated option found in live search 2026-07-18. WiFi confirmed in amenities. Square footage not stated by host. Selected as LEADING option 2026-07-18."
       }
-    ]
+    ],
+    "confirmationNumber": "HMKEWFASSS"
   },
   {
     "id": "r-chamonix-restaurant-albert1er",
@@ -1088,12 +1089,13 @@
   },
   {
     "id": "t-rental-car-gva-nce-2026",
-    "name": "Rental car: Renault Megane, GVA French sector -> NCE ($681, at checkout)",
+    "name": "Rental car: Europcar GVA French Sector -> NCE T2 (BOOKED via Chase)",
     "category": "train",
-    "status": "contacted",
+    "status": "booked",
     "checkIn": "2026-07-28",
     "checkOut": "2026-08-03",
-    "notes": "FINAL CHOICE 2026-07-18: Renault Megane or similar (compact hatchback), 5 seats, 3-large-bag trunk — fits family 4 carry-ons easily. MANUAL transmission (auto version $755 if needed). Jul 28 noon -> Aug 3 noon; GVA French sector (Ferney-Voltaire desk) -> NCE terminal. $681 total (~$113/day) incl taxes/fees, pay at pickup, FREE CANCELLATION until pickup, unlimited mileage, 10/10 Kayak rating, via Priceline. Checkout was open in browser 2026-07-18. TO DO at booking: shift pickup to 9-10 AM (land 7:30 AM), confirm NCE airport drop. Considered and passed: Rafale full-size crossover $1,036 (10/10, auto) — overkill for 4 carry-ons; Annemasse 3008 $625 (20-min taxi off-airport); Kuga $869 (7.8)."
+    "notes": "BOOKED 2026-07-18 via Chase Travel (Trip ID 1020671203) — Europcar Intermediate, Renault Symbioz or similar. Pick-up Tue Jul 28 9:00 AM — Geneva Airport FRENCH SECTOR, Route Douaniere P21, 01210 (follow Secteur France signs after baggage). Drop-off Mon Aug 3 — Nice Cote d Azur Airport Terminal 2. Driver: Jaquan Levons. Paid: \\$789.10 total = 63,712 UR points + \\$16.11 to Visa 5940 (\\$653.23 base; ⚠️ one-way fee ~\\$135.87 due AT THE COUNTER, not prepaid). Free cancellation until Sat Jul 25. ⚠️ Chase email shows drop-off time \"12:00 am\" Aug 3 — likely a noon display quirk but VERIFY with Europcar; midnight drop would be wrong. Car conf 732925877; Europcar counter conf 1204973637.",
+    "confirmationNumber": "Car conf 732925877 / Europcar counter 1204973637 / Chase Trip 1020671203"
   },
   {
     "id": "t-train-alt-arles-avignon-2026",
