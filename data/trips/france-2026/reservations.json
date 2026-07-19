@@ -1088,12 +1088,12 @@
   },
   {
     "id": "t-rental-car-gva-nce-2026",
-    "name": "Rental car: Alamo GVA French sector -> NCE ($681, chosen — book on Priceline)",
+    "name": "Rental car: Renault Megane, GVA French sector -> NCE ($681, at checkout)",
     "category": "train",
     "status": "contacted",
     "checkIn": "2026-07-28",
     "checkOut": "2026-08-03",
-    "notes": "CHOSEN 2026-07-18 (user rejected 7.7-rated broker offers): Renault Megane or similar, Compact, 5 seats/3 large bags, Manual. Jul 28 noon -> Aug 3 noon. Supplier: ALAMO (Enterprise group), pickup listed as GVA (France) / Ferney-Voltaire desk at the airport French gate; drop-off NCE terminal. $680.95 total (~$113/day), Kayak rating 10/10 Excellent, FREE CANCELLATION, via Priceline. Booking link in Priceline with detailsKey pre-selected. VERIFY at checkout: exact pickup address (Ferney-Voltaire vs in-terminal Secteur France) and one-way fee included. Rejected alternatives: $606 Peugeot 3008 broker offer (7.7, off-airport call-for-pickup); Booking.com in-terminal majors $1,435-1,699. Landing 7:30 AM Jul 28 — noon pickup leaves slack; could try moving pickup to 9-10 AM at booking."
+    "notes": "FINAL CHOICE 2026-07-18: Renault Megane or similar (compact hatchback), 5 seats, 3-large-bag trunk — fits family 4 carry-ons easily. MANUAL transmission (auto version $755 if needed). Jul 28 noon -> Aug 3 noon; GVA French sector (Ferney-Voltaire desk) -> NCE terminal. $681 total (~$113/day) incl taxes/fees, pay at pickup, FREE CANCELLATION until pickup, unlimited mileage, 10/10 Kayak rating, via Priceline. Checkout was open in browser 2026-07-18. TO DO at booking: shift pickup to 9-10 AM (land 7:30 AM), confirm NCE airport drop. Considered and passed: Rafale full-size crossover $1,036 (10/10, auto) — overkill for 4 carry-ons; Annemasse 3008 $625 (20-min taxi off-airport); Kuga $869 (7.8)."
   },
   {
     "id": "t-train-alt-arles-avignon-2026",
