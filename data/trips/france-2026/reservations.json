@@ -1123,11 +1123,12 @@
   },
   {
     "id": "t-ewr-parking-2026",
-    "name": "EWR long-term parking OR dropoff plan (Jul 27 - Aug 5)",
+    "name": "EWR parking: ARB Parking Newark (BOOKED, Jul 27-Aug 5)",
     "category": "train",
-    "status": "needed",
+    "status": "booked",
     "checkIn": "2026-07-27",
     "checkOut": "2026-08-05",
-    "notes": "Family drives BCCC → EWR after dropping performer. 9 days of parking: EWR P4/P6 economy or offsite (Vista, Peachy) ~$13-25/day — reserve ahead for late-July. Alternative: relative drop-off/pickup (return flight lands EWR 3:40 PM Aug 5, but performer bus returns from JFK to BCCC on Aug 6 — someone must also collect the performer at BCCC on Aug 6 ⚠️)."
+    "notes": "BOOKED 2026-07-26 via ParkOn — conf JJ752910. ARB Parking Newark, 27-63 Haynes Ave, Newark NJ (2.4 mi from EWR). UNCOVERED SELF-PARK (keep keys). Drop-off Mon Jul 27 2:00 PM -> pick-up Wed Aug 5 4:00 PM (9 billed days). $138.14 total: $29.74 paid at booking, $108.40 due at lot. Free shuttle every 10-15 min, all terminals. 94% rec (247 reviews). Chosen over cheaper E-Z Way valet due to documented theft/tampering reports. Return Aug 5: land 3:40 PM, call/board shuttle at terminal. Reminder: performer pickup at BCCC is Aug 6.",
+    "confirmationNumber": "JJ752910"
   }
 ]
