@@ -1115,11 +1115,12 @@
   },
   {
     "id": "t-aiguille-du-midi-tickets-2026",
-    "name": "Aiguille du Midi cable car tickets (Jul 29)",
+    "name": "Aiguille du Midi tickets (BOOKED — Jul 29, 8:25 AM, 4 pax)",
     "category": "activity",
-    "status": "needed",
+    "status": "booked",
     "date": "2026-07-29",
-    "notes": "NOT YET PURCHASED (verified no order in email 2026-07-18). Buy for 2 adults + 2 children ONLY — the performer rides with the YOBC group booking. Timed tickets on montblancnaturalresort.com; morning slots for Jul 29 sell out in peak season. ~€75/adult, ~€64/child round trip → ~€278 (~$300) total."
+    "notes": "BOOKED 2026-07-19 on montblancnaturalresort.com — order 166114433, total EUR 205.20. Round-trip Aiguille du Midi, timed WED JUL 29 8:25 AM. 4 pax: Jaquan (adult 67.80), Mikaela (adult 67.80), Kailani (youth 53.30), Aziza (youth 16.30). Performer not included (rides with YOBC group). Boarding passes: qrticket_166114433.pdf attached to confirmation email — save to phones before Wed. Ref billetterie T:285132 / 501-251-93643..46.",
+    "confirmationNumber": "Order 166114433"
   },
   {
     "id": "t-ewr-parking-2026",
