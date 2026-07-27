@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>YOBC France 2026 — Levons Family (Visitor) Route</name><description>Numbered stops in trip order for the independent visitor itinerary, July 27 - August 5, 2026. Companion to the performer tour map.</description><Style id="route"><LineStyle><color>ff38A0E0</color><width>4</width></LineStyle></Style><Folder><name>Stops in order</name><Placemark><name>1. BCCC — Bucks County Community College (Newtown)</name><description>Departure Day — Monday, July 27
+
+Drop-off point for the performer: group bus takes performers from BCCC to JFK. Family then drives on to Newark Airport.
+
+Schedule:
+Monday, July 27 TBD (AM/midday): Drop performer at BCCC (report time TBA by YOBC)
+Monday, July 27 ~1:00 PM: Family drives BCCC to EWR (~1h15 plus traffic buffer)
+
+Address: 275 Swamp Rd, Newtown, PA 18940</description><Point><coordinates>-74.9366,40.2333,0</coordinates></Point></Placemark><Placemark><name>1b. ARB Parking Newark (car park, Jul 27 - Aug 5)</name><description>Departure Day — Monday, July 27 (and return Wednesday, August 5)
+
+Long-term airport parking (BOOKED via ParkOn, conf JJ752910). Uncovered self-park — keep your keys. $29.74 prepaid, $108.40 due at lot ($138.14 total). Show the confirmation at the facility for the quoted rate. Free shuttle to all EWR terminals every 10-15 min. Phone: 862-395-7691.
+
+Schedule:
+Monday, July 27 2:00 PM: Park, board shuttle to terminal
+Wednesday, August 5 ~3:40 PM: Land EWR, shuttle back, pick up car (lot departure 4:00 PM)
+
+Address: 27-63 Haynes Ave, Newark, NJ 07114</description><Point><coordinates>-74.1795,40.7043,0</coordinates></Point></Placemark><Placemark><name>2. Newark Liberty International Airport (EWR)</name><description>Departure Day — Monday, July 27
+
+Family departure airport. United nonstop to Geneva (booked, Chase Trip 1018046263). Decide: long-term parking (~$18-25/day x 9 days) vs. drop-off.
+
+Schedule:
+Monday, July 27 2:30 PM: Check in United international — bags, security
+Monday, July 27 5:30 PM: United EWR to GVA nonstop departs
+
+Address: 3 Brewster Rd, Newark, NJ 07114</description><Point><coordinates>-74.1745,40.6895,0</coordinates></Point></Placemark><Placemark><name>3. Geneva Airport (GVA) — French Sector</name><description>Day 1 — Tuesday, July 28
+
+Arrival airport. Exit via Secteur France signs to the Europcar desk (Route Douaniere P21).
+
+Schedule:
+Tuesday, July 28 7:30 AM: Land GVA — exit via French Sector
+Tuesday, July 28 9:00 AM: Pick up Europcar rental (conf 732925877, Renault Symbioz class) — one-way fee ~$136 at counter
+
+Address: Route Douaniere, 1215 Geneva, Switzerland (French Sector)</description><Point><coordinates>6.1089,46.2381,0</coordinates></Point></Placemark><Placemark><name>4. Chamonix Airbnb — Magnifique 3 chambres vue Mont Blanc</name><description>Days 1-3 — Tuesday, July 28 to Thursday, July 30 (2 nights)
+
+Family lodging in Chamonix, hosted by Louise. Lockbox entry, conf HMKEWFASSS. Check-in after 4 PM (ask host about early bag drop), checkout by 10 AM.
+
+Schedule:
+Tuesday, July 28 10:30 AM: Arrive Chamonix — explore town until check-in
+Tuesday, July 28 4:00 PM: Check in (lockbox)
+Thursday, July 30 by 10:00 AM: Check out — drive south to Arles
+
+Address: 73 Chemin des Gires des Carterins, 74400 Chamonix-Mont-Blanc, France</description><Point><coordinates>6.8694,45.9237,0</coordinates></Point></Placemark><Placemark><name>5. Aiguille du Midi</name><description>Day 2 — Wednesday, July 29 ★ Concert #1
+
+Join the group for the world's highest vertical-ascent cable car — panoramic views of Mont Blanc. Buy visitor tickets in advance (peak season sells out). Bring warm layers: near freezing at the 3,842 m summit even in August.
+
+Schedule:
+Wednesday, July 29 9:00 AM: Aiguille du Midi cable car with the group
+
+Address: Plan de l'Aiguille, 74400 Chamonix-Mont-Blanc, France</description><Point><coordinates>6.8877,45.8793,0</coordinates></Point></Placemark><Placemark><name>6. Martigny Place Centrale</name><description>Day 2 — Wednesday, July 29 ★ Concert #1
+
+Drive 40 min via Col de la Forclaz (no Swiss vignette needed on the pass road). Do NOT rely on the return train — last one leaves before the concert ends. Fill the tank before the night drive back.
+
+Schedule:
+Wednesday, July 29 3:30 PM: Free time in Martigny (Fondation Gianadda worth a visit)
+Wednesday, July 29 8:00 PM: ★ Concert #1 — Place Centrale (open-air, no ticket)
+Wednesday, July 29 10:00 PM: Night drive back to Chamonix (~40 min)
+
+Address: Place Centrale, 1920 Martigny, Switzerland</description><Point><coordinates>7.0743,46.1017,0</coordinates></Point></Placemark><Placemark><name>7. Pont du Gard</name><description>Day 3 — Thursday, July 30
+
+Stop en route Chamonix to Arles (~4.5h total drive via Lyon). UNESCO Roman aqueduct — the group stops here around noon; family arrives ~1:30 PM.
+
+Schedule:
+Thursday, July 30 1:30 PM: Pont du Gard stop — explore, photos
+
+Address: 400 Route du Pont du Gard, 30210 Vers-Pont-du-Gard, France</description><Point><coordinates>4.5353,43.9472,0</coordinates></Point></Placemark><Placemark><name>8. Arles Airbnb — Le Mas Sivan</name><description>Days 3-7 — Thursday, July 30 to Monday, August 3 (4 nights)
+
+Family lodging in Arles: terrace, secured on-site parking, air conditioning. Conf HM9S8PCSBF. Check-in after 5 PM, checkout by 10 AM.
+
+Schedule:
+Thursday, July 30 5:00 PM: Check in
+Saturday, August 1 5:00 PM: Free evening in Arles — Roman Arena, Van Gogh sites
+Monday, August 3 by 10:00 AM: Check out — travel to Nice
+
+Address: 9 Rue du Pont de Langlois, 13200 Arles, France</description><Point><coordinates>4.6208,43.6614,0</coordinates></Point></Placemark><Placemark><name>9. Les Baux-de-Provence</name><description>Day 4 — Friday, July 31 ★ Concert #2
+
+Join the group's guided tour of the dramatic hilltop village (25 min drive from Arles). Largely shadeless stone village — hats, water, sunscreen.
+
+Schedule:
+Friday, July 31 10:00 AM: Guided tour with the group; lunch in the village
+
+Address: Les Baux-de-Provence, Bouches-du-Rhône, France</description><Point><coordinates>4.7957,43.7443,0</coordinates></Point></Placemark><Placemark><name>10. Château de La Tour d'Aigues</name><description>Day 4 — Friday, July 31 ★ Concert #2
+
+Renaissance château concert venue in the Luberon. CAR REQUIRED — no practical public transit. Dinner en route or picnic. Concert ends ~10:30 PM, then 75-min night drive back to Arles.
+
+Schedule:
+Friday, July 31 6:30 PM: Drive from Arles/Les Baux (~75 min)
+Friday, July 31 9:00 PM: ★ Concert #2 (check ticketing in advance)
+Friday, July 31 10:45 PM: Night drive back to Arles
+
+Address: Place du Château, 84240 La Tour-d'Aigues, France</description><Point><coordinates>5.5497,43.7243,0</coordinates></Point></Placemark><Placemark><name>11. Le Grau-du-Roi Beach</name><description>Day 5 — Saturday, August 1
+
+Beach day with the group. 45-min drive; summer Saturday beach traffic — leave Arles by 9 AM. No booking needed.
+
+Schedule:
+Saturday, August 1 9:30 AM: Beach day with the group
+Saturday, August 1 5:00 PM: Back to Arles — free evening
+
+Address: Le Grau-du-Roi, Gard, France</description><Point><coordinates>4.1356,43.5378,0</coordinates></Point></Placemark><Placemark><name>12. Avignon — Pont Saint-Bénézet + Palais des Papes</name><description>Day 6 — Sunday, August 2 ★ Concert #3
+
+BEST TRAIN DAY: TER Arles to Avignon Centre ~20 min, roughly hourly, ~€8 pp (verify Sunday schedule ~1 week out; buy on SNCF Connect). Evening trains back run until ~10 PM. Driving also fine but intramuros parking is tight on summer Sundays.
+
+Schedule:
+Sunday, August 2 9:30 AM: Pont Saint-Bénézet + Palais des Papes with the group
+Sunday, August 2 1:00 PM: Lunch — free time in Avignon
+
+Address: Place du Palais, 84000 Avignon, France</description><Point><coordinates>4.8085,43.9517,0</coordinates></Point></Placemark><Placemark><name>13. Place de l'Horloge, Avignon</name><description>Day 6 — Sunday, August 2 ★ Concert #3
+
+Avignon's lively main square — confirmed Concert #3 venue (per Jul 17 YOBC email; Aix option dropped).
+
+Schedule:
+Sunday, August 2 5:00 PM: ★ Concert #3 (open-air, no ticket)
+Sunday, August 2 7:30 PM: Train or drive back to Arles — dinner in Arles
+
+Address: Place de l'Horloge, 84000 Avignon, France</description><Point><coordinates>4.8063,43.9497,0</coordinates></Point></Placemark><Placemark><name>14. Nice Airbnb — Charming 3BR, Place Rossetti (Vieux Nice)</name><description>Days 7-9 — Monday, August 3 to Wednesday, August 5 (2 nights)
+
+Family lodging in the heart of Old Nice, steps from Place Rossetti — 3BR / 6 beds / 2 baths. ~10 min walk from the group's NH Hotel. No parking: return the rental at NCE airport or Nice Ville on arrival (or return it at Avignon TGV and take the train down). Exact street address released by Airbnb before check-in.
+
+Schedule:
+Monday, August 3 ~4:00 PM: Check in
+Wednesday, August 5 9:30 AM: Check out — tram/taxi to NCE airport
+
+Address: Place Rossetti, 06300 Nice, France (exact address TBA)</description><Point><coordinates>7.2760,43.6966,0</coordinates></Point></Placemark><Placemark><name>15. Vieux-Nice + Cours Saleya Market</name><description>Day 8 — Tuesday, August 4 ★ Concert #4
+
+Guided walking tour of Old Nice with the group, ending at Cours Saleya market — starts a short walk from the Airbnb. Grab a quick lunch at the market (socca!) before the snorkeling departure.
+
+Schedule:
+Tuesday, August 4 10:00 AM: Old Nice guided tour with the group (~2 hrs)
+Tuesday, August 4 ~12:00 PM: Quick lunch at Cours Saleya
+
+Address: Cours Saleya, 06300 Nice, France</description><Point><coordinates>7.2769,43.6961,0</coordinates></Point></Placemark><Placemark><name>16. Port of Nice — Snorkeling Departure (Chango Diving)</name><description>Day 8 — Tuesday, August 4 ★ Concert #4
+
+Family snorkeling excursion to Villefranche-sur-Mer Bay (booked via Manawa, 4 adults, $258.21). ~15-min walk east from the Airbnb. All gear provided (mask, fins, snorkel, wetsuit). Everyone must be able to swim.
+
+Schedule:
+Tuesday, August 4 ~1:10 PM: Walk from Cours Saleya to 14 Quai des Docks
+Tuesday, August 4 1:30-3:30 PM: Guided snorkeling excursion — Villefranche Bay
+Tuesday, August 4 ~3:45 PM: Back at port — rest at Airbnb before evening
+
+Address: 14 Quai des Docks, 06300 Nice, France</description><Point><coordinates>7.2857,43.6935,0</coordinates></Point></Placemark><Placemark><name>17. Nice Bandstand (Promenade area) — Concert #4</name><description>Day 8 — Tuesday, August 4 ★ Concert #4
+
+Final concert of the tour — open-air at the bandstand near the Promenade, walkable from Vieux Nice. No ticket required.
+
+Schedule:
+Tuesday, August 4 7:00 PM: Dinner on own
+Tuesday, August 4 9:00 PM: ★ Concert #4 — final concert
+
+Address: Promenade des Anglais area, 06000 Nice, France</description><Point><coordinates>7.2660,43.6953,0</coordinates></Point></Placemark><Placemark><name>18. Nice Côte d'Azur Airport (NCE)</name><description>Day 9 — Wednesday, August 5
+
+Family flies home while the group continues to Italy. Tram Line 2 from Vieux Nice (~25 min, ~€1.50 pp) or taxi ~€35. Leave Vieux Nice by 9:30 AM.
+
+Schedule:
+Wednesday, August 5 9:30 AM: Check out — tram/taxi to NCE
+Wednesday, August 5 12:10 PM: United NCE to EWR departs — arrives 3:40 PM
+
+Address: Rue Costes et Bellonte, 06206 Nice, France</description><Point><coordinates>7.2159,43.6584,0</coordinates></Point></Placemark></Folder><Folder><name>Visitor route</name><Placemark><name>Family drive/flight route</name><styleUrl>#route</styleUrl><LineString><tessellate>1</tessellate><coordinates>-74.9366,40.2333,0 -74.1795,40.7043,0 -74.1745,40.6895,0 6.1089,46.2381,0 6.8694,45.9237,0 6.8877,45.8793,0 7.0743,46.1017,0 6.8694,45.9237,0 4.5353,43.9472,0 4.6208,43.6614,0 4.7957,43.7443,0 5.5497,43.7243,0 4.6208,43.6614,0 4.1356,43.5378,0 4.6208,43.6614,0 4.8063,43.9497,0 4.6208,43.6614,0 7.2760,43.6966,0 7.2857,43.6935,0 7.2660,43.6953,0 7.2159,43.6584,0</coordinates></LineString></Placemark></Folder></Document></kml>

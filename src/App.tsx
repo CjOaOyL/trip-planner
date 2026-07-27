@@ -4,6 +4,7 @@ import TripPage from './pages/TripPage';
 import ItineraryPage from './pages/ItineraryPage';
 import VotePage from './pages/VotePage';
 import VisitorPlanPage from './pages/VisitorPlanPage';
+import TourMapsPage from './pages/TourMapsPage';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/trip/:tripId" element={<TripPage />} />
         <Route path="/trip/:tripId/itinerary/:itineraryId" element={<ItineraryPage />} />
         <Route path="/trip/:tripId/visitor-plan" element={<VisitorPlanPage />} />
+        <Route path="/trip/:tripId/maps" element={<TourMapsPage />} />
         <Route path="/vote" element={<VotePage />} />
         <Route path="/vote/:sessionId" element={<VotePage />} />
       </Routes>

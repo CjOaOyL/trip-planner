@@ -98,6 +98,13 @@ export default function TripPage() {
         {trip.meta.startDate} → {trip.meta.endDate} &nbsp;·&nbsp; From {trip.meta.origin.name} &nbsp;·&nbsp; {trip.meta.vehicle}
       </p>
 
+      <button
+        onClick={() => navigate(`/trip/${tripId}/maps`)}
+        className="flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-blue-600 hover:bg-blue-50 border border-stone-300 hover:border-blue-400 rounded-2xl px-5 py-3 mb-8 transition-colors"
+      >
+        🗺️ Tour Maps — performer &amp; family routes
+      </button>
+
       <h2 className="text-xl font-semibold text-stone-700 mb-4">Choose an Itinerary</h2>
       <div className="grid gap-4 max-w-2xl mb-10">
         {active.map((it) => (
