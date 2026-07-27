@@ -55,7 +55,17 @@
         {
           "time": "~1:00 PM",
           "placeId": "ewr-airport",
-          "activity": "Family drives BCCC → EWR (~1h15; buffer for traffic). Park or get dropped off",
+          "activity": "Family drives BCCC → ARB Parking Newark (~1h15; buffer for traffic)",
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "2:00 PM",
+          "placeId": "ewr-airport",
+          "activity": "Park at ARB Parking Newark (BOOKED, conf JJ752910) — 27-63 Haynes Ave, Newark NJ. Uncovered self-park, keep keys. $108.40 due at lot ($29.74 prepaid). Show confirmation for quoted rate. Free shuttle to terminal every 10-15 min",
+          "fixed": true,
           "eventType": "travel",
           "openTo": [
             "visitor"
@@ -512,6 +522,16 @@
           "time": "12:10 PM",
           "placeId": "nice-airport",
           "activity": "✈ United NCE → (connection) → EWR, arrives 3:40 PM (booked)",
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "visitor"
+          ]
+        },
+        {
+          "time": "3:40 PM",
+          "placeId": "ewr-airport",
+          "activity": "Land EWR — call/board ARB Parking shuttle at terminal (862-395-7691), pick up car at 27-63 Haynes Ave (conf JJ752910, lot departure 4:00 PM), drive home. Reminder: performer pickup at BCCC is tomorrow (Aug 6)",
           "fixed": true,
           "eventType": "travel",
           "openTo": [
