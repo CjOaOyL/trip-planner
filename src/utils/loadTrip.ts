@@ -10,6 +10,7 @@ import { mergeSeedReservations, type SeedReservation } from './reservations';
 export const TRIP_REGISTRY: { id: string; label: string }[] = [
   { id: 'spring-break-2026', label: 'Spring Break 2026' },
   { id: 'france-2026', label: 'YOBC French Alps & Riviera 2026' },
+  { id: 'thanksgiving-md-2026', label: 'Thanksgiving MD 2026' },
 ];
 
 /**
@@ -77,6 +78,7 @@ function getItineraryIds(tripId: string): string[] {
       '01-performer-schedule',
       '02-visitor-guide',
     ],
+    'thanksgiving-md-2026': ['01-thanksgiving-weekend'],
   };
   return map[tripId] ?? [];
 }

@@ -1,0 +1,15 @@
+{
+  "id": "thanksgiving-md-2026",
+  "name": "Thanksgiving MD 2026",
+  "subtitle": "Waldorf / Clinton / Brandywine — 3 nights, host a family dinner for ~12",
+  "startDate": "2026-11-25",
+  "endDate": "2026-11-28",
+  "origin": {
+    "name": "Hopewell, NJ",
+    "placeId": "hopewell-nj"
+  },
+  "travelers": ["Adult 1", "Adult 2", "Teen 1", "Teen 2", "Teen 3"],
+  "vehicle": "Tesla Model Y",
+  "tripType": "road-trip",
+  "itineraryIds": ["01-thanksgiving-weekend"]
+}

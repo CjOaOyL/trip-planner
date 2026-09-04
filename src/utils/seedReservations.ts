@@ -92,6 +92,9 @@ function createAutoSeed(
 ): void {
   if (!partial.placeId) return;
   const id = autoSeedId(itinerary.id, partial.category, partial.placeId);
+  // Never clobber a row that already exists under the deterministic ID —
+  // e.g. one seeded from the repo's reservations.json (with options attached).
+  if (getReservations(trip.meta.id)[id]) return;
   const now = new Date().toISOString();
   saveReservation(trip.meta.id, {
     ...partial,

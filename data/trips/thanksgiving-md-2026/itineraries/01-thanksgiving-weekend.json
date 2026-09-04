@@ -1,0 +1,92 @@
+{
+  "id": "01-thanksgiving-weekend",
+  "name": "Thanksgiving Weekend",
+  "tagline": "Drive down Wednesday, host dinner for ~12 on Thursday, home Saturday",
+  "vibe": "Low-key family weekend built around one big dinner at the rental.",
+  "highlights": ["Thanksgiving dinner for ~12 at the house", "National Harbor day", "Easy 3.5 hr drive each way"],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 380,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Wednesday, Nov 25",
+      "theme": "Hopewell → Southern Maryland, check in",
+      "legs": [
+        {
+          "id": "leg-home-waldorf",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "waldorf-md",
+          "distanceMiles": 190,
+          "drivingMinutes": 210,
+          "notes": "I-95 S / I-295 S / MD-5 or US-301. Day-before-Thanksgiving traffic — leave by mid-morning."
+        }
+      ],
+      "segments": [
+        { "time": "10:00 AM", "placeId": "hopewell-nj", "activity": "Depart Hopewell", "durationMinutes": 0 },
+        { "time": "2:00 PM", "placeId": "waldorf-md", "activity": "Grocery run for Thursday dinner (Wegmans/Giant in Waldorf)", "durationMinutes": 90 },
+        { "time": "4:00 PM", "placeId": "waldorf-md", "activity": "Check in to rental, unpack, prep what can be prepped", "durationMinutes": 180, "eventType": "rest" }
+      ],
+      "overnightPlaceId": "waldorf-md"
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Thursday, Nov 26 (Thanksgiving)",
+      "theme": "Host dinner for ~12",
+      "legs": [],
+      "segments": [
+        { "time": "9:00 AM", "placeId": "waldorf-md", "activity": "Cooking / setup — confirm table + island + extra seating", "durationMinutes": 300 },
+        { "time": "3:00 PM", "placeId": "waldorf-md", "activity": "Guests arrive (~7 visitors + our 5)", "durationMinutes": 60, "eventType": "meal" },
+        { "time": "4:00 PM", "placeId": "waldorf-md", "activity": "Thanksgiving dinner", "durationMinutes": 180, "eventType": "meal" },
+        { "time": "8:00 PM", "placeId": "waldorf-md", "activity": "Wind down — respect host quiet hours (most listings 10–11 PM)", "durationMinutes": 120, "eventType": "rest" }
+      ],
+      "overnightPlaceId": "waldorf-md"
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Friday, Nov 27",
+      "theme": "Free day — National Harbor",
+      "legs": [
+        {
+          "id": "leg-waldorf-harbor",
+          "fromPlaceId": "waldorf-md",
+          "toPlaceId": "national-harbor",
+          "distanceMiles": 22,
+          "drivingMinutes": 30
+        },
+        {
+          "id": "leg-harbor-waldorf",
+          "fromPlaceId": "national-harbor",
+          "toPlaceId": "waldorf-md",
+          "distanceMiles": 22,
+          "drivingMinutes": 30
+        }
+      ],
+      "segments": [
+        { "time": "11:00 AM", "placeId": "national-harbor", "activity": "Capital Wheel, waterfront, Tanger Outlets (Black Friday)", "durationMinutes": 300, "eventType": "activity" },
+        { "time": "5:00 PM", "placeId": "waldorf-md", "activity": "Leftovers night at the house", "durationMinutes": 120, "eventType": "meal" }
+      ],
+      "overnightPlaceId": "waldorf-md"
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Saturday, Nov 28",
+      "theme": "Check out, drive home",
+      "legs": [
+        {
+          "id": "leg-waldorf-home",
+          "fromPlaceId": "waldorf-md",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 190,
+          "drivingMinutes": 210
+        }
+      ],
+      "segments": [
+        { "time": "10:00 AM", "placeId": "waldorf-md", "activity": "Check out (most listings 10–11 AM)", "durationMinutes": 0 },
+        { "time": "2:00 PM", "placeId": "hopewell-nj", "activity": "Arrive home", "durationMinutes": 0 }
+      ],
+      "overnightPlaceId": "hopewell-nj"
+    }
+  ]
+}

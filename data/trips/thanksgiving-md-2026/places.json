@@ -1,0 +1,83 @@
+[
+  {
+    "id": "hopewell-nj",
+    "name": "Hopewell, NJ",
+    "type": "other",
+    "description": "Home base.",
+    "address": "Hopewell, NJ 08525",
+    "coordinates": [40.3876, -74.7657],
+    "googleMapsUrl": "https://maps.google.com/?q=Hopewell,NJ",
+    "tags": ["origin"]
+  },
+  {
+    "id": "waldorf-md",
+    "name": "Waldorf, MD",
+    "type": "neighborhood",
+    "description": "Primary search area. Charles County suburb ~30 min south of DC on US-301. Most of the large whole-home rentals are here.",
+    "address": "Waldorf, MD 20601",
+    "coordinates": [38.6246, -76.9391],
+    "googleMapsUrl": "https://maps.google.com/?q=Waldorf,MD",
+    "tags": ["lodging-area"]
+  },
+  {
+    "id": "clinton-md",
+    "name": "Clinton, MD",
+    "type": "neighborhood",
+    "description": "Search area. Prince George's County, next to Joint Base Andrews, ~15 min north of Waldorf.",
+    "address": "Clinton, MD 20735",
+    "coordinates": [38.7651, -76.8983],
+    "googleMapsUrl": "https://maps.google.com/?q=Clinton,MD",
+    "tags": ["lodging-area"]
+  },
+  {
+    "id": "brandywine-md",
+    "name": "Brandywine, MD",
+    "type": "neighborhood",
+    "description": "Search area. Rural-suburban, between Clinton and Waldorf on MD-5/US-301.",
+    "address": "Brandywine, MD 20613",
+    "coordinates": [38.6968, -76.8494],
+    "googleMapsUrl": "https://maps.google.com/?q=Brandywine,MD",
+    "tags": ["lodging-area"]
+  },
+  {
+    "id": "accokeek-md",
+    "name": "Accokeek, MD",
+    "type": "neighborhood",
+    "description": "Within ~15 min of Clinton/Brandywine, west along MD-210.",
+    "address": "Accokeek, MD 20607",
+    "coordinates": [38.6676, -77.0283],
+    "googleMapsUrl": "https://maps.google.com/?q=Accokeek,MD",
+    "tags": ["lodging-area", "nearby"]
+  },
+  {
+    "id": "fort-washington-md",
+    "name": "Fort Washington, MD",
+    "type": "neighborhood",
+    "description": "Within ~15 min of Clinton. Close to National Harbor / MGM.",
+    "address": "Fort Washington, MD 20744",
+    "coordinates": [38.7073, -77.0236],
+    "googleMapsUrl": "https://maps.google.com/?q=Fort+Washington,MD",
+    "tags": ["lodging-area", "nearby"]
+  },
+  {
+    "id": "upper-marlboro-md",
+    "name": "Upper Marlboro, MD",
+    "type": "neighborhood",
+    "description": "~15–20 min northeast of Brandywine/Clinton.",
+    "address": "Upper Marlboro, MD 20772",
+    "coordinates": [38.8160, -76.7502],
+    "googleMapsUrl": "https://maps.google.com/?q=Upper+Marlboro,MD",
+    "tags": ["lodging-area", "nearby"]
+  },
+  {
+    "id": "national-harbor",
+    "name": "National Harbor",
+    "type": "attraction",
+    "description": "Waterfront district with the Capital Wheel, shops, restaurants, MGM National Harbor, and Tanger Outlets. ~20–25 min from Waldorf.",
+    "address": "165 Waterfront St, National Harbor, MD 20745",
+    "coordinates": [38.7826, -77.0165],
+    "googleMapsUrl": "https://maps.google.com/?q=National+Harbor,MD",
+    "website": "https://www.nationalharbor.com",
+    "tags": ["day-trip"]
+  }
+]
