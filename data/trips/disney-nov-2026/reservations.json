@@ -1476,11 +1476,11 @@
   },
   {
     "id": "auto-01-parade-weekend-activity-epcot",
-    "name": "Disney park tickets — Fri–Sun (parade is inside Epcot)",
+    "name": "Disney park tickets — Thu/Fri/Sat (3× 3-day from Nov 5, 1× 2-day from Nov 6)",
     "category": "activity",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "Everyone watching the parade needs an Epcot ticket for Fri Nov 6. Date-based pricing from TouringPlans' capture of Disney's 2026 calendar (post Oct-2025 increase), per adult (10+), before 6.5% FL tax; child (3–9) is $5 less on 1-day and $10–18 less on multi-day. Multi-day tickets are valid over a window (3-day = 5 days), so a Friday start covers Fri/Sat/Sun. Park Hopper adds ~$95/person on a 3-day. Lightning Lane Multi Pass ~$15–40/person/day extra; parking ~$30/day.",
+    "notes": "Plan: 3 of us in parks Thu Nov 5, Fri Nov 6 (parade at Epcot), Sat Nov 7 → 3-day base tickets starting Thu; the Friday arrival gets a 2-day ticket starting Fri. Disney direct = $1,961 + 6.5% tax = $2,088. Best routes checked 2026-10-10: Undercover Tourist (~$1,987 incl. tax + $80 DiningDollars; pay with Sapphire Reserve to use the $300 travel credit) or Disney direct paid with 5–10%-off gift cards (Target RedCard / Sam's Club). No public Disney ticket promo covers Nov 5–7. Working Advantage needs a BMS login to price. Older per-adult pricing options (3-day base $528 from Fri, Park Hopper, etc.) kept below for reference. Everyone watching the parade needs an Epcot admission for Fri Nov 6.",
     "date": "2026-11-06",
     "placeId": "epcot",
     "options": [
@@ -1543,10 +1543,70 @@
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
         "notes": "4 adults = $2,688 pre-tax. Only if Monday has a usable park morning (late flight home)."
+      },
+      {
+        "id": "o-tix-ut-thu-fri-sat",
+        "url": "https://www.undercovertourist.com/orlando/3-day-magic-your-way-ticket/",
+        "title": "Undercover Tourist — 3× 3-day (start Thu Nov 5) + 1× 2-day (start Fri Nov 6) — ~$1,987 incl. tax",
+        "status": "shortlist",
+        "totalPrice": 1987,
+        "currency": "USD",
+        "location": "Undercover Tourist (authorized reseller, e-tickets)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T18:05:00Z",
+        "notes": "UT calendar prices for our dates: 3-day $166/day = $498; 2-day $186/day = $372 → $1,866 before tax, ~$1,987 with 6.5% tax (confirm tax handling at checkout). About $100 under Disney direct ($2,088 incl. tax), plus a free $20 DiningDollars credit per ticket (4 × $20 toward Disney/restaurant gift cards). E-tickets link straight into My Disney Experience. Codes as TRAVEL on Chase Sapphire Reserve → can burn the $300 annual travel credit if unused, and earns travel points."
+      },
+      {
+        "id": "o-tix-disney-direct-giftcards",
+        "url": "https://disneyworld.disney.go.com/admission/tickets/",
+        "title": "Disney direct, paid with discounted gift cards — ~$1,984 (5% off) / ~$1,880 (10% promo)",
+        "status": "shortlist",
+        "totalPrice": 1984,
+        "currency": "USD",
+        "location": "disneyworld.com + Target RedCard / Sam's Club gift cards",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T18:05:00Z",
+        "notes": "Disney price for our plan: 3 × 3-day from Thu Nov 5 ($532) + 1 × 2-day from Fri Nov 6 ($365) = $1,961 + 6.5% tax = $2,088. Buy Disney gift cards first: Target RedCard = automatic 5% off (→ ~$1,984); Sam's Club usually $190 per $200 (5%) with occasional 10% promos (→ ~$1,880, limits of ~2 per order); Costco/BJ's run similar deals. Gift cards can't be used at Undercover Tourist, so this is EITHER/OR with the reseller route."
+      },
+      {
+        "id": "o-tix-working-advantage",
+        "url": "https://www.workingadvantage.com/",
+        "title": "Working Advantage (BMS employee perks) — log in to price; marketed as 'adult tickets at child prices on 3+ day'",
+        "status": "shortlist",
+        "totalPrice": null,
+        "currency": "USD",
+        "location": "workingadvantage.com (login required)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T18:05:00Z",
+        "notes": "Public offer page currently says 'offer not available' and prices are only visible logged in. If the adult-at-child-price deal is live, that's $5–18 off per 3-day ticket (child 3-day for Nov 5 start is ~$514 vs $532) — i.e. LESS than Undercover Tourist unless WA also discounts the child price. Worth a 5-minute login check; TicketsAtWork is the other employer-perk vendor (voucher pickup at the park, slower)."
+      },
+      {
+        "id": "o-tix-chase-travel-points",
+        "url": "https://travel.chase.com/",
+        "title": "Chase Sapphire — Ultimate Rewards via Chase Travel 'Activities' (~1¢/point) — NOT recommended for tickets",
+        "status": "rejected",
+        "totalPrice": null,
+        "currency": "USD",
+        "location": "Chase Travel portal",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T18:05:00Z",
+        "notes": "Disney tickets appear intermittently under Activities in Chase Travel and redeem at roughly 1 cent per point (a 1-day ticket was 18,587 pts ≈ 0.9¢). Points are worth more on flights/hotels. Better Sapphire plays: (1) pay Undercover Tourist with the Reserve to use the $300 travel credit, (2) check Chase Offers in the app for an Undercover Tourist / Disney cashback offer, (3) no Disney ticket discount exists for Sapphire; the Disney Visa only gives 10% merch/dining and 0% financing."
+      },
+      {
+        "id": "o-tix-disney-promos-none",
+        "url": "https://www.disneytouristblog.com/current-discounts-promos-disney-world-land/",
+        "title": "Disney official promos for Nov 5–7 — none apply (reference)",
+        "status": "rejected",
+        "totalPrice": null,
+        "currency": "USD",
+        "location": "disneyworld.com",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T18:05:00Z",
+        "notes": "Checked 2026-10-10: 4-Park Magic ($99/day) ended with October; Disney+ Perks 3-park ticket deal covered Jan 12–May 22 only; Florida-resident Discover ticket ended Oct 3; 2-Park Explorer ended Sep 30. Only military Salute tickets run through Dec 18. Watch Disney Tourist Blog for a new late-fall ticket offer before booking."
       }
     ],
     "createdAt": "2026-10-10T16:40:00Z",
-    "updatedAt": "2026-10-10T16:40:00Z"
+    "updatedAt": "2026-10-10T18:05:00Z"
   },
   {
     "id": "r-rental-car",
