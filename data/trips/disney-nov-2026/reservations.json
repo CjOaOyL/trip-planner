@@ -913,16 +913,16 @@
   },
   {
     "id": "auto-01-parade-weekend-hotel-disney-area",
-    "name": "Lodging — Nov 5–9 (4 nights, 4 guests): Tampa family vs Airbnb / VRBO / hotel / Disney resort",
+    "name": "Lodging near the parks — Thu Nov 5 → Sun Nov 8 (3 nights, 4 guests)",
     "category": "hotel",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "Searched 2026-10-10 for 4 guests, Thu Nov 5 – Mon Nov 9 (4 nights). Thandi stays with the band. Airbnb prices are 4-night totals as displayed (before taxes); VRBO figures are nightly × 4 BEFORE VRBO fees/taxes; hotel figures are Google Hotels nightly × 4 before tax (~12.5%), resort fees and parking ($20–30/night at most LBV hotels); Disney resort figures are Mousesavers rack rates INCLUDING tax — Disney usually runs a 20–25% fall discount, so check. Parade-day logic: anything on the Skyliner (Pop Century, Art of Animation, Caribbean Beach) lands you at Epcot's International Gateway, right by the UK pavilion where the parade starts. Everything else is a 10–20 min drive + $30 parking. If the 3 fly Wednesday night, add a night (Nov 4) or sleep in Tampa that night. Options ordered: Tampa family, Airbnb (cheapest first), VRBO, hotels, Disney.",
+    "notes": "PLAN (2026-10-10): Wed and Sun nights with family in Tampa; Thu/Fri/Sat nights near the parks → 3 hotel nights, not 4. Options below were priced for Nov 5–9 (4 nights) — expect ~25% less for 3. Pop Century for 3 nights ≈ $882 incl. tax (Thu $272 + Fri $305 + Sat $305) and puts you on the Skyliner for Friday's parade and Saturday's Hollywood Studios. Airbnb prices are 4-night totals as displayed; VRBO = nightly × 4 before fees; hotels = Google Hotels nightly × 4 before tax/parking; Disney = rack incl. tax. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
     "checkIn": "2026-11-05",
-    "checkOut": "2026-11-09",
+    "checkOut": "2026-11-08",
     "placeId": "disney-area",
     "createdAt": "2026-10-10T16:40:00Z",
-    "updatedAt": "2026-10-10T17:10:00Z",
+    "updatedAt": "2026-10-10T18:40:00Z",
     "options": [
       {
         "id": "o-tampa-family",
@@ -1711,5 +1711,31 @@
         "notes": "If family can lend a car for the 3 park days, lodging + car are both $0 and the only costs are Disney parking ($30/day) and gas. Ask before booking anything else."
       }
     ]
+  },
+  {
+    "id": "auto-01-parade-weekend-hotel-tampa-family",
+    "name": "Stay with family in Tampa — Wed Nov 4 and Sun Nov 8",
+    "category": "hotel",
+    "status": "contacted",
+    "itineraryId": "01-parade-weekend",
+    "placeId": "tampa-family",
+    "checkIn": "2026-11-04",
+    "checkOut": "2026-11-05",
+    "cost": 0,
+    "notes": "Two separate nights: Wed Nov 4 (land TPA 10:35 PM) and Sun Nov 8 (before the Mon 9:55 AM flight). Confirm with family.",
+    "createdAt": "2026-10-10T18:40:00Z",
+    "updatedAt": "2026-10-10T18:40:00Z"
+  },
+  {
+    "id": "r-lightning-lane",
+    "name": "Lightning Lane — Multi Pass each park day + Single Pass for Rise of the Resistance",
+    "category": "activity",
+    "status": "needed",
+    "itineraryId": "01-parade-weekend",
+    "placeId": "hollywood-studios",
+    "date": "2026-11-05",
+    "notes": "Off-site guests book 3 days before each park day at 7 AM ET, three rides at a time, in the My Disney Experience app (tickets must be linked first). Mon Nov 2 → Magic Kingdom (Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight). Tue Nov 3 → Epcot (Frozen Ever After, Remy, Soarin'). Wed Nov 4 → Hollywood Studios (Slinky Dog Dash, Toy Story Mania, Runaway Railway) PLUS Single Pass for Rise of the Resistance (~$20–25 each). Multi Pass runs ~$15–25/person at Epcot, ~$25–39 at MK and HS on these dates. Guardians (Epcot) and Tron (MK) are Single Pass only — skipped for motion sickness.",
+    "createdAt": "2026-10-10T18:40:00Z",
+    "updatedAt": "2026-10-10T18:40:00Z"
   }
 ]

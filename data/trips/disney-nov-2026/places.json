@@ -114,7 +114,7 @@
     "id": "epcot",
     "name": "EPCOT",
     "type": "attraction",
-    "description": "MBG parade Fri Nov 6: band arrives 8:45 AM in uniform, step-off 10:05 AM in the United Kingdom pavilion, ends at the American Adventure. Sat Nov 7 9:30 AM soundtrack workshop (students only).",
+    "description": "Friday park. MBG parade: band arrives 8:45 AM in uniform, step-off 10:05 AM in the UK pavilion, ends at the American Adventure. Then the World Showcase lap with Food & Wine Festival booths (festival runs Aug 27 – Nov 21). Multi Pass picks: Frozen Ever After, Remy, Soarin'.",
     "address": "200 Epcot Center Dr, Orlando, FL 32821",
     "coordinates": [
       28.3747,
@@ -156,6 +156,38 @@
     "tags": [
       "lodging-option",
       "free"
+    ]
+  },
+  {
+    "id": "magic-kingdom",
+    "name": "Magic Kingdom",
+    "type": "park",
+    "description": "Thursday park. Classic first-visit rides; longest hours; Happily Ever After fireworks ~8–9 PM. Multi Pass picks: Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight.",
+    "address": "1180 Seven Seas Dr, Lake Buena Vista, FL 32830",
+    "coordinates": [
+      28.4177,
+      -81.5812
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Magic+Kingdom",
+    "website": "https://disneyworld.disney.go.com/destinations/magic-kingdom/",
+    "tags": [
+      "park-day"
+    ]
+  },
+  {
+    "id": "hollywood-studios",
+    "name": "Disney's Hollywood Studios",
+    "type": "park",
+    "description": "Saturday park — Star Wars (Galaxy's Edge), Toy Story Land, Frozen Sing-Along. Rope-drop day. Multi Pass: Slinky Dog Dash, Toy Story Mania, Runaway Railway; Single Pass: Rise of the Resistance.",
+    "address": "351 S Studio Dr, Lake Buena Vista, FL 32830",
+    "coordinates": [
+      28.3575,
+      -81.5583
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Disney's+Hollywood+Studios",
+    "website": "https://disneyworld.disney.go.com/destinations/hollywood-studios/",
+    "tags": [
+      "park-day"
     ]
   }
 ]
