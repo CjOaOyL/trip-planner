@@ -1,8 +1,7 @@
 import { useMemo, useState } from 'react';
-import type { BookingOption, FlightScenario, Reservation, Trip } from '../types';
+import type { BookingOption, FlightScenario, Reservation } from '../types';
 import { chooseOption, listReservations } from '../utils/reservations';
 import {
-  adjustedPerPerson,
   dayOffset,
   deleteFlightScenario,
   durationMinutes,
@@ -10,12 +9,9 @@ import {
   formatDay,
   formatDuration,
   formatTime,
-  getAirportPenalties,
   getFlightScenarios,
-  optionPenaltyPerPerson,
   parseLocal,
   perPerson,
-  saveAirportPenalties,
   saveFlightScenario,
   scenarioTotals,
 } from '../utils/flightScenarios';
@@ -23,10 +19,9 @@ import {
 interface Props {
   tripId: string;
   itineraryId: string;
-  trip: Trip;
 }
 
-type SortKey = 'price' | 'adjusted' | 'depart' | 'arrive' | 'duration';
+type SortKey = 'price' | 'depart' | 'arrive' | 'duration';
 
 interface LegFilter {
   from: Set<string>;      // empty = any
@@ -80,11 +75,10 @@ function passesFilter(o: BookingOption, f: LegFilter, legDate: string | undefine
   return true;
 }
 
-function sortOptions(opts: BookingOption[], key: SortKey, penalties: Record<string, number>): BookingOption[] {
+function sortOptions(opts: BookingOption[], key: SortKey): BookingOption[] {
   const val = (o: BookingOption): number => {
     switch (key) {
       case 'price': return o.totalPrice ?? Number.POSITIVE_INFINITY;
-      case 'adjusted': return adjustedPerPerson(o, penalties) ?? Number.POSITIVE_INFINITY;
       case 'depart': return parseLocal(o.flight!.depart).getTime();
       case 'arrive': return parseLocal(o.flight!.arrive).getTime();
       case 'duration': return durationMinutes(o.flight!);
@@ -93,7 +87,7 @@ function sortOptions(opts: BookingOption[], key: SortKey, penalties: Record<stri
   return [...opts].sort((a, b) => val(a) - val(b));
 }
 
-export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props) {
+export default function FlightScenariosTab({ tripId, itineraryId }: Props) {
   const [tick, setTick] = useState(0);
   const refresh = () => setTick((t) => t + 1);
   void tick;
@@ -103,9 +97,6 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
     [tripId, itineraryId, tick], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
-  const [penalties, setPenalties] = useState<Record<string, number>>(() =>
-    getAirportPenalties(tripId, trip.meta.airportPenalties),
-  );
   const [filters, setFilters] = useState<Record<string, LegFilter>>({});
   const [selections, setSelections] = useState<Record<string, string>>(() => {
     // Start from whatever is already marked "chosen" on each leg.
@@ -121,15 +112,7 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
   const [feedback, setFeedback] = useState<string | null>(null);
 
   const scenarios = getFlightScenarios(tripId).filter((s) => !s.itineraryId || s.itineraryId === itineraryId);
-
-  // All airports that appear on any leg — drives the penalty editor.
-  const airports = useMemo(() => {
-    const set = new Set<string>();
-    for (const leg of legs) for (const o of leg.options ?? []) if (o.flight) { set.add(o.flight.from); set.add(o.flight.to); }
-    return [...set].sort();
-  }, [legs]);
-
-  const totals = scenarioTotals(legs, selections, penalties);
+  const totals = scenarioTotals(legs, selections);
 
   function getFilter(legId: string): LegFilter {
     return filters[legId] ?? blankFilter();
@@ -140,13 +123,6 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
 
   function select(legId: string, optionId: string) {
     setSelections((prev) => (prev[legId] === optionId ? omit(prev, legId) : { ...prev, [legId]: optionId }));
-  }
-
-  function setPenalty(code: string, value: string) {
-    const n = value === '' ? 0 : Number(value);
-    const next = { ...penalties, [code]: Number.isFinite(n) ? n : 0 };
-    setPenalties(next);
-    saveAirportPenalties(tripId, next);
   }
 
   function flash(msg: string) {
@@ -161,7 +137,6 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
       itineraryId,
       name,
       selections: { ...selections },
-      penalties: { ...penalties },
     });
     setLoadedId(saved.id);
     setScenarioName(saved.name);
@@ -171,8 +146,6 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
 
   function handleLoad(s: FlightScenario) {
     setSelections({ ...s.selections });
-    setPenalties({ ...s.penalties });
-    saveAirportPenalties(tripId, s.penalties);
     setScenarioName(s.name);
     setLoadedId(s.id);
     flash(`Loaded "${s.name}"`);
@@ -223,7 +196,6 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
             onFilter={(patch) => setFilter(leg.id, patch)}
             selectedId={selections[leg.id]}
             onSelect={(optionId) => select(leg.id, optionId)}
-            penalties={penalties}
           />
         ))}
       </div>
@@ -252,9 +224,8 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
             })}
           </ul>
           <div className="border-t border-stone-100 pt-3 space-y-1 text-sm">
-            <div className="flex justify-between"><span className="text-stone-500">Fare total</span><span className="font-semibold text-stone-800">{money(totals.fare)}</span></div>
-            <div className="flex justify-between"><span className="text-stone-500">Airport penalties</span><span className="text-stone-600">{totals.penalty ? `+${money(totals.penalty)}` : '—'}</span></div>
-            <div className="flex justify-between"><span className="text-stone-500">Adjusted</span><span className="font-semibold text-stone-800">{money(totals.adjusted)}</span></div>
+            <div className="flex justify-between"><span className="text-stone-500">Total fare</span><span className="font-semibold text-stone-800">{money(totals.fare)}</span></div>
+            <div className="flex justify-between"><span className="text-stone-500">Tickets</span><span className="text-stone-600">{totals.passengers || '—'}</span></div>
             <div className="text-[11px] text-stone-400">{totals.legsSelected} of {totals.legsTotal} legs selected</div>
           </div>
 
@@ -298,36 +269,14 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
           </div>
         </div>
 
-        {/* Penalties */}
-        <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-sm">
-          <h3 className="text-sm font-semibold text-stone-700 mb-1">Airport penalties</h3>
-          <p className="text-[11px] text-stone-400 mb-3">Per person, per leg. Added to the fare when ranking — set 0 for your preferred airport.</p>
-          <div className="grid grid-cols-2 gap-2">
-            {airports.map((code) => (
-              <label key={code} className="flex items-center gap-2 text-xs">
-                <span className="w-9 font-mono font-semibold text-stone-600">{code}</span>
-                <span className="text-stone-400">$</span>
-                <input
-                  type="number"
-                  min={0}
-                  step={5}
-                  value={penalties[code] ?? 0}
-                  onChange={(e) => setPenalty(code, e.target.value)}
-                  className="w-full border border-stone-200 rounded px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-blue-300"
-                />
-              </label>
-            ))}
-          </div>
-        </div>
-
         {/* Saved scenarios */}
         <div className="bg-white border border-stone-200 rounded-2xl p-4 shadow-sm">
           <h3 className="text-sm font-semibold text-stone-700 mb-3">Saved scenarios ({scenarios.length})</h3>
           {scenarios.length === 0 && <div className="text-xs text-stone-300 italic">None yet — pick a flight on each leg and save.</div>}
           <ul className="space-y-2">
             {scenarios
-              .map((s) => ({ s, t: scenarioTotals(legs, s.selections, s.penalties) }))
-              .sort((a, b) => a.t.adjusted - b.t.adjusted)
+              .map((s) => ({ s, t: scenarioTotals(legs, s.selections) }))
+              .sort((a, b) => a.t.fare - b.t.fare)
               .map(({ s, t }) => (
                 <li key={s.id} className={`rounded-xl border px-3 py-2 text-xs ${loadedId === s.id ? 'border-blue-300 bg-blue-50' : 'border-stone-100 bg-stone-50'}`}>
                   <div className="flex items-start justify-between gap-2">
@@ -337,8 +286,9 @@ export default function FlightScenariosTab({ tripId, itineraryId, trip }: Props)
                     <button onClick={() => handleDelete(s)} className="text-stone-300 hover:text-red-500" title="Delete">✕</button>
                   </div>
                   <div className="text-stone-500 mt-0.5">
-                    {money(t.fare)} fare · {money(t.adjusted)} adjusted · {t.legsSelected}/{t.legsTotal} legs
+                    {money(t.fare)} · {t.passengers} tickets · {t.legsSelected}/{t.legsTotal} legs
                   </div>
+                  {s.notes && <div className="text-stone-400 mt-1 whitespace-pre-wrap">{s.notes}</div>}
                 </li>
               ))}
           </ul>
@@ -356,24 +306,24 @@ interface LegProps {
   onFilter: (patch: Partial<LegFilter>) => void;
   selectedId?: string;
   onSelect: (optionId: string) => void;
-  penalties: Record<string, number>;
 }
 
-function LegPanel({ leg, filter, onFilter, selectedId, onSelect, penalties }: LegProps) {
+function LegPanel({ leg, filter, onFilter, selectedId, onSelect }: LegProps) {
   const all = (leg.options ?? []).filter((o) => o.flight);
   const froms = [...new Set(all.map((o) => o.flight!.from))].sort();
   const tos = [...new Set(all.map((o) => o.flight!.to))].sort();
   const dates = [...new Set(all.map((o) => o.flight!.depart.slice(0, 10)))].sort();
-  const visible = sortOptions(all.filter((o) => passesFilter(o, filter, leg.date)), filter.sort, penalties);
+  const visible = sortOptions(all.filter((o) => passesFilter(o, filter, leg.date)), filter.sort);
   const pax = all[0]?.flight?.passengers;
 
   const SORTS: { id: SortKey; label: string }[] = [
     { id: 'price', label: 'Price' },
-    { id: 'adjusted', label: 'Adjusted' },
     { id: 'depart', label: 'Departure' },
     { id: 'arrive', label: 'Arrival' },
     { id: 'duration', label: 'Duration' },
   ];
+
+  const filtered = filter.from.size || filter.to.size || filter.dates.size || filter.maxStops !== 'any' || filter.departAfter || filter.arriveBy;
 
   return (
     <section className="bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden">
@@ -432,7 +382,7 @@ function LegPanel({ leg, filter, onFilter, selectedId, onSelect, penalties }: Le
               {SORTS.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
             </select>
           </div>
-          {(filter.from.size || filter.to.size || filter.dates.size || filter.maxStops !== 'any' || filter.departAfter || filter.arriveBy) ? (
+          {filtered ? (
             <button onClick={() => onFilter(blankFilter())} className="text-stone-400 hover:text-stone-600 underline">reset</button>
           ) : null}
         </div>
@@ -452,19 +402,17 @@ function LegPanel({ leg, filter, onFilter, selectedId, onSelect, penalties }: Le
               <th className="px-2 py-2">Stops</th>
               <th className="px-2 py-2 text-right">Total</th>
               <th className="px-2 py-2 text-right">Per person</th>
-              <th className="px-2 py-2 text-right" title="Per person + airport penalty">Adjusted</th>
               <th className="px-2 py-2"></th>
             </tr>
           </thead>
           <tbody>
             {visible.length === 0 && (
-              <tr><td colSpan={11} className="px-4 py-6 text-center text-stone-300 italic">No options match these filters.</td></tr>
+              <tr><td colSpan={10} className="px-4 py-6 text-center text-stone-300 italic">No options match these filters.</td></tr>
             )}
             {visible.map((o) => {
               const f = o.flight!;
               const sel = selectedId === o.id;
               const off = dayOffset(f);
-              const pen = optionPenaltyPerPerson(o, penalties);
               return (
                 <tr
                   key={o.id}
@@ -498,9 +446,6 @@ function LegPanel({ leg, filter, onFilter, selectedId, onSelect, penalties }: Le
                   </td>
                   <td className="px-2 py-2 text-right font-semibold text-stone-800 whitespace-nowrap">{money(o.totalPrice)}</td>
                   <td className="px-2 py-2 text-right text-stone-600 whitespace-nowrap">{money(perPerson(o))}</td>
-                  <td className="px-2 py-2 text-right text-stone-600 whitespace-nowrap" title={pen ? `includes +$${pen} airport penalty` : undefined}>
-                    {money(adjustedPerPerson(o, penalties))}{pen ? <span className="text-stone-300"> *</span> : null}
-                  </td>
                   <td className="px-2 py-2 whitespace-nowrap">
                     <a href={o.url} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} className="text-blue-600 hover:underline">search ↗</a>
                     {(f.cabinNotes || o.notes) && (

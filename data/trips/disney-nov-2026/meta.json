@@ -1,7 +1,7 @@
 {
   "id": "disney-nov-2026",
   "name": "Disney — MBG Parade Weekend 2026",
-  "subtitle": "Nov 4/5 – Nov 9 · Thandi marches with MBG at Epcot Fri Nov 6, 10:05 AM · family flies down separately",
+  "subtitle": "Nov 4–9 · MBG (Thandi) marches at Epcot Fri Nov 6, 10:05 AM · band schedule + family plan",
   "startDate": "2026-11-04",
   "endDate": "2026-11-09",
   "origin": {
@@ -14,13 +14,9 @@
     "Aziza",
     "Thandi (travels with MBG by bus)"
   ],
-  "tripType": "road-trip",
+  "tripType": "group-tour",
   "itineraryIds": [
+    "00-mbg-band-schedule",
     "01-parade-weekend"
-  ],
-  "airportPenalties": {
-    "TTN": 0,
-    "PHL": 50,
-    "EWR": 125
-  }
+  ]
 }

@@ -1,17 +1,13 @@
 /**
  * Flight scenarios: pick one option per flight leg (reservation) and save the
- * combination for a trip, plus per-airport fare penalties used for ranking.
+ * combination for a trip.
  *
  *   Scenarios: `flight-scenarios:${tripId}`  → FlightScenario[]
- *   Penalties: `flight-penalties:${tripId}`  → Record<airport, perPersonPerLeg>
  */
 import type { BookingOption, FlightDetails, FlightScenario, Reservation } from '../types';
 
 function scenariosKey(tripId: string) {
   return `flight-scenarios:${tripId}`;
-}
-function penaltiesKey(tripId: string) {
-  return `flight-penalties:${tripId}`;
 }
 
 // ─── Scenarios ───────────────────────────────────────────────────────────────
@@ -85,22 +81,6 @@ export function mergeSeedFlightScenarios(tripId: string, seed: SeedFlightScenari
   }
 }
 
-// ─── Penalties ───────────────────────────────────────────────────────────────
-
-export function getAirportPenalties(tripId: string, defaults?: Record<string, number>): Record<string, number> {
-  try {
-    const raw = localStorage.getItem(penaltiesKey(tripId));
-    if (raw) return JSON.parse(raw);
-  } catch {
-    // fall through
-  }
-  return { ...(defaults ?? {}) };
-}
-
-export function saveAirportPenalties(tripId: string, penalties: Record<string, number>) {
-  localStorage.setItem(penaltiesKey(tripId), JSON.stringify(penalties));
-}
-
 // ─── Flight helpers ──────────────────────────────────────────────────────────
 
 /** Parse a local ISO datetime ("2026-11-05T20:01") as a local Date. */
@@ -151,20 +131,6 @@ export function perPerson(o: BookingOption): number | undefined {
   return o.totalPrice / o.flight.passengers;
 }
 
-/**
- * Airport-side penalty for an option: the sum of penalties for any airport in
- * the penalty table that the flight touches (normally only the home-side one).
- */
-export function optionPenaltyPerPerson(o: BookingOption, penalties: Record<string, number>): number {
-  if (!o.flight) return 0;
-  return (penalties[o.flight.from] ?? 0) + (penalties[o.flight.to] ?? 0);
-}
-
-export function adjustedPerPerson(o: BookingOption, penalties: Record<string, number>): number | undefined {
-  const pp = perPerson(o);
-  if (pp == null) return undefined;
-  return pp + optionPenaltyPerPerson(o, penalties);
-}
 
 /** Flight legs = flight reservations that have at least one structured option. */
 export function flightLegs(reservations: Reservation[]): Reservation[] {
@@ -175,26 +141,21 @@ export function flightLegs(reservations: Reservation[]): Reservation[] {
 
 export interface ScenarioTotals {
   fare: number;             // sum of totalPrice across selected options
-  adjusted: number;         // fare + penalties × passengers
-  penalty: number;          // adjusted − fare
+  passengers: number;       // sum of seats across selected options
   legsSelected: number;
   legsTotal: number;
 }
 
-export function scenarioTotals(
-  legs: Reservation[],
-  selections: Record<string, string>,
-  penalties: Record<string, number>,
-): ScenarioTotals {
+export function scenarioTotals(legs: Reservation[], selections: Record<string, string>): ScenarioTotals {
   let fare = 0;
-  let penalty = 0;
+  let passengers = 0;
   let legsSelected = 0;
   for (const leg of legs) {
     const o = (leg.options ?? []).find((x) => x.id === selections[leg.id]);
     if (!o || o.totalPrice == null) continue;
     legsSelected += 1;
     fare += o.totalPrice;
-    penalty += optionPenaltyPerPerson(o, penalties) * (o.flight?.passengers ?? 1);
+    passengers += o.flight?.passengers ?? 0;
   }
-  return { fare, adjusted: fare + penalty, penalty, legsSelected, legsTotal: legs.length };
+  return { fare, passengers, legsSelected, legsTotal: legs.length };
 }

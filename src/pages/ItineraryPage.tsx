@@ -403,7 +403,7 @@ export default function ItineraryPage() {
 
         {/* Flight scenarios tab */}
         {tab === 'flights' && tripId && (
-          <FlightScenariosTab tripId={tripId} itineraryId={itinerary.id} trip={trip} />
+          <FlightScenariosTab tripId={tripId} itineraryId={itinerary.id} />
         )}
       </div>
 

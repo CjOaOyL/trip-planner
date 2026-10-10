@@ -144,8 +144,6 @@ export interface TripMeta {
   tripType?: TripType;      // defaults to 'road-trip' if absent
   coverImage?: string;
   itineraryIds: string[];
-  /** Per-person, per-leg fare penalty by airport code used when ranking flight scenarios (e.g. { PHL: 50, EWR: 125 }). */
-  airportPenalties?: Record<string, number>;
 }
 
 // ─── The full loaded trip (meta + places + itineraries) ───────────────────────
@@ -260,7 +258,7 @@ export interface FlightScenario {
   itineraryId?: string;
   name: string;
   selections: Record<string, string>;   // reservationId → optionId
-  penalties: Record<string, number>;    // airport code → per-person per-leg penalty used when saved
+  penalties?: Record<string, number>;   // legacy — no longer used in the UI
   notes?: string;
   createdAt: string;
   updatedAt: string;

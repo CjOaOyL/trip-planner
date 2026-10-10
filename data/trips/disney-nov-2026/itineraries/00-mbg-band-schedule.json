@@ -1,0 +1,252 @@
+{
+  "id": "00-mbg-band-schedule",
+  "name": "MBG Band Schedule",
+  "locked": true,
+  "tagline": "Official Marching Black & Gold itinerary — bus down Wed Nov 4, Epcot parade Fri, workshop Sat, bus home Sun night",
+  "vibe": "Thandi's schedule, as sent by Mr. Harding (\"Home Stretch of Disney!\", Oct 2). Every event is pre-arranged by the band staff.",
+  "highlights": [
+    "Epcot parade — Fri Nov 6, 10:05 AM step-off",
+    "Soundtrack workshop at Epcot — Sat Nov 7, 9:30 AM",
+    "Park Hopper passes all four days",
+    "Overnight bus both ways"
+  ],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 2100,
+  "days": [
+    {
+      "id": "b-day1",
+      "label": "Day 1 — Wednesday, Nov 4",
+      "theme": "Travel day — bus to Florida",
+      "legs": [
+        {
+          "id": "bleg-chs-fl",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "disney-area",
+          "distanceMiles": 1050,
+          "drivingMinutes": 1080,
+          "travelMode": "bus",
+          "notes": "Overnight charter bus from Central High School. Departure time TBD — watch email / Band app."
+        }
+      ],
+      "segments": [
+        {
+          "time": "Start of school day",
+          "placeId": "hopewell-nj",
+          "activity": "Drop luggage at the CHS Band Room for luggage checks with administration",
+          "durationMinutes": 30,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "TBD",
+          "placeId": "hopewell-nj",
+          "activity": "Buses depart CHS (time to be announced)",
+          "durationMinutes": 30,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Overnight on the bus."
+    },
+    {
+      "id": "b-day2",
+      "label": "Day 2 — Thursday, Nov 5",
+      "theme": "Arrive Disney — hotel drop, park day",
+      "legs": [],
+      "segments": [
+        {
+          "time": "Morning",
+          "placeId": "disney-area",
+          "activity": "Arrive — unload luggage at the hotel",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Midday",
+          "placeId": "disney-area",
+          "activity": "Dropped at one of the four parks (Park Hopper passes; dedicated staff check-ins through the day)",
+          "durationMinutes": 540,
+          "fixed": true,
+          "eventType": "free-time",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Evening",
+          "placeId": "disney-area",
+          "activity": "Return to hotel",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "rest",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "disney-area"
+    },
+    {
+      "id": "b-day3",
+      "label": "Day 3 — Friday, Nov 6",
+      "theme": "PARADE DAY — Epcot",
+      "legs": [],
+      "segments": [
+        {
+          "time": "8:45 AM",
+          "placeId": "epcot",
+          "activity": "MBG members arrive at Epcot in full uniform — warm-up and final preparations",
+          "durationMinutes": 80,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "10:05 AM",
+          "placeId": "epcot",
+          "activity": "PARADE step-off in the United Kingdom pavilion; concludes at the American Adventure",
+          "durationMinutes": 45,
+          "fixed": true,
+          "eventType": "concert",
+          "openTo": [
+            "performer",
+            "visitor"
+          ],
+          "ticketed": true
+        },
+        {
+          "time": "~11:00 AM",
+          "placeId": "epcot",
+          "activity": "Change, drop uniforms and equipment on the bus, resume the day in the park",
+          "durationMinutes": 480,
+          "fixed": true,
+          "eventType": "free-time",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Parade route PDF is attached to Mr. Harding's email (Epcot Parade Route.pdf)."
+    },
+    {
+      "id": "b-day4",
+      "label": "Day 4 — Saturday, Nov 7",
+      "theme": "Soundtrack workshop (students only)",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "epcot",
+          "activity": "All HVBands members arrive at Epcot for the soundtrack workshop with professional musicians and conductors — friends and family NOT permitted",
+          "durationMinutes": 180,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Afternoon",
+          "placeId": "disney-area",
+          "activity": "Take equipment back to the hotel, then return to the parks for the rest of the day",
+          "durationMinutes": 420,
+          "fixed": true,
+          "eventType": "free-time",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "disney-area"
+    },
+    {
+      "id": "b-day5",
+      "label": "Day 5 — Sunday, Nov 8",
+      "theme": "Last park day — bus home tonight",
+      "legs": [
+        {
+          "id": "bleg-fl-chs",
+          "fromPlaceId": "disney-area",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 1050,
+          "drivingMinutes": 1080,
+          "travelMode": "bus",
+          "notes": "Overnight charter bus back to CHS."
+        }
+      ],
+      "segments": [
+        {
+          "time": "Morning",
+          "placeId": "disney-area",
+          "activity": "Load the bus with luggage and equipment",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Midday",
+          "placeId": "disney-area",
+          "activity": "Dropped at one of the four parks (Park Hopper; staff check-ins)",
+          "durationMinutes": 480,
+          "fixed": true,
+          "eventType": "free-time",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Evening",
+          "placeId": "disney-area",
+          "activity": "Depart for New Jersey",
+          "durationMinutes": 30,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "hopewell-nj",
+      "notes": "Overnight on the bus."
+    },
+    {
+      "id": "b-day6",
+      "label": "Day 6 — Monday, Nov 9",
+      "theme": "Return to CHS",
+      "legs": [],
+      "segments": [
+        {
+          "time": "TBD",
+          "placeId": "hopewell-nj",
+          "activity": "Approximate return to Central High School — time to be communicated by email and Band app",
+          "durationMinutes": 30,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "hopewell-nj"
+    }
+  ]
+}

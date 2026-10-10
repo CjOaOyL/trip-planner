@@ -1,12 +1,12 @@
 {
   "id": "01-parade-weekend",
-  "name": "Parade Weekend",
-  "tagline": "3 fly down Wed night or Thu, 1 flies Fri morning for the 10:05 AM parade, all 4 home Monday",
-  "vibe": "Built around one fixed event — Thandi's MBG parade at Epcot Friday morning. Everything else is park time.",
+  "name": "Family Plan",
+  "tagline": "The rest of us: 3 fly down Wed night or Thu, 1 flies Fri morning for the parade, all 4 home Sun/Mon",
+  "vibe": "Our own trip around Thandi's band schedule — flights, lodging, park days. The band's official schedule is the locked itinerary.",
   "highlights": [
-    "MBG parade at Epcot — Fri Nov 6, 10:05 AM",
+    "Watch the MBG parade at Epcot — Fri Nov 6, 10:05 AM",
     "3 park days (Fri–Sun)",
-    "Monday return"
+    "Return Sunday or Monday"
   ],
   "skiDays": 0,
   "includesMontreal": false,
@@ -16,7 +16,7 @@
     {
       "id": "day1",
       "label": "Day 1 — Wednesday, Nov 4",
-      "theme": "Band bus leaves · 3 travelers may fly down tonight",
+      "theme": "Band bus leaves · 3 of us may fly down tonight",
       "legs": [
         {
           "id": "leg-home-phl",
@@ -60,7 +60,7 @@
     {
       "id": "day2",
       "label": "Day 2 — Thursday, Nov 5",
-      "theme": "Band arrives · 3 travelers fly down (if not Wed)",
+      "theme": "3 of us fly down (if not Wed)",
       "legs": [
         {
           "id": "leg-home-ttn",
@@ -91,17 +91,6 @@
         }
       ],
       "segments": [
-        {
-          "time": "Midday",
-          "placeId": "disney-area",
-          "activity": "MBG arrives at hotel, students dropped at a park (Park Hopper passes, staff check-ins)",
-          "durationMinutes": 480,
-          "fixed": true,
-          "eventType": "activity",
-          "openTo": [
-            "performer"
-          ]
-        },
         {
           "time": "Evening",
           "placeId": "mco-airport",
@@ -145,17 +134,6 @@
           "eventType": "travel"
         },
         {
-          "time": "8:45 AM",
-          "placeId": "epcot",
-          "activity": "MBG arrives at Epcot in full uniform — warm-up and final prep",
-          "durationMinutes": 80,
-          "fixed": true,
-          "eventType": "rehearsal",
-          "openTo": [
-            "performer"
-          ]
-        },
-        {
           "time": "9:15 AM",
           "placeId": "epcot",
           "activity": "Family enters Epcot — stake out a spot on the World Showcase route (UK pavilion → American Adventure)",
@@ -187,20 +165,9 @@
     {
       "id": "day4",
       "label": "Day 4 — Saturday, Nov 7",
-      "theme": "Band workshop (students only) · family park day",
+      "theme": "Family park day (band is in its workshop until early afternoon)",
       "legs": [],
       "segments": [
-        {
-          "time": "9:30 AM",
-          "placeId": "epcot",
-          "activity": "HVBands soundtrack workshop with professional musicians — friends and family NOT permitted",
-          "durationMinutes": 180,
-          "fixed": true,
-          "eventType": "rehearsal",
-          "openTo": [
-            "performer"
-          ]
-        },
         {
           "time": "9:00 AM",
           "placeId": "disney-area",
@@ -216,7 +183,7 @@
     {
       "id": "day5",
       "label": "Day 5 — Sunday, Nov 8",
-      "theme": "Last band park day · buses leave tonight",
+      "theme": "Park day · band buses leave tonight · optional Sunday flight home",
       "legs": [],
       "segments": [
         {
@@ -226,17 +193,6 @@
           "durationMinutes": 600,
           "eventType": "free-time",
           "ticketed": true
-        },
-        {
-          "time": "Evening",
-          "placeId": "disney-area",
-          "activity": "MBG loads buses with luggage/equipment and departs for NJ (return to CHS Monday, time TBD)",
-          "durationMinutes": 60,
-          "fixed": true,
-          "eventType": "travel",
-          "openTo": [
-            "performer"
-          ]
         }
       ],
       "overnightPlaceId": "disney-area",
@@ -245,7 +201,7 @@
     {
       "id": "day6",
       "label": "Day 6 — Monday, Nov 9",
-      "theme": "All 4 fly home",
+      "theme": "Fly home (if not Sunday)",
       "legs": [
         {
           "id": "leg-hotel-airport",
