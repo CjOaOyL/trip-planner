@@ -1,0 +1,296 @@
+{
+  "id": "01-parade-weekend",
+  "name": "Parade Weekend",
+  "tagline": "3 fly down Wed night or Thu, 1 flies Fri morning for the 10:05 AM parade, all 4 home Monday",
+  "vibe": "Built around one fixed event — Thandi's MBG parade at Epcot Friday morning. Everything else is park time.",
+  "highlights": [
+    "MBG parade at Epcot — Fri Nov 6, 10:05 AM",
+    "3 park days (Fri–Sun)",
+    "Monday return"
+  ],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 0,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Wednesday, Nov 4",
+      "theme": "Band bus leaves · 3 travelers may fly down tonight",
+      "legs": [
+        {
+          "id": "leg-home-phl",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "phl-airport",
+          "distanceMiles": 45,
+          "drivingMinutes": 60,
+          "travelMode": "drive",
+          "notes": "Only if taking a Wednesday-evening flight. Wed nonstops to MCO are $450+/person; the value is PHL→TPA nonstop (Frontier 8:20 PM) or a 1-stop to MCO."
+        },
+        {
+          "id": "leg-phl-fl",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "tpa-airport",
+          "distanceMiles": 920,
+          "drivingMinutes": 168,
+          "travelMode": "flight",
+          "notes": "Option: Frontier PHL→TPA 8:20 PM → 11:08 PM, then 1h20 drive to Disney (arrive ~1 AM). See 'Flights down — 3 travelers'."
+        }
+      ],
+      "segments": [
+        {
+          "time": "AM",
+          "placeId": "hopewell-nj",
+          "activity": "Thandi drops luggage at CHS band room for admin check; MBG buses depart (time TBD)",
+          "durationMinutes": 30,
+          "fixed": true,
+          "eventType": "travel"
+        },
+        {
+          "time": "Evening",
+          "placeId": "phl-airport",
+          "activity": "OPTIONAL — 3 travelers fly down tonight (PHL→TPA nonstop or PHL→MCO 1-stop). Skip if flying Thursday.",
+          "durationMinutes": 180,
+          "eventType": "travel"
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "If the 3 fly Thursday instead, there is no Wednesday hotel night — adjust the hotel reservation to Nov 5–9."
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Thursday, Nov 5",
+      "theme": "Band arrives · 3 travelers fly down (if not Wed)",
+      "legs": [
+        {
+          "id": "leg-home-ttn",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "ttn-airport",
+          "distanceMiles": 15,
+          "drivingMinutes": 20,
+          "travelMode": "drive",
+          "notes": "Thursday Trenton option: Frontier 8:01 PM → MCO 10:48 PM."
+        },
+        {
+          "id": "leg-ttn-mco",
+          "fromPlaceId": "ttn-airport",
+          "toPlaceId": "mco-airport",
+          "distanceMiles": 900,
+          "drivingMinutes": 167,
+          "travelMode": "flight",
+          "notes": "Or PHL Frontier via Detroit (12:10 PM → 8:35 PM, cheapest) / PHL→TPA Frontier 5:59 PM nonstop. See flight options."
+        },
+        {
+          "id": "leg-mco-hotel",
+          "fromPlaceId": "mco-airport",
+          "toPlaceId": "disney-area",
+          "distanceMiles": 22,
+          "drivingMinutes": 30,
+          "travelMode": "drive",
+          "notes": "Pick up rental car at MCO (or TPA if flying there)."
+        }
+      ],
+      "segments": [
+        {
+          "time": "Midday",
+          "placeId": "disney-area",
+          "activity": "MBG arrives at hotel, students dropped at a park (Park Hopper passes, staff check-ins)",
+          "durationMinutes": 480,
+          "fixed": true,
+          "eventType": "activity",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "Evening",
+          "placeId": "mco-airport",
+          "activity": "3 travelers land (Trenton 10:48 PM / PHL-Detroit 8:35 PM / Tampa 8:46 PM), rental car, check in",
+          "durationMinutes": 120,
+          "eventType": "travel"
+        }
+      ],
+      "overnightPlaceId": "disney-area"
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Friday, Nov 6",
+      "theme": "PARADE DAY — Epcot 10:05 AM",
+      "legs": [
+        {
+          "id": "leg-phl-mco-fri",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "mco-airport",
+          "distanceMiles": 860,
+          "drivingMinutes": 166,
+          "travelMode": "flight",
+          "notes": "4th traveler: Frontier PHL 5:15 AM → MCO 8:01 AM is the only flight that makes the parade. Leave home ~2:45 AM."
+        },
+        {
+          "id": "leg-mco-epcot",
+          "fromPlaceId": "mco-airport",
+          "toPlaceId": "epcot",
+          "distanceMiles": 20,
+          "drivingMinutes": 35,
+          "travelMode": "drive",
+          "notes": "Rideshare straight to Epcot (~$40–50) or get picked up by the others. Tight but doable for 10:05."
+        }
+      ],
+      "segments": [
+        {
+          "time": "8:01 AM",
+          "placeId": "mco-airport",
+          "activity": "4th traveler lands (Frontier from PHL) — straight to Epcot",
+          "durationMinutes": 30,
+          "eventType": "travel"
+        },
+        {
+          "time": "8:45 AM",
+          "placeId": "epcot",
+          "activity": "MBG arrives at Epcot in full uniform — warm-up and final prep",
+          "durationMinutes": 80,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "9:15 AM",
+          "placeId": "epcot",
+          "activity": "Family enters Epcot — stake out a spot on the World Showcase route (UK pavilion → American Adventure)",
+          "durationMinutes": 50,
+          "eventType": "activity",
+          "ticketed": true
+        },
+        {
+          "time": "10:05 AM",
+          "placeId": "epcot",
+          "activity": "MBG PARADE step-off (UK pavilion), concludes at the American Adventure",
+          "durationMinutes": 45,
+          "fixed": true,
+          "eventType": "concert",
+          "ticketed": true
+        },
+        {
+          "time": "11:00 AM",
+          "placeId": "epcot",
+          "activity": "Students change, drop uniforms on the bus, rejoin the park. Family: Epcot for the day",
+          "durationMinutes": 480,
+          "eventType": "free-time",
+          "ticketed": true
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "If based in Tampa: leave by 7:15 AM for the 10:05 parade (I-4 east is slow Friday mornings; ~1h45). If at Pop Century / Art of Animation / Caribbean Beach: take the Skyliner to Epcot's International Gateway — it opens onto the UK pavilion where the parade steps off."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Saturday, Nov 7",
+      "theme": "Band workshop (students only) · family park day",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "epcot",
+          "activity": "HVBands soundtrack workshop with professional musicians — friends and family NOT permitted",
+          "durationMinutes": 180,
+          "fixed": true,
+          "eventType": "rehearsal",
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "9:00 AM",
+          "placeId": "disney-area",
+          "activity": "Family park day — Magic Kingdom or Hollywood Studios (one park per day on a base ticket)",
+          "durationMinutes": 600,
+          "eventType": "free-time",
+          "ticketed": true
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Tampa base = ~3 hrs round-trip driving + $30 parking per park day. Near-parks lodging options are in the Reservations tab."
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Sunday, Nov 8",
+      "theme": "Last band park day · buses leave tonight",
+      "legs": [],
+      "segments": [
+        {
+          "time": "9:00 AM",
+          "placeId": "disney-area",
+          "activity": "Family park day (3rd ticket day)",
+          "durationMinutes": 600,
+          "eventType": "free-time",
+          "ticketed": true
+        },
+        {
+          "time": "Evening",
+          "placeId": "disney-area",
+          "activity": "MBG loads buses with luggage/equipment and departs for NJ (return to CHS Monday, time TBD)",
+          "durationMinutes": 60,
+          "fixed": true,
+          "eventType": "travel",
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Tampa base = ~3 hrs round-trip driving + $30 parking per park day. Near-parks lodging options are in the Reservations tab."
+    },
+    {
+      "id": "day6",
+      "label": "Day 6 — Monday, Nov 9",
+      "theme": "All 4 fly home",
+      "legs": [
+        {
+          "id": "leg-hotel-airport",
+          "fromPlaceId": "disney-area",
+          "toPlaceId": "mco-airport",
+          "distanceMiles": 22,
+          "drivingMinutes": 30,
+          "travelMode": "drive",
+          "notes": "Return rental at MCO — or drive 1h20 to TPA if the cheaper Tampa return wins."
+        },
+        {
+          "id": "leg-fl-phl",
+          "fromPlaceId": "mco-airport",
+          "toPlaceId": "phl-airport",
+          "distanceMiles": 860,
+          "drivingMinutes": 150,
+          "travelMode": "flight",
+          "notes": "See 'Flights home — all 4'. Thandi comes home on the band bus."
+        },
+        {
+          "id": "leg-phl-home",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 45,
+          "drivingMinutes": 60,
+          "travelMode": "drive"
+        }
+      ],
+      "segments": [
+        {
+          "time": "Morning",
+          "placeId": "disney-area",
+          "activity": "Optional half park day if on an evening flight; otherwise check out",
+          "durationMinutes": 240,
+          "eventType": "free-time"
+        },
+        {
+          "time": "Afternoon/Evening",
+          "placeId": "mco-airport",
+          "activity": "Fly home (4 pax) — see options",
+          "durationMinutes": 180,
+          "eventType": "travel"
+        }
+      ],
+      "overnightPlaceId": "hopewell-nj"
+    }
+  ]
+}

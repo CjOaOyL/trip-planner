@@ -1,0 +1,161 @@
+[
+  {
+    "id": "hopewell-nj",
+    "name": "Hopewell, NJ",
+    "type": "other",
+    "description": "Home base.",
+    "address": "Hopewell, NJ 08525",
+    "coordinates": [
+      40.3876,
+      -74.7657
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Hopewell,NJ",
+    "tags": [
+      "origin"
+    ]
+  },
+  {
+    "id": "ttn-airport",
+    "name": "Trenton–Mercer (TTN)",
+    "type": "airport",
+    "description": "Preferred airport — 20 min from home. Frontier only to MCO (Thu/Fri/Mon evenings); Allegiant to Orlando Sanford (SFB) on Fri/Mon.",
+    "address": "1100 Terminal Cir, Ewing Township, NJ 08628",
+    "coordinates": [
+      40.2767,
+      -74.8135
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Trenton-Mercer+Airport",
+    "website": "https://www.trenton-mercer-airport.com",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "phl-airport",
+    "name": "Philadelphia Intl (PHL)",
+    "type": "airport",
+    "description": "Second choice (~1 hr drive). Frontier, American, Southwest, United to MCO; Frontier/American to TPA.",
+    "address": "8000 Essington Ave, Philadelphia, PA 19153",
+    "coordinates": [
+      39.8744,
+      -75.2424
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=PHL+Airport",
+    "website": "https://www.phl.org",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "ewr-airport",
+    "name": "Newark Liberty (EWR)",
+    "type": "airport",
+    "description": "Third choice (~1h15 drive). United, JetBlue, Frontier to MCO; United to TPA.",
+    "address": "3 Brewster Rd, Newark, NJ 07114",
+    "coordinates": [
+      40.6895,
+      -74.1745
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Newark+Liberty+Airport",
+    "website": "https://www.newarkairport.com",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "mco-airport",
+    "name": "Orlando Intl (MCO)",
+    "type": "airport",
+    "description": "Main Orlando airport, ~25–35 min to Walt Disney World.",
+    "address": "1 Jeff Fuqua Blvd, Orlando, FL 32827",
+    "coordinates": [
+      28.4312,
+      -81.3081
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Orlando+International+Airport",
+    "website": "https://orlandoairports.net",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "sfb-airport",
+    "name": "Orlando Sanford Intl (SFB)",
+    "type": "airport",
+    "description": "Allegiant's Orlando airport, ~45–55 min NE of Disney. Allegiant flies TTN↔SFB Fri + Mon.",
+    "address": "1200 Red Cleveland Blvd, Sanford, FL 32773",
+    "coordinates": [
+      28.7776,
+      -81.2375
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Orlando+Sanford+Airport",
+    "website": "https://flysfb.com",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "tpa-airport",
+    "name": "Tampa Intl (TPA)",
+    "type": "airport",
+    "description": "Alternate — ~75 mi / 1h20 drive to Disney via I-4. Often cheaper nonstops from PHL.",
+    "address": "4100 George J Bean Pkwy, Tampa, FL 33607",
+    "coordinates": [
+      27.9755,
+      -82.5332
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Tampa+International+Airport",
+    "website": "https://www.tampaairport.com",
+    "tags": [
+      "airport"
+    ]
+  },
+  {
+    "id": "epcot",
+    "name": "EPCOT",
+    "type": "attraction",
+    "description": "MBG parade Fri Nov 6: band arrives 8:45 AM in uniform, step-off 10:05 AM in the United Kingdom pavilion, ends at the American Adventure. Sat Nov 7 9:30 AM soundtrack workshop (students only).",
+    "address": "200 Epcot Center Dr, Orlando, FL 32821",
+    "coordinates": [
+      28.3747,
+      -81.5494
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=EPCOT",
+    "website": "https://disneyworld.disney.go.com/destinations/epcot/",
+    "tags": [
+      "parade",
+      "must-see"
+    ]
+  },
+  {
+    "id": "disney-area",
+    "name": "Walt Disney World area (Lake Buena Vista)",
+    "type": "neighborhood",
+    "description": "Hotel area for the family. Band hotel TBD per Mr. Harding's flyer.",
+    "address": "Lake Buena Vista, FL 32830",
+    "coordinates": [
+      28.3852,
+      -81.5639
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Lake+Buena+Vista,FL",
+    "tags": [
+      "lodging-area"
+    ]
+  },
+  {
+    "id": "tampa-family",
+    "name": "Family in Tampa (free lodging option)",
+    "type": "other",
+    "description": "Stay with family instead of a hotel. ~80–85 mi / 1h20–1h45 each way to Epcot via I-4. Parade day: leave by 7:15 AM. Disney parking $30/day.",
+    "address": "Tampa, FL",
+    "coordinates": [
+      27.9506,
+      -82.4572
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Tampa,FL",
+    "tags": [
+      "lodging-option",
+      "free"
+    ]
+  }
+]
