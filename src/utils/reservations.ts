@@ -159,6 +159,7 @@ const OPTION_FILLABLE_FIELDS: (keyof BookingOption)[] = [
   'amenities', 'imageUrl', 'notes', 'scrapedAt',
   'availability', 'availabilityCheckedAt',
   'rating', 'reviewCount', 'isSuperhost', 'isGuestFavorite',
+  'reviewSummary', 'flight',
 ];
 
 const RESERVATION_FILLABLE_FIELDS: (keyof Reservation)[] = [

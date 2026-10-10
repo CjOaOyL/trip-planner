@@ -17,5 +17,10 @@
   "tripType": "road-trip",
   "itineraryIds": [
     "01-parade-weekend"
-  ]
+  ],
+  "airportPenalties": {
+    "TTN": 0,
+    "PHL": 50,
+    "EWR": 125
+  }
 }

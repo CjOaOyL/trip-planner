@@ -19,7 +19,17 @@
         "location": "PHL → Tampa (TPA)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$169 ea. Best Wednesday-night value. Land 11:08 PM, rent car at TPA, 1h20 drive to Disney (arrive ~1 AM). Nonstop. Frontier: carry-on not included."
+        "notes": "$169 ea. Best Wednesday-night value. Land 11:08 PM, rent car at TPA, 1h20 drive to Disney (arrive ~1 AM). Nonstop. Frontier: carry-on not included.",
+        "flight": {
+          "from": "PHL",
+          "to": "TPA",
+          "airline": "Frontier",
+          "depart": "2026-11-04T20:20",
+          "arrive": "2026-11-04T23:08",
+          "stops": 0,
+          "passengers": 3,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-wed-phl-tpa-f9-atl",
@@ -31,7 +41,19 @@
         "location": "PHL → Tampa (TPA)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$134 ea — cheapest of everything, but 1h05 connection in ATL on Frontier (thin rebook options if it misses) and still a 1h20 drive after landing."
+        "notes": "$134 ea — cheapest of everything, but 1h05 connection in ATL on Frontier (thin rebook options if it misses) and still a 1h20 drive after landing.",
+        "flight": {
+          "from": "PHL",
+          "to": "TPA",
+          "airline": "Frontier",
+          "depart": "2026-11-04T17:22",
+          "arrive": "2026-11-04T22:35",
+          "stops": 1,
+          "passengers": 3,
+          "via": "Atlanta",
+          "layover": "1h05",
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-wed-phl-mco-ua-iad",
@@ -43,7 +65,19 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$173 ea. Lands 12:59 AM Thursday. Likely basic economy. The Wednesday MCO nonstops are $456+/person — not worth it."
+        "notes": "$173 ea. Lands 12:59 AM Thursday. Likely basic economy. The Wednesday MCO nonstops are $456+/person — not worth it.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "United",
+          "depart": "2026-11-04T19:40",
+          "arrive": "2026-11-05T00:59",
+          "stops": 1,
+          "passengers": 3,
+          "via": "Washington (IAD)",
+          "layover": "1h39",
+          "cabinNotes": "Likely basic economy"
+        }
       },
       {
         "id": "o-wed-ewr-mco-ua-ord",
@@ -55,7 +89,19 @@
         "location": "Newark → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$164 ea. Needs a 4:45 PM departure from Newark (leave home ~2 PM). Newark penalty applies."
+        "notes": "$164 ea. Needs a 4:45 PM departure from Newark (leave home ~2 PM). Newark penalty applies.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "United",
+          "depart": "2026-11-04T16:45",
+          "arrive": "2026-11-04T23:38",
+          "stops": 1,
+          "passengers": 3,
+          "via": "Chicago",
+          "layover": "1h14",
+          "cabinNotes": "Likely basic economy"
+        }
       },
       {
         "id": "o-thu-ttn-mco-f9",
@@ -67,7 +113,17 @@
         "location": "Trenton → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$234 ea (was $204 on Oct 4). Preferred airport, 20 min from home, nonstop. Only Trenton option Thursday. Carry-on not included."
+        "notes": "$234 ea (was $204 on Oct 4). Preferred airport, 20 min from home, nonstop. Only Trenton option Thursday. Carry-on not included.",
+        "flight": {
+          "from": "TTN",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-05T20:01",
+          "arrive": "2026-11-05T22:48",
+          "stops": 0,
+          "passengers": 3,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-thu-phl-mco-f9-dtw",
@@ -79,7 +135,19 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$154 ea — cheapest Thursday. 3h43 layover in Detroit, 8h25 total. Lands 11 min after the (now $342/ea) 5:45 PM nonstop. Frontier connection risk."
+        "notes": "$154 ea — cheapest Thursday. 3h43 layover in Detroit, 8h25 total. Lands 11 min after the (now $342/ea) 5:45 PM nonstop. Frontier connection risk.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-05T12:10",
+          "arrive": "2026-11-05T20:35",
+          "stops": 1,
+          "passengers": 3,
+          "via": "Detroit",
+          "layover": "3h43",
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-thu-phl-tpa-f9",
@@ -91,7 +159,17 @@
         "location": "PHL → Tampa (TPA)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$204 ea. Nonstop; then 1h20 drive to Disney (arrive ~10:30 PM). Rent at TPA and return at TPA Monday to avoid one-way fees."
+        "notes": "$204 ea. Nonstop; then 1h20 drive to Disney (arrive ~10:30 PM). Rent at TPA and return at TPA Monday to avoid one-way fees.",
+        "flight": {
+          "from": "PHL",
+          "to": "TPA",
+          "airline": "Frontier",
+          "depart": "2026-11-05T17:59",
+          "arrive": "2026-11-05T20:46",
+          "stops": 0,
+          "passengers": 3,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-thu-phl-mco-wn",
@@ -103,7 +181,17 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$340 ea. Cheapest PHL→MCO nonstop left on Thursday (Frontier 5:45 PM is $342). Carry-on included. Reference only."
+        "notes": "$340 ea. Cheapest PHL→MCO nonstop left on Thursday (Frontier 5:45 PM is $342). Carry-on included. Reference only.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Southwest",
+          "depart": "2026-11-05T17:20",
+          "arrive": "2026-11-05T20:00",
+          "stops": 0,
+          "passengers": 3,
+          "cabinNotes": "Carry-on included"
+        }
       },
       {
         "id": "o-thu-ewr-mco-b6",
@@ -115,7 +203,17 @@
         "location": "Newark → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$239 ea. Nonstop, best legroom, carry-on included — but Newark penalty makes it the priciest on your scale."
+        "notes": "$239 ea. Nonstop, best legroom, carry-on included — but Newark penalty makes it the priciest on your scale.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "JetBlue",
+          "depart": "2026-11-05T19:55",
+          "arrive": "2026-11-05T22:56",
+          "stops": 0,
+          "passengers": 3,
+          "cabinNotes": "Carry-on included; most legroom"
+        }
       },
       {
         "id": "o-thu-ewr-mco-mx",
@@ -127,7 +225,18 @@
         "location": "Newark → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$179 ea. 40-min stop in Charleston (same plane). Midday departure."
+        "notes": "$179 ea. 40-min stop in Charleston (same plane). Midday departure.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "Breeze",
+          "depart": "2026-11-05T12:17",
+          "arrive": "2026-11-05T16:52",
+          "stops": 1,
+          "passengers": 3,
+          "via": "Charleston (same plane)",
+          "layover": "0h40"
+        }
       }
     ],
     "createdAt": "2026-10-10T16:40:00Z",
@@ -153,7 +262,17 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "THE parade-maker: only flight that lands before the 10:05 AM step-off. Leave home ~2:45 AM. MCO→Epcot ~35 min by rideshare. Carry-on not included."
+        "notes": "THE parade-maker: only flight that lands before the 10:05 AM step-off. Leave home ~2:45 AM. MCO→Epcot ~35 min by rideshare. Carry-on not included.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-06T05:15",
+          "arrive": "2026-11-06T08:01",
+          "stops": 0,
+          "passengers": 1,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-fri-ewr-mco-f9-600",
@@ -165,7 +284,17 @@
         "location": "Newark → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "Lands 8:56 AM — 69 min to get from MCO to the Epcot route. Very risky for the parade."
+        "notes": "Lands 8:56 AM — 69 min to get from MCO to the Epcot route. Very risky for the parade.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-06T06:00",
+          "arrive": "2026-11-06T08:56",
+          "stops": 0,
+          "passengers": 1,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-fri-ttn-sfb-g4",
@@ -177,7 +306,17 @@
         "location": "Trenton → Orlando Sanford (SFB)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "Misses the parade. Cheap Trenton option if the 4th person doesn't need to see it. Sanford is ~50 min from Disney."
+        "notes": "Misses the parade. Cheap Trenton option if the 4th person doesn't need to see it. Sanford is ~50 min from Disney.",
+        "flight": {
+          "from": "TTN",
+          "to": "SFB",
+          "airline": "Allegiant",
+          "depart": "2026-11-06T11:25",
+          "arrive": "2026-11-06T13:54",
+          "stops": 0,
+          "passengers": 1,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-fri-phl-mco-f9-545",
@@ -189,7 +328,17 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "Misses the parade. Cheapest PHL fare if they only need Sat–Mon."
+        "notes": "Misses the parade. Cheapest PHL fare if they only need Sat–Mon.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-06T17:45",
+          "arrive": "2026-11-06T20:24",
+          "stops": 0,
+          "passengers": 1,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-fri-ttn-mco-f9-801",
@@ -201,7 +350,17 @@
         "location": "Trenton → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "Misses the parade. Cheapest + preferred airport if arriving Friday night is fine."
+        "notes": "Misses the parade. Cheapest + preferred airport if arriving Friday night is fine.",
+        "flight": {
+          "from": "TTN",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-06T20:01",
+          "arrive": "2026-11-06T22:48",
+          "stops": 0,
+          "passengers": 1,
+          "cabinNotes": "Carry-on not included"
+        }
       }
     ],
     "createdAt": "2026-10-10T16:40:00Z",
@@ -209,11 +368,11 @@
   },
   {
     "id": "f-return-4pax",
-    "name": "Flights home — all 4, Mon Nov 9",
+    "name": "Flights home — all 4, Mon Nov 9 (or Sun Nov 8)",
     "category": "flight",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "Priced 2026-10-10 for 4 passengers; totalPrice = all 4 tickets. Thandi returns on the MBG bus (Sunday night departure). Tampa returns are cheapest; MCO Frontier 10:07 PM nonstop is the cheapest from Orlando. Trenton's Frontier return jumped to $423/person — effectively out unless it drops. Late-night arrivals land ~2 AM Tuesday (school day).",
+    "notes": "Priced 2026-10-10 for 4 passengers; totalPrice = all 4 tickets. Thandi returns on the MBG bus (Sunday night departure). MONDAY: Tampa returns are cheapest ($169–204 ea); MCO Frontier 10:07 PM nonstop is the cheapest from Orlando; Trenton's Frontier jumped to $423 ea. SUNDAY: Orlando nonstops are $726+ per person — out. The only sane Sunday options are from Tampa (Frontier 7:16 AM nonstop $218 ea, United via DC $219 ea) or a 5:30 AM Delta connection from MCO ($289 ea). A Sunday return gives up the last park day and means the family leaves before the band buses do. Use the Date chips on the ✈ Flights tab to compare Sun vs Mon.",
     "date": "2026-11-09",
     "placeId": "phl-airport",
     "options": [
@@ -227,7 +386,19 @@
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$169 ea — cheapest return. Full last morning, 1h28 in Chicago. Pairs with a Tampa arrival (one rental, no one-way fee)."
+        "notes": "$169 ea — cheapest return. Full last morning, 1h28 in Chicago. Pairs with a Tampa arrival (one rental, no one-way fee).",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "United",
+          "depart": "2026-11-09T16:26",
+          "arrive": "2026-11-09T23:09",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Chicago",
+          "layover": "1h28",
+          "cabinNotes": "Likely basic economy"
+        }
       },
       {
         "id": "o-mon-tpa-phl-f9-atl",
@@ -239,7 +410,19 @@
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$174 ea. 1h13 in Atlanta."
+        "notes": "$174 ea. 1h13 in Atlanta.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T17:54",
+          "arrive": "2026-11-09T23:16",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h13",
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-tpa-phl-f9-956",
@@ -251,7 +434,17 @@
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$179 ea. Nonstop, full Monday in the parks, but home ~2 AM Tuesday (school)."
+        "notes": "$179 ea. Nonstop, full Monday in the parks, but home ~2 AM Tuesday (school).",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T21:56",
+          "arrive": "2026-11-10T00:29",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-phl-f9-1007",
@@ -263,7 +456,17 @@
         "location": "Orlando (MCO) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$194 ea. Cheapest MCO return; nonstop; full Monday; home ~2 AM Tuesday."
+        "notes": "$194 ea. Cheapest MCO return; nonstop; full Monday; home ~2 AM Tuesday.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T22:07",
+          "arrive": "2026-11-10T00:35",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-tpa-phl-f9-955",
@@ -275,7 +478,17 @@
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$204 ea. Nonstop, home by early afternoon — gives up Monday in Orlando (leave hotel ~6:30 AM)."
+        "notes": "$204 ea. Nonstop, home by early afternoon — gives up Monday in Orlando (leave hotel ~6:30 AM).",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T09:55",
+          "arrive": "2026-11-09T12:34",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-phl-f9-859",
@@ -287,7 +500,17 @@
         "location": "Orlando (MCO) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$211 ea. Nonstop morning return from MCO."
+        "notes": "$211 ea. Nonstop morning return from MCO.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T08:59",
+          "arrive": "2026-11-09T11:30",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-phl-wn-bna",
@@ -299,7 +522,19 @@
         "location": "Orlando (MCO) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$213 ea. Carry-on included."
+        "notes": "$213 ea. Carry-on included.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Southwest",
+          "depart": "2026-11-09T18:55",
+          "arrive": "2026-11-10T00:10",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Nashville",
+          "layover": "1h05",
+          "cabinNotes": "Carry-on included"
+        }
       },
       {
         "id": "o-mon-mco-phl-f9-atl",
@@ -311,7 +546,19 @@
         "location": "Orlando (MCO) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$215 ea. Reasonable arrival time, half a Monday."
+        "notes": "$215 ea. Reasonable arrival time, half a Monday.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-09T12:54",
+          "arrive": "2026-11-09T18:19",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h30",
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-phl-ua-ord",
@@ -323,7 +570,19 @@
         "location": "Orlando (MCO) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$230 ea (was $194 on Oct 8)."
+        "notes": "$230 ea (was $194 on Oct 8).",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "United",
+          "depart": "2026-11-09T16:32",
+          "arrive": "2026-11-09T23:09",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Chicago",
+          "layover": "1h08",
+          "cabinNotes": "Likely basic economy"
+        }
       },
       {
         "id": "o-mon-sfb-ttn-g4",
@@ -335,7 +594,17 @@
         "location": "Orlando Sanford (SFB) → Trenton",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$263 ea. Only affordable Trenton return — but a 6 AM departure from Sanford (leave hotel ~3:45 AM) and a different airport from arrival."
+        "notes": "$263 ea. Only affordable Trenton return — but a 6 AM departure from Sanford (leave hotel ~3:45 AM) and a different airport from arrival.",
+        "flight": {
+          "from": "SFB",
+          "to": "TTN",
+          "airline": "Allegiant",
+          "depart": "2026-11-09T06:00",
+          "arrive": "2026-11-09T08:35",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-ttn-f9",
@@ -347,7 +616,17 @@
         "location": "Orlando (MCO) → Trenton",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$423 ea (was $234 on Oct 4). Ideal timing and airport, but the price has run away."
+        "notes": "$423 ea (was $234 on Oct 4). Ideal timing and airport, but the price has run away.",
+        "flight": {
+          "from": "MCO",
+          "to": "TTN",
+          "airline": "Frontier",
+          "depart": "2026-11-09T16:43",
+          "arrive": "2026-11-09T19:15",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       },
       {
         "id": "o-mon-mco-ewr-ua",
@@ -359,11 +638,160 @@
         "location": "Orlando (MCO) → Newark",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T16:35:00Z",
-        "notes": "$261 ea. Newark nonstops are $344+/ea. Reference only."
+        "notes": "$261 ea. Newark nonstops are $344+/ea. Reference only.",
+        "flight": {
+          "from": "MCO",
+          "to": "EWR",
+          "airline": "United",
+          "depart": "2026-11-09T09:35",
+          "arrive": "2026-11-09T16:49",
+          "stops": 1,
+          "passengers": 4,
+          "via": "(connection)",
+          "cabinNotes": "Likely basic economy"
+        }
+      },
+      {
+        "id": "o-sun-tpa-phl-f9-716",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Tampa%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→PHL Frontier nonstop 7:16 AM → 9:54 AM",
+        "status": "shortlist",
+        "totalPrice": 872,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$218 ea — the only cheap Sunday nonstop. Leave the Disney area by ~4:45 AM, or sleep in Tampa Saturday night. Gives up Sunday entirely; home by lunch.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T07:16",
+          "arrive": "2026-11-08T09:54",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
+      },
+      {
+        "id": "o-sun-tpa-phl-ua-iad",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Tampa%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→PHL United via Washington 8:30 AM → 2:16 PM",
+        "status": "shortlist",
+        "totalPrice": 877,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$219 ea. 2h14 in Washington; carry-on included on United standard fares (check basic economy).",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "United",
+          "depart": "2026-11-08T08:30",
+          "arrive": "2026-11-08T14:16",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Washington (IAD)",
+          "layover": "2h14",
+          "cabinNotes": "Likely basic economy"
+        }
+      },
+      {
+        "id": "o-sun-mco-phl-dl-atl",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL Delta via Atlanta 5:30 AM → 11:00 AM",
+        "status": "shortlist",
+        "totalPrice": 1157,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$289 ea. Cheapest Sunday from Orlando; 5:30 AM departure.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Delta",
+          "depart": "2026-11-08T05:30",
+          "arrive": "2026-11-08T11:00",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h56"
+        }
+      },
+      {
+        "id": "o-sun-mco-phl-f9-dtw",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL Frontier via Detroit 8:52 AM → 4:43 PM",
+        "status": "shortlist",
+        "totalPrice": 1164,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$291 ea. 3h21 in Detroit.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T08:52",
+          "arrive": "2026-11-08T16:43",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Detroit",
+          "layover": "3h21",
+          "cabinNotes": "Carry-on not included"
+        }
+      },
+      {
+        "id": "o-sun-mco-phl-wn-310",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL Southwest nonstop 3:10 PM → 5:40 PM",
+        "status": "rejected",
+        "totalPrice": 2902,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$726 ea — Sunday nonstops from MCO are $726–824/person (Southwest 9:25 AM, 3:10 PM, 8:35 PM all $726; Frontier $766–824). Reference only.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Southwest",
+          "depart": "2026-11-08T15:10",
+          "arrive": "2026-11-08T17:40",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on included"
+        }
+      },
+      {
+        "id": "o-sun-mco-ewr-dl-atl",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20EWR%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→EWR Delta via Atlanta 5:30 AM → 10:30 AM",
+        "status": "rejected",
+        "totalPrice": 1193,
+        "currency": "USD",
+        "location": "Orlando (MCO) → Newark",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:15:00Z",
+        "notes": "$298 ea. Newark nonstops Sunday are $520–536/person. Reference only.",
+        "flight": {
+          "from": "MCO",
+          "to": "EWR",
+          "airline": "Delta",
+          "depart": "2026-11-08T05:30",
+          "arrive": "2026-11-08T10:30",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h17"
+        }
       }
     ],
     "createdAt": "2026-10-10T16:40:00Z",
-    "updatedAt": "2026-10-10T16:40:00Z"
+    "updatedAt": "2026-10-10T17:20:00Z"
   },
   {
     "id": "auto-01-parade-weekend-hotel-disney-area",

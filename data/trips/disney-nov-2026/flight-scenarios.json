@@ -1,0 +1,34 @@
+[
+  {
+    "id": "fs-seed-tampa-via-atl-tpa-return",
+    "itineraryId": "01-parade-weekend",
+    "name": "Favorite A — Wed PHL→TPA via ATL, Fri PHL 5:15 AM, Mon 9:55 AM TPA→PHL",
+    "selections": {
+      "f-out-3pax": "o-wed-phl-tpa-f9-atl",
+      "f-out-1pax": "o-fri-phl-mco-f9-515",
+      "f-return-4pax": "o-mon-tpa-phl-f9-955"
+    },
+    "penalties": {
+      "TTN": 0,
+      "PHL": 50,
+      "EWR": 125
+    },
+    "notes": "$401 + $129 + $816 = $1,346 fare. One rental at TPA both ends. Monday 9:55 AM from Tampa means leaving the Disney area by ~7 AM (easy if sleeping in Tampa Sunday night). 1h05 Frontier connection in Atlanta on the way down."
+  },
+  {
+    "id": "fs-seed-tampa-via-atl-mco-return",
+    "itineraryId": "01-parade-weekend",
+    "name": "Favorite B — Wed PHL→TPA via ATL, Fri PHL 5:15 AM, Mon 8:59 AM MCO→PHL",
+    "selections": {
+      "f-out-3pax": "o-wed-phl-tpa-f9-atl",
+      "f-out-1pax": "o-fri-phl-mco-f9-515",
+      "f-return-4pax": "o-mon-mco-phl-f9-859"
+    },
+    "penalties": {
+      "TTN": 0,
+      "PHL": 50,
+      "EWR": 125
+    },
+    "notes": "$401 + $129 + $844 = $1,374 fare. Fits a Disney-area hotel (MCO is 30 min away) but the rental is picked up at TPA and dropped at MCO — expect a one-way fee. Both favorites give up Monday park time."
+  }
+]

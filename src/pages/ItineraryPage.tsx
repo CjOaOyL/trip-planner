@@ -14,10 +14,11 @@ import DayTable from '../components/DayTable';
 import PlacePanel from '../components/PlacePanel';
 import RouteMap from '../components/RouteMap';
 import ReservationsTab from '../components/ReservationsTab';
+import FlightScenariosTab from '../components/FlightScenariosTab';
 import TripOverview from '../components/TripOverview';
 import CompareView from '../components/CompareView';
 
-type Tab = 'itinerary' | 'overview' | 'compare' | 'reservations';
+type Tab = 'itinerary' | 'overview' | 'compare' | 'reservations' | 'flights';
 
 export default function ItineraryPage() {
   const { tripId, itineraryId } = useParams<{ tripId: string; itineraryId: string }>();
@@ -151,12 +152,15 @@ export default function ItineraryPage() {
   const grandTotal = totalActivityCost + totalLodgingCost;
   const hasCostData = grandTotal > 0;
   const isCustom = isCustomItinerary(tripId!, itinerary.id);
+  const hasFlightOptions = listReservations(tripId!, itinerary.id)
+    .some((r) => r.category === 'flight' && (r.options ?? []).some((o) => o.flight));
 
   const TABS: { id: Tab; label: string }[] = [
     { id: 'itinerary',    label: 'Itinerary' },
     { id: 'overview',     label: 'Overview' },
     { id: 'compare',      label: 'Compare' },
     { id: 'reservations', label: 'Reservations' },
+    ...(hasFlightOptions ? [{ id: 'flights' as Tab, label: '✈ Flights' }] : []),
   ];
 
   return (
@@ -318,7 +322,7 @@ export default function ItineraryPage() {
       </div>
 
       {/* ── Tab content ── */}
-      <div className={`${tab === 'overview' || tab === 'compare' ? '' : 'max-w-3xl mx-auto'} px-4 py-6`}>
+      <div className={`${tab === 'overview' || tab === 'compare' || tab === 'flights' ? '' : 'max-w-3xl mx-auto'} px-4 py-6`}>
 
         {/* Itinerary tab */}
         {tab === 'itinerary' && (
@@ -395,6 +399,11 @@ export default function ItineraryPage() {
             trip={trip}
             itinerary={itinerary}
           />
+        )}
+
+        {/* Flight scenarios tab */}
+        {tab === 'flights' && tripId && (
+          <FlightScenariosTab tripId={tripId} itineraryId={itinerary.id} trip={trip} />
         )}
       </div>
 

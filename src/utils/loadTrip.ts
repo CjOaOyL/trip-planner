@@ -1,6 +1,7 @@
 import type { Trip, TripMeta, Place, Itinerary } from '../types';
 import { getCustomItineraries } from './customItineraries';
 import { mergeSeedReservations, type SeedReservation } from './reservations';
+import { mergeSeedFlightScenarios, type SeedFlightScenario } from './flightScenarios';
 
 /**
  * Registry of all available trips.
@@ -42,6 +43,7 @@ export async function loadTrip(tripId: string): Promise<Trip> {
   // Optional: seed reservations from repo if the trip has them.
   // No-op for trips without a reservations.json file.
   await loadSeedReservations(tripId);
+  await loadSeedFlightScenarios(tripId);
 
   return { meta, places, itineraries: allItineraries };
 }
@@ -51,6 +53,15 @@ async function loadSeedReservations(tripId: string): Promise<void> {
     const mod = await import(`../../data/trips/${tripId}/reservations.json`);
     const seed = mod.default as SeedReservation[];
     mergeSeedReservations(tripId, seed);
+  } catch {
+    // No seed file for this trip — fine.
+  }
+}
+
+async function loadSeedFlightScenarios(tripId: string): Promise<void> {
+  try {
+    const mod = await import(`../../data/trips/${tripId}/flight-scenarios.json`);
+    mergeSeedFlightScenarios(tripId, mod.default as SeedFlightScenario[]);
   } catch {
     // No seed file for this trip — fine.
   }
