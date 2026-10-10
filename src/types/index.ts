@@ -144,6 +144,8 @@ export interface TripMeta {
   tripType?: TripType;      // defaults to 'road-trip' if absent
   coverImage?: string;
   itineraryIds: string[];
+  /** Per-person, per-leg fare penalty by airport code used when ranking flight scenarios (e.g. { PHL: 50, EWR: 125 }). */
+  airportPenalties?: Record<string, number>;
 }
 
 // ─── The full loaded trip (meta + places + itineraries) ───────────────────────
@@ -177,6 +179,20 @@ export type BookingOptionStatus = 'shortlist' | 'rejected' | 'chosen';
 
 export type BookingOptionAvailability = 'available' | 'unavailable' | 'unknown';
 
+/** Structured flight data for a BookingOption on a `flight` reservation. Times are local ISO datetimes without zone ("2026-11-05T20:01"). */
+export interface FlightDetails {
+  from: string;          // IATA departure airport, e.g. "PHL"
+  to: string;            // IATA arrival airport, e.g. "MCO"
+  airline: string;
+  depart: string;        // local ISO datetime at origin
+  arrive: string;        // local ISO datetime at destination
+  stops: number;         // 0 = nonstop
+  via?: string;          // layover city/airport text, e.g. "Chicago"
+  layover?: string;      // layover length text, e.g. "1h56"
+  passengers: number;    // seats priced into totalPrice
+  cabinNotes?: string;   // e.g. "carry-on not included"
+}
+
 export interface BookingOption {
   id: string;
   url: string;
@@ -202,6 +218,8 @@ export interface BookingOption {
   // Availability for the reservation's dates
   availability?: BookingOptionAvailability;
   availabilityCheckedAt?: string;   // ISO datetime of last check
+  reviewSummary?: string;    // 1–2 sentence gist of what guests say (key review takeaways)
+  flight?: FlightDetails;    // present on options of a `flight` reservation
   // Catch-all
   notes?: string;
   scrapedAt?: string;         // when AI auto-fill last ran
@@ -233,3 +251,19 @@ export interface Reservation {
 
 // Persisted in localStorage under key: `reservations:${tripId}`
 export type ReservationStore = Record<string, Reservation>; // keyed by reservation.id
+
+// ─── Flight scenarios (one chosen option per flight leg, saved per trip) ──────
+
+export interface FlightScenario {
+  id: string;
+  tripId: string;
+  itineraryId?: string;
+  name: string;
+  selections: Record<string, string>;   // reservationId → optionId
+  penalties: Record<string, number>;    // airport code → per-person per-leg penalty used when saved
+  notes?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+// Persisted in localStorage under key: `flight-scenarios:${tripId}`

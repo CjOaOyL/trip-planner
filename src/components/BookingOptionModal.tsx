@@ -25,6 +25,7 @@ type FormState = {
   guests: string;
   amenities: string;     // comma-separated input
   imageUrl: string;
+  reviewSummary: string;
   notes: string;
 };
 
@@ -42,6 +43,7 @@ function blank(): FormState {
     guests: '',
     amenities: '',
     imageUrl: '',
+    reviewSummary: '',
     notes: '',
   };
 }
@@ -60,6 +62,7 @@ function fromOption(o: BookingOption): FormState {
     guests: o.guests != null ? String(o.guests) : '',
     amenities: (o.amenities ?? []).join(', '),
     imageUrl: o.imageUrl ?? '',
+    reviewSummary: o.reviewSummary ?? '',
     notes: o.notes ?? '',
   };
 }
@@ -160,6 +163,7 @@ export default function BookingOptionModal({
       guests: num(form.guests),
       amenities: amenities.length ? amenities : undefined,
       imageUrl: form.imageUrl.trim() || undefined,
+      reviewSummary: form.reviewSummary.trim() || undefined,
       notes: form.notes.trim() || undefined,
     };
 
@@ -334,6 +338,18 @@ export default function BookingOptionModal({
                 />
               </div>
             )}
+
+            {/* Review summary */}
+            <div>
+              <label className="block text-xs font-semibold text-stone-500 mb-1">Key review summary</label>
+              <textarea
+                value={form.reviewSummary}
+                onChange={(e) => set('reviewSummary', e.target.value)}
+                rows={2}
+                placeholder="What guests consistently say — e.g. 'Spotless, host very responsive; street parking tight'"
+                className="w-full border border-stone-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-300 resize-none"
+              />
+            </div>
 
             {/* Notes */}
             <div>
