@@ -372,7 +372,7 @@
     "category": "flight",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "Priced 2026-10-10 for 4 passengers; totalPrice = all 4 tickets. Thandi returns on the MBG bus (Sunday night departure). MONDAY: Tampa returns are cheapest ($169–204 ea); MCO Frontier 10:07 PM nonstop is the cheapest from Orlando; Trenton's Frontier jumped to $423 ea. SUNDAY: Orlando nonstops are $726+ per person — out. The only sane Sunday options are from Tampa (Frontier 7:16 AM nonstop $218 ea, United via DC $219 ea) or a 5:30 AM Delta connection from MCO ($289 ea). A Sunday return gives up the last park day and means the family leaves before the band buses do. Use the Date chips on the ✈ Flights tab to compare Sun vs Mon.",
+    "notes": "Priced 2026-10-10 for 4 passengers; totalPrice = all 4 tickets. Thandi returns on the MBG bus (Sunday night departure). MONDAY: Tampa returns are cheapest ($169–204 ea); MCO Frontier 10:07 PM nonstop is the cheapest from Orlando; Trenton's Frontier jumped to $423 ea. SUNDAY: Orlando nonstops are $726+ per person — out. The only sane Sunday options are from Tampa (Frontier 7:16 AM nonstop $218 ea, United via DC $219 ea) or a 5:30 AM Delta connection from MCO ($289 ea). A Sunday return gives up the last park day and means the family leaves before the band buses do. SUNDAY AFTERNOON: nothing cheap — best are Frontier via Atlanta at ~1 PM from TPA ($335 ea) or MCO ($340 ea), landing 6:19 PM; afternoon nonstops are $544–726+ per person. Use the Date chips on the ✈ Flights tab to compare Sun vs Mon.",
     "date": "2026-11-09",
     "placeId": "phl-airport",
     "options": [
@@ -788,10 +788,128 @@
           "via": "Atlanta",
           "layover": "1h17"
         }
+      },
+      {
+        "id": "o-sun-pm-mco-phl-f9-rdu",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL Frontier via Raleigh 2:39 PM → 11:24 PM",
+        "status": "shortlist",
+        "totalPrice": 1092,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:24:00Z",
+        "notes": "$273 ea — cheapest Sunday-afternoon departure, but a 5h22 layover in Raleigh and an 11:24 PM arrival.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T14:39",
+          "arrive": "2026-11-08T23:24",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Raleigh",
+          "layover": "5h22",
+          "cabinNotes": "Carry-on not included"
+        }
+      },
+      {
+        "id": "o-sun-pm-tpa-phl-f9-atl",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Tampa%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→PHL Frontier via Atlanta 12:59 PM → 6:19 PM",
+        "status": "shortlist",
+        "totalPrice": 1338,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:24:00Z",
+        "notes": "$335 ea. Best-timed Sunday afternoon option: half a day in the parks, home by dinner. 1h23 in Atlanta.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T12:59",
+          "arrive": "2026-11-08T18:19",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h23",
+          "cabinNotes": "Carry-on not included"
+        }
+      },
+      {
+        "id": "o-sun-pm-mco-phl-f9-atl",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL Frontier via Atlanta 12:54 PM → 6:19 PM",
+        "status": "shortlist",
+        "totalPrice": 1358,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:24:00Z",
+        "notes": "$340 ea. Same arrival as the Tampa version, from Orlando. 1h30 in Atlanta.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T12:54",
+          "arrive": "2026-11-08T18:19",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Atlanta",
+          "layover": "1h30",
+          "cabinNotes": "Carry-on not included"
+        }
+      },
+      {
+        "id": "o-sun-pm-mco-phl-b6-bos",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Orlando%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · MCO→PHL JetBlue via Boston 2:50 PM → 9:11 PM",
+        "status": "shortlist",
+        "totalPrice": 1578,
+        "currency": "USD",
+        "location": "Orlando (MCO) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:24:00Z",
+        "notes": "$395 ea. Carry-on included, roomiest seats; 1h05 in Boston.",
+        "flight": {
+          "from": "MCO",
+          "to": "PHL",
+          "airline": "JetBlue",
+          "depart": "2026-11-08T14:50",
+          "arrive": "2026-11-08T21:11",
+          "stops": 1,
+          "passengers": 4,
+          "via": "Boston",
+          "layover": "1h05",
+          "cabinNotes": "Carry-on included"
+        }
+      },
+      {
+        "id": "o-sun-pm-tpa-phl-f9-452",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20Tampa%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→PHL Frontier nonstop 4:52 PM → 7:30 PM",
+        "status": "rejected",
+        "totalPrice": 2472,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-10T17:24:00Z",
+        "notes": "$618 ea — the cheapest Sunday-afternoon NONSTOP anywhere (AA 7:05 PM is $604, Frontier 9:56 PM $544; MCO nonstops are $726+). Reference only.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Frontier",
+          "depart": "2026-11-08T16:52",
+          "arrive": "2026-11-08T19:30",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on not included"
+        }
       }
     ],
     "createdAt": "2026-10-10T16:40:00Z",
-    "updatedAt": "2026-10-10T17:20:00Z"
+    "updatedAt": "2026-10-10T17:24:00Z"
   },
   {
     "id": "auto-01-parade-weekend-hotel-disney-area",
