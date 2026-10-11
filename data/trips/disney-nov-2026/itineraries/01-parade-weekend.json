@@ -2,7 +2,7 @@
   "id": "01-parade-weekend",
   "name": "Family Plan",
   "tagline": "3 fly to Tampa Wed night, Magic Kingdom Thu, Epcot + parade + World Showcase Fri, Hollywood Studios Sat, Tampa Sun, home Mon",
-  "vibe": "One park per day, no Park Hopper. Built for a 12- and 14-year-old who like Star Wars, Marvel, Frozen and Toy Story, prefer mild rides (motion sickness — no inversions), and want a mid-day break. Lightning Lane Multi Pass each day.",
+  "vibe": "One park per day, no Park Hopper. Built for a 12- and 14-year-old who like Star Wars, Marvel, Frozen and Toy Story, prefer mild rides (motion sickness — no inversions), and want a mid-day break. Lightning Lane Multi Pass each day. Museum-style exhibits (Carousel of Progress, Hall of Presidents, pavilion films, Nemo) are cut in favor of attractions with a new angle — see the Exhibit Scorecard.",
   "highlights": [
     "MBG parade at Epcot — Fri 10:05 AM",
     "World Showcase lap + Food & Wine booths",
@@ -126,10 +126,10 @@
         {
           "time": "1:15 PM",
           "placeId": "magic-kingdom",
-          "activity": "Cool-down block: PeopleMover, Carousel of Progress, Hall of Presidents (all seated, air-conditioned)",
+          "activity": "Cool-down block: PeopleMover → Monsters, Inc. Laugh Floor (live improv, seated, cold) → Mickey's PhilharMagic if you still need AC",
           "durationMinutes": 120,
           "eventType": "rest",
-          "notes": "This is the mid-day break. If the hotel is checked in by now, the pool works too — but the drive out and back costs ~1 hr."
+          "notes": "Skipping Carousel of Progress and Hall of Presidents — museum-grade exhibits (2 of 5 on the scorecard). If the hotel is already checked in, the pool works too, but the drive out and back costs ~1 hr."
         },
         {
           "time": "3:30 PM",
@@ -235,10 +235,10 @@
         {
           "time": "12:00 PM",
           "placeId": "epcot",
-          "activity": "World Showcase lap, counter-clockwise from Norway: Mexico (Gran Fiesta boat ride), Norway, China (film/acrobats), Germany (Karamell-Küche, train village), Italy",
+          "activity": "World Showcase lap, counter-clockwise from Norway: Mexico (Gran Fiesta boat if there's no line), Norway, China (acrobats if performing — skip the film), Germany (Karamell-Küche, train village), Italy",
           "durationMinutes": 150,
           "eventType": "activity",
-          "notes": "Grab a Food & Wine Festival passport at the entrance — stamp the Global Marketplace booths as you go. Lunch = $5–10 festival plates along the way (budget ~$60–80 for four)."
+          "notes": "Grab a Food & Wine Festival passport at the entrance — stamp the Global Marketplace booths as you go. Lunch = $5–10 festival plates along the way (budget ~$60–80 for four). Skip the pavilion films (Canada/China/France) and The Seas with Nemo — museum-grade or built for small kids."
         },
         {
           "time": "2:30 PM",
@@ -257,7 +257,7 @@
         {
           "time": "5:45 PM",
           "placeId": "epcot",
-          "activity": "Back to World Celebration: Soarin' (Multi Pass) → Spaceship Earth. Test Track is the kids' call (fast, no inversions).",
+          "activity": "Back to World Celebration: Soarin' (Multi Pass) → Mission: SPACE green side (mild, no spin) → Club Cool (free world Coke flavors) → Spaceship Earth if there's time. Test Track is the kids' call (fast, no inversions).",
           "durationMinutes": 75,
           "eventType": "activity"
         },
@@ -329,10 +329,10 @@
         {
           "time": "3:45 PM",
           "placeId": "hollywood-studios",
-          "activity": "Mickey & Minnie's Runaway Railway (Multi Pass) → Frozen Sing-Along Celebration (seated show) → the Star Wars flight simulator in Echo Lake (mild, optional)",
+          "activity": "Mickey & Minnie's Runaway Railway (Multi Pass) → Indiana Jones Epic Stunt Spectacular (check showtimes — how movie stunts are staged, then staged) → Frozen Sing-Along Celebration (seated show)",
           "durationMinutes": 120,
           "eventType": "activity",
-          "notes": "Skip: Tower of Terror (drops), Rock 'n' Roller Coaster (inverts)."
+          "notes": "Skip: Tower of Terror (drops), Rock 'n' Roller Coaster (inverts), Walt Disney Presents (museum exhibit). Star Tours only if the line is short."
         },
         {
           "time": "6:00 PM",
