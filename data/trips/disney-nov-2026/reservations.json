@@ -912,20 +912,20 @@
     "updatedAt": "2026-10-10T17:24:00Z"
   },
   {
-    "id": "auto-01-parade-weekend-hotel-disney-area",
-    "name": "Lodging near the parks — Thu Nov 5 → Sun Nov 8 (3 nights, 4 guests)",
+    "id": "hotel-disney-area-2n",
+    "name": "Lodging near the parks — Thu Nov 5 → Sat Nov 7 (2 nights, 4 guests)",
     "category": "hotel",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "PLAN (2026-10-10): Wed and Sun nights with family in Tampa; Thu/Fri/Sat nights near the parks → 3 hotel nights, not 4. Options below were priced for Nov 5–9 (4 nights) — expect ~25% less for 3. Pop Century for 3 nights ≈ $882 incl. tax (Thu $272 + Fri $305 + Sat $305) and puts you on the Skyliner for Friday's parade and Saturday's Hollywood Studios. Airbnb prices are 4-night totals as displayed; VRBO = nightly × 4 before fees; hotels = Google Hotels nightly × 4 before tax/parking; Disney = rack incl. tax. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
+    "notes": "SUPERSEDES the Oct 10 '3 nights / priced for 4' lodging card (that card stays in your browser until you delete it; its 4-night figures are preserved in each option's notes here). PLAN (updated 2026-10-17): price the near-the-parks stay as 2 NIGHTS (Thu + Fri), checkout Sat Nov 7 with bags at bell services for the Hollywood Studios day. Every option's totalPrice is now a 2-night figure so the compare table sorts fairly; the itinerary still shows Sat night at disney-area — if we keep 3 nights, add ~50% (Disney Sat rates = Fri rates). BASIS: Disney = rack incl. 12.5% tax from the Oct 10 price check (Thu + Fri); hotels = Google Hotels nightly × 2 BEFORE ~12.5% tax, resort fee and parking; Airbnb = half the displayed 4-night rate (short stays usually price higher and some listings have 3-night minimums — re-check the link, which now carries Nov 5–7); VRBO = nightly × 2 before fees. DISCOUNTS LIVE NOW: Disney room offer up to 20% off select rooms Oct 4–Dec 24 (Values typically ~10%); Disney Springs Resort Area hotels from $125/night incl. resort fee, bookable through Nov 13 for stays through Dec 18. PICK: Pop Century (~$577 rack / ~$520 at 10% off) puts both Skyliner parks within 15–25 min with no car; Drury Plaza (~$335–450 incl. tax, breakfast and dinner-hour included) is the cheapest decent hotel. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
     "checkIn": "2026-11-05",
-    "checkOut": "2026-11-08",
+    "checkOut": "2026-11-07",
     "placeId": "disney-area",
-    "createdAt": "2026-10-10T16:40:00Z",
-    "updatedAt": "2026-10-10T18:40:00Z",
+    "createdAt": "2026-10-17T18:55:00Z",
+    "updatedAt": "2026-10-17T18:55:00Z",
     "options": [
       {
-        "id": "o-tampa-family",
+        "id": "o-tampa-family-2n",
         "url": "https://maps.google.com/?q=Tampa,FL",
         "title": "Stay with family in Tampa — $0 lodging, ~1h30 commute each way",
         "status": "shortlist",
@@ -939,15 +939,15 @@
         "notes": "Free, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks."
       },
       {
-        "id": "o-airbnb-36585565",
-        "url": "https://www.airbnb.com/rooms/36585565?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-36585565-2n",
+        "url": "https://www.airbnb.com/rooms/36585565?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Water park resort condo near Disney — 3BR/3BA (Kissimmee) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 574,
+        "totalPrice": 288,
         "currency": "USD",
         "location": "Kissimmee, FL — resort with water park",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 144,
         "bedrooms": 3,
         "beds": 4,
@@ -961,18 +961,18 @@
           "Full kitchen",
           "Resort"
         ],
-        "notes": "CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
+        "notes": "2-NIGHT ESTIMATE ~$288 = half the displayed 4-night rate ($574); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
       },
       {
-        "id": "o-airbnb-12309561",
-        "url": "https://www.airbnb.com/rooms/12309561?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-12309561-2n",
+        "url": "https://www.airbnb.com/rooms/12309561?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Resort home with lazy river near Disney — 3BR/2BA, 7 beds (Kissimmee) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 656,
+        "totalPrice": 328,
         "currency": "USD",
         "location": "Kissimmee, FL — resort community",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 164,
         "bedrooms": 3,
         "beds": 7,
@@ -986,18 +986,18 @@
           "Resort pool",
           "Full kitchen"
         ],
-        "notes": "$656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
+        "notes": "2-NIGHT ESTIMATE ~$328 = half the displayed 4-night rate ($656); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
       },
       {
-        "id": "o-airbnb-814679478584015457",
-        "url": "https://www.airbnb.com/rooms/814679478584015457?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-814679478584015457-2n",
+        "url": "https://www.airbnb.com/rooms/814679478584015457?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "18th-floor condo over pool and lake — 2BR/2BA (Orlando, near Disney) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 671,
+        "totalPrice": 336,
         "currency": "USD",
         "location": "Orlando, FL — high-rise resort near Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 168,
         "bedrooms": 2,
         "beds": 4,
@@ -1012,18 +1012,18 @@
           "Lake view",
           "Full kitchen"
         ],
-        "notes": "$671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
+        "notes": "2-NIGHT ESTIMATE ~$336 = half the displayed 4-night rate ($671); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
       },
       {
-        "id": "o-airbnb-1665923956290113935",
-        "url": "https://www.airbnb.com/rooms/1665923956290113935?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-1665923956290113935-2n",
+        "url": "https://www.airbnb.com/rooms/1665923956290113935?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Resort condo with pool and jacuzzi near Disney — 2BR/2BA (Kissimmee) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 764,
+        "totalPrice": 382,
         "currency": "USD",
         "location": "Kissimmee, FL — resort",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 191,
         "bedrooms": 2,
         "beds": 4,
@@ -1037,18 +1037,18 @@
           "Jacuzzi",
           "Full kitchen"
         ],
-        "notes": "$764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
+        "notes": "2-NIGHT ESTIMATE ~$382 = half the displayed 4-night rate ($764); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
       },
       {
-        "id": "o-airbnb-1732777257590720334",
-        "url": "https://www.airbnb.com/rooms/1732777257590720334?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-1732777257590720334-2n",
+        "url": "https://www.airbnb.com/rooms/1732777257590720334?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Private heated pool home, 8 min to Disney — 4BR/3BA (Kissimmee) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 801,
+        "totalPrice": 400,
         "currency": "USD",
         "location": "Kissimmee, FL — 8 min to Disney",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 200,
         "bedrooms": 4,
         "beds": 7,
@@ -1061,18 +1061,18 @@
           "Full kitchen",
           "Whole house"
         ],
-        "notes": "$801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
+        "notes": "2-NIGHT ESTIMATE ~$400 = half the displayed 4-night rate ($801); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
       },
       {
-        "id": "o-airbnb-841630856781083949",
-        "url": "https://www.airbnb.com/rooms/841630856781083949?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-841630856781083949-2n",
+        "url": "https://www.airbnb.com/rooms/841630856781083949?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Private pool + resort water park home — 3BR/3BA (Kissimmee) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 898,
+        "totalPrice": 450,
         "currency": "USD",
         "location": "Kissimmee, FL — resort community",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 225,
         "bedrooms": 3,
         "beds": 4,
@@ -1086,18 +1086,18 @@
           "Water park",
           "Full kitchen"
         ],
-        "notes": "$898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
+        "notes": "2-NIGHT ESTIMATE ~$450 = half the displayed 4-night rate ($898); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
       },
       {
-        "id": "o-airbnb-1566253415254826838",
-        "url": "https://www.airbnb.com/rooms/1566253415254826838?check_in=2026-11-05&check_out=2026-11-09&adults=4",
+        "id": "o-airbnb-1566253415254826838-2n",
+        "url": "https://www.airbnb.com/rooms/1566253415254826838?check_in=2026-11-05&check_out=2026-11-07&adults=4",
         "title": "Windsor Hills townhouse with private pool — 3BR/3BA (gated, ~3 mi to Disney) — Airbnb",
         "status": "shortlist",
-        "totalPrice": 1000,
+        "totalPrice": 500,
         "currency": "USD",
         "location": "Windsor Hills, Kissimmee — closest resort community to Disney",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 250,
         "bedrooms": 3,
         "beds": 5,
@@ -1112,18 +1112,18 @@
           "Clubhouse",
           "Full kitchen"
         ],
-        "notes": "$1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
+        "notes": "2-NIGHT ESTIMATE ~$500 = half the displayed 4-night rate ($1000); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
       },
       {
-        "id": "o-vrbo-258562",
-        "url": "https://www.vrbo.com/258562?startDate=2026-11-05&endDate=2026-11-09&adults=4",
+        "id": "o-vrbo-258562-2n",
+        "url": "https://www.vrbo.com/258562?startDate=2026-11-05&endDate=2026-11-07&adults=4",
         "title": "Windsor Hills condo — 3BR, 6 beds (Four Corners, ~5 min to Disney) — VRBO",
         "status": "shortlist",
-        "totalPrice": 600,
+        "totalPrice": 300,
         "currency": "USD",
         "location": "Windsor Hills, 5.9 mi from Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 150,
         "bedrooms": 3,
         "beds": 6,
@@ -1136,18 +1136,18 @@
           "Game room",
           "Gated"
         ],
-        "notes": "$150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
+        "notes": "2-NIGHT ESTIMATE ~$300 before VRBO fees/taxes (nightly $150 × 2; was $600 for 4 nights). Original notes: $150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
       },
       {
-        "id": "o-vrbo-4155441",
-        "url": "https://www.vrbo.com/4155441?startDate=2026-11-05&endDate=2026-11-09&adults=4",
+        "id": "o-vrbo-4155441-2n",
+        "url": "https://www.vrbo.com/4155441?startDate=2026-11-05&endDate=2026-11-07&adults=4",
         "title": "Condo near Disney — 2BR/2BA, EV charging, free parking (Orlando, 4 mi) — VRBO",
         "status": "shortlist",
-        "totalPrice": 612,
+        "totalPrice": 306,
         "currency": "USD",
         "location": "Orlando, 4.2 mi from Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 153,
         "bedrooms": 2,
         "beds": 4,
@@ -1162,18 +1162,18 @@
           "Hot tub",
           "Game room"
         ],
-        "notes": "$153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
+        "notes": "2-NIGHT ESTIMATE ~$306 before VRBO fees/taxes (nightly $153 × 2; was $612 for 4 nights). Original notes: $153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
       },
       {
-        "id": "o-vrbo-4522838",
-        "url": "https://www.vrbo.com/4522838?startDate=2026-11-05&endDate=2026-11-09&adults=4",
+        "id": "o-vrbo-4522838-2n",
+        "url": "https://www.vrbo.com/4522838?startDate=2026-11-05&endDate=2026-11-07&adults=4",
         "title": "Cozy 3BR condo, ~2 miles from Disney (Four Corners) — VRBO",
         "status": "shortlist",
-        "totalPrice": 684,
+        "totalPrice": 342,
         "currency": "USD",
         "location": "Four Corners, 5.8 mi from Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 171,
         "bedrooms": 3,
         "beds": 5,
@@ -1184,18 +1184,18 @@
           "Full kitchen",
           "Washer/dryer"
         ],
-        "notes": "$171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
+        "notes": "2-NIGHT ESTIMATE ~$342 before VRBO fees/taxes (nightly $171 × 2; was $684 for 4 nights). Original notes: $171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
       },
       {
-        "id": "o-vrbo-23110",
-        "url": "https://www.vrbo.com/23110?startDate=2026-11-05&endDate=2026-11-09&adults=4",
+        "id": "o-vrbo-23110-2n",
+        "url": "https://www.vrbo.com/23110?startDate=2026-11-05&endDate=2026-11-07&adults=4",
         "title": "Sheraton Vistana Resort Villas — 2BR/2BA villa, 4 beds (2.7 mi to LBV) — VRBO",
         "status": "shortlist",
-        "totalPrice": 728,
+        "totalPrice": 364,
         "currency": "USD",
         "location": "Orlando, 2.7 mi from Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 182,
         "bedrooms": 2,
         "beds": 4,
@@ -1209,18 +1209,18 @@
           "Kids club",
           "Resort"
         ],
-        "notes": "$182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
+        "notes": "2-NIGHT ESTIMATE ~$364 before VRBO fees/taxes (nightly $182 × 2; was $728 for 4 nights). Original notes: $182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
       },
       {
-        "id": "o-vrbo-1909922",
-        "url": "https://www.vrbo.com/1909922?startDate=2026-11-05&endDate=2026-11-09&adults=4",
+        "id": "o-vrbo-1909922-2n",
+        "url": "https://www.vrbo.com/1909922?startDate=2026-11-05&endDate=2026-11-07&adults=4",
         "title": "3BR house with private pool + hot tub, 6 minutes from Disney (Four Corners) — VRBO",
         "status": "shortlist",
-        "totalPrice": 892,
+        "totalPrice": 446,
         "currency": "USD",
         "location": "Four Corners, 6.1 mi from Lake Buena Vista",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 223,
         "bedrooms": 3,
         "beds": 4,
@@ -1233,18 +1233,18 @@
           "Playground",
           "Full kitchen"
         ],
-        "notes": "$223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
+        "notes": "2-NIGHT ESTIMATE ~$446 before VRBO fees/taxes (nightly $223 × 2; was $892 for 4 nights). Original notes: $223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
       },
       {
-        "id": "o-hotel-springhill-mv",
-        "url": "https://www.google.com/travel/search?q=SpringHill%20Suites%20by%20Marriott%20Orlando%20Lake%20Buena%20Vista%20in%20the%20Marriott%20Village&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-springhill-mv-2n",
+        "url": "https://www.google.com/travel/search?q=SpringHill%20Suites%20by%20Marriott%20Orlando%20Lake%20Buena%20Vista%20in%20the%20Marriott%20Village&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "SpringHill Suites Orlando LBV (Marriott Village) — suites, free breakfast — $74/night",
         "status": "shortlist",
-        "totalPrice": 296,
+        "totalPrice": 148,
         "currency": "USD",
         "location": "Marriott Village, Lake Buena Vista — 2.9 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 74,
         "guests": 4,
         "rating": 4.0,
@@ -1256,18 +1256,18 @@
           "Suite with sofa bed",
           "Parking ($)"
         ],
-        "notes": "$74/night on Google Hotels → ~$296 for 4 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
+        "notes": "$74/night on Google Hotels → ~$148 for 2 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
       },
       {
-        "id": "o-hotel-hilton-grande-villas",
-        "url": "https://www.google.com/travel/search?q=Hilton%20Vacation%20Club%20Grande%20Villas%20Orlando&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-hilton-grande-villas-2n",
+        "url": "https://www.google.com/travel/search?q=Hilton%20Vacation%20Club%20Grande%20Villas%20Orlando&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "Hilton Vacation Club Grande Villas — villas with kitchen, free parking — $99/night",
         "status": "shortlist",
-        "totalPrice": 396,
+        "totalPrice": 198,
         "currency": "USD",
         "location": "Lake Buena Vista — 3.1 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 99,
         "guests": 4,
         "rating": 4.5,
@@ -1278,18 +1278,18 @@
           "Pool",
           "Restaurant"
         ],
-        "notes": "$99/night → ~$396 for 4 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
+        "notes": "$99/night → ~$198 for 2 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
       },
       {
-        "id": "o-hotel-holiday-inn-resort-lbv",
-        "url": "https://www.google.com/travel/search?q=Holiday%20Inn%20Resort%20Orlando%20Lake%20Buena%20Vista%20by%20IHG&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-holiday-inn-resort-lbv-2n",
+        "url": "https://www.google.com/travel/search?q=Holiday%20Inn%20Resort%20Orlando%20Lake%20Buena%20Vista%20by%20IHG&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "Holiday Inn Resort Orlando Lake Buena Vista — $76/night",
         "status": "shortlist",
-        "totalPrice": 304,
+        "totalPrice": 152,
         "currency": "USD",
         "location": "Lake Buena Vista — 2.9 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 76,
         "guests": 4,
         "rating": 4.2,
@@ -1299,18 +1299,18 @@
           "Hot tub",
           "Parking ($)"
         ],
-        "notes": "$76/night → ~$304 for 4 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
+        "notes": "$76/night → ~$152 for 2 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
       },
       {
-        "id": "o-hotel-wyndham-lbv-ds",
-        "url": "https://www.google.com/travel/search?q=Wyndham%20Lake%20Buena%20Vista%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-wyndham-lbv-ds-2n",
+        "url": "https://www.google.com/travel/search?q=Wyndham%20Lake%20Buena%20Vista%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "Wyndham Lake Buena Vista — Disney Springs Resort Area, walk to Disney Springs — $115/night",
         "status": "shortlist",
-        "totalPrice": 460,
+        "totalPrice": 230,
         "currency": "USD",
         "location": "Disney Springs Resort Area — 2.3 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 115,
         "guests": 4,
         "rating": 4.0,
@@ -1322,18 +1322,18 @@
           "Hot tub",
           "Resort fee"
         ],
-        "notes": "$115/night → ~$460 for 4 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
+        "notes": "$115/night → ~$230 for 2 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
       },
       {
-        "id": "o-hotel-wyndham-grand-bonnet-creek",
-        "url": "https://www.google.com/travel/search?q=Wyndham%20Grand%20Orlando%20Resort%20Bonnet%20Creek&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-wyndham-grand-bonnet-creek-2n",
+        "url": "https://www.google.com/travel/search?q=Wyndham%20Grand%20Orlando%20Resort%20Bonnet%20Creek&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "Wyndham Grand Orlando Resort Bonnet Creek — inside Disney property, 1.5 mi to Epcot — $176/night",
         "status": "shortlist",
-        "totalPrice": 704,
+        "totalPrice": 352,
         "currency": "USD",
         "location": "Bonnet Creek — 1.5 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 176,
         "guests": 4,
         "rating": 4.4,
@@ -1344,18 +1344,18 @@
           "Shuttle to parks",
           "Resort fee"
         ],
-        "notes": "$176/night → ~$704 for 4 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
+        "notes": "$176/night → ~$352 for 2 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
       },
       {
-        "id": "o-hotel-hilton-lbv-ds",
-        "url": "https://www.google.com/travel/search?q=Hilton%20Orlando%20Lake%20Buena%20Vista%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-09&adults=4&hl=en&gl=us&curr=USD",
+        "id": "o-hotel-hilton-lbv-ds-2n",
+        "url": "https://www.google.com/travel/search?q=Hilton%20Orlando%20Lake%20Buena%20Vista%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
         "title": "Hilton Orlando Lake Buena Vista — Disney Springs Area — $177/night",
         "status": "shortlist",
-        "totalPrice": 708,
+        "totalPrice": 354,
         "currency": "USD",
         "location": "Disney Springs Resort Area — 2.4 mi to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 177,
         "guests": 4,
         "rating": 4.2,
@@ -1366,18 +1366,114 @@
           "Pool",
           "Resort fee"
         ],
-        "notes": "$177/night → ~$708 for 4 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
+        "notes": "$177/night → ~$354 for 2 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
       },
       {
-        "id": "o-disney-all-star-movies",
-        "url": "https://disneyworld.disney.go.com/resorts/all-star-movies-resort/",
-        "title": "Disney's All-Star Movies — standard room — ~$874 for 4 nights (rack, incl. tax)",
+        "id": "o-hotel-drury-plaza-ds-2n",
+        "url": "https://www.google.com/travel/search?q=Drury%20Plaza%20Hotel%20Orlando%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
+        "title": "Drury Plaza Hotel Orlando — Disney Springs Area — free breakfast + evening Kickback, no resort fee — ~$149/night promo",
         "status": "shortlist",
-        "totalPrice": 874,
+        "totalPrice": 298,
+        "currency": "USD",
+        "location": "Disney Springs Resort Area — 2.3 mi to Epcot",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 149,
+        "guests": 4,
+        "amenities": [
+          "Free hot breakfast",
+          "Free 5:30 Kickback (hot food + 3 drinks)",
+          "No resort fee",
+          "Early Entry",
+          "Disney Springs walk",
+          "Park shuttle",
+          "Pool + splash pad"
+        ],
+        "notes": "Fall promo from ~$149/night incl. resort fee (none) → ~$298 for 2 nights before 12.5% tax (~$335–450 all-in depending on the night). Official Disney Springs Resort Area hotel, so 30-min Early Entry applies. Breakfast and the 5:30 PM Kickback (hot food, three drinks) are included — that's dinner for the kids. Shuttles to the parks run on a schedule; budget a rideshare back from Hollywood Studios Saturday night. Parking fee to confirm if we drive. Promo bookable through Nov 13 for stays through Dec 18. Cheapest decent hotel option.",
+        "rating": 4.6,
+        "reviewCount": 4200
+      },
+      {
+        "id": "o-hotel-hilton-bv-palace-ds-2n",
+        "url": "https://www.google.com/travel/search?q=Hilton%20Orlando%20Buena%20Vista%20Palace%20Disney%20Springs%20Area&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
+        "title": "Hilton Orlando Buena Vista Palace — Disney Springs Area — ~$168/night promo",
+        "status": "shortlist",
+        "totalPrice": 336,
+        "currency": "USD",
+        "location": "Disney Springs Resort Area — walk to Disney Springs, 2.3 mi to Epcot",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 168,
+        "guests": 4,
+        "amenities": [
+          "Disney Springs walk",
+          "Disney shuttle",
+          "Early Entry",
+          "Lazy river pool",
+          "Resort fee (incl. in promo)"
+        ],
+        "notes": "Fall promo from ~$168/night (resort fee included this year) → ~$336 for 2 nights before tax and parking. Skybridge to Disney Springs, lazy-river pool, Early Entry. Compare with the Hilton LBV next door (~$177).",
+        "rating": 4.2,
+        "reviewCount": 7000
+      },
+      {
+        "id": "o-hotel-signia-bonnet-creek-2n",
+        "url": "https://www.google.com/travel/search?q=Signia%20by%20Hilton%20Orlando%20Bonnet%20Creek&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
+        "title": "Signia by Hilton Orlando Bonnet Creek — official WDW hotel, inside the property — ~$204/night + resort fee",
+        "status": "shortlist",
+        "totalPrice": 408,
+        "currency": "USD",
+        "location": "Bonnet Creek — 1.5 mi to Epcot, shuttle to parks",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 204,
+        "guests": 4,
+        "amenities": [
+          "Lazy river",
+          "Pools",
+          "Shuttle to parks",
+          "Early Entry",
+          "Resort fee (~$45)",
+          "Parking ($)"
+        ],
+        "notes": "~$204/night → ~$408 for 2 nights before tax, ~$45/night resort fee and parking. Shares the Bonnet Creek lagoon, lazy river and shuttles with the Waldorf Astoria and Wyndham Grand; Hilton Honors points and status work. Official WDW hotel perks (Early Entry). Sister Waldorf Astoria is the splurge version.",
+        "rating": 4.5,
+        "reviewCount": 9000
+      },
+      {
+        "id": "o-hotel-swan-dolphin-2n",
+        "url": "https://www.google.com/travel/search?q=Walt%20Disney%20World%20Swan%20and%20Dolphin&checkin=2026-11-05&checkout=2026-11-07&adults=4&hl=en&gl=us&curr=USD",
+        "title": "Walt Disney World Swan / Dolphin (Marriott) — walk to Epcot, boat to Hollywood Studios — ~$280/night + $50 resort fee + $40 parking",
+        "status": "shortlist",
+        "totalPrice": 560,
+        "currency": "USD",
+        "location": "Epcot Resort Area — 10-min walk to Epcot International Gateway, boat/20-min walk to Hollywood Studios",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 280,
+        "guests": 4,
+        "amenities": [
+          "Walk to Epcot",
+          "Boat to Hollywood Studios",
+          "Early Entry",
+          "Marriott Bonvoy",
+          "Resort fee $50/night",
+          "Self-parking $40/night"
+        ],
+        "notes": "Room ~$280–400/night → ~$560–800 for 2 nights BEFORE tax, the $50/night resort fee and $40/night self-parking (~$850–1,150 all-in). Marriott-run hotels on Disney property between Epcot's back gate and the Studios; Early Entry applies but NOT Disney's deluxe-only extended evening hours. Swan Reserve next door is the newer, quieter tower at similar rates. Bonvoy points or a free-night certificate make this the cheap way to sleep walking distance from the parade route.",
+        "rating": 4.4,
+        "reviewCount": 12000
+      },
+      {
+        "id": "o-disney-all-star-movies-2n",
+        "url": "https://disneyworld.disney.go.com/resorts/all-star-movies-resort/",
+        "title": "Disney's All-Star Movies — standard room — ~$437 for 2 nights (rack, incl. tax) · bus only",
+        "status": "shortlist",
+        "totalPrice": 437,
         "currency": "USD",
         "location": "Disney Value resort — Animal Kingdom area, bus to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 219,
         "guests": 4,
         "rating": 4.4,
@@ -1388,18 +1484,18 @@
           "Disney bus",
           "Pool"
         ],
-        "notes": "Rack rate incl. 13.5% tax: $207 (Thu) + $230 (Fri) + $230 (Sat) + $207 (Sun) = $874. Google Hotels showed $150/night (pre-tax/discounted) — Disney fall discounts of 20–25% are common, so check. Perks: free theme-park parking, 30-min Early Entry, Disney buses. Rooms sleep 4 (2 queens). No Skyliner — bus to Epcot."
+        "notes": "Rack incl. tax: $207 (Thu) + $230 (Fri) = $437 for 2 nights; ~$395 at 10% off. Cheapest Disney-owned room, but Animal Kingdom side: bus to Epcot and Hollywood Studios (20–30 min). Perks: 30-min Early Entry, free parking, Disney buses. Rooms sleep 4 (2 queens)."
       },
       {
-        "id": "o-disney-pop-century",
+        "id": "o-disney-pop-century-2n",
         "url": "https://disneyworld.disney.go.com/resorts/pop-century-resort/",
-        "title": "Disney's Pop Century — standard room — ~$1,154 for 4 nights (rack, incl. tax) · SKYLINER to Epcot",
+        "title": "Disney's Pop Century — standard room — ~$577 for 2 nights (rack, incl. tax) · SKYLINER to Epcot + Hollywood Studios",
         "status": "shortlist",
-        "totalPrice": 1154,
+        "totalPrice": 577,
         "currency": "USD",
         "location": "Disney Value resort — on the Skyliner line to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 289,
         "guests": 4,
         "rating": 4.5,
@@ -1410,18 +1506,18 @@
           "Early Entry",
           "Pools"
         ],
-        "notes": "Rack rate incl. tax: $272 + $305 + $305 + $272 = $1,154 (Fall 2 season). THE PARADE-DAY PICK among Disney hotels: the Skyliner drops you at Epcot's International Gateway, which is steps from the UK pavilion where the parade steps off — no car, no parking. Free park parking, Early Entry. Rooms sleep 4. Check for a fall room discount."
+        "notes": "Rack incl. tax: $272 (Thu) + $305 (Fri) = $577 for 2 nights; ~$520 with the 10% fall room offer. THE PARADE-DAY PICK: Skyliner station on the bridge to Art of Animation → Hollywood Studios ~15 min, Epcot International Gateway ~25 min (change at Caribbean Beach), and the Gateway is steps from the UK pavilion where the parade steps off. No car, no parking. Room: 260 sq ft, queen bed + queen Murphy bed, one bathroom, mini fridge; soft-goods refresh finished March 2026. Ten decade-themed buildings (50s–90s) around Hourglass Lake with giant icons; Classic Hall has check-in, the Everything POP food court and bus stops; three pools (Hippy Dippy is the main one). Preferred rooms (+~$30/night) = 50s/60s/70s near Classic Hall; building 3 (60s) is between the lobby and the Skyliner bridge — request '60s, lake view, upper floor away from the pool'. Downsides: one bathroom, food court only, exterior-corridor noise. Early Entry, free parking, no resort fee."
       },
       {
-        "id": "o-disney-art-of-animation",
+        "id": "o-disney-art-of-animation-2n",
         "url": "https://disneyworld.disney.go.com/resorts/art-of-animation-resort/",
-        "title": "Disney's Art of Animation — Little Mermaid room ~$1,326 / Family Suite ~$2,510 (rack, incl. tax) · Skyliner",
+        "title": "Disney's Art of Animation — Little Mermaid standard room — ~$663 for 2 nights (rack, incl. tax) · Skyliner",
         "status": "shortlist",
-        "totalPrice": 1326,
+        "totalPrice": 663,
         "currency": "USD",
         "location": "Disney Value resort — Skyliner to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 332,
         "guests": 4,
         "amenities": [
@@ -1430,18 +1526,43 @@
           "Early Entry",
           "Themed pools"
         ],
-        "notes": "Little Mermaid standard rooms: $324 + $339 + $339 + $324 = $1,326. Family Suites (sleep 6, kitchenette, 2 baths): $596 + $659 + $659 + $596 = $2,510. Skyliner to Epcot's International Gateway. Little Mermaid rooms are a long walk from the Skyliner station."
+        "notes": "Little Mermaid standard rooms: $324 (Thu) + $339 (Fri) = $663 for 2 nights. Same Skyliner station as Pop Century, but the Little Mermaid buildings are the far end of the resort (8–10 min walk to the station). Family Suites are a separate option below."
       },
       {
-        "id": "o-disney-caribbean-beach",
+        "id": "o-disney-art-of-animation-suite-2n",
+        "url": "https://disneyworld.disney.go.com/resorts/art-of-animation-resort/",
+        "title": "Disney's Art of Animation — Family Suite (2 baths, sleeps 6) — ~$1,255 for 2 nights (rack, incl. tax) · Skyliner",
+        "status": "shortlist",
+        "totalPrice": 1255,
+        "currency": "USD",
+        "location": "Disney Value resort — Skyliner to Epcot + Hollywood Studios",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 628,
+        "guests": 6,
+        "amenities": [
+          "Skyliner",
+          "2 bathrooms",
+          "Kitchenette",
+          "Early Entry",
+          "Free park parking",
+          "Themed pools"
+        ],
+        "notes": "Family Suites: $596 (Thu) + $659 (Fri) = $1,255 for 2 nights; ~$1,130 at 10% off. Separate bedroom, two bathrooms, table bed + sofa bed, kitchenette. Cars, Lion King and Finding Nemo wings; Cars is closest to the Skyliner. Worth it only if two bathrooms matter more than ~$680 vs Pop Century.",
+        "bedrooms": 1,
+        "bathrooms": 2,
+        "beds": 3
+      },
+      {
+        "id": "o-disney-caribbean-beach-2n",
         "url": "https://disneyworld.disney.go.com/resorts/caribbean-beach-resort/",
-        "title": "Disney's Caribbean Beach — standard room — ~$1,770 for 4 nights (rack, incl. tax) · Skyliner hub",
-        "status": "rejected",
-        "totalPrice": 1770,
+        "title": "Disney's Caribbean Beach — standard room — ~$885 for 2 nights (rack, incl. tax) · Skyliner hub",
+        "status": "shortlist",
+        "totalPrice": 885,
         "currency": "USD",
         "location": "Disney Moderate resort — Skyliner hub to Epcot",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 443,
         "guests": 5,
         "amenities": [
@@ -1450,18 +1571,18 @@
           "Early Entry",
           "Pools"
         ],
-        "notes": "Rack incl. tax: $426 + $459 + $459 + $426 = $1,770. Moderate resort at the Skyliner hub (one ride to Epcot International Gateway). Rooms sleep 4–5. Pricey without a discount."
+        "notes": "ONE TIER UP FROM POP: the Moderate that fits this trip, because it is the Skyliner hub (no transfer to either park). Rack incl. tax: $426 (Thu) + $459 (Fri) = $885 for 2 nights; ~$800 at 10% off (Moderates may see up to 20%). The Skyliner hub itself: one ride to Epcot's International Gateway, one to Hollywood Studios. Bigger rooms (sleep 4–5), table-service restaurant, better pool. Sprawling — ask for Trinidad or Jamaica near the gondola station."
       },
       {
-        "id": "o-disney-port-orleans-fq",
+        "id": "o-disney-port-orleans-fq-2n",
         "url": "https://disneyworld.disney.go.com/resorts/port-orleans-resort-french-quarter/",
-        "title": "Disney's Port Orleans French Quarter — standard room — ~$1,668 for 4 nights (rack, incl. tax)",
+        "title": "Disney's Port Orleans French Quarter — standard room — ~$834 for 2 nights (rack, incl. tax)",
         "status": "rejected",
-        "totalPrice": 1668,
+        "totalPrice": 834,
         "currency": "USD",
         "location": "Disney Moderate resort — boat to Disney Springs, bus to parks",
         "availability": "available",
-        "availabilityCheckedAt": "2026-10-10T17:00:00Z",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
         "pricePerNight": 417,
         "guests": 4,
         "amenities": [
@@ -1470,7 +1591,29 @@
           "Boat to Disney Springs",
           "Pool"
         ],
-        "notes": "Rack incl. tax: $404 + $430 + $430 + $404 = $1,668. Compact, well-liked moderate; bus to Epcot (no Skyliner). Reference only unless discounted."
+        "notes": "Rack incl. tax: $404 (Thu) + $430 (Fri) = $834 for 2 nights. Compact, well-liked moderate; boat to Disney Springs, bus to the parks (no Skyliner). Reference only unless discounted."
+      },
+      {
+        "id": "o-disney-epcot-deluxe-2n",
+        "url": "https://disneyworld.disney.go.com/resorts/beach-club-resort/",
+        "title": "Disney's Beach Club / Yacht Club / BoardWalk Inn — deluxe, walk to both parks — ~$1,460–2,030 for 2 nights (incl. tax)",
+        "status": "rejected",
+        "totalPrice": 1750,
+        "currency": "USD",
+        "location": "Epcot Resort Area — walk to Epcot International Gateway and Hollywood Studios",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-17T18:55:00Z",
+        "pricePerNight": 875,
+        "guests": 4,
+        "amenities": [
+          "Walk to Epcot",
+          "Walk/boat to Hollywood Studios",
+          "Extended Evening Hours",
+          "Early Entry",
+          "Stormalong Bay pool",
+          "Free park parking"
+        ],
+        "notes": "Deluxe rack ~$650–900/night incl. tax → ~$1,460–2,030 for 2 nights; the fall offer's up-to-20% tier applies to many Deluxe rooms. Best location on property for this trip (parade route is a 10-min walk) plus deluxe-only Extended Evening Hours, at 3–4× Pop Century. Reference only."
       }
     ]
   },
