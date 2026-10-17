@@ -20,5 +20,27 @@
       "f-return-4pax": "o-mon-mco-phl-f9-859"
     },
     "notes": "$401 + $129 + $844 = $1,374 fare. Fits a Disney-area hotel (MCO is 30 min away) but the rental is picked up at TPA and dropped at MCO — expect a one-way fee. Both favorites give up Monday park time."
+  },
+  {
+    "id": "fs-seed-nicoles-weekend-early",
+    "itineraryId": "02-nicoles-weekend",
+    "name": "Nicole's Weekend — Wed PHL→TPA via ATL, Fri PHL 5:15 AM, Sun 7:16 AM TPA→PHL",
+    "selections": {
+      "f-out-3pax-nw": "o-wed-phl-tpa-f9-atl-nw",
+      "f-out-1pax-nw": "o-fri-phl-mco-f9-515-nw",
+      "f-return-4pax-nw": "o-sun-tpa-phl-f9-716-nw"
+    },
+    "notes": "$401 + $129 + $872 = $1,402 fare — $56 more than the Family Plan's Favorite A, but with two fewer ticket days and one fewer hotel night. One rental at TPA both ends. 4:45 AM departure from Nicole's on Sunday."
+  },
+  {
+    "id": "fs-seed-nicoles-weekend-noon",
+    "itineraryId": "02-nicoles-weekend",
+    "name": "Nicole's Weekend — same, but Sun 12:59 PM TPA→PHL via Atlanta",
+    "selections": {
+      "f-out-3pax-nw": "o-wed-phl-tpa-f9-atl-nw",
+      "f-out-1pax-nw": "o-fri-phl-mco-f9-515-nw",
+      "f-return-4pax-nw": "o-sun-pm-tpa-phl-f9-atl-nw"
+    },
+    "notes": "$401 + $129 + $1,338 = $1,868 fare. No pre-dawn alarm, home by 7:30 PM, 1h23 connection in Atlanta. Costs $466 more than the early flight."
   }
 ]

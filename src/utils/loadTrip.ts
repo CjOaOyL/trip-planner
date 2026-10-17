@@ -91,7 +91,7 @@ function getItineraryIds(tripId: string): string[] {
       '02-visitor-guide',
     ],
     'thanksgiving-md-2026': ['01-thanksgiving-weekend'],
-    'disney-nov-2026': ['00-mbg-band-schedule', '01-parade-weekend'],
+    'disney-nov-2026': ['00-mbg-band-schedule', '01-parade-weekend', '02-nicoles-weekend'],
   };
   return map[tripId] ?? [];
 }
