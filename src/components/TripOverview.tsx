@@ -13,6 +13,7 @@ import {
 import type { Itinerary, Place, Day, Segment, TimeSlot } from '../types';
 import { inferSlot, SLOT_ORDER, SLOT_LABEL, SLOT_BG } from '../utils/slotUtils';
 import { computeStayRuns, dayColorIdxArray, isStayBoundary, STAY_PALETTE } from '../utils/stayUtils';
+import { dayDateText } from '../utils/dayDate';
 import {
   uid,
   DraggableCard,
@@ -29,6 +30,8 @@ interface Props {
   itinerary: Itinerary;
   places: Record<string, Place>;
   onPlaceClick: (place: Place) => void;
+  /** Trip start date (ISO). Used to date the day columns when a day's label carries no date. */
+  startDate?: string;
 }
 
 /* ─── Grid state ────────────────────────────────────────────────────────────── */
@@ -94,7 +97,7 @@ function activeSlots(grid: GridDay[], bench: DndSegment[]): TimeSlot[] {
    Component
    ═══════════════════════════════════════════════════════════════════════════════ */
 
-export default function TripOverview({ itinerary, places, onPlaceClick }: Props) {
+export default function TripOverview({ itinerary, places, onPlaceClick, startDate }: Props) {
   const navigate = useNavigate();
 
   /* ── State ── */
@@ -345,7 +348,12 @@ export default function TripOverview({ itinerary, places, onPlaceClick }: Props)
                       className={`border-b min-w-[180px] max-w-[220px] ${boundary ? 'border-r-2 border-stone-400' : 'border-r border-stone-200'}`}
                     >
                       <div className="px-3 py-2 text-left">
-                        <div className="font-bold text-stone-700">Day {i + 1}</div>
+                        <div className="font-bold text-stone-700">
+                          Day {i + 1}
+                          {dayDateText(day, i, startDate) && (
+                            <span className="ml-1.5 font-medium text-stone-500">· {dayDateText(day, i, startDate)}</span>
+                          )}
+                        </div>
                         <div className="text-stone-400 font-normal truncate">{day.theme}</div>
                       </div>
                     </th>

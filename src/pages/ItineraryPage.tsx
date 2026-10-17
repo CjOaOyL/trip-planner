@@ -376,7 +376,7 @@ export default function ItineraryPage() {
 
         {/* Overview tab */}
         {tab === 'overview' && (
-          <TripOverview itinerary={liveItinerary} places={trip.places} onPlaceClick={setSelectedPlace} />
+          <TripOverview itinerary={liveItinerary} places={trip.places} onPlaceClick={setSelectedPlace} startDate={trip.meta.startDate} />
         )}
 
         {/* Compare tab */}
