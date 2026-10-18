@@ -917,12 +917,12 @@
     "category": "hotel",
     "status": "needed",
     "itineraryId": "01-parade-weekend",
-    "notes": "FAMILY PLAN lodging (Thu, Fri, Sat). Every option's totalPrice is a 3-night figure: Disney = Thu + Fri + Sat rack incl. tax (Sat = Fri rate); hotels = nightly × 3 before tax/fees; Airbnb/VRBO = nightly × 3 before fees (cleaning fees hurt less over 3 nights). Links carry Nov 5–8. Pop Century 3 nights ≈ $882 rack / ~$795 at 10% off. The Oct 10 '3 nights / priced for 4' card stays in your browser until you delete it; this card replaces it. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
+    "notes": "PARK ACCESS KEY — 🚡/🚌/🚶 Disney-side: Disney transport + free park parking + Early Entry (Pop Century / Art of Animation / Caribbean Beach ride the Skyliner straight to the parade gate; Swan/Dolphin and the Epcot deluxes walk there). 🚐 Shuttle hotels: free scheduled bus to the parks, but NO free park parking ($30/day if you drive) plus hotel parking/resort fees. 🚗 Airbnb/VRBO/Tampa: drive + $30/day. FAMILY PLAN lodging (Thu, Fri, Sat). Every option's totalPrice is a 3-night figure: Disney = Thu + Fri + Sat rack incl. tax (Sat = Fri rate); hotels = nightly × 3 before tax/fees; Airbnb/VRBO = nightly × 3 before fees (cleaning fees hurt less over 3 nights). Links carry Nov 5–8. Pop Century 3 nights ≈ $882 rack / ~$795 at 10% off. The Oct 10 '3 nights / priced for 4' card stays in your browser until you delete it; this card replaces it. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
     "checkIn": "2026-11-05",
     "checkOut": "2026-11-08",
     "placeId": "disney-area",
     "createdAt": "2026-10-17T19:40:00Z",
-    "updatedAt": "2026-10-17T19:40:00Z",
+    "updatedAt": "2026-10-18T14:10:00Z",
     "options": [
       {
         "id": "o-tampa-family-3n",
@@ -936,7 +936,10 @@
         "availabilityCheckedAt": "2026-10-10T17:00:00Z",
         "pricePerNight": 0,
         "guests": 4,
-        "notes": "Free, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks."
+        "notes": "ACCESS: Drive 1h20–1h45 each way via I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
+        "amenities": [
+          "🚗 Drive · $30/day park parking"
+        ]
       },
       {
         "id": "o-airbnb-36585565-3n",
@@ -956,12 +959,13 @@
         "rating": 4.77,
         "reviewCount": 788,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Water park",
           "Pool",
           "Full kitchen",
           "Resort"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$432 (nightly $144 × 3, before fees/taxes). Original 4-night notes: CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$432 (nightly $144 × 3, before fees/taxes). Original 4-night notes: CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
       },
       {
         "id": "o-airbnb-12309561-3n",
@@ -982,11 +986,12 @@
         "reviewCount": 12,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Lazy river",
           "Resort pool",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$492 (nightly $164 × 3, before fees/taxes). Original 4-night notes: $656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$492 (nightly $164 × 3, before fees/taxes). Original 4-night notes: $656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
       },
       {
         "id": "o-airbnb-814679478584015457-3n",
@@ -1007,12 +1012,13 @@
         "reviewCount": 143,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Balcony",
           "Pool",
           "Lake view",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$504 (nightly $168 × 3, before fees/taxes). Original 4-night notes: $671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$504 (nightly $168 × 3, before fees/taxes). Original 4-night notes: $671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
       },
       {
         "id": "o-airbnb-1665923956290113935-3n",
@@ -1033,11 +1039,12 @@
         "reviewCount": 85,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Pool",
           "Jacuzzi",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$573 (nightly $191 × 3, before fees/taxes). Original 4-night notes: $764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$573 (nightly $191 × 3, before fees/taxes). Original 4-night notes: $764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
       },
       {
         "id": "o-airbnb-1732777257590720334-3n",
@@ -1057,11 +1064,12 @@
         "rating": 5.0,
         "reviewCount": 4,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private heated pool",
           "Full kitchen",
           "Whole house"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$600 (nightly $200 × 3, before fees/taxes). Original 4-night notes: $801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$600 (nightly $200 × 3, before fees/taxes). Original 4-night notes: $801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
       },
       {
         "id": "o-airbnb-841630856781083949-3n",
@@ -1082,11 +1090,12 @@
         "reviewCount": 98,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Water park",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$675 (nightly $225 × 3, before fees/taxes). Original 4-night notes: $898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$675 (nightly $225 × 3, before fees/taxes). Original 4-night notes: $898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
       },
       {
         "id": "o-airbnb-1566253415254826838-3n",
@@ -1107,12 +1116,13 @@
         "reviewCount": 41,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Gated resort",
           "Clubhouse",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$750 (nightly $250 × 3, before fees/taxes). Original 4-night notes: $1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$750 (nightly $250 × 3, before fees/taxes). Original 4-night notes: $1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
       },
       {
         "id": "o-vrbo-258562-3n",
@@ -1131,12 +1141,13 @@
         "rating": 4.9,
         "reviewCount": 65,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Resort pool",
           "Hot tub",
           "Game room",
           "Gated"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$450 (nightly $150 × 3, before fees/taxes). Original notes: $150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$450 (nightly $150 × 3, before fees/taxes). Original notes: $150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
       },
       {
         "id": "o-vrbo-4155441-3n",
@@ -1156,13 +1167,14 @@
         "rating": 4.5,
         "reviewCount": 51,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "EV charging",
           "Free parking",
           "Pool",
           "Hot tub",
           "Game room"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$459 (nightly $153 × 3, before fees/taxes). Original notes: $153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$459 (nightly $153 × 3, before fees/taxes). Original notes: $153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
       },
       {
         "id": "o-vrbo-4522838-3n",
@@ -1181,10 +1193,11 @@
         "rating": 4.9,
         "reviewCount": 38,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Full kitchen",
           "Washer/dryer"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$513 (nightly $171 × 3, before fees/taxes). Original notes: $171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$513 (nightly $171 × 3, before fees/taxes). Original notes: $171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
       },
       {
         "id": "o-vrbo-23110-3n",
@@ -1204,12 +1217,13 @@
         "rating": 4.6,
         "reviewCount": 1023,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Full kitchen",
           "Multiple pools",
           "Kids club",
           "Resort"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$546 (nightly $182 × 3, before fees/taxes). Original notes: $182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
+        "notes": "ACCESS: Sheraton Vistana typically runs a scheduled Disney shuttle for a fee — confirm with the resort. Otherwise drive + $30/day park parking.\n\n3-NIGHT ESTIMATE ~$546 (nightly $182 × 3, before fees/taxes). Original notes: $182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
       },
       {
         "id": "o-vrbo-1909922-3n",
@@ -1228,12 +1242,13 @@
         "rating": 5.0,
         "reviewCount": 127,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Hot tub",
           "Playground",
           "Full kitchen"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$669 (nightly $223 × 3, before fees/taxes). Original notes: $223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n3-NIGHT ESTIMATE ~$669 (nightly $223 × 3, before fees/taxes). Original notes: $223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
       },
       {
         "id": "o-hotel-springhill-mv-3n",
@@ -1250,13 +1265,14 @@
         "rating": 4.0,
         "reviewCount": 3200,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Free breakfast",
           "Pool",
           "Hot tub",
           "Suite with sofa bed",
           "Parking ($)"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$222 (nightly $74 × 3, before fees/taxes). $74/night on Google Hotels → ~$222 for 3 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
+        "notes": "ACCESS: Marriott Village: scheduled transportation to the Disney parks and Disney Springs included in the ~$5 resort fee (limited departures — check the timetable). Park parking $30/day if you drive; hotel parking ~$20/night. No Early Entry.\n\n3-NIGHT ESTIMATE ~$222 (nightly $74 × 3, before fees/taxes). $74/night on Google Hotels → ~$222 for 3 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
       },
       {
         "id": "o-hotel-hilton-grande-villas-3n",
@@ -1273,12 +1289,13 @@
         "rating": 4.5,
         "reviewCount": 4500,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Kitchen",
           "Free parking",
           "Pool",
           "Restaurant"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$297 (nightly $99 × 3, before fees/taxes). $99/night → ~$297 for 3 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
+        "notes": "ACCESS: Free hotel parking. Disney shuttle availability/fee not confirmed — ask the resort. Otherwise drive + $30/day park parking.\n\n3-NIGHT ESTIMATE ~$297 (nightly $99 × 3, before fees/taxes). $99/night → ~$297 for 3 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
       },
       {
         "id": "o-hotel-holiday-inn-resort-lbv-3n",
@@ -1295,11 +1312,12 @@
         "rating": 4.2,
         "reviewCount": 4700,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Pool",
           "Hot tub",
           "Parking ($)"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$228 (nightly $76 × 3, before fees/taxes). $76/night → ~$228 for 3 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
+        "notes": "ACCESS: Many LBV hotels run a scheduled Disney shuttle, often fee-based or limited — confirm before booking. Otherwise drive + $30/day park parking; hotel parking fee.\n\n3-NIGHT ESTIMATE ~$228 (nightly $76 × 3, before fees/taxes). $76/night → ~$228 for 3 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
       },
       {
         "id": "o-hotel-wyndham-lbv-ds-3n",
@@ -1316,13 +1334,14 @@
         "rating": 4.0,
         "reviewCount": 6500,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Pool",
           "Hot tub",
           "Resort fee"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$345 (nightly $115 × 3, before fees/taxes). $115/night → ~$345 for 3 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
+        "notes": "ACCESS: Disney Springs Resort Area: free hotel-run shuttle to all 4 parks (~every 30 min, drops at the MAIN Epcot entrance — ~15 min walk to World Showcase), 30-min Early Entry, walk to Disney Springs. NOT free park parking; hotel self-parking ~$25–30/night + resort fee.\n\n3-NIGHT ESTIMATE ~$345 (nightly $115 × 3, before fees/taxes). $115/night → ~$345 for 3 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
       },
       {
         "id": "o-hotel-wyndham-grand-bonnet-creek-3n",
@@ -1339,12 +1358,13 @@
         "rating": 4.4,
         "reviewCount": 3800,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Lazy river",
           "Pools",
           "Shuttle to parks",
           "Resort fee"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$528 (nightly $176 × 3, before fees/taxes). $176/night → ~$528 for 3 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
+        "notes": "ACCESS: Inside the Disney property line: complimentary scheduled shuttle to all 4 parks (main Epcot gate). Park parking $30/day if you drive; resort fee + hotel parking fee. Not a Disney Springs Area hotel, so no Early Entry.\n\n3-NIGHT ESTIMATE ~$528 (nightly $176 × 3, before fees/taxes). $176/night → ~$528 for 3 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
       },
       {
         "id": "o-hotel-hilton-lbv-ds-3n",
@@ -1361,12 +1381,13 @@
         "rating": 4.2,
         "reviewCount": 5900,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Pool",
           "Resort fee"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$531 (nightly $177 × 3, before fees/taxes). $177/night → ~$531 for 3 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks (covered by the ~$41/night resort charge), Early Entry, walk to Disney Springs. Park parking $30/day if you drive; hotel self-parking ~$38/night.\n\n3-NIGHT ESTIMATE ~$531 (nightly $177 × 3, before fees/taxes). $177/night → ~$531 for 3 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
       },
       {
         "id": "o-hotel-drury-plaza-ds-3n",
@@ -1381,6 +1402,7 @@
         "pricePerNight": 149,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Free hot breakfast",
           "Free 5:30 Kickback (hot food + 3 drinks)",
           "No resort fee",
@@ -1389,7 +1411,7 @@
           "Park shuttle",
           "Pool + splash pad"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$447 (nightly $149 × 3, before fees/taxes). Fall promo from ~$149/night incl. resort fee (none) → ~$447 for 3 nights before 12.5% tax (~$335–450 all-in depending on the night). Official Disney Springs Resort Area hotel, so 30-min Early Entry applies. Breakfast and the 5:30 PM Kickback (hot food, three drinks) are included — that's dinner for the kids. Shuttles to the parks run on a schedule; budget a rideshare back from Hollywood Studios Saturday night. Parking fee to confirm if we drive. Promo bookable through Nov 13 for stays through Dec 18. Cheapest decent hotel option.",
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks, Early Entry, walk to Disney Springs, no resort fee. Park parking $30/day if you drive; confirm hotel parking charge.\n\n3-NIGHT ESTIMATE ~$447 (nightly $149 × 3, before fees/taxes). Fall promo from ~$149/night incl. resort fee (none) → ~$447 for 3 nights before 12.5% tax (~$335–450 all-in depending on the night). Official Disney Springs Resort Area hotel, so 30-min Early Entry applies. Breakfast and the 5:30 PM Kickback (hot food, three drinks) are included — that's dinner for the kids. Shuttles to the parks run on a schedule; budget a rideshare back from Hollywood Studios Saturday night. Parking fee to confirm if we drive. Promo bookable through Nov 13 for stays through Dec 18. Cheapest decent hotel option.",
         "rating": 4.6,
         "reviewCount": 4200
       },
@@ -1406,13 +1428,14 @@
         "pricePerNight": 168,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Early Entry",
           "Lazy river pool",
           "Resort fee (incl. in promo)"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$504 (nightly $168 × 3, before fees/taxes). Fall promo from ~$168/night (resort fee included this year) → ~$504 for 3 nights before tax and parking. Skybridge to Disney Springs, lazy-river pool, Early Entry. Compare with the Hilton LBV next door (~$177).",
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks (in the ~$41/night resort charge), Early Entry, walk to Disney Springs. Park parking $30/day if you drive; hotel self-parking ~$38/night.\n\n3-NIGHT ESTIMATE ~$504 (nightly $168 × 3, before fees/taxes). Fall promo from ~$168/night (resort fee included this year) → ~$504 for 3 nights before tax and parking. Skybridge to Disney Springs, lazy-river pool, Early Entry. Compare with the Hilton LBV next door (~$177).",
         "rating": 4.2,
         "reviewCount": 7000
       },
@@ -1429,6 +1452,7 @@
         "pricePerNight": 204,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Lazy river",
           "Pools",
           "Shuttle to parks",
@@ -1436,7 +1460,7 @@
           "Resort fee (~$45)",
           "Parking ($)"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$612 (nightly $204 × 3, before fees/taxes). ~$204/night → ~$612 for 3 nights before tax, ~$45/night resort fee and parking. Shares the Bonnet Creek lagoon, lazy river and shuttles with the Waldorf Astoria and Wyndham Grand; Hilton Honors points and status work. Official WDW hotel perks (Early Entry). Sister Waldorf Astoria is the splurge version.",
+        "notes": "ACCESS: Official WDW hotel inside the property: complimentary shuttle to all 4 parks and Early Entry. Park parking $30/day if you drive; resort fee + hotel parking fee.\n\n3-NIGHT ESTIMATE ~$612 (nightly $204 × 3, before fees/taxes). ~$204/night → ~$612 for 3 nights before tax, ~$45/night resort fee and parking. Shares the Bonnet Creek lagoon, lazy river and shuttles with the Waldorf Astoria and Wyndham Grand; Hilton Honors points and status work. Official WDW hotel perks (Early Entry). Sister Waldorf Astoria is the splurge version.",
         "rating": 4.5,
         "reviewCount": 9000
       },
@@ -1453,6 +1477,7 @@
         "pricePerNight": 280,
         "guests": 4,
         "amenities": [
+          "🚶 Walk to Epcot's parade gate · Disney transport · Early Entry",
           "Walk to Epcot",
           "Boat to Hollywood Studios",
           "Early Entry",
@@ -1460,7 +1485,7 @@
           "Resort fee $50/night",
           "Self-parking $40/night"
         ],
-        "notes": "3-NIGHT ESTIMATE ~$840 (nightly $280 × 3, before fees/taxes). Room ~$280–400/night → ~$560–800 for 3 nights BEFORE tax, the $50/night resort fee and $40/night self-parking (~$850–1,150 all-in). Marriott-run hotels on Disney property between Epcot's back gate and the Studios; Early Entry applies but NOT Disney's deluxe-only extended evening hours. Swan Reserve next door is the newer, quieter tower at similar rates. Bonvoy points or a free-night certificate make this the cheap way to sleep walking distance from the parade route.",
+        "notes": "ACCESS: NO CAR NEEDED. ~15–20 min walk (or boat) to Epcot's International Gateway, boat to Hollywood Studios, Disney buses to Magic Kingdom; Early Entry. Marriott-run, so confirm whether theme-park parking is free for guests (it has changed) — hotel self-parking and resort fee apply.\n\n3-NIGHT ESTIMATE ~$840 (nightly $280 × 3, before fees/taxes). Room ~$280–400/night → ~$560–800 for 3 nights BEFORE tax, the $50/night resort fee and $40/night self-parking (~$850–1,150 all-in). Marriott-run hotels on Disney property between Epcot's back gate and the Studios; Early Entry applies but NOT Disney's deluxe-only extended evening hours. Swan Reserve next door is the newer, quieter tower at similar rates. Bonvoy points or a free-night certificate make this the cheap way to sleep walking distance from the parade route.",
         "rating": 4.4,
         "reviewCount": 12000
       },
@@ -1479,12 +1504,13 @@
         "rating": 4.4,
         "reviewCount": 30800,
         "amenities": [
+          "🚌 Disney buses · free park parking · Early Entry",
           "Free park parking",
           "Early Entry",
           "Disney bus",
           "Pool"
         ],
-        "notes": "3-NIGHT: ~$667 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $207 (Thu) + $230 (Fri) for Thu + Fri; ~$395 at 10% off. Cheapest Disney-owned room, but Animal Kingdom side: bus to Epcot and Hollywood Studios (20–30 min). Perks: 30-min Early Entry, free parking, Disney buses. Rooms sleep 4 (2 queens)."
+        "notes": "ACCESS: NO CAR NEEDED but bus-only (MK ~20 min, Epcot ~15 min, drops at the MAIN Epcot gate — ~15 min walk to World Showcase). Free park and hotel parking; Early Entry.\n\n3-NIGHT: ~$667 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $207 (Thu) + $230 (Fri) for Thu + Fri; ~$395 at 10% off. Cheapest Disney-owned room, but Animal Kingdom side: bus to Epcot and Hollywood Studios (20–30 min). Perks: 30-min Early Entry, free parking, Disney buses. Rooms sleep 4 (2 queens)."
       },
       {
         "id": "o-disney-pop-century-3n",
@@ -1501,12 +1527,13 @@
         "rating": 4.5,
         "reviewCount": 40000,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Pools"
         ],
-        "notes": "3-NIGHT: ~$882 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $272 (Thu) + $305 (Fri) for Thu + Fri; ~$520 with the 10% fall room offer. THE PARADE-DAY PICK: Skyliner station on the bridge to Art of Animation → Hollywood Studios ~15 min, Epcot International Gateway ~25 min (change at Caribbean Beach), and the Gateway is steps from the UK pavilion where the parade steps off. No car, no parking. Room: 260 sq ft, queen bed + queen Murphy bed, one bathroom, mini fridge; soft-goods refresh finished March 2026. Ten decade-themed buildings (50s–90s) around Hourglass Lake with giant icons; Classic Hall has check-in, the Everything POP food court and bus stops; three pools (Hippy Dippy is the main one). Preferred rooms (+~$30/night) = 50s/60s/70s near Classic Hall; building 3 (60s) is between the lobby and the Skyliner bridge — request '60s, lake view, upper floor away from the pool'. Downsides: one bathroom, food court only, exterior-corridor noise. Early Entry, free parking, no resort fee."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot's International Gateway (beside the UK pavilion where the parade starts) and to Hollywood Studios; Disney bus to Magic Kingdom. Free theme-park and hotel parking if you do drive; 30-min Early Entry.\n\n3-NIGHT: ~$882 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $272 (Thu) + $305 (Fri) for Thu + Fri; ~$520 with the 10% fall room offer. THE PARADE-DAY PICK: Skyliner station on the bridge to Art of Animation → Hollywood Studios ~15 min, Epcot International Gateway ~25 min (change at Caribbean Beach), and the Gateway is steps from the UK pavilion where the parade steps off. No car, no parking. Room: 260 sq ft, queen bed + queen Murphy bed, one bathroom, mini fridge; soft-goods refresh finished March 2026. Ten decade-themed buildings (50s–90s) around Hourglass Lake with giant icons; Classic Hall has check-in, the Everything POP food court and bus stops; three pools (Hippy Dippy is the main one). Preferred rooms (+~$30/night) = 50s/60s/70s near Classic Hall; building 3 (60s) is between the lobby and the Skyliner bridge — request '60s, lake view, upper floor away from the pool'. Downsides: one bathroom, food court only, exterior-corridor noise. Early Entry, free parking, no resort fee."
       },
       {
         "id": "o-disney-art-of-animation-3n",
@@ -1521,12 +1548,13 @@
         "pricePerNight": 332,
         "guests": 4,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Themed pools"
         ],
-        "notes": "3-NIGHT: ~$1,002 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Little Mermaid standard rooms: $324 (Thu) + $339 (Fri) for Thu + Fri. Same Skyliner station as Pop Century, but the Little Mermaid buildings are the far end of the resort (8–10 min walk to the station). Family Suites are a separate option below."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot (International Gateway) and Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry. Little Mermaid rooms are the far end of the resort from the Skyliner station.\n\n3-NIGHT: ~$1,002 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Little Mermaid standard rooms: $324 (Thu) + $339 (Fri) for Thu + Fri. Same Skyliner station as Pop Century, but the Little Mermaid buildings are the far end of the resort (8–10 min walk to the station). Family Suites are a separate option below."
       },
       {
         "id": "o-disney-art-of-animation-suite-3n",
@@ -1541,6 +1569,7 @@
         "pricePerNight": 628,
         "guests": 6,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner",
           "2 bathrooms",
           "Kitchenette",
@@ -1548,7 +1577,7 @@
           "Free park parking",
           "Themed pools"
         ],
-        "notes": "3-NIGHT: ~$1,914 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Family Suites: $596 (Thu) + $659 (Fri) for Thu + Fri; ~$1,130 at 10% off. Separate bedroom, two bathrooms, table bed + sofa bed, kitchenette. Cars, Lion King and Finding Nemo wings; Cars is closest to the Skyliner. Worth it only if two bathrooms matter more than ~$680 vs Pop Century.",
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot (International Gateway) and Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry.\n\n3-NIGHT: ~$1,914 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Family Suites: $596 (Thu) + $659 (Fri) for Thu + Fri; ~$1,130 at 10% off. Separate bedroom, two bathrooms, table bed + sofa bed, kitchenette. Cars, Lion King and Finding Nemo wings; Cars is closest to the Skyliner. Worth it only if two bathrooms matter more than ~$680 vs Pop Century.",
         "bedrooms": 1,
         "bathrooms": 2,
         "beds": 3
@@ -1566,12 +1595,13 @@
         "pricePerNight": 443,
         "guests": 5,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Pools"
         ],
-        "notes": "3-NIGHT: ~$1,344 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). ONE TIER UP FROM POP: the Moderate that fits this trip, because it is the Skyliner hub (no transfer to either park). Rack incl. tax: $426 (Thu) + $459 (Fri) for Thu + Fri; ~$800 at 10% off (Moderates may see up to 20%). The Skyliner hub itself: one ride to Epcot's International Gateway, one to Hollywood Studios. Bigger rooms (sleep 4–5), table-service restaurant, better pool. Sprawling — ask for Trinidad or Jamaica near the gondola station."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner hub — one ride to Epcot's International Gateway or Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry.\n\n3-NIGHT: ~$1,344 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). ONE TIER UP FROM POP: the Moderate that fits this trip, because it is the Skyliner hub (no transfer to either park). Rack incl. tax: $426 (Thu) + $459 (Fri) for Thu + Fri; ~$800 at 10% off (Moderates may see up to 20%). The Skyliner hub itself: one ride to Epcot's International Gateway, one to Hollywood Studios. Bigger rooms (sleep 4–5), table-service restaurant, better pool. Sprawling — ask for Trinidad or Jamaica near the gondola station."
       },
       {
         "id": "o-disney-port-orleans-fq-3n",
@@ -1586,12 +1616,13 @@
         "pricePerNight": 417,
         "guests": 4,
         "amenities": [
+          "🚌 Disney buses · free park parking · Early Entry",
           "Free park parking",
           "Early Entry",
           "Boat to Disney Springs",
           "Pool"
         ],
-        "notes": "3-NIGHT: ~$1,264 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $404 (Thu) + $430 (Fri) for Thu + Fri. Compact, well-liked moderate; boat to Disney Springs, bus to the parks (no Skyliner). Reference only unless discounted."
+        "notes": "ACCESS: NO CAR NEEDED: Disney buses to all parks (main Epcot gate); boat to Disney Springs. Free park and hotel parking; Early Entry.\n\n3-NIGHT: ~$1,264 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Rack incl. tax: $404 (Thu) + $430 (Fri) for Thu + Fri. Compact, well-liked moderate; boat to Disney Springs, bus to the parks (no Skyliner). Reference only unless discounted."
       },
       {
         "id": "o-disney-epcot-deluxe-3n",
@@ -1606,6 +1637,7 @@
         "pricePerNight": 875,
         "guests": 4,
         "amenities": [
+          "🚶 Walk to Epcot's parade gate · Disney transport · Early Entry",
           "Walk to Epcot",
           "Walk/boat to Hollywood Studios",
           "Extended Evening Hours",
@@ -1613,7 +1645,7 @@
           "Stormalong Bay pool",
           "Free park parking"
         ],
-        "notes": "3-NIGHT: ~$2,625 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Deluxe rack ~$650–900/night incl. tax → ~$1,460–2,030 for 2 nights; the fall offer's up-to-20% tier applies to many Deluxe rooms. Best location on property for this trip (parade route is a 10-min walk) plus deluxe-only Extended Evening Hours, at 3–4× Pop Century. Reference only."
+        "notes": "ACCESS: NO CAR NEEDED. 5–10 min walk to Epcot's International Gateway — the parade gate — and a walk or boat to Hollywood Studios; Disney bus to Magic Kingdom. Free park parking, Early Entry AND Extended Evening Hours (deluxe perk).\n\n3-NIGHT: ~$2,625 rack incl. tax (Thu + Fri + Sat; Sat = Fri rate). Deluxe rack ~$650–900/night incl. tax → ~$1,460–2,030 for 2 nights; the fall offer's up-to-20% tier applies to many Deluxe rooms. Best location on property for this trip (parade route is a 10-min walk) plus deluxe-only Extended Evening Hours, at 3–4× Pop Century. Reference only."
       }
     ]
   },
@@ -1623,12 +1655,12 @@
     "category": "hotel",
     "status": "needed",
     "itineraryId": "02-nicoles-weekend",
-    "notes": "NICOLE'S WEEKEND lodging (Thu + Fri). The Family Plan has its own 3-night card with the same options. The Oct 10 '3 nights / priced for 4' card stays in your browser until you delete it. PLAN (updated 2026-10-17): price the near-the-parks stay as 2 NIGHTS (Thu + Fri), checkout Sat Nov 7 with bags at bell services for the Hollywood Studios day. Every option's totalPrice is now a 2-night figure so the compare table sorts fairly; the itinerary still shows Sat night at disney-area — if we keep 3 nights, add ~50% (Disney Sat rates = Fri rates). BASIS: Disney = rack incl. 12.5% tax from the Oct 10 price check (Thu + Fri); hotels = Google Hotels nightly × 2 BEFORE ~12.5% tax, resort fee and parking; Airbnb = half the displayed 4-night rate (short stays usually price higher and some listings have 3-night minimums — re-check the link, which now carries Nov 5–7); VRBO = nightly × 2 before fees. DISCOUNTS LIVE NOW: Disney room offer up to 20% off select rooms Oct 4–Dec 24 (Values typically ~10%); Disney Springs Resort Area hotels from $125/night incl. resort fee, bookable through Nov 13 for stays through Dec 18. PICK: Pop Century (~$577 rack / ~$520 at 10% off) puts both Skyliner parks within 15–25 min with no car; Drury Plaza (~$335–450 incl. tax, breakfast and dinner-hour included) is the cheapest decent hotel. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
+    "notes": "PARK ACCESS KEY — 🚡/🚌/🚶 Disney-side: Disney transport + free park parking + Early Entry (Pop Century / Art of Animation / Caribbean Beach ride the Skyliner straight to the parade gate; Swan/Dolphin and the Epcot deluxes walk there). 🚐 Shuttle hotels: free scheduled bus to the parks, but NO free park parking ($30/day if you drive) plus hotel parking/resort fees. 🚗 Airbnb/VRBO/Tampa: drive + $30/day. NICOLE'S WEEKEND lodging (Thu + Fri). The Family Plan has its own 3-night card with the same options. The Oct 10 '3 nights / priced for 4' card stays in your browser until you delete it. PLAN (updated 2026-10-17): price the near-the-parks stay as 2 NIGHTS (Thu + Fri), checkout Sat Nov 7 with bags at bell services for the Hollywood Studios day. Every option's totalPrice is now a 2-night figure so the compare table sorts fairly; the itinerary still shows Sat night at disney-area — if we keep 3 nights, add ~50% (Disney Sat rates = Fri rates). BASIS: Disney = rack incl. 12.5% tax from the Oct 10 price check (Thu + Fri); hotels = Google Hotels nightly × 2 BEFORE ~12.5% tax, resort fee and parking; Airbnb = half the displayed 4-night rate (short stays usually price higher and some listings have 3-night minimums — re-check the link, which now carries Nov 5–7); VRBO = nightly × 2 before fees. DISCOUNTS LIVE NOW: Disney room offer up to 20% off select rooms Oct 4–Dec 24 (Values typically ~10%); Disney Springs Resort Area hotels from $125/night incl. resort fee, bookable through Nov 13 for stays through Dec 18. PICK: Pop Century (~$577 rack / ~$520 at 10% off) puts both Skyliner parks within 15–25 min with no car; Drury Plaza (~$335–450 incl. tax, breakfast and dinner-hour included) is the cheapest decent hotel. Options ordered: Tampa family, Airbnb, VRBO, hotels, Disney.",
     "checkIn": "2026-11-05",
     "checkOut": "2026-11-07",
     "placeId": "disney-area",
     "createdAt": "2026-10-17T18:55:00Z",
-    "updatedAt": "2026-10-17T18:55:00Z",
+    "updatedAt": "2026-10-18T14:10:00Z",
     "options": [
       {
         "id": "o-tampa-family-2n",
@@ -1642,7 +1674,10 @@
         "availabilityCheckedAt": "2026-10-10T17:00:00Z",
         "pricePerNight": 0,
         "guests": 4,
-        "notes": "Free, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks."
+        "notes": "ACCESS: Drive 1h20–1h45 each way via I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
+        "amenities": [
+          "🚗 Drive · $30/day park parking"
+        ]
       },
       {
         "id": "o-airbnb-36585565-2n",
@@ -1662,12 +1697,13 @@
         "rating": 4.77,
         "reviewCount": 788,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Water park",
           "Pool",
           "Full kitchen",
           "Resort"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$288 = half the displayed 4-night rate ($574); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$288 = half the displayed 4-night rate ($574); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: CHEAPEST and most-reviewed (788 reviews, 4.77). $574 for 4 nights, discounted from $717. 3 bedrooms / 4 beds / 3 baths. Resort-style condo; expect a resort fee and ~15–20 min to Epcot. Check parking and resort-fee details before booking."
       },
       {
         "id": "o-airbnb-12309561-2n",
@@ -1688,11 +1724,12 @@
         "reviewCount": 12,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Lazy river",
           "Resort pool",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$328 = half the displayed 4-night rate ($656); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$328 = half the displayed 4-night rate ($656); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $656 for 4 nights (discounted from $762). 3 bedrooms / 7 beds / 2 baths — plenty of beds. 5.0 from 12 reviews, Top Guest Favorite. Resort amenities (lazy river)."
       },
       {
         "id": "o-airbnb-814679478584015457-2n",
@@ -1713,12 +1750,13 @@
         "reviewCount": 143,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Balcony",
           "Pool",
           "Lake view",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$336 = half the displayed 4-night rate ($671); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$336 = half the displayed 4-night rate ($671); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $671 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.99 from 143 reviews, Top Guest Favorite — the best-reviewed pick. High-rise resort condo with balcony views."
       },
       {
         "id": "o-airbnb-1665923956290113935-2n",
@@ -1739,11 +1777,12 @@
         "reviewCount": 85,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Pool",
           "Jacuzzi",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$382 = half the displayed 4-night rate ($764); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$382 = half the displayed 4-night rate ($764); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $764 for 4 nights. 2 bedrooms / 4 beds / 2 baths. 4.81 from 85 reviews, Guest Favorite."
       },
       {
         "id": "o-airbnb-1732777257590720334-2n",
@@ -1763,11 +1802,12 @@
         "rating": 5.0,
         "reviewCount": 4,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private heated pool",
           "Full kitchen",
           "Whole house"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$400 = half the displayed 4-night rate ($801); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$400 = half the displayed 4-night rate ($801); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $801 for 4 nights (discounted from $909). 4 bedrooms / 7 beds / 3 baths with private heated pool. 5.0 but only 4 reviews. Closest-to-Disney whole house in the set."
       },
       {
         "id": "o-airbnb-841630856781083949-2n",
@@ -1788,11 +1828,12 @@
         "reviewCount": 98,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Water park",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$450 = half the displayed 4-night rate ($898); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$450 = half the displayed 4-night rate ($898); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $898 for 4 nights. 3 bedrooms / 4 beds / 3 baths, private pool plus resort water park. 4.91 from 98 reviews, Top Guest Favorite."
       },
       {
         "id": "o-airbnb-1566253415254826838-2n",
@@ -1813,12 +1854,13 @@
         "reviewCount": 41,
         "isGuestFavorite": true,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Gated resort",
           "Clubhouse",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$500 = half the displayed 4-night rate ($1000); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$500 = half the displayed 4-night rate ($1000); short stays usually price higher and cleaning fees are fixed, so re-check the link (now set to Nov 5–7). Original 4-night notes: $1,000 for 4 nights. 3 bedrooms / 5 beds / 3 baths, private pool, gated resort ~5 min from the Disney gate. 5.0 from 41 reviews, Top Guest Favorite. Priciest, best location."
       },
       {
         "id": "o-vrbo-258562-2n",
@@ -1837,12 +1879,13 @@
         "rating": 4.9,
         "reviewCount": 65,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Resort pool",
           "Hot tub",
           "Game room",
           "Gated"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$300 before VRBO fees/taxes (nightly $150 × 2; was $600 for 4 nights). Original notes: $150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$300 before VRBO fees/taxes (nightly $150 × 2; was $600 for 4 nights). Original notes: $150/night → ~$600 for 4 nights BEFORE VRBO fees/taxes (expect ~$700–750 all-in). 3 bedrooms / 6 beds, resort pool, hot tub, game room. 9.8/10 from 65 reviews. Best value in Windsor Hills."
       },
       {
         "id": "o-vrbo-4155441-2n",
@@ -1862,13 +1905,14 @@
         "rating": 4.5,
         "reviewCount": 51,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "EV charging",
           "Free parking",
           "Pool",
           "Hot tub",
           "Game room"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$306 before VRBO fees/taxes (nightly $153 × 2; was $612 for 4 nights). Original notes: $153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$306 before VRBO fees/taxes (nightly $153 × 2; was $612 for 4 nights). Original notes: $153/night → ~$612 for 4 nights before fees. 2 bedrooms / 4 beds, balcony, EV CHARGING on site (pairs with a Tesla rental), free parking, pool, hot tub, game room. 9.0/10 from 51 reviews. Free cancellation until Oct 31."
       },
       {
         "id": "o-vrbo-4522838-2n",
@@ -1887,10 +1931,11 @@
         "rating": 4.9,
         "reviewCount": 38,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Full kitchen",
           "Washer/dryer"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$342 before VRBO fees/taxes (nightly $171 × 2; was $684 for 4 nights). Original notes: $171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$342 before VRBO fees/taxes (nightly $171 × 2; was $684 for 4 nights). Original notes: $171/night → ~$684 for 4 nights before fees. 3 bedrooms / 5 beds. 9.8/10 from 38 reviews. Free cancellation until Oct 22."
       },
       {
         "id": "o-vrbo-23110-2n",
@@ -1910,12 +1955,13 @@
         "rating": 4.6,
         "reviewCount": 1023,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Full kitchen",
           "Multiple pools",
           "Kids club",
           "Resort"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$364 before VRBO fees/taxes (nightly $182 × 2; was $728 for 4 nights). Original notes: $182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
+        "notes": "ACCESS: Sheraton Vistana typically runs a scheduled Disney shuttle for a fee — confirm with the resort. Otherwise drive + $30/day park parking.\n\n2-NIGHT ESTIMATE ~$364 before VRBO fees/taxes (nightly $182 × 2; was $728 for 4 nights). Original notes: $182/night → ~$728 for 4 nights before fees. Hotel-run 2-bedroom villa with full kitchen; kid's pool, 8 hot tubs, free kids' club. 9.2/10 from ~1,000 reviews. Also bookable direct via Marriott (~$111/night on Google Hotels — compare)."
       },
       {
         "id": "o-vrbo-1909922-2n",
@@ -1934,12 +1980,13 @@
         "rating": 5.0,
         "reviewCount": 127,
         "amenities": [
+          "🚗 Drive · $30/day park parking",
           "Private pool",
           "Hot tub",
           "Playground",
           "Full kitchen"
         ],
-        "notes": "2-NIGHT ESTIMATE ~$446 before VRBO fees/taxes (nightly $223 × 2; was $892 for 4 nights). Original notes: $223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
+        "notes": "ACCESS: Drive to every park and pay $30/day parking (one fee covers all parks that day) — or rideshare ~$15–25 each way. Windsor Hills and some condo resorts sell a paid shuttle. The Orlando VRBO condo (4155441) has EV charging + free parking on site.\n\n2-NIGHT ESTIMATE ~$446 before VRBO fees/taxes (nightly $223 × 2; was $892 for 4 nights). Original notes: $223/night → ~$892 for 4 nights before fees. 3 bedrooms / 4 beds, private pool, hot tub, playground. 10/10 from 127 reviews."
       },
       {
         "id": "o-hotel-springhill-mv-2n",
@@ -1956,13 +2003,14 @@
         "rating": 4.0,
         "reviewCount": 3200,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Free breakfast",
           "Pool",
           "Hot tub",
           "Suite with sofa bed",
           "Parking ($)"
         ],
-        "notes": "$74/night on Google Hotels → ~$148 for 2 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
+        "notes": "ACCESS: Marriott Village: scheduled transportation to the Disney parks and Disney Springs included in the ~$5 resort fee (limited departures — check the timetable). Park parking $30/day if you drive; hotel parking ~$20/night. No Early Entry.\n\n$74/night on Google Hotels → ~$148 for 2 nights before ~12.5% tax and parking (~$20–25/night). Suites sleep 4–5 with a sofa bed; free breakfast; pools. 4.0 from 3.2K reviews. Cheapest decent hotel option. Sister Fairfield next door is $69 (free breakfast too)."
       },
       {
         "id": "o-hotel-hilton-grande-villas-2n",
@@ -1979,12 +2027,13 @@
         "rating": 4.5,
         "reviewCount": 4500,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Kitchen",
           "Free parking",
           "Pool",
           "Restaurant"
         ],
-        "notes": "$99/night → ~$198 for 2 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
+        "notes": "ACCESS: Free hotel parking. Disney shuttle availability/fee not confirmed — ask the resort. Otherwise drive + $30/day park parking.\n\n$99/night → ~$198 for 2 nights before tax. Timeshare-style villas with kitchen, FREE parking, pool. 4.5 from 4.5K reviews — best-rated of the budget hotels. Confirm the room type sleeps 4."
       },
       {
         "id": "o-hotel-holiday-inn-resort-lbv-2n",
@@ -2001,11 +2050,12 @@
         "rating": 4.2,
         "reviewCount": 4700,
         "amenities": [
+          "🚐 Shuttle — verify · else drive + $30/day",
           "Pool",
           "Hot tub",
           "Parking ($)"
         ],
-        "notes": "$76/night → ~$152 for 2 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
+        "notes": "ACCESS: Many LBV hotels run a scheduled Disney shuttle, often fee-based or limited — confirm before booking. Otherwise drive + $30/day park parking; hotel parking fee.\n\n$76/night → ~$152 for 2 nights before tax/parking. 4.2 from 4.7K reviews, pool + hot tub. Standard rooms with 2 queens."
       },
       {
         "id": "o-hotel-wyndham-lbv-ds-2n",
@@ -2022,13 +2072,14 @@
         "rating": 4.0,
         "reviewCount": 6500,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Pool",
           "Hot tub",
           "Resort fee"
         ],
-        "notes": "$115/night → ~$230 for 2 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
+        "notes": "ACCESS: Disney Springs Resort Area: free hotel-run shuttle to all 4 parks (~every 30 min, drops at the MAIN Epcot entrance — ~15 min walk to World Showcase), 30-min Early Entry, walk to Disney Springs. NOT free park parking; hotel self-parking ~$25–30/night + resort fee.\n\n$115/night → ~$230 for 2 nights before tax, resort fee and parking. Official Disney Springs-area hotel: walkable to Disney Springs, Disney bus service to parks, early-entry perk. 4.0 from 6.5K reviews."
       },
       {
         "id": "o-hotel-wyndham-grand-bonnet-creek-2n",
@@ -2045,12 +2096,13 @@
         "rating": 4.4,
         "reviewCount": 3800,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Lazy river",
           "Pools",
           "Shuttle to parks",
           "Resort fee"
         ],
-        "notes": "$176/night → ~$352 for 2 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
+        "notes": "ACCESS: Inside the Disney property line: complimentary scheduled shuttle to all 4 parks (main Epcot gate). Park parking $30/day if you drive; resort fee + hotel parking fee. Not a Disney Springs Area hotel, so no Early Entry.\n\n$176/night → ~$352 for 2 nights before tax/resort fee/parking. 4-star, lazy river and multiple pools, closest big resort to Epcot. 4.4 from 3.8K reviews. Shuttle to parks."
       },
       {
         "id": "o-hotel-hilton-lbv-ds-2n",
@@ -2067,12 +2119,13 @@
         "rating": 4.2,
         "reviewCount": 5900,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Pool",
           "Resort fee"
         ],
-        "notes": "$177/night → ~$354 for 2 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks (covered by the ~$41/night resort charge), Early Entry, walk to Disney Springs. Park parking $30/day if you drive; hotel self-parking ~$38/night.\n\n$177/night → ~$354 for 2 nights before tax/resort fee/parking. Walk to Disney Springs; Disney bus service; early entry. 4.2 from 5.9K reviews."
       },
       {
         "id": "o-hotel-drury-plaza-ds-2n",
@@ -2087,6 +2140,7 @@
         "pricePerNight": 149,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Free hot breakfast",
           "Free 5:30 Kickback (hot food + 3 drinks)",
           "No resort fee",
@@ -2095,7 +2149,7 @@
           "Park shuttle",
           "Pool + splash pad"
         ],
-        "notes": "Fall promo from ~$149/night incl. resort fee (none) → ~$298 for 2 nights before 12.5% tax (~$335–450 all-in depending on the night). Official Disney Springs Resort Area hotel, so 30-min Early Entry applies. Breakfast and the 5:30 PM Kickback (hot food, three drinks) are included — that's dinner for the kids. Shuttles to the parks run on a schedule; budget a rideshare back from Hollywood Studios Saturday night. Parking fee to confirm if we drive. Promo bookable through Nov 13 for stays through Dec 18. Cheapest decent hotel option.",
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks, Early Entry, walk to Disney Springs, no resort fee. Park parking $30/day if you drive; confirm hotel parking charge.\n\nFall promo from ~$149/night incl. resort fee (none) → ~$298 for 2 nights before 12.5% tax (~$335–450 all-in depending on the night). Official Disney Springs Resort Area hotel, so 30-min Early Entry applies. Breakfast and the 5:30 PM Kickback (hot food, three drinks) are included — that's dinner for the kids. Shuttles to the parks run on a schedule; budget a rideshare back from Hollywood Studios Saturday night. Parking fee to confirm if we drive. Promo bookable through Nov 13 for stays through Dec 18. Cheapest decent hotel option.",
         "rating": 4.6,
         "reviewCount": 4200
       },
@@ -2112,13 +2166,14 @@
         "pricePerNight": 168,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Disney Springs walk",
           "Disney shuttle",
           "Early Entry",
           "Lazy river pool",
           "Resort fee (incl. in promo)"
         ],
-        "notes": "Fall promo from ~$168/night (resort fee included this year) → ~$336 for 2 nights before tax and parking. Skybridge to Disney Springs, lazy-river pool, Early Entry. Compare with the Hilton LBV next door (~$177).",
+        "notes": "ACCESS: Disney Springs Resort Area: free shuttle to all 4 parks (in the ~$41/night resort charge), Early Entry, walk to Disney Springs. Park parking $30/day if you drive; hotel self-parking ~$38/night.\n\nFall promo from ~$168/night (resort fee included this year) → ~$336 for 2 nights before tax and parking. Skybridge to Disney Springs, lazy-river pool, Early Entry. Compare with the Hilton LBV next door (~$177).",
         "rating": 4.2,
         "reviewCount": 7000
       },
@@ -2135,6 +2190,7 @@
         "pricePerNight": 204,
         "guests": 4,
         "amenities": [
+          "🚐 Free hotel shuttle to all 4 parks · park parking $30/day if driving",
           "Lazy river",
           "Pools",
           "Shuttle to parks",
@@ -2142,7 +2198,7 @@
           "Resort fee (~$45)",
           "Parking ($)"
         ],
-        "notes": "~$204/night → ~$408 for 2 nights before tax, ~$45/night resort fee and parking. Shares the Bonnet Creek lagoon, lazy river and shuttles with the Waldorf Astoria and Wyndham Grand; Hilton Honors points and status work. Official WDW hotel perks (Early Entry). Sister Waldorf Astoria is the splurge version.",
+        "notes": "ACCESS: Official WDW hotel inside the property: complimentary shuttle to all 4 parks and Early Entry. Park parking $30/day if you drive; resort fee + hotel parking fee.\n\n~$204/night → ~$408 for 2 nights before tax, ~$45/night resort fee and parking. Shares the Bonnet Creek lagoon, lazy river and shuttles with the Waldorf Astoria and Wyndham Grand; Hilton Honors points and status work. Official WDW hotel perks (Early Entry). Sister Waldorf Astoria is the splurge version.",
         "rating": 4.5,
         "reviewCount": 9000
       },
@@ -2159,6 +2215,7 @@
         "pricePerNight": 280,
         "guests": 4,
         "amenities": [
+          "🚶 Walk to Epcot's parade gate · Disney transport · Early Entry",
           "Walk to Epcot",
           "Boat to Hollywood Studios",
           "Early Entry",
@@ -2166,7 +2223,7 @@
           "Resort fee $50/night",
           "Self-parking $40/night"
         ],
-        "notes": "Room ~$280–400/night → ~$560–800 for 2 nights BEFORE tax, the $50/night resort fee and $40/night self-parking (~$850–1,150 all-in). Marriott-run hotels on Disney property between Epcot's back gate and the Studios; Early Entry applies but NOT Disney's deluxe-only extended evening hours. Swan Reserve next door is the newer, quieter tower at similar rates. Bonvoy points or a free-night certificate make this the cheap way to sleep walking distance from the parade route.",
+        "notes": "ACCESS: NO CAR NEEDED. ~15–20 min walk (or boat) to Epcot's International Gateway, boat to Hollywood Studios, Disney buses to Magic Kingdom; Early Entry. Marriott-run, so confirm whether theme-park parking is free for guests (it has changed) — hotel self-parking and resort fee apply.\n\nRoom ~$280–400/night → ~$560–800 for 2 nights BEFORE tax, the $50/night resort fee and $40/night self-parking (~$850–1,150 all-in). Marriott-run hotels on Disney property between Epcot's back gate and the Studios; Early Entry applies but NOT Disney's deluxe-only extended evening hours. Swan Reserve next door is the newer, quieter tower at similar rates. Bonvoy points or a free-night certificate make this the cheap way to sleep walking distance from the parade route.",
         "rating": 4.4,
         "reviewCount": 12000
       },
@@ -2185,12 +2242,13 @@
         "rating": 4.4,
         "reviewCount": 30800,
         "amenities": [
+          "🚌 Disney buses · free park parking · Early Entry",
           "Free park parking",
           "Early Entry",
           "Disney bus",
           "Pool"
         ],
-        "notes": "Rack incl. tax: $207 (Thu) + $230 (Fri) = $437 for 2 nights; ~$395 at 10% off. Cheapest Disney-owned room, but Animal Kingdom side: bus to Epcot and Hollywood Studios (20–30 min). Perks: 30-min Early Entry, free parking, Disney buses. Rooms sleep 4 (2 queens)."
+        "notes": "ACCESS: NO CAR NEEDED but bus-only (MK ~20 min, Epcot ~15 min, drops at the MAIN Epcot gate — ~15 min walk to World Showcase). Free park and hotel parking; Early Entry.\n\nRack incl. tax: $207 (Thu) + $230 (Fri) = $437 for 2 nights; ~$395 at 10% off. Cheapest Disney-owned room, but Animal Kingdom side: bus to Epcot and Hollywood Studios (20–30 min). Perks: 30-min Early Entry, free parking, Disney buses. Rooms sleep 4 (2 queens)."
       },
       {
         "id": "o-disney-pop-century-2n",
@@ -2207,12 +2265,13 @@
         "rating": 4.5,
         "reviewCount": 40000,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Pools"
         ],
-        "notes": "Rack incl. tax: $272 (Thu) + $305 (Fri) = $577 for 2 nights; ~$520 with the 10% fall room offer. THE PARADE-DAY PICK: Skyliner station on the bridge to Art of Animation → Hollywood Studios ~15 min, Epcot International Gateway ~25 min (change at Caribbean Beach), and the Gateway is steps from the UK pavilion where the parade steps off. No car, no parking. Room: 260 sq ft, queen bed + queen Murphy bed, one bathroom, mini fridge; soft-goods refresh finished March 2026. Ten decade-themed buildings (50s–90s) around Hourglass Lake with giant icons; Classic Hall has check-in, the Everything POP food court and bus stops; three pools (Hippy Dippy is the main one). Preferred rooms (+~$30/night) = 50s/60s/70s near Classic Hall; building 3 (60s) is between the lobby and the Skyliner bridge — request '60s, lake view, upper floor away from the pool'. Downsides: one bathroom, food court only, exterior-corridor noise. Early Entry, free parking, no resort fee."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot's International Gateway (beside the UK pavilion where the parade starts) and to Hollywood Studios; Disney bus to Magic Kingdom. Free theme-park and hotel parking if you do drive; 30-min Early Entry.\n\nRack incl. tax: $272 (Thu) + $305 (Fri) = $577 for 2 nights; ~$520 with the 10% fall room offer. THE PARADE-DAY PICK: Skyliner station on the bridge to Art of Animation → Hollywood Studios ~15 min, Epcot International Gateway ~25 min (change at Caribbean Beach), and the Gateway is steps from the UK pavilion where the parade steps off. No car, no parking. Room: 260 sq ft, queen bed + queen Murphy bed, one bathroom, mini fridge; soft-goods refresh finished March 2026. Ten decade-themed buildings (50s–90s) around Hourglass Lake with giant icons; Classic Hall has check-in, the Everything POP food court and bus stops; three pools (Hippy Dippy is the main one). Preferred rooms (+~$30/night) = 50s/60s/70s near Classic Hall; building 3 (60s) is between the lobby and the Skyliner bridge — request '60s, lake view, upper floor away from the pool'. Downsides: one bathroom, food court only, exterior-corridor noise. Early Entry, free parking, no resort fee."
       },
       {
         "id": "o-disney-art-of-animation-2n",
@@ -2227,12 +2286,13 @@
         "pricePerNight": 332,
         "guests": 4,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Themed pools"
         ],
-        "notes": "Little Mermaid standard rooms: $324 (Thu) + $339 (Fri) = $663 for 2 nights. Same Skyliner station as Pop Century, but the Little Mermaid buildings are the far end of the resort (8–10 min walk to the station). Family Suites are a separate option below."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot (International Gateway) and Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry. Little Mermaid rooms are the far end of the resort from the Skyliner station.\n\nLittle Mermaid standard rooms: $324 (Thu) + $339 (Fri) = $663 for 2 nights. Same Skyliner station as Pop Century, but the Little Mermaid buildings are the far end of the resort (8–10 min walk to the station). Family Suites are a separate option below."
       },
       {
         "id": "o-disney-art-of-animation-suite-2n",
@@ -2247,6 +2307,7 @@
         "pricePerNight": 628,
         "guests": 6,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner",
           "2 bathrooms",
           "Kitchenette",
@@ -2254,7 +2315,7 @@
           "Free park parking",
           "Themed pools"
         ],
-        "notes": "Family Suites: $596 (Thu) + $659 (Fri) = $1,255 for 2 nights; ~$1,130 at 10% off. Separate bedroom, two bathrooms, table bed + sofa bed, kitchenette. Cars, Lion King and Finding Nemo wings; Cars is closest to the Skyliner. Worth it only if two bathrooms matter more than ~$680 vs Pop Century.",
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner to Epcot (International Gateway) and Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry.\n\nFamily Suites: $596 (Thu) + $659 (Fri) = $1,255 for 2 nights; ~$1,130 at 10% off. Separate bedroom, two bathrooms, table bed + sofa bed, kitchenette. Cars, Lion King and Finding Nemo wings; Cars is closest to the Skyliner. Worth it only if two bathrooms matter more than ~$680 vs Pop Century.",
         "bedrooms": 1,
         "bathrooms": 2,
         "beds": 3
@@ -2272,12 +2333,13 @@
         "pricePerNight": 443,
         "guests": 5,
         "amenities": [
+          "🚡 Skyliner + Disney buses · free park parking · Early Entry",
           "Skyliner to Epcot",
           "Free park parking",
           "Early Entry",
           "Pools"
         ],
-        "notes": "ONE TIER UP FROM POP: the Moderate that fits this trip, because it is the Skyliner hub (no transfer to either park). Rack incl. tax: $426 (Thu) + $459 (Fri) = $885 for 2 nights; ~$800 at 10% off (Moderates may see up to 20%). The Skyliner hub itself: one ride to Epcot's International Gateway, one to Hollywood Studios. Bigger rooms (sleep 4–5), table-service restaurant, better pool. Sprawling — ask for Trinidad or Jamaica near the gondola station."
+        "notes": "ACCESS: NO CAR NEEDED. Skyliner hub — one ride to Epcot's International Gateway or Hollywood Studios; bus to Magic Kingdom. Free park and hotel parking; Early Entry.\n\nONE TIER UP FROM POP: the Moderate that fits this trip, because it is the Skyliner hub (no transfer to either park). Rack incl. tax: $426 (Thu) + $459 (Fri) = $885 for 2 nights; ~$800 at 10% off (Moderates may see up to 20%). The Skyliner hub itself: one ride to Epcot's International Gateway, one to Hollywood Studios. Bigger rooms (sleep 4–5), table-service restaurant, better pool. Sprawling — ask for Trinidad or Jamaica near the gondola station."
       },
       {
         "id": "o-disney-port-orleans-fq-2n",
@@ -2292,12 +2354,13 @@
         "pricePerNight": 417,
         "guests": 4,
         "amenities": [
+          "🚌 Disney buses · free park parking · Early Entry",
           "Free park parking",
           "Early Entry",
           "Boat to Disney Springs",
           "Pool"
         ],
-        "notes": "Rack incl. tax: $404 (Thu) + $430 (Fri) = $834 for 2 nights. Compact, well-liked moderate; boat to Disney Springs, bus to the parks (no Skyliner). Reference only unless discounted."
+        "notes": "ACCESS: NO CAR NEEDED: Disney buses to all parks (main Epcot gate); boat to Disney Springs. Free park and hotel parking; Early Entry.\n\nRack incl. tax: $404 (Thu) + $430 (Fri) = $834 for 2 nights. Compact, well-liked moderate; boat to Disney Springs, bus to the parks (no Skyliner). Reference only unless discounted."
       },
       {
         "id": "o-disney-epcot-deluxe-2n",
@@ -2312,6 +2375,7 @@
         "pricePerNight": 875,
         "guests": 4,
         "amenities": [
+          "🚶 Walk to Epcot's parade gate · Disney transport · Early Entry",
           "Walk to Epcot",
           "Walk/boat to Hollywood Studios",
           "Extended Evening Hours",
@@ -2319,7 +2383,7 @@
           "Stormalong Bay pool",
           "Free park parking"
         ],
-        "notes": "Deluxe rack ~$650–900/night incl. tax → ~$1,460–2,030 for 2 nights; the fall offer's up-to-20% tier applies to many Deluxe rooms. Best location on property for this trip (parade route is a 10-min walk) plus deluxe-only Extended Evening Hours, at 3–4× Pop Century. Reference only."
+        "notes": "ACCESS: NO CAR NEEDED. 5–10 min walk to Epcot's International Gateway — the parade gate — and a walk or boat to Hollywood Studios; Disney bus to Magic Kingdom. Free park parking, Early Entry AND Extended Evening Hours (deluxe perk).\n\nDeluxe rack ~$650–900/night incl. tax → ~$1,460–2,030 for 2 nights; the fall offer's up-to-20% tier applies to many Deluxe rooms. Best location on property for this trip (parade route is a 10-min walk) plus deluxe-only Extended Evening Hours, at 3–4× Pop Century. Reference only."
       }
     ]
   },
