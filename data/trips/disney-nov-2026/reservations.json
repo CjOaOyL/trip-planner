@@ -927,16 +927,16 @@
       {
         "id": "o-tampa-family-3n",
         "url": "https://maps.google.com/?q=Tampa,FL",
-        "title": "Stay with family in Tampa — $0 lodging, ~1h30 commute each way",
+        "title": "Stay at Nicole's in Land O' Lakes — $0 lodging, ~1h40–2h commute each way",
         "status": "shortlist",
         "totalPrice": 0,
         "currency": "USD",
-        "location": "Tampa, FL (~80–85 mi / 1h20–1h45 to Epcot via I-4)",
+        "location": "Land O' Lakes, FL (Butterfly Kiss Dr) — ~95 mi / 1h40–2h to Epcot via I-75 → I-4",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T17:00:00Z",
         "pricePerNight": 0,
         "guests": 4,
-        "notes": "ACCESS: Drive 1h20–1h45 each way via I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
+        "notes": "ACCESS: Drive 1h40–2h each way via I-75 → I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Land O' Lakes by 6:45 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
         "amenities": [
           "🚗 Drive · $30/day park parking"
         ]
@@ -1665,16 +1665,16 @@
       {
         "id": "o-tampa-family-2n",
         "url": "https://maps.google.com/?q=Tampa,FL",
-        "title": "Stay with family in Tampa — $0 lodging, ~1h30 commute each way",
+        "title": "Stay at Nicole's in Land O' Lakes — $0 lodging, ~1h40–2h commute each way",
         "status": "shortlist",
         "totalPrice": 0,
         "currency": "USD",
-        "location": "Tampa, FL (~80–85 mi / 1h20–1h45 to Epcot via I-4)",
+        "location": "Land O' Lakes, FL (Butterfly Kiss Dr) — ~95 mi / 1h40–2h to Epcot via I-75 → I-4",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-10T17:00:00Z",
         "pricePerNight": 0,
         "guests": 4,
-        "notes": "ACCESS: Drive 1h20–1h45 each way via I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Tampa by 7:15 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
+        "notes": "ACCESS: Drive 1h40–2h each way via I-75 → I-4 and pay $30/day park parking. Thursday's Magic Kingdom parking is at the Transportation & Ticket Center + ferry/monorail — allow 30 min.\n\nFree, and pairs with the cheapest flights (PHL→TPA nonstops both ways). Costs: ~3 hrs/day in the car, Disney parking $30/day per car (~$90 for 3 park days), ~500 miles of driving (~$60 gas, or a Tesla rental). PARADE DAY: leave Land O' Lakes by 6:45 AM to be on the Epcot route by 9:30 for a 10:05 step-off — I-4 eastbound is heavy on Friday mornings. Monday return from TPA is easy. The Friday traveler lands at MCO and would need a 1h30 ride to Tampa that night or a hotel night near the parks.",
         "amenities": [
           "🚗 Drive · $30/day park parking"
         ]
@@ -2685,7 +2685,7 @@
   },
   {
     "id": "auto-01-parade-weekend-hotel-tampa-family",
-    "name": "Stay with family in Tampa — Wed Nov 4 and Sun Nov 8",
+    "name": "Stay at Nicole's (Land O' Lakes) — Wed Nov 4 and Sun Nov 8",
     "category": "hotel",
     "status": "contacted",
     "itineraryId": "01-parade-weekend",
@@ -2693,13 +2693,13 @@
     "checkIn": "2026-11-04",
     "checkOut": "2026-11-05",
     "cost": 0,
-    "notes": "Two separate nights: Wed Nov 4 (land TPA 10:35 PM) and Sun Nov 8 (before the Mon 9:55 AM flight). Confirm with family.",
+    "notes": "Nicole's house is on Butterfly Kiss Dr in Land O' Lakes — ~35 min from TPA, ~1h40–2h to Epcot. Two separate nights: Wed Nov 4 (land TPA 10:35 PM) and Sun Nov 8 (before the Mon 9:55 AM flight). Confirm with family.",
     "createdAt": "2026-10-10T18:40:00Z",
     "updatedAt": "2026-10-10T18:40:00Z"
   },
   {
     "id": "auto-02-nicoles-weekend-hotel-tampa-family",
-    "name": "Stay with Nicole in Tampa — Wed Nov 4 and Sat Nov 7",
+    "name": "Stay at Nicole's (Land O' Lakes) — Wed Nov 4 and Sat Nov 7",
     "category": "hotel",
     "status": "contacted",
     "itineraryId": "02-nicoles-weekend",
@@ -2707,7 +2707,7 @@
     "checkIn": "2026-11-04",
     "checkOut": "2026-11-05",
     "cost": 0,
-    "notes": "Two free nights: Wednesday after the late flight in, Saturday after checking out near the parks. Confirm with Nicole that Saturday works and whether a car can be borrowed (see the rental card).",
+    "notes": "Nicole's house is on Butterfly Kiss Dr in Land O' Lakes — ~35 min from TPA, ~1h40–2h to Epcot. Two free nights: Wednesday after the late flight in, Saturday after checking out near the parks. Confirm with Nicole that Saturday works and whether a car can be borrowed (see the rental card).",
     "createdAt": "2026-10-17T19:40:00Z",
     "updatedAt": "2026-10-17T19:40:00Z"
   },

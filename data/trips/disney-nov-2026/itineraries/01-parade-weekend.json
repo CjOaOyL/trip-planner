@@ -42,10 +42,10 @@
           "id": "leg-tpa-family",
           "fromPlaceId": "tpa-airport",
           "toPlaceId": "tampa-family",
-          "distanceMiles": 12,
-          "drivingMinutes": 25,
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Pick up the rental at TPA (Turo Tesla or Kayak broker), sleep at family's."
+          "notes": "Pick up the rental at TPA (Turo Tesla or Kayak broker), sleep at family's. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
         }
       ],
       "segments": [
@@ -84,10 +84,10 @@
           "id": "leg-tampa-mk",
           "fromPlaceId": "tampa-family",
           "toPlaceId": "magic-kingdom",
-          "distanceMiles": 80,
-          "drivingMinutes": 85,
+          "distanceMiles": 95,
+          "drivingMinutes": 100,
           "travelMode": "drive",
-          "notes": "I-4 east. Park at the Transportation & Ticket Center ($30), then ferry or monorail to the gate (allow 30 min)."
+          "notes": "Park at the Transportation & Ticket Center ($30), then ferry or monorail to the gate (allow 30 min). From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
         },
         {
           "id": "leg-mk-hotel",
@@ -103,7 +103,7 @@
         {
           "time": "7:45 AM",
           "placeId": "tampa-family",
-          "activity": "Leave Tampa after breakfast (no rope drop today — easy start after the late flight)",
+          "activity": "Leave Land O' Lakes (Nicole's) after breakfast (no rope drop today — easy start after the late flight)",
           "durationMinutes": 15,
           "eventType": "travel"
         },
@@ -362,10 +362,10 @@
           "id": "leg-hotel-tampa",
           "fromPlaceId": "disney-area",
           "toPlaceId": "tampa-family",
-          "distanceMiles": 80,
-          "drivingMinutes": 85,
+          "distanceMiles": 95,
+          "drivingMinutes": 100,
           "travelMode": "drive",
-          "notes": "I-4 west. No park today."
+          "notes": "No park today. From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
         }
       ],
       "segments": [
@@ -379,7 +379,7 @@
         {
           "time": "12:30 PM",
           "placeId": "tampa-family",
-          "activity": "Arrive Tampa, family day",
+          "activity": "Arrive Land O' Lakes (Nicole's), family day",
           "durationMinutes": 360,
           "eventType": "free-time"
         },
@@ -407,10 +407,10 @@
           "id": "leg-family-tpa",
           "fromPlaceId": "tampa-family",
           "toPlaceId": "tpa-airport",
-          "distanceMiles": 12,
-          "drivingMinutes": 25,
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Return the rental at TPA. At the airport by 8:15 for 9:55."
+          "notes": "Return the rental at TPA. At the airport by 8:15 for 9:55. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
         },
         {
           "id": "leg-tpa-phl",

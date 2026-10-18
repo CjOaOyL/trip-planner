@@ -144,18 +144,19 @@
   },
   {
     "id": "tampa-family",
-    "name": "Family in Tampa (free lodging option)",
+    "name": "Nicole's — Land O' Lakes, FL",
     "type": "other",
-    "description": "Stay with family instead of a hotel. ~80–85 mi / 1h20–1h45 each way to Epcot via I-4. Parade day: leave by 7:15 AM. Disney parking $30/day.",
-    "address": "Tampa, FL",
+    "description": "Nicole's house on Butterfly Kiss Dr, Land O' Lakes (north Tampa suburb, Pasco County). ~25 mi / 35 min to Tampa airport (TPA); ~95 mi / 1h40–2h to Epcot via I-75 → I-4 (longer than from Tampa proper). Free lodging Wed + Sun (Family Plan) or Wed + Sat (Nicole's Weekend).",
+    "address": "Butterfly Kiss Dr, Land O' Lakes, FL 34638",
     "coordinates": [
-      27.9506,
-      -82.4572
+      28.2187,
+      -82.4576
     ],
-    "googleMapsUrl": "https://maps.google.com/?q=Tampa,FL",
+    "googleMapsUrl": "https://maps.google.com/?q=Butterfly+Kiss+Dr,+Land+O'+Lakes,+FL",
     "tags": [
       "lodging-option",
-      "free"
+      "free",
+      "nicole"
     ]
   },
   {

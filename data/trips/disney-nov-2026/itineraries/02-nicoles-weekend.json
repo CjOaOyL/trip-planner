@@ -42,10 +42,10 @@
           "id": "leg-tpa-family",
           "fromPlaceId": "tpa-airport",
           "toPlaceId": "tampa-family",
-          "distanceMiles": 12,
-          "drivingMinutes": 25,
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Pick up the rental at TPA (Turo Tesla or Kayak broker), sleep at Nicole's."
+          "notes": "Pick up the rental at TPA (Turo Tesla or Kayak broker), sleep at Nicole's. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
         }
       ],
       "segments": [
@@ -84,10 +84,10 @@
           "id": "leg-tampa-mk",
           "fromPlaceId": "tampa-family",
           "toPlaceId": "magic-kingdom",
-          "distanceMiles": 80,
-          "drivingMinutes": 85,
+          "distanceMiles": 95,
+          "drivingMinutes": 100,
           "travelMode": "drive",
-          "notes": "I-4 east. Park at the Transportation & Ticket Center ($30), then ferry or monorail to the gate (allow 30 min)."
+          "notes": "Park at the Transportation & Ticket Center ($30), then ferry or monorail to the gate (allow 30 min). From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
         },
         {
           "id": "leg-mk-hotel",
@@ -281,10 +281,10 @@
           "id": "leg-hotel-tampa",
           "fromPlaceId": "disney-area",
           "toPlaceId": "tampa-family",
-          "distanceMiles": 80,
-          "drivingMinutes": 85,
+          "distanceMiles": 95,
+          "drivingMinutes": 100,
           "travelMode": "drive",
-          "notes": "I-4 west, late morning — no park today, so no rush."
+          "notes": ", late morning — no park today, so no rush. From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
         }
       ],
       "segments": [
@@ -316,7 +316,7 @@
         {
           "time": "1:30 PM",
           "placeId": "tampa-family",
-          "activity": "Arrive at Nicole's — Tampa afternoon (Riverwalk, Armature Works, or just the pool)",
+          "activity": "Arrive at Nicole's — Land O' Lakes (Nicole's) afternoon (Riverwalk, Armature Works, or just the pool)",
           "durationMinutes": 300,
           "eventType": "free-time"
         },
@@ -340,10 +340,10 @@
           "id": "leg-family-tpa",
           "fromPlaceId": "tampa-family",
           "toPlaceId": "tpa-airport",
-          "distanceMiles": 12,
-          "drivingMinutes": 25,
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Leave Nicole's by 4:45 AM, return the rental at TPA, at the gate by 6:15."
+          "notes": "Leave Nicole's by 4:45 AM, return the rental at TPA, at the gate by 6:15. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
         },
         {
           "id": "leg-tpa-phl",
