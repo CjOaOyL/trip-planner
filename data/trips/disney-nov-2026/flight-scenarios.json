@@ -42,5 +42,35 @@
       "f-return-4pax-nw": "o-sun-pm-tpa-phl-f9-atl-nw"
     },
     "notes": "$401 + $129 + $1,338 = $1,868 fare. No pre-dawn alarm, home by 7:30 PM, 1h23 connection in Atlanta. Costs $466 more than the early flight."
+  },
+  {
+    "id": "fs-af-thu-phl-wn-home",
+    "itineraryId": "03-all-four",
+    "name": "★ All Four — Thu 7:35 AM PHL→MCO Frontier, Sun 6:15 AM TPA→PHL Southwest (car at PHL)",
+    "selections": {
+      "f-out-4pax-af": "o-thu-phl-mco-f9-735-af",
+      "f-return-4pax-af": "o-sun-tpa-phl-wn-615-af"
+    },
+    "notes": "Fares $948 + $1,669 = $2,617 (−$500 Southwest credit = $2,117). Plus PHL Economy parking ~$72 and one-way MCO→TPA rental ~$260 → transport ≈ $2,450. One car, no favors needed. Cost: leave home 5:15 AM Thu, Magic Kingdom from ~11:45 AM."
+  },
+  {
+    "id": "fs-af-wed-ewr-tpa-wn-home",
+    "itineraryId": "03-all-four",
+    "name": "All Four — Wed 8:29 PM EWR→TPA United (drop-off), Sun 6:15 AM TPA→PHL Southwest",
+    "selections": {
+      "f-out-4pax-af": "o-wed-ewr-tpa-ua-829-af",
+      "f-return-4pax-af": "o-sun-tpa-phl-wn-615-af"
+    },
+    "notes": "Fares $2,117 + $1,669 = $3,786 (−$500 = $3,286). Plus Uber XL PHL→Hopewell ~$110 (car stays home; friend drops you at Newark after the 5 PM New Brunswick pickup) and TPA round-trip rental ~$249 → transport ≈ $3,645. Wednesday night at Nicole's, full Thursday at Magic Kingdom."
+  },
+  {
+    "id": "fs-af-wed-ewr-tpa-ua-home",
+    "itineraryId": "03-all-four",
+    "name": "All Four — Wed 8:29 PM EWR→TPA United, Sun 6:00 AM TPA→EWR United (car at EWR)",
+    "selections": {
+      "f-out-4pax-af": "o-wed-ewr-tpa-ua-829-af",
+      "f-return-4pax-af": "o-sun-tpa-ewr-ua-600-af"
+    },
+    "notes": "Fares $2,117 + $1,507 = $3,624, no credit. Plus EWR P6 ~$105 and TPA rental ~$249 → transport ≈ $3,980. Mikaela drives the girls, grabs Jaquan in New Brunswick at 5, parks at Newark; home by 10 AM Sunday."
   }
 ]

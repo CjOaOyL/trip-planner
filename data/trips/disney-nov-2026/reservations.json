@@ -3721,5 +3721,327 @@
     "notes": "Off-site guests book 3 days before each park day at 7 AM ET in My Disney Experience (link tickets first). Mon Nov 2 → Thursday's park: Magic Kingdom (Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight) or, if the ballot swaps it, Hollywood Studios (Slinky Dog Dash, Toy Story Mania, Runaway Railway + Single Pass for Rise of the Resistance). Tue Nov 3 → Epcot (Frozen Ever After, Remy, Soarin'). Multi Pass ~$15–25/person at Epcot, ~$25–39 at MK/HS on these dates. Guardians and Tron are Single Pass only — skipped for motion sickness.",
     "createdAt": "2026-10-17T19:40:00Z",
     "updatedAt": "2026-10-17T19:40:00Z"
+  },
+  {
+    "id": "f-out-4pax-af",
+    "name": "Flights down — all 4 together · All Four",
+    "category": "flight",
+    "status": "needed",
+    "itineraryId": "03-all-four",
+    "date": "2026-11-05",
+    "placeId": "mco-airport",
+    "createdAt": "2026-10-19T22:45:00Z",
+    "updatedAt": "2026-10-19T22:45:00Z",
+    "notes": "Priced 2026-10-19 on Google Flights for 4 (Chase Travel matched Google on every check). Jaquan is in New Brunswick until 5 PM Wed, so Wednesday means Newark after ~6:30 PM. The JetBlue 8:55 PM EWR→MCO had 3 seats at $184 on Oct 18–19 but now prices at $851/seat. Frontier prices shown are base fare; add ~$15/person for the Economy bundle (carry-on + seat choice) — far cheaper than a $60 à-la-carte carry-on. Chase Travel does not sell Frontier: book on flyfrontier.com.",
+    "options": [
+      {
+        "id": "o-thu-phl-mco-f9-735-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20PHL%20to%20MCO%20on%202026-11-05%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Thu Nov 5 · PHL→MCO Frontier nonstop 7:35 AM → 10:13 AM",
+        "status": "shortlist",
+        "totalPrice": 948,
+        "currency": "USD",
+        "location": "PHL → Orlando (MCO)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "THE PICK: $888 base for 4 + ~$60 Economy bundles = ~$948 with carry-ons. Car parks at PHL Economy ($18/day) and you come home to it on Southwest. Magic Kingdom by ~11:45 AM.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-05T07:35",
+          "arrive": "2026-11-05T10:13",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Price includes ~$15/person Economy bundle (carry-on)"
+        }
+      },
+      {
+        "id": "o-thu-phl-mco-f9-515-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20PHL%20to%20MCO%20on%202026-11-05%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Thu Nov 5 · PHL→MCO Frontier nonstop 5:15 AM → 8:01 AM",
+        "status": "option",
+        "totalPrice": 948,
+        "currency": "USD",
+        "location": "PHL → Orlando (MCO)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Same price as the 7:35. Rope drop at Magic Kingdom, but leave home ~3:15 AM.",
+        "flight": {
+          "from": "PHL",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-05T05:15",
+          "arrive": "2026-11-05T08:01",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Price includes ~$15/person Economy bundle (carry-on)"
+        }
+      },
+      {
+        "id": "o-wed-ewr-tpa-ua-829-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20EWR%20to%20TPA%20on%202026-11-04%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Wed Nov 4 · EWR→TPA United nonstop 8:29 PM → 11:38 PM",
+        "status": "option",
+        "totalPrice": 2117,
+        "currency": "USD",
+        "location": "Newark → Tampa (TPA)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "$529 ea, carry-on included. Fits the 5 PM New Brunswick pickup; sleep at Nicole's Wed (30 min from TPA) and drive 1h40 to Magic Kingdom Thu. Needs a Newark drop-off or EWR parking.",
+        "flight": {
+          "from": "EWR",
+          "to": "TPA",
+          "airline": "United",
+          "depart": "2026-11-04T20:29",
+          "arrive": "2026-11-04T23:38",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on included"
+        }
+      },
+      {
+        "id": "o-wed-ewr-mco-b6-855-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20EWR%20to%20MCO%20on%202026-11-04%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Wed Nov 4 · EWR→MCO JetBlue nonstop 8:55 PM → 11:56 PM",
+        "status": "option",
+        "totalPrice": 3402,
+        "currency": "USD",
+        "location": "Newark → Orlando (MCO)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Was $551 for 3 (Main Base $184) on Oct 18–19; now $851/seat for any party size — the cheap seats are gone. Only worth it if the fare drops back.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "JetBlue",
+          "depart": "2026-11-04T20:55",
+          "arrive": "2026-11-04T23:56",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on included (Main Base: no seat choice)"
+        }
+      },
+      {
+        "id": "o-thu-ewr-mco-f9-600-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20EWR%20to%20MCO%20on%202026-11-05%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Thu Nov 5 · EWR→MCO Frontier nonstop 6:00 AM → 8:56 AM",
+        "status": "option",
+        "totalPrice": 1476,
+        "currency": "USD",
+        "location": "Newark → Orlando (MCO)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "$1,416 base + ~$60 bundles. Only makes sense if the car has to be at Newark.",
+        "flight": {
+          "from": "EWR",
+          "to": "MCO",
+          "airline": "Frontier",
+          "depart": "2026-11-05T06:00",
+          "arrive": "2026-11-05T08:56",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Price includes ~$15/person Economy bundle (carry-on)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "f-return-4pax-af",
+    "name": "Flights home — all 4, Sun Nov 8 from Tampa · All Four",
+    "category": "flight",
+    "status": "needed",
+    "itineraryId": "03-all-four",
+    "date": "2026-11-08",
+    "placeId": "phl-airport",
+    "createdAt": "2026-10-19T22:45:00Z",
+    "updatedAt": "2026-10-19T22:45:00Z",
+    "notes": "Sleeping at Nicole's Saturday makes Tampa the airport (~35 min). Southwest does not fly to Newark, so the $500 Sapphire Reserve Southwest credit (statement credit on Southwest booked through Chase Travel, good through 12/31/2027) only helps on a PHL return — which is where the car is in the recommended plan.",
+    "options": [
+      {
+        "id": "o-sun-tpa-phl-wn-615-af",
+        "url": "https://travelsecure.chase.com/",
+        "title": "Sun Nov 8 · TPA→PHL Southwest 6:15 AM → 1:50 PM (via St. Louis)",
+        "status": "shortlist",
+        "totalPrice": 1669,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "THE PICK: Choice fare $418 ea (carry-on + seat selection), $1,668.80 on Chase Travel → ~$1,169 after the $500 Southwest credit. Last Chase check 2026-10-19 morning.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Southwest",
+          "depart": "2026-11-08T06:15",
+          "arrive": "2026-11-08T13:50",
+          "stops": 1,
+          "passengers": 4,
+          "cabinNotes": "Choice fare: carry-on + seat selection included",
+          "via": "St. Louis (STL)",
+          "layover": "~3h"
+        }
+      },
+      {
+        "id": "o-sun-tpa-phl-dl-620-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20TPA%20to%20PHL%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→PHL Delta 6:20 AM → 11:00 AM (via Atlanta)",
+        "status": "option",
+        "totalPrice": 1677,
+        "currency": "USD",
+        "location": "Tampa (TPA) → PHL",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Home ~3 hours earlier than Southwest but no credit — effectively ~$500 more.",
+        "flight": {
+          "from": "TPA",
+          "to": "PHL",
+          "airline": "Delta",
+          "depart": "2026-11-08T06:20",
+          "arrive": "2026-11-08T11:00",
+          "stops": 1,
+          "passengers": 4,
+          "cabinNotes": "Main Classic: carry-on included",
+          "via": "Atlanta",
+          "layover": "1h04"
+        }
+      },
+      {
+        "id": "o-sun-tpa-ewr-ua-600-af",
+        "url": "https://www.google.com/travel/flights?q=one%20way%20flights%20from%20TPA%20to%20EWR%20on%202026-11-08%20for%204%20passengers&hl=en&gl=us&curr=USD",
+        "title": "Sun Nov 8 · TPA→EWR United nonstop 6:00 AM → 8:43 AM",
+        "status": "option",
+        "totalPrice": 1507,
+        "currency": "USD",
+        "location": "Tampa (TPA) → Newark",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "$377 ea, carry-on included. Only if the car is parked at Newark (P6 Economy ~$21/day pre-booked).",
+        "flight": {
+          "from": "TPA",
+          "to": "EWR",
+          "airline": "United",
+          "depart": "2026-11-08T06:00",
+          "arrive": "2026-11-08T08:43",
+          "stops": 0,
+          "passengers": 4,
+          "cabinNotes": "Carry-on included"
+        }
+      }
+    ]
+  },
+  {
+    "id": "r-airport-car-af",
+    "name": "Getting to/from the NJ-side airport — where the car sits · All Four",
+    "category": "other",
+    "status": "needed",
+    "itineraryId": "03-all-four",
+    "date": "2026-11-05",
+    "placeId": "phl-airport",
+    "createdAt": "2026-10-19T22:45:00Z",
+    "updatedAt": "2026-10-19T22:45:00Z",
+    "notes": "Pairs with the flight scenario: the car should be at the airport you fly home to. Rates checked 2026-10-19 (PHL: phl.org; EWR/off-site: aggregator blogs — confirm before booking).",
+    "options": [
+      {
+        "id": "o-park-phl-economy-af",
+        "url": "https://www.phl.org/parking/garages/economy-parking",
+        "title": "Drive to PHL, park Economy Lot Thu 6 AM → Sun 2 PM (4 days × $18)",
+        "status": "shortlist",
+        "totalPrice": 72,
+        "currency": "USD",
+        "location": "PHL Economy Lot (shuttle to terminals)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "THE PICK for Thu-from-PHL + Southwest-home. $18/day flat incl. taxes (phl.org, rate since May 1 2026). Off-site Jet Stream ~$10/day is cheaper but adds a shuttle."
+      },
+      {
+        "id": "o-park-ewr-p6-af",
+        "url": "https://www.newarkairport.com/to-from-airport/parking",
+        "title": "Drive to EWR, park P6 Economy Wed 6:30 PM → Sun 9 AM (5 days, ~$21/day pre-booked)",
+        "status": "option",
+        "totalPrice": 105,
+        "currency": "USD",
+        "location": "EWR P6 Economy (AirTrain/shuttle)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Only with a Newark return (United TPA→EWR). Drive-up is $35/day; off-site lots ~$9–18/day."
+      },
+      {
+        "id": "o-dropoff-ewr-uber-phl-af",
+        "url": "https://www.uber.com/",
+        "title": "Friend drops all 4 at Newark Wed; Uber XL PHL → Hopewell Sun",
+        "status": "option",
+        "totalPrice": 110,
+        "currency": "USD",
+        "location": "Newark drop-off / PHL rideshare",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Only for Wednesday-Newark-out + PHL-home. Uber XL PHL → Hopewell est. ~$100–120 (no published route price; Mount Laurel averages $89). $0 if someone picks you up at PHL."
+      }
+    ]
+  },
+  {
+    "id": "r-rental-car-af",
+    "name": "Rental car — Orlando airport Thu → Tampa airport Sun 5 AM · All Four",
+    "category": "other",
+    "status": "needed",
+    "itineraryId": "03-all-four",
+    "date": "2026-11-05",
+    "placeId": "mco-airport",
+    "createdAt": "2026-10-19T22:45:00Z",
+    "updatedAt": "2026-10-19T22:45:00Z",
+    "notes": "One-way MCO → TPA. Chase Travel prices (Alamo Intermediate, Nissan Rogue or similar): Fri→Sun 2 days $177, Wed→Sun 4 days $341 — so Thu→Sun ≈ $260 (estimate, re-price on Chase). Sapphire Reserve covers collision: decline the counter CDW.",
+    "options": [
+      {
+        "id": "o-car-alamo-mco-tpa-thu-af",
+        "url": "https://travelsecure.chase.com/",
+        "title": "Alamo Intermediate (Nissan Rogue or similar) — MCO Thu 10:30 AM → TPA Sun 5:00 AM",
+        "status": "shortlist",
+        "totalPrice": 260,
+        "currency": "USD",
+        "location": "Orlando airport → Tampa airport",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "ESTIMATE between the two Chase quotes; free cancellation on Chase until ~3 days before pickup."
+      },
+      {
+        "id": "o-car-alamo-tpa-rt-af",
+        "url": "https://travelsecure.chase.com/",
+        "title": "Alamo Intermediate — TPA Wed 11:30 PM → TPA Sun 5 AM (round trip, Wednesday-Tampa scenario)",
+        "status": "option",
+        "totalPrice": 249,
+        "currency": "USD",
+        "location": "Tampa airport",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Chase quote 2026-10-18 for the United EWR→TPA Wednesday option."
+      }
+    ]
+  },
+  {
+    "id": "r-hotel-disney-af",
+    "name": "Lodging near the parks — Thu Nov 5 → Sat Nov 7 (2 nights, 4 guests) · All Four",
+    "category": "hotel",
+    "status": "needed",
+    "itineraryId": "03-all-four",
+    "date": "2026-11-05",
+    "placeId": "disney-area",
+    "createdAt": "2026-10-19T22:45:00Z",
+    "updatedAt": "2026-10-19T22:45:00Z",
+    "notes": "2 nights keeps the Sapphire Reserve $250 select-hotel (IHG) credit, which needs a 2-night minimum and expires 12/31/2026. Pay by card, not points.",
+    "options": [
+      {
+        "id": "o-hi-resort-lbv-af",
+        "url": "https://travelsecure.chase.com/",
+        "title": "Holiday Inn Resort Orlando – Lake Buena Vista (IHG) — 2 Queens, Thu → Sat",
+        "status": "shortlist",
+        "totalPrice": 246,
+        "currency": "USD",
+        "location": "13351 State Road 535, Orlando (Lake Buena Vista)",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-10-19T22:30:00Z",
+        "notes": "Chase Travel all-in $245.72 for Wed–Fri on 2026-10-19 (re-price for Thu–Sat). ~$250 IHG credit covers it. Resort fee ~$30–34/night and parking ~$21/night paid at the hotel; free scheduled Disney shuttle. Tripadvisor 4/5 (2,237)."
+      }
+    ]
   }
 ]

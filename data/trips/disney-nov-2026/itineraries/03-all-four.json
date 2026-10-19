@@ -1,0 +1,392 @@
+{
+  "id": "03-all-four",
+  "name": "All Four Together",
+  "tagline": "All 4 fly PHL → Orlando Thu 7:35 AM, Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun — the car waits at PHL",
+  "vibe": "Re-plan after all four decided to travel together (2026-10-19). The Wednesday-night Newark JetBlue fare jumped to $851/seat for four, so the cheapest way down is Thursday morning from PHL, parking the car there for 4 days and coming home to it on the Southwest flight that uses the $500 Sapphire credit. Wednesday-night Newark options stay on the flight cards for comparison (see the ✈ Flights tab scenarios).",
+  "highlights": [
+    "One car, parked at PHL Economy ($18/day) — no drop-offs or pickups",
+    "MBG parade at Epcot — Fri 10:05 AM",
+    "Magic Kingdom Thursday + fireworks",
+    "Two nights near the parks (Holiday Inn Resort LBV, $250 IHG credit)",
+    "Southwest home Sunday ($500 Sapphire Southwest credit)"
+  ],
+  "skiDays": 0,
+  "includesMontreal": false,
+  "includesPortland": false,
+  "totalMiles": 0,
+  "days": [
+    {
+      "id": "day1",
+      "label": "Day 1 — Wednesday, Nov 4",
+      "theme": "Band bus leaves · regular workday (Jaquan in New Brunswick until 5) · pack, early night",
+      "legs": [],
+      "segments": [
+        {
+          "time": "Morning",
+          "placeId": "hopewell-nj",
+          "activity": "Thandi drops luggage at CHS band room; MBG buses depart (time TBD)",
+          "durationMinutes": 30,
+          "eventType": "travel",
+          "fixed": true
+        },
+        {
+          "time": "Evening",
+          "placeId": "hopewell-nj",
+          "activity": "Pack carry-ons (Frontier Economy bundle = 1 carry-on + personal item each), print/load boarding passes, bed by 9:30",
+          "durationMinutes": 120,
+          "eventType": "rest"
+        }
+      ],
+      "overnightPlaceId": "hopewell-nj",
+      "notes": "No Wednesday travel: the only Wednesday-evening flights that fit a 5 PM New Brunswick finish leave Newark, and for four they now cost $2,117 (United → Tampa) to $3,402 (JetBlue → Orlando)."
+    },
+    {
+      "id": "day2",
+      "label": "Day 2 — Thursday, Nov 5",
+      "theme": "Fly PHL → Orlando at 7:35 AM · Magic Kingdom from late morning · check in near the parks",
+      "legs": [
+        {
+          "id": "leg-home-phl-4",
+          "fromPlaceId": "hopewell-nj",
+          "toPlaceId": "phl-airport",
+          "distanceMiles": 45,
+          "drivingMinutes": 60,
+          "travelMode": "drive",
+          "notes": "Leave home 5:15 AM → PHL Economy Lot (shuttle to terminals) by 6:15; park Thu–Sun, ~$72 (4 × $18)."
+        },
+        {
+          "id": "leg-phl-mco-4",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "mco-airport",
+          "distanceMiles": 860,
+          "drivingMinutes": 158,
+          "travelMode": "flight",
+          "notes": "Frontier nonstop 7:35 AM → 10:13 AM, 4 × Economy bundle (~$237 ea incl. carry-on). The 5:15 AM → 8:01 AM is the same price if you want rope drop."
+        },
+        {
+          "id": "leg-mco-mk-4",
+          "fromPlaceId": "mco-airport",
+          "toPlaceId": "magic-kingdom",
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
+          "travelMode": "drive",
+          "notes": "Pick up the one-way rental (MCO → TPA Sun) and drive to the Transportation & Ticket Center; or drop bags at the hotel first."
+        }
+      ],
+      "segments": [
+        {
+          "time": "5:15 AM",
+          "placeId": "hopewell-nj",
+          "activity": "Leave home → PHL Economy Lot",
+          "durationMinutes": 60,
+          "eventType": "travel"
+        },
+        {
+          "time": "7:35 AM",
+          "placeId": "phl-airport",
+          "activity": "Frontier PHL → Orlando nonstop (lands 10:13 AM)",
+          "durationMinutes": 158,
+          "eventType": "travel"
+        },
+        {
+          "time": "10:30 AM",
+          "placeId": "mco-airport",
+          "activity": "Rental car, drive to Magic Kingdom (bags stay in the trunk until hotel check-in)",
+          "durationMinutes": 75,
+          "eventType": "travel"
+        },
+        {
+          "time": "11:45 AM",
+          "placeId": "magic-kingdom",
+          "activity": "Enter; Multi Pass windows start ~noon. Seven Dwarfs Mine Train → Peter Pan's Flight → Haunted Mansion",
+          "durationMinutes": 30,
+          "eventType": "activity",
+          "ticketed": true,
+          "notes": "Multi Pass picks for today: Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight. Book 3 days out (Mon Nov 2, 7 AM ET)."
+        },
+        {
+          "time": "12:15 PM",
+          "placeId": "magic-kingdom",
+          "activity": "Lunch — Columbia Harbour House (indoor, seated, Liberty Square)",
+          "durationMinutes": 60,
+          "eventType": "meal"
+        },
+        {
+          "time": "1:15 PM",
+          "placeId": "magic-kingdom",
+          "activity": "Cool-down block: PeopleMover → Monsters, Inc. Laugh Floor (live improv, seated, cold) → Mickey's PhilharMagic if you still need AC",
+          "durationMinutes": 120,
+          "eventType": "rest",
+          "notes": "Skipping Carousel of Progress and Hall of Presidents — museum-grade exhibits (2 of 5 on the scorecard). If the hotel is already checked in, the pool works too, but the drive out and back costs ~1 hr."
+        },
+        {
+          "time": "3:30 PM",
+          "placeId": "magic-kingdom",
+          "activity": "Pirates of the Caribbean → Jungle Cruise (Multi Pass) → Buzz Lightyear's Space Ranger Spin (Toy Story)",
+          "durationMinutes": 150,
+          "eventType": "activity",
+          "notes": "Kid's call: Big Thunder Mountain (fast, no inversions, shaky). Skip Space Mountain and Tron for motion sickness unless someone volunteers."
+        },
+        {
+          "time": "6:15 PM",
+          "placeId": "magic-kingdom",
+          "activity": "Dinner — Pecos Bill or Cosmic Ray's; walk Main Street while it's lit",
+          "durationMinutes": 75,
+          "eventType": "meal"
+        },
+        {
+          "time": "8:00 PM",
+          "placeId": "magic-kingdom",
+          "activity": "Happily Ever After fireworks from Main Street (confirm time on the app — 8 or 9 PM)",
+          "durationMinutes": 45,
+          "eventType": "activity",
+          "fixed": true,
+          "notes": "Wait 20 min in the Emporium after the show before heading to the monorail/ferry — the exit crush is real."
+        },
+        {
+          "time": "9:30 PM",
+          "placeId": "disney-area",
+          "activity": "Drive to the hotel, check in (2 nights, Thu–Sat)",
+          "durationMinutes": 45,
+          "eventType": "rest"
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Late-morning start vs a Wednesday-night arrival, in exchange for ~$1,200 less transport cost than the Newark options."
+    },
+    {
+      "id": "day3",
+      "label": "Day 3 — Friday, Nov 6",
+      "theme": "EPCOT — parade at 10:05, World Showcase lap, stay for Luminous (no early morning tomorrow)",
+      "legs": [
+        {
+          "id": "leg-hotel-epcot-4",
+          "fromPlaceId": "disney-area",
+          "toPlaceId": "epcot",
+          "distanceMiles": 6,
+          "drivingMinutes": 20,
+          "travelMode": "drive",
+          "notes": "Or the Skyliner to International Gateway if staying at Pop Century / Art of Animation / Caribbean Beach — it lands beside the UK pavilion."
+        },
+        {
+          "id": "leg-phl-mco-fri-4",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "mco-airport",
+          "distanceMiles": 860,
+          "drivingMinutes": 166,
+          "travelMode": "flight",
+          "notes": "4th traveler: Frontier PHL 5:15 AM → MCO 8:01 AM ($129). Only flight that makes the parade. Leave home ~2:45 AM."
+        },
+        {
+          "id": "leg-mco-epcot-4",
+          "fromPlaceId": "mco-airport",
+          "toPlaceId": "epcot",
+          "distanceMiles": 20,
+          "drivingMinutes": 35,
+          "travelMode": "drive",
+          "notes": "Rideshare straight to Epcot (~$40–50). Tight but doable for 10:05."
+        }
+      ],
+      "segments": [
+        {
+          "time": "7:30 AM",
+          "placeId": "disney-area",
+          "activity": "Drive (or hotel shuttle) to Epcot — all four together, no airport run",
+          "durationMinutes": 30,
+          "eventType": "travel"
+        },
+        {
+          "time": "8:15 AM",
+          "placeId": "epcot",
+          "activity": "Gate. Walk straight to World Showcase and stake out a parade spot (UK/Canada end = step-off; American Adventure = finish). Pavilions open at 11, so this stretch is only for the spot.",
+          "durationMinutes": 100,
+          "eventType": "activity",
+          "ticketed": true
+        },
+        {
+          "time": "10:05 AM",
+          "placeId": "epcot",
+          "activity": "MBG PARADE — steps off in the UK pavilion, ends at the American Adventure",
+          "durationMinutes": 45,
+          "eventType": "concert",
+          "fixed": true,
+          "ticketed": true
+        },
+        {
+          "time": "10:50 AM",
+          "placeId": "epcot",
+          "activity": "Frozen Ever After (Norway, Multi Pass) → Remy's Ratatouille Adventure (France) — both open before World Showcase",
+          "durationMinutes": 75,
+          "eventType": "activity",
+          "notes": "Multi Pass picks for today: Frozen Ever After, Remy, Soarin'. Guardians of the Galaxy (Marvel) is Single Pass only and the worst motion-sickness ride on property — skip or one brave rider."
+        },
+        {
+          "time": "12:00 PM",
+          "placeId": "epcot",
+          "activity": "World Showcase lap, counter-clockwise from Norway: Mexico (Gran Fiesta boat if there's no line), Norway, China (acrobats if performing — skip the film), Germany (Karamell-Küche, train village), Italy",
+          "durationMinutes": 150,
+          "eventType": "activity",
+          "notes": "Grab a Food & Wine Festival passport at the entrance — stamp the Global Marketplace booths as you go. Lunch = $5–10 festival plates along the way (budget ~$60–80 for four). Skip the pavilion films (Canada/China/France) and The Seas with Nemo — museum-grade or built for small kids."
+        },
+        {
+          "time": "2:30 PM",
+          "placeId": "epcot",
+          "activity": "The American Adventure show (30 min, seated, air-conditioned) — the built-in rest",
+          "durationMinutes": 45,
+          "eventType": "rest"
+        },
+        {
+          "time": "3:15 PM",
+          "placeId": "epcot",
+          "activity": "Japan (Mitsukoshi store, Kabuki Cafe shaved ice) → Morocco alleys → France (Beauty and the Beast Sing-Along, bakery) → UK → Canada",
+          "durationMinutes": 150,
+          "eventType": "activity"
+        },
+        {
+          "time": "5:45 PM",
+          "placeId": "epcot",
+          "activity": "Back to World Celebration: Soarin' (Multi Pass) → Mission: SPACE green side (mild, no spin) → Club Cool (free world Coke flavors) → Spaceship Earth if there's time. Test Track is the kids' call (fast, no inversions).",
+          "durationMinutes": 75,
+          "eventType": "activity"
+        },
+        {
+          "time": "7:00 PM",
+          "placeId": "epcot",
+          "activity": "Dinner from the winning booth, then Luminous fireworks at 9 PM — no rope drop tomorrow, so stay as late as the kids last",
+          "durationMinutes": 60,
+          "eventType": "meal"
+        }
+      ],
+      "overnightPlaceId": "disney-area",
+      "notes": "Food & Wine Festival runs Aug 27 – Nov 21, so the booths are up. Everyone watching the parade needs Epcot admission today. Last park day of the trip: if anyone wants Hollywood Studios, a Park Hopper on today's ticket is the only way (Skyliner from the International Gateway, ~15 min)."
+    },
+    {
+      "id": "day4",
+      "label": "Day 4 — Saturday, Nov 7",
+      "theme": "Check out · drive to Nicole's · Tampa afternoon (band workshop at Epcot)",
+      "legs": [
+        {
+          "id": "leg-hotel-tampa-4",
+          "fromPlaceId": "disney-area",
+          "toPlaceId": "tampa-family",
+          "distanceMiles": 95,
+          "drivingMinutes": 100,
+          "travelMode": "drive",
+          "notes": ", late morning — no park today, so no rush. From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
+        }
+      ],
+      "segments": [
+        {
+          "time": "9:30 AM",
+          "placeId": "epcot",
+          "activity": "MBG soundtrack workshop at Epcot (Thandi, students only) — the band stays in the parks afterward",
+          "durationMinutes": 180,
+          "eventType": "rehearsal",
+          "fixed": true,
+          "openTo": [
+            "performer"
+          ]
+        },
+        {
+          "time": "9:30 AM",
+          "placeId": "disney-area",
+          "activity": "Sleep in, pool, check out by 11 — bags in the car. Optional Disney Springs stop on the way out (free parking, no ticket)",
+          "durationMinutes": 120,
+          "eventType": "free-time"
+        },
+        {
+          "time": "12:00 PM",
+          "placeId": "disney-area",
+          "activity": "Drive to Tampa (1h30)",
+          "durationMinutes": 90,
+          "eventType": "travel"
+        },
+        {
+          "time": "1:30 PM",
+          "placeId": "tampa-family",
+          "activity": "Arrive at Nicole's — Land O' Lakes (Nicole's) afternoon (Riverwalk, Armature Works, or just the pool)",
+          "durationMinutes": 300,
+          "eventType": "free-time"
+        },
+        {
+          "time": "Evening",
+          "placeId": "tampa-family",
+          "activity": "Early dinner, early night — 4:45 AM alarm for the 7:16 flight (or sleep in for the 12:59 PM option)",
+          "durationMinutes": 120,
+          "eventType": "rest"
+        }
+      ],
+      "overnightPlaceId": "tampa-family",
+      "notes": "Giving up Saturday's park day is what makes Sunday's Tampa flight work: Sunday nonstops from Orlando are $726+ per person, while Tampa has a $218 nonstop at 7:16 AM. Hollywood Studios drops out of the trip unless Thursday swaps to it."
+    },
+    {
+      "id": "day5",
+      "label": "Day 5 — Sunday, Nov 8",
+      "theme": "Fly home TPA → PHL (Southwest 6:15 AM via St. Louis) · drive home from PHL · band buses leave tonight",
+      "legs": [
+        {
+          "id": "leg-family-tpa-4",
+          "fromPlaceId": "tampa-family",
+          "toPlaceId": "tpa-airport",
+          "distanceMiles": 25,
+          "drivingMinutes": 35,
+          "travelMode": "drive",
+          "notes": "Leave Nicole's by 4:45 AM, return the rental at TPA, at the gate by 6:15. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
+        },
+        {
+          "id": "leg-tpa-phl-4",
+          "fromPlaceId": "tpa-airport",
+          "toPlaceId": "phl-airport",
+          "distanceMiles": 920,
+          "drivingMinutes": 158,
+          "travelMode": "flight",
+          "notes": "Frontier nonstop 7:16 AM → 9:54 AM, 4 tickets $872. Alternative: Frontier via Atlanta 12:59 PM → 6:19 PM, $1,338 for 4, no 4:45 AM alarm."
+        },
+        {
+          "id": "leg-phl-home-4",
+          "fromPlaceId": "phl-airport",
+          "toPlaceId": "hopewell-nj",
+          "distanceMiles": 45,
+          "drivingMinutes": 60,
+          "travelMode": "drive"
+        }
+      ],
+      "segments": [
+        {
+          "time": "4:30 AM",
+          "placeId": "tampa-family",
+          "activity": "Leave Nicole's for TPA, drop the rental",
+          "durationMinutes": 35,
+          "eventType": "travel"
+        },
+        {
+          "time": "6:15 AM",
+          "placeId": "tpa-airport",
+          "activity": "Southwest Tampa → St. Louis → Philadelphia (lands 1:50 PM), Choice fare, seats together",
+          "durationMinutes": 455,
+          "eventType": "travel"
+        },
+        {
+          "time": "2:15 PM",
+          "placeId": "phl-airport",
+          "activity": "Economy Lot shuttle → car → home by ~3:30 PM",
+          "durationMinutes": 75,
+          "eventType": "travel"
+        },
+        {
+          "time": "Evening",
+          "placeId": "tampa-family",
+          "activity": "MBG loads buses and departs Orlando for NJ (Thandi); bus reaches CHS Monday, time via Band app",
+          "durationMinutes": 30,
+          "eventType": "travel",
+          "fixed": true,
+          "openTo": [
+            "performer"
+          ]
+        }
+      ],
+      "overnightPlaceId": "hopewell-nj",
+      "notes": "Home a day earlier than the Family Plan and Thandi is on the bus until Monday either way. If the 4:45 AM start is a dealbreaker, the 12:59 PM Atlanta connection costs $466 more for the four of us."
+    }
+  ]
+}
