@@ -1,7 +1,7 @@
 {
   "id": "03-all-four",
   "name": "All Four Together",
-  "tagline": "All 4 fly PHL → Orlando Thu 5:15 AM (Frontier JG9YXM, booked), Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun — the car waits at PHL",
+  "tagline": "All 4 fly PHL → Orlando Thu 5:15 AM (Frontier JG9YXM, booked), Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun (2477ZW, booked) — the car waits at PHL",
   "vibe": "Re-plan after all four decided to travel together (2026-10-19). The Wednesday-night Newark JetBlue fare jumped to $851/seat for four, so the cheapest way down is Thursday morning from PHL, parking the car there for 4 days and coming home to it on the Southwest flight that uses the $500 Sapphire credit. Wednesday-night Newark options stay on the flight cards for comparison (see the ✈ Flights tab scenarios).",
   "highlights": [
     "One car, parked at PHL Economy ($18/day) — no drop-offs or pickups",
@@ -363,9 +363,10 @@
         {
           "time": "6:15 AM",
           "placeId": "tpa-airport",
-          "activity": "Southwest Tampa → St. Louis → Philadelphia (lands 1:50 PM), Choice fare, seats together",
+          "activity": "Southwest WN 4283 TPA 6:15 AM → St. Louis 7:40 AM CT; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET — conf. 2477ZW (Choice, choose seats on southwest.com)",
           "durationMinutes": 455,
-          "eventType": "travel"
+          "eventType": "travel",
+          "fixed": true
         },
         {
           "time": "2:15 PM",

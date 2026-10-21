@@ -3853,25 +3853,25 @@
     "id": "f-return-4pax-af",
     "name": "Flights home — all 4, Sun Nov 8 from Tampa · All Four",
     "category": "flight",
-    "status": "needed",
+    "status": "booked",
     "itineraryId": "03-all-four",
     "date": "2026-11-08",
     "placeId": "phl-airport",
     "createdAt": "2026-10-19T22:45:00Z",
-    "updatedAt": "2026-10-19T22:45:00Z",
-    "notes": "Sleeping at Nicole's Saturday makes Tampa the airport (~35 min). Southwest does not fly to Newark, so the $500 Sapphire Reserve Southwest credit (statement credit on Southwest booked through Chase Travel, good through 12/31/2027) only helps on a PHL return — which is where the car is in the recommended plan.",
+    "updatedAt": "2026-10-21T02:55:00Z",
+    "notes": "BOOKED 2026-10-20 via Chase Travel — Southwest confirmation 2477ZW (Chase Trip ID 1031111570, agency ref MSHURJ), $1,752.80 on card ...5940, no points; $500 Sapphire Southwest statement credit expected in 6–8 weeks. WN 4283 TPA 6:15 AM ET → STL 7:40 AM CT; 3h layover; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET. Choice fare (carry-on + seat selection). Travelers Mikaela, Jaquan, Aziza, Kailani with Known Traveler Numbers. SEATS NOT YET CHOSEN — pick on southwest.com. Fare was $418/pp on Oct 18–19 and $439/pp when booked. Earlier notes: Sleeping at Nicole's Saturday makes Tampa the airport (~35 min). Southwest does not fly to Newark, so the $500 Sapphire Reserve Southwest credit (statement credit on Southwest booked through Chase Travel, good through 12/31/2027) only helps on a PHL return — which is where the car is in the recommended plan.",
     "options": [
       {
         "id": "o-sun-tpa-phl-wn-615-af",
         "url": "https://travelsecure.chase.com/",
         "title": "Sun Nov 8 · TPA→PHL Southwest 6:15 AM → 1:50 PM (via St. Louis)",
-        "status": "shortlist",
-        "totalPrice": 1669,
+        "status": "chosen",
+        "totalPrice": 1752.8,
         "currency": "USD",
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-19T22:30:00Z",
-        "notes": "THE PICK: Choice fare $418 ea (carry-on + seat selection), $1,668.80 on Chase Travel → ~$1,169 after the $500 Southwest credit. Last Chase check 2026-10-19 morning.",
+        "notes": "BOOKED — 2477ZW, $1,752.80 for 4 ($439 ea Choice) via Chase Travel; −$500 Southwest credit → ~$1,253 net.",
         "flight": {
           "from": "TPA",
           "to": "PHL",
@@ -3882,7 +3882,7 @@
           "passengers": 4,
           "cabinNotes": "Choice fare: carry-on + seat selection included",
           "via": "St. Louis (STL)",
-          "layover": "~3h"
+          "layover": "3h"
         }
       },
       {
@@ -3931,7 +3931,10 @@
           "cabinNotes": "Carry-on included"
         }
       }
-    ]
+    ],
+    "confirmationNumber": "2477ZW",
+    "cost": 1752.8,
+    "bookingUrl": "https://www.southwest.com/air/manage-reservation/"
   },
   {
     "id": "r-airport-car-af",
