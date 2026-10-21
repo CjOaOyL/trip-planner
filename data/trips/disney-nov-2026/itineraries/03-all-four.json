@@ -1,7 +1,7 @@
 {
   "id": "03-all-four",
   "name": "All Four Together",
-  "tagline": "All 4 fly PHL → Orlando Thu 7:35 AM, Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun — the car waits at PHL",
+  "tagline": "All 4 fly PHL → Orlando Thu 5:15 AM (Frontier JG9YXM, booked), Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun — the car waits at PHL",
   "vibe": "Re-plan after all four decided to travel together (2026-10-19). The Wednesday-night Newark JetBlue fare jumped to $851/seat for four, so the cheapest way down is Thursday morning from PHL, parking the car there for 4 days and coming home to it on the Southwest flight that uses the $500 Sapphire credit. Wednesday-night Newark options stay on the flight cards for comparison (see the ✈ Flights tab scenarios).",
   "highlights": [
     "One car, parked at PHL Economy ($18/day) — no drop-offs or pickups",
@@ -43,7 +43,7 @@
     {
       "id": "day2",
       "label": "Day 2 — Thursday, Nov 5",
-      "theme": "Fly PHL → Orlando at 7:35 AM · Magic Kingdom from late morning · check in near the parks",
+      "theme": "Fly PHL → Orlando 5:15 AM (booked) · Magic Kingdom from ~9:30 · check in near the parks",
       "legs": [
         {
           "id": "leg-home-phl-4",
@@ -52,7 +52,7 @@
           "distanceMiles": 45,
           "drivingMinutes": 60,
           "travelMode": "drive",
-          "notes": "Leave home 5:15 AM → PHL Economy Lot (shuttle to terminals) by 6:15; park Thu–Sun, ~$72 (4 × $18)."
+          "notes": "Leave home ~3:15 AM → PHL Economy Lot (shuttle to terminals) by ~4:00; park Thu–Sun, ~$72 (4 × $18)."
         },
         {
           "id": "leg-phl-mco-4",
@@ -61,7 +61,7 @@
           "distanceMiles": 860,
           "drivingMinutes": 158,
           "travelMode": "flight",
-          "notes": "Frontier nonstop 7:35 AM → 10:13 AM, 4 × Economy bundle (~$237 ea incl. carry-on). The 5:15 AM → 8:01 AM is the same price if you want rope drop."
+          "notes": "BOOKED: Frontier F9 2415 5:15 AM → 8:01 AM, confirmation JG9YXM, $947.92 for 4 (Economy bundles). Seats 24A, 25A–C."
         },
         {
           "id": "leg-mco-mk-4",
@@ -75,34 +75,35 @@
       ],
       "segments": [
         {
-          "time": "5:15 AM",
+          "time": "3:15 AM",
           "placeId": "hopewell-nj",
           "activity": "Leave home → PHL Economy Lot",
           "durationMinutes": 60,
           "eventType": "travel"
         },
         {
-          "time": "7:35 AM",
+          "time": "5:15 AM",
           "placeId": "phl-airport",
-          "activity": "Frontier PHL → Orlando nonstop (lands 10:13 AM)",
-          "durationMinutes": 158,
-          "eventType": "travel"
+          "activity": "Frontier F9 2415 PHL → Orlando nonstop (lands 8:01 AM) — conf. JG9YXM",
+          "durationMinutes": 166,
+          "eventType": "travel",
+          "fixed": true
         },
         {
-          "time": "10:30 AM",
+          "time": "8:30 AM",
           "placeId": "mco-airport",
           "activity": "Rental car, drive to Magic Kingdom (bags stay in the trunk until hotel check-in)",
-          "durationMinutes": 75,
+          "durationMinutes": 60,
           "eventType": "travel"
         },
         {
-          "time": "11:45 AM",
+          "time": "9:30 AM",
           "placeId": "magic-kingdom",
-          "activity": "Enter; Multi Pass windows start ~noon. Seven Dwarfs Mine Train → Peter Pan's Flight → Haunted Mansion",
-          "durationMinutes": 30,
+          "activity": "Enter; first Multi Pass window. Seven Dwarfs Mine Train → Peter Pan's Flight → Haunted Mansion",
+          "durationMinutes": 165,
           "eventType": "activity",
           "ticketed": true,
-          "notes": "Multi Pass picks for today: Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight. Book 3 days out (Mon Nov 2, 7 AM ET)."
+          "notes": "Multi Pass picks for today: Seven Dwarfs Mine Train, Jungle Cruise, Peter Pan's Flight. Book 3 days out (Mon Nov 2, 7 AM ET). Plan a mid-afternoon rest — everyone was up at 3 AM."
         },
         {
           "time": "12:15 PM",
@@ -152,7 +153,7 @@
         }
       ],
       "overnightPlaceId": "disney-area",
-      "notes": "Late-morning start vs a Wednesday-night arrival, in exchange for ~$1,200 less transport cost than the Newark options."
+      "notes": "Early start (3:15 AM) bought a near-full Magic Kingdom day and saved ~$190 vs the 7:35 AM."
     },
     {
       "id": "day3",
