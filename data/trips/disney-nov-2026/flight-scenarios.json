@@ -51,7 +51,7 @@
       "f-out-4pax-af": "o-thu-phl-mco-f9-735-af",
       "f-return-4pax-af": "o-sun-tpa-phl-wn-615-af"
     },
-    "notes": "Fares $948 + $1,669 = $2,617 (−$500 Southwest credit = $2,117). Plus PHL Economy parking ~$72 and one-way MCO→TPA rental ~$260 → transport ≈ $2,450. One car, no favors needed. Cost: leave home 5:15 AM Thu, Magic Kingdom from ~11:45 AM."
+    "notes": "Fares ~$1,044 (7:35 AM, 2026-10-20) + $1,669 Southwest = $2,713 (−$500 credit = $2,213). Plus PHL Economy ~$72 and one-way MCO→TPA rental ~$260 → transport ≈ $2,545. The 5:15 AM flight is now $188 cheaper (see next scenario)."
   },
   {
     "id": "fs-af-wed-ewr-tpa-wn-home",
@@ -72,5 +72,15 @@
       "f-return-4pax-af": "o-sun-tpa-ewr-ua-600-af"
     },
     "notes": "Fares $2,117 + $1,507 = $3,624, no credit. Plus EWR P6 ~$105 and TPA rental ~$249 → transport ≈ $3,980. Mikaela drives the girls, grabs Jaquan in New Brunswick at 5, parks at Newark; home by 10 AM Sunday."
+  },
+  {
+    "id": "fs-af-thu-515-phl-wn-home",
+    "itineraryId": "03-all-four",
+    "name": "All Four — Thu 5:15 AM PHL→MCO Frontier, Sun 6:15 AM TPA→PHL Southwest (car at PHL)",
+    "selections": {
+      "f-out-4pax-af": "o-thu-phl-mco-f9-515-af",
+      "f-return-4pax-af": "o-sun-tpa-phl-wn-615-af"
+    },
+    "notes": "Fares ~$856 + $1,669 = $2,525 (−$500 = $2,025). Plus PHL parking ~$72 and rental ~$260 → transport ≈ $2,357 — cheapest. Leave home ~3:15 AM; rope drop at Magic Kingdom."
   }
 ]
