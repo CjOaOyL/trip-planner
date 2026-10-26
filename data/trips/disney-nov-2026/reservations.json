@@ -3732,7 +3732,7 @@
     "placeId": "mco-airport",
     "createdAt": "2026-10-19T22:45:00Z",
     "updatedAt": "2026-10-21T02:20:00Z",
-    "notes": "BOOKED 2026-10-20 on flyfrontier.com — confirmation JG9YXM, $947.92 (Economy bundle: carry-on + personal item each). F9 2415 PHL 5:15 AM → MCO 8:01 AM Thu Nov 5. Seats: Jaquan 24A, Mikaela 25C, Aziza 25B, Kailani 25A. Known Traveler Numbers on all 4. Non-refundable (Frontier credit if changed). Booked as 2 adults + 2 children; the flight was not a Kids Fly Free flight. Earlier notes: Priced 2026-10-19 on Google Flights for 4 (Chase Travel matched Google on every check). Jaquan is in New Brunswick until 5 PM Wed, so Wednesday means Newark after ~6:30 PM. The JetBlue 8:55 PM EWR→MCO had 3 seats at $184 on Oct 18–19 but now prices at $851/seat. Frontier prices shown are base fare; add ~$15/person for the Economy bundle (carry-on + seat choice) — far cheaper than a $60 à-la-carte carry-on. Chase Travel does not sell Frontier: book on flyfrontier.com.",
+    "notes": "BOOKED 2026-10-20 on flyfrontier.com — confirmation in email/calendar, $947.92 (Economy bundle: carry-on + personal item each). F9 2415 PHL 5:15 AM → MCO 8:01 AM Thu Nov 5. Seats: Jaquan 24A, Mikaela 25C, Aziza 25B, Kailani 25A. Known Traveler Numbers on all 4. Non-refundable (Frontier credit if changed). Booked as 2 adults + 2 children; the flight was not a Kids Fly Free flight. Earlier notes: Priced 2026-10-19 on Google Flights for 4 (Chase Travel matched Google on every check). Jaquan is in New Brunswick until 5 PM Wed, so Wednesday means Newark after ~6:30 PM. The JetBlue 8:55 PM EWR→MCO had 3 seats at $184 on Oct 18–19 but now prices at $851/seat. Frontier prices shown are base fare; add ~$15/person for the Economy bundle (carry-on + seat choice) — far cheaper than a $60 à-la-carte carry-on. Chase Travel does not sell Frontier: book on flyfrontier.com.",
     "options": [
       {
         "id": "o-thu-phl-mco-f9-735-af",
@@ -3766,7 +3766,7 @@
         "location": "PHL → Orlando (MCO)",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-20T12:00:00Z",
-        "notes": "BOOKED — JG9YXM, $947.92 for 4 ($236.98 ea incl. Economy bundle). The $233.98 fare sold out mid-checkout and re-priced $3/person higher.",
+        "notes": "BOOKED — [conf. in calendar], $947.92 for 4 ($236.98 ea incl. Economy bundle). The $233.98 fare sold out mid-checkout and re-priced $3/person higher.",
         "flight": {
           "from": "PHL",
           "to": "MCO",
@@ -3845,7 +3845,6 @@
         }
       }
     ],
-    "confirmationNumber": "JG9YXM",
     "cost": 947.92,
     "bookingUrl": "https://booking.flyfrontier.com"
   },
@@ -3859,7 +3858,7 @@
     "placeId": "phl-airport",
     "createdAt": "2026-10-19T22:45:00Z",
     "updatedAt": "2026-10-21T02:55:00Z",
-    "notes": "BOOKED 2026-10-20 via Chase Travel — Southwest confirmation 2477ZW (Chase Trip ID 1031111570, agency ref MSHURJ), $1,752.80 on card ...5940, no points; $500 Sapphire Southwest statement credit expected in 6–8 weeks. WN 4283 TPA 6:15 AM ET → STL 7:40 AM CT; 3h layover; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET. Choice fare (carry-on + seat selection). Travelers Mikaela, Jaquan, Aziza, Kailani with Known Traveler Numbers. SEATS NOT YET CHOSEN — pick on southwest.com. Fare was $418/pp on Oct 18–19 and $439/pp when booked. Earlier notes: Sleeping at Nicole's Saturday makes Tampa the airport (~35 min). Southwest does not fly to Newark, so the $500 Sapphire Reserve Southwest credit (statement credit on Southwest booked through Chase Travel, good through 12/31/2027) only helps on a PHL return — which is where the car is in the recommended plan.",
+    "notes": "BOOKED 2026-10-20 via Chase Travel — Southwest confirmation in email/calendar, $1,752.80 by card, no points; $500 Sapphire Southwest statement credit expected in 6–8 weeks. WN 4283 TPA 6:15 AM ET → STL 7:40 AM CT; 3h layover; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET. Choice fare (carry-on + seat selection). Travelers Mikaela, Jaquan, Aziza, Kailani with Known Traveler Numbers. SEATS NOT YET CHOSEN — pick on southwest.com. Fare was $418/pp on Oct 18–19 and $439/pp when booked. Earlier notes: Sleeping at Nicole's Saturday makes Tampa the airport (~35 min). Southwest does not fly to Newark, so the $500 Sapphire Reserve Southwest credit (statement credit on Southwest booked through Chase Travel, good through 12/31/2027) only helps on a PHL return — which is where the car is in the recommended plan.",
     "options": [
       {
         "id": "o-sun-tpa-phl-wn-615-af",
@@ -3871,7 +3870,7 @@
         "location": "Tampa (TPA) → PHL",
         "availability": "available",
         "availabilityCheckedAt": "2026-10-19T22:30:00Z",
-        "notes": "BOOKED — 2477ZW, $1,752.80 for 4 ($439 ea Choice) via Chase Travel; −$500 Southwest credit → ~$1,253 net.",
+        "notes": "BOOKED — [conf. in calendar], $1,752.80 for 4 ($439 ea Choice) via Chase Travel; −$500 Southwest credit → ~$1,253 net.",
         "flight": {
           "from": "TPA",
           "to": "PHL",
@@ -3932,7 +3931,6 @@
         }
       }
     ],
-    "confirmationNumber": "2477ZW",
     "cost": 1752.8,
     "bookingUrl": "https://www.southwest.com/air/manage-reservation/"
   },

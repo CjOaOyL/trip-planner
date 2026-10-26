@@ -746,7 +746,7 @@
     "cost": 1493.25,
     "bookingUrl": "https://www.airbnb.com/rooms/43811621",
     "cancellationDeadline": "2026-07-29T17:00:00+02:00",
-    "notes": "Booked on Airbnb 2026-05-10. Le Mas Sivan — terrace, secured parking, AC. Host: Djema (+33 6 70 55 83 64). 9 Rue du Pont de Langlois, 13200 Arles. Check-in after 5 PM Jul 30; checkout by 10 AM Aug 3. 4 adults + 2 children (6-guest max). ⚠️ No CO detector reported — bring portable. Smoke alarm present. Stairs required. Payment $1,493.25 to Visa 5940, scheduled for Jul 21, 2026. Free cancellation until 5 PM Jul 29 (Arles local time); partial refund after.",
+    "notes": "Booked on Airbnb 2026-05-10. Le Mas Sivan — terrace, secured parking, AC. Host: Djema (+33 6 70 55 83 64). 9 Rue du Pont de Langlois, 13200 Arles. Check-in after 5 PM Jul 30; checkout by 10 AM Aug 3. 4 adults + 2 children (6-guest max). ⚠️ No CO detector reported — bring portable. Smoke alarm present. Stairs required. Payment $1,493.25 to Visa, scheduled for Jul 21, 2026. Free cancellation until 5 PM Jul 29 (Arles local time); partial refund after.",
     "options": [
       {
         "id": "o-le-mas-sivan-airbnb-43811621",
@@ -1094,7 +1094,7 @@
     "status": "booked",
     "checkIn": "2026-07-28",
     "checkOut": "2026-08-03",
-    "notes": "BOOKED 2026-07-18 via Chase Travel (Trip ID 1020671203) — Europcar Intermediate, Renault Symbioz or similar. Pick-up Tue Jul 28 9:00 AM — Geneva Airport FRENCH SECTOR, Route Douaniere P21, 01210 (follow Secteur France signs after baggage). Drop-off Mon Aug 3 — Nice Cote d Azur Airport Terminal 2. Driver: Jaquan Levons. Paid: \\$789.10 total = 63,712 UR points + \\$16.11 to Visa 5940 (\\$653.23 base; ⚠️ one-way fee ~\\$135.87 due AT THE COUNTER, not prepaid). Free cancellation until Sat Jul 25. ⚠️ Chase email shows drop-off time \"12:00 am\" Aug 3 — likely a noon display quirk but VERIFY with Europcar; midnight drop would be wrong. Car conf 732925877; Europcar counter conf 1204973637.",
+    "notes": "BOOKED 2026-07-18 via Chase Travel (Trip ID 1020671203) — Europcar Intermediate, Renault Symbioz or similar. Pick-up Tue Jul 28 9:00 AM — Geneva Airport FRENCH SECTOR, Route Douaniere P21, 01210 (follow Secteur France signs after baggage). Drop-off Mon Aug 3 — Nice Cote d Azur Airport Terminal 2. Driver: Jaquan Levons. Paid: \\$789.10 total = 63,712 UR points + \\$16.11 to Visa (\\$653.23 base; ⚠️ one-way fee ~\\$135.87 due AT THE COUNTER, not prepaid). Free cancellation until Sat Jul 25. ⚠️ Chase email shows drop-off time \"12:00 am\" Aug 3 — likely a noon display quirk but VERIFY with Europcar; midnight drop would be wrong. Car conf 732925877; Europcar counter conf 1204973637.",
     "confirmationNumber": "Car conf 732925877 / Europcar counter 1204973637 / Chase Trip 1020671203"
   },
   {

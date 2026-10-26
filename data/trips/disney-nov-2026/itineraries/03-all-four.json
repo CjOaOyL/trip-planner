@@ -1,7 +1,7 @@
 {
   "id": "03-all-four",
   "name": "All Four Together",
-  "tagline": "All 4 fly PHL → Orlando Thu 5:15 AM (Frontier JG9YXM, booked), Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun (2477ZW, booked) — the car waits at PHL",
+  "tagline": "All 4 fly PHL → Orlando Thu 5:15 AM (Frontier, booked), Magic Kingdom Thu, Epcot + parade Fri (2 hotel nights), Nicole's Sat, Southwest TPA → PHL Sun (booked) — the car waits at PHL",
   "vibe": "Re-plan after all four decided to travel together (2026-10-19). The Wednesday-night Newark JetBlue fare jumped to $851/seat for four, so the cheapest way down is Thursday morning from PHL, parking the car there for 4 days and coming home to it on the Southwest flight that uses the $500 Sapphire credit. Wednesday-night Newark options stay on the flight cards for comparison (see the ✈ Flights tab scenarios).",
   "highlights": [
     "One car, parked at PHL Economy ($18/day) — no drop-offs or pickups",
@@ -61,7 +61,7 @@
           "distanceMiles": 860,
           "drivingMinutes": 158,
           "travelMode": "flight",
-          "notes": "BOOKED: Frontier F9 2415 5:15 AM → 8:01 AM, confirmation JG9YXM, $947.92 for 4 (Economy bundles). Seats 24A, 25A–C."
+          "notes": "BOOKED: Frontier F9 2415 5:15 AM → 8:01 AM, confirmation in email/calendar, $947.92 for 4 (Economy bundles). Seats 24A, 25A–C."
         },
         {
           "id": "leg-mco-mk-4",
@@ -84,7 +84,7 @@
         {
           "time": "5:15 AM",
           "placeId": "phl-airport",
-          "activity": "Frontier F9 2415 PHL → Orlando nonstop (lands 8:01 AM) — conf. JG9YXM",
+          "activity": "Frontier F9 2415 PHL → Orlando nonstop (lands 8:01 AM) — conf. in calendar",
           "durationMinutes": 166,
           "eventType": "travel",
           "fixed": true
@@ -363,7 +363,7 @@
         {
           "time": "6:15 AM",
           "placeId": "tpa-airport",
-          "activity": "Southwest WN 4283 TPA 6:15 AM → St. Louis 7:40 AM CT; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET — conf. 2477ZW (Choice, choose seats on southwest.com)",
+          "activity": "Southwest WN 4283 TPA 6:15 AM → St. Louis 7:40 AM CT; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET — conf. in calendar (Choice, choose seats on southwest.com)",
           "durationMinutes": 455,
           "eventType": "travel",
           "fixed": true

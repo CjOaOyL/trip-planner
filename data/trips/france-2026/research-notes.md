@@ -24,7 +24,7 @@ Last updated: 2026-05-16
 - **Property:** Le Mas Sivan — terrasse, parking sécurisé, clim (Airbnb #43811621)
 - **Dates:** Jul 30 (check-in after 5 PM) – Aug 3 (checkout by 10 AM)
 - **Guests:** 4 adults + 2 children
-- **Cost:** $1,493.25 total — balance due Jul 21, 2026 (Visa 5940)
+- **Cost:** $1,493.25 total — balance due Jul 21, 2026 (Visa)
 - **Confirmation:** HM9S8PCSBF
 - **Address:** 9 Rue du Pont de Langlois, 13200 Arles, France
 - **Host:** Djema — +33 6 70 55 83 64
