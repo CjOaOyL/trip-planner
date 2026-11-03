@@ -190,5 +190,82 @@
     "tags": [
       "park-day"
     ]
+  },
+  {
+    "id": "animal-kingdom",
+    "name": "Disney's Animal Kingdom",
+    "type": "park",
+    "description": "Disney theme park — safari, Pandora, Festival of the Lion King.",
+    "address": "2901 Osceola Pkwy, Bay Lake, FL 32830",
+    "coordinates": [
+      28.3553,
+      -81.5901
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Disney%27s+Animal+Kingdom",
+    "tags": [
+      "disney"
+    ]
+  },
+  {
+    "id": "universal-orlando",
+    "name": "Universal Orlando Resort",
+    "type": "park",
+    "description": "Universal Studios Florida + Islands of Adventure (Hogsmeade & Diagon Alley).",
+    "address": "6000 Universal Blvd, Orlando, FL 32819",
+    "coordinates": [
+      28.4743,
+      -81.4677
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Universal+Orlando+Resort",
+    "tags": [
+      "universal"
+    ]
+  },
+  {
+    "id": "bonnet-creek",
+    "name": "Club Wyndham Bonnet Creek",
+    "type": "other",
+    "description": "Sushant's family's base Oct 31 – Nov 6.",
+    "address": "9560 Via Encinas, Orlando, FL 32830",
+    "coordinates": [
+      28.3836,
+      -81.5276
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Club+Wyndham+Bonnet+Creek",
+    "tags": [
+      "lodging",
+      "friends"
+    ]
+  },
+  {
+    "id": "hyatt-place-mco",
+    "name": "Hyatt Place Orlando Airport",
+    "type": "other",
+    "description": "Sushant's family, night of Nov 6 (not the Hyatt inside MCO).",
+    "address": "5435 Forbes Pl, Orlando, FL 32812",
+    "coordinates": [
+      28.4602,
+      -81.3086
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=Hyatt+Place+Orlando+Airport+5435+Forbes+Place",
+    "tags": [
+      "lodging",
+      "friends"
+    ]
+  },
+  {
+    "id": "hi-disney-springs",
+    "name": "Holiday Inn Orlando – Disney Springs Area (IHG)",
+    "type": "other",
+    "description": "Our hotel Thu–Sat (pending booking confirmation). Walk to Disney Springs; ~10–15 min drive to Epcot / Magic Kingdom.",
+    "address": "1805 Hotel Plaza Blvd, Lake Buena Vista, FL 32830",
+    "coordinates": [
+      28.3833,
+      -81.5139
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=1805+Hotel+Plaza+Blvd+Lake+Buena+Vista+FL",
+    "tags": [
+      "lodging"
+    ]
   }
 ]
