@@ -52,7 +52,7 @@
           "distanceMiles": 45,
           "drivingMinutes": 60,
           "travelMode": "drive",
-          "notes": "Leave home ~3:15 AM → PHL Economy Lot (shuttle to terminals) by ~4:00; park Thu–Sun, ~$72 (4 × $18)."
+          "notes": "Leave home ~3:15 AM → PHL Terminal D/E garage by ~4:15 (5-min walk to Terminal E). Upper levels $32/day ≈ $128 Thu–Sun. Economy Lot ($18/day) shuttle was too tight for the 4:55 door close."
         },
         {
           "id": "leg-phl-mco-4",
@@ -61,7 +61,7 @@
           "distanceMiles": 860,
           "drivingMinutes": 158,
           "travelMode": "flight",
-          "notes": "BOOKED: Frontier F9 2415 5:15 AM → 8:01 AM, confirmation in email/calendar, $947.92 for 4 (Economy bundles). Seats 24A, 25A–C."
+          "notes": "BOOKED: Frontier F9 2415 5:15 AM → 8:01 AM, $947.92 for 4. Checked in Nov 4: seats 24A (Jaquan), 25A–C; TSA PreCheck on all 4 passes."
         },
         {
           "id": "leg-mco-mk-4",
@@ -70,31 +70,32 @@
           "distanceMiles": 25,
           "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Rideshare (no rental until Saturday), ~$50–70."
+          "notes": "Rideshare via the hotel to drop bags (~$35 + ~$25). No car until Saturday."
         }
       ],
       "segments": [
         {
           "time": "3:15 AM",
           "placeId": "hopewell-nj",
-          "activity": "Leave home → PHL Economy Lot",
+          "activity": "Leave home → PHL Terminal D/E garage (walk to Terminal E)",
           "durationMinutes": 60,
           "eventType": "travel"
         },
         {
           "time": "5:15 AM",
           "placeId": "phl-airport",
-          "activity": "Frontier F9 2415 PHL → Orlando nonstop (lands 8:01 AM) — conf. in calendar",
+          "activity": "Frontier F9 2415 PHL → Orlando nonstop (lands 8:01 AM) — checked in, all 4 TSA PreCheck, gate E4, boarding 4:30, door closes 4:55",
           "durationMinutes": 166,
           "eventType": "travel",
           "fixed": true
         },
         {
-          "time": "8:30 AM",
+          "time": "8:20 AM",
           "placeId": "mco-airport",
-          "activity": "Rideshare to Magic Kingdom (~$50–70); optional stop at the hotel to leave bags",
-          "durationMinutes": 60,
-          "eventType": "travel"
+          "activity": "Rideshare MCO → Holiday Inn (~25 min); leave bags with the bell desk (check-in is 4 PM), then rideshare to Magic Kingdom (drop at the Contemporary Resort and walk ~10 min, or the TTC + monorail)",
+          "durationMinutes": 85,
+          "eventType": "travel",
+          "notes": "Carry-ons only, so no baggage claim. Ask the IHG app for an early room. Disney rideshares cannot drop at the Magic Kingdom gate."
         },
         {
           "time": "9:45 AM",
@@ -179,30 +180,12 @@
       "legs": [
         {
           "id": "leg-hotel-epcot-4",
-          "fromPlaceId": "disney-area",
+          "fromPlaceId": "hi-disney-springs",
           "toPlaceId": "epcot",
           "distanceMiles": 6,
           "drivingMinutes": 20,
           "travelMode": "drive",
-          "notes": "Or the Skyliner to International Gateway if staying at Pop Century / Art of Animation / Caribbean Beach — it lands beside the UK pavilion."
-        },
-        {
-          "id": "leg-phl-mco-fri-4",
-          "fromPlaceId": "phl-airport",
-          "toPlaceId": "mco-airport",
-          "distanceMiles": 860,
-          "drivingMinutes": 166,
-          "travelMode": "flight",
-          "notes": "4th traveler: Frontier PHL 5:15 AM → MCO 8:01 AM ($129). Only flight that makes the parade. Leave home ~2:45 AM."
-        },
-        {
-          "id": "leg-mco-epcot-4",
-          "fromPlaceId": "mco-airport",
-          "toPlaceId": "epcot",
-          "distanceMiles": 20,
-          "drivingMinutes": 35,
-          "travelMode": "drive",
-          "notes": "Rideshare straight to Epcot (~$40–50). Tight but doable for 10:05."
+          "notes": "Hotel park shuttle (free with the resort fee) or rideshare ~10–15 min. Confirm shuttle times at the front desk Thursday night."
         }
       ],
       "segments": [
@@ -276,16 +259,16 @@
     {
       "id": "day4",
       "label": "Day 4 — Saturday, Nov 7",
-      "theme": "Check out · drive to Nicole's · Tampa afternoon (band workshop at Epcot)",
+      "theme": "Jaquan grabs the rental at MCO · drive to Nicole's by ~9:40",
       "legs": [
         {
           "id": "leg-hotel-tampa-4",
-          "fromPlaceId": "disney-area",
+          "fromPlaceId": "hi-disney-springs",
           "toPlaceId": "tampa-family",
           "distanceMiles": 95,
           "drivingMinutes": 100,
           "travelMode": "drive",
-          "notes": ", late morning — no park today, so no rush. From Land O' Lakes: ~95 mi, 1h40 (2h in traffic) via I-75 S → I-4 E."
+          "notes": "Leave ~8:10 AM after the MCO car run. Lake Buena Vista → Land O' Lakes ~95 mi, 1h30 via I-4 W."
         }
       ],
       "segments": [
@@ -301,37 +284,46 @@
           ]
         },
         {
-          "time": "9:30 AM",
+          "time": "6:50 AM",
           "placeId": "hi-disney-springs",
-          "activity": "Sleep in, pool, check out by 11",
-          "durationMinutes": 90,
-          "eventType": "free-time"
+          "activity": "Jaquan: rideshare alone to MCO (~20 min). Mikaela + kids pack and check out",
+          "durationMinutes": 20,
+          "eventType": "travel"
         },
         {
-          "time": "11:00 AM",
-          "placeId": "disney-area",
-          "activity": "Pick up the one-way rental near Disney (→ TPA Sun) — not booked yet",
+          "time": "7:30 AM",
+          "placeId": "mco-airport",
+          "activity": "Pick up Alamo one-way rental at MCO (Nissan Rogue or similar, $85.51 at the counter) — decline the damage waiver, pay with Sapphire",
           "durationMinutes": 30,
+          "eventType": "travel",
+          "fixed": true,
+          "notes": "Confirmation in email/calendar. Pay Later, free cancellation. Returns to TPA Sun 5:00 AM."
+        },
+        {
+          "time": "8:00 AM",
+          "placeId": "hi-disney-springs",
+          "activity": "Back at the hotel — load family + bags",
+          "durationMinutes": 10,
           "eventType": "travel"
         },
         {
-          "time": "11:30 AM",
-          "placeId": "disney-area",
-          "activity": "Drive to Nicole's (1h30)",
+          "time": "8:10 AM",
+          "placeId": "hi-disney-springs",
+          "activity": "Drive to Nicole's (~1h30)",
           "durationMinutes": 90,
           "eventType": "travel"
         },
         {
-          "time": "1:30 PM",
+          "time": "9:40 AM",
           "placeId": "tampa-family",
-          "activity": "Arrive at Nicole's — Land O' Lakes (Nicole's) afternoon (Riverwalk, Armature Works, or just the pool)",
-          "durationMinutes": 300,
+          "activity": "Arrive at Nicole's — Land O' Lakes; full day together",
+          "durationMinutes": 480,
           "eventType": "free-time"
         },
         {
           "time": "Evening",
           "placeId": "tampa-family",
-          "activity": "Early dinner, early night — 4:45 AM alarm for the 7:16 flight (or sleep in for the 12:59 PM option)",
+          "activity": "Early dinner, gas up the rental, early night — 4:30 AM departure for the 6:15 Southwest flight",
           "durationMinutes": 120,
           "eventType": "rest"
         }
@@ -351,7 +343,7 @@
           "distanceMiles": 25,
           "drivingMinutes": 35,
           "travelMode": "drive",
-          "notes": "Leave Nicole's by 4:45 AM, return the rental at TPA, at the gate by 6:15. Land O' Lakes → TPA is ~25 mi / 35 min (Veterans Expy / Suncoast Pkwy)."
+          "notes": "Leave Nicole's 4:30 AM, return the Alamo rental at TPA ~5:00, at the gate well before 6:15. ~25 mi / 35 min."
         },
         {
           "id": "leg-tpa-phl-4",
@@ -360,7 +352,7 @@
           "distanceMiles": 920,
           "drivingMinutes": 158,
           "travelMode": "flight",
-          "notes": "Frontier nonstop 7:16 AM → 9:54 AM, 4 tickets $872. Alternative: Frontier via Atlanta 12:59 PM → 6:19 PM, $1,338 for 4, no 4:45 AM alarm."
+          "notes": "BOOKED: Southwest WN 4283 TPA 6:15 AM → STL 7:40 AM CT; WN 4922 STL 10:40 AM CT → PHL 1:50 PM ET (Terminal E). Check in Sat 6:15 AM for boarding positions."
         },
         {
           "id": "leg-phl-home-4",
@@ -375,7 +367,7 @@
         {
           "time": "4:30 AM",
           "placeId": "tampa-family",
-          "activity": "Leave Nicole's for TPA, drop the rental",
+          "activity": "Leave Nicole's for TPA, return the Alamo rental by ~5:00 AM (24-hour return; refuel first)",
           "durationMinutes": 35,
           "eventType": "travel"
         },
@@ -390,7 +382,7 @@
         {
           "time": "2:15 PM",
           "placeId": "phl-airport",
-          "activity": "Economy Lot shuttle → car → home by ~3:30 PM",
+          "activity": "Land Terminal E, walk to the D/E garage → home by ~3:30 PM",
           "durationMinutes": 75,
           "eventType": "travel"
         },

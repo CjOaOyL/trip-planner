@@ -3731,8 +3731,8 @@
     "date": "2026-11-05",
     "placeId": "mco-airport",
     "createdAt": "2026-10-19T22:45:00Z",
-    "updatedAt": "2026-10-21T02:20:00Z",
-    "notes": "BOOKED 2026-10-20 on flyfrontier.com — confirmation in email/calendar, $947.92 (Economy bundle: carry-on + personal item each). F9 2415 PHL 5:15 AM → MCO 8:01 AM Thu Nov 5. Seats: Jaquan 24A, Mikaela 25C, Aziza 25B, Kailani 25A. Known Traveler Numbers on all 4. Non-refundable (Frontier credit if changed). Booked as 2 adults + 2 children; the flight was not a Kids Fly Free flight. Earlier notes: Priced 2026-10-19 on Google Flights for 4 (Chase Travel matched Google on every check). Jaquan is in New Brunswick until 5 PM Wed, so Wednesday means Newark after ~6:30 PM. The JetBlue 8:55 PM EWR→MCO had 3 seats at $184 on Oct 18–19 but now prices at $851/seat. Frontier prices shown are base fare; add ~$15/person for the Economy bundle (carry-on + seat choice) — far cheaper than a $60 à-la-carte carry-on. Chase Travel does not sell Frontier: book on flyfrontier.com.",
+    "updatedAt": "2026-11-05T03:10:00Z",
+    "notes": "CHECKED IN 2026-11-04 in the Frontier app: all 4 TSA PreCheck, gate E4, boarding 4:30 AM, door closes 4:55 AM, carry-ons (no checked bags). BOOKED 2026-10-20 on flyfrontier.com — confirmation in email/calendar, $947.92 (Economy bundle: carry-on + personal item each). F9 2415 PHL 5:15 AM → MCO 8:01 AM Thu Nov 5. Seats: Jaquan 24A, Mikaela 25C, Aziza 25B, Kailani 25A. Known Traveler Numbers on all 4. Non-refundable (Frontier credit if changed). Booked as 2 adults + 2 children; the flight was not a Kids Fly Free flight. Earlier notes: Priced 2026-10-19 on Google Flights for 4 (Chase Travel matched Google on every check). Jaquan is in New Brunswick until 5 PM Wed, so Wednesday means Newark after ~6:30 PM. The JetBlue 8:55 PM EWR→MCO had 3 seats at $184 on Oct 18–19 but now prices at $851/seat. Frontier prices shown are base fare; add ~$15/person for the Economy bundle (carry-on + seat choice) — far cheaper than a $60 à-la-carte carry-on. Chase Travel does not sell Frontier: book on flyfrontier.com.",
     "options": [
       {
         "id": "o-thu-phl-mco-f9-735-af",
@@ -3938,19 +3938,31 @@
     "id": "r-airport-car-af",
     "name": "Getting to/from the NJ-side airport — where the car sits · All Four",
     "category": "other",
-    "status": "needed",
+    "status": "booked",
     "itineraryId": "03-all-four",
     "date": "2026-11-05",
     "placeId": "phl-airport",
     "createdAt": "2026-10-19T22:45:00Z",
-    "updatedAt": "2026-10-19T22:45:00Z",
-    "notes": "Pairs with the flight scenario: the car should be at the airport you fly home to. Rates checked 2026-10-19 (PHL: phl.org; EWR/off-site: aggregator blogs — confirm before booking).",
+    "updatedAt": "2026-11-05T03:10:00Z",
+    "notes": "DECIDED 2026-11-04: PHL Terminal D/E garage (drive-up, upper levels $32/day). Economy Lot shuttle was too tight for the 5:15 AM Frontier (door closes 4:55). Garage C is closed for construction.",
     "options": [
+      {
+        "id": "o-park-phl-de-garage-af",
+        "url": "https://www.phl.org/parking/garages",
+        "title": "PHL Terminal D/E garage, Thu ~4 AM → Sun ~2:30 PM (4 days × $32)",
+        "status": "chosen",
+        "totalPrice": 128,
+        "currency": "USD",
+        "location": "PHL Terminal D/E garage",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-11-05T03:10:00Z",
+        "notes": "5-min walk to Terminal E (Frontier out, Southwest back)."
+      },
       {
         "id": "o-park-phl-economy-af",
         "url": "https://www.phl.org/parking/garages/economy-parking",
         "title": "Drive to PHL, park Economy Lot Thu 6 AM → Sun 2 PM (4 days × $18)",
-        "status": "shortlist",
+        "status": "rejected",
         "totalPrice": 72,
         "currency": "USD",
         "location": "PHL Economy Lot (shuttle to terminals)",
@@ -3962,7 +3974,7 @@
         "id": "o-park-ewr-p6-af",
         "url": "https://www.newarkairport.com/to-from-airport/parking",
         "title": "Drive to EWR, park P6 Economy Wed 6:30 PM → Sun 9 AM (5 days, ~$21/day pre-booked)",
-        "status": "shortlist",
+        "status": "rejected",
         "totalPrice": 105,
         "currency": "USD",
         "location": "EWR P6 Economy (AirTrain/shuttle)",
@@ -3974,7 +3986,7 @@
         "id": "o-dropoff-ewr-uber-phl-af",
         "url": "https://www.uber.com/",
         "title": "Friend drops all 4 at Newark Wed; Uber XL PHL → Hopewell Sun",
-        "status": "shortlist",
+        "status": "rejected",
         "totalPrice": 110,
         "currency": "USD",
         "location": "Newark drop-off / PHL rideshare",
@@ -3982,25 +3994,38 @@
         "availabilityCheckedAt": "2026-10-19T22:30:00Z",
         "notes": "Only for Wednesday-Newark-out + PHL-home. Uber XL PHL → Hopewell est. ~$100–120 (no published route price; Mount Laurel averages $89). $0 if someone picks you up at PHL."
       }
-    ]
+    ],
+    "cost": 128
   },
   {
     "id": "r-rental-car-af",
-    "name": "Rental car — Orlando airport Thu → Tampa airport Sun 5 AM · All Four",
+    "name": "Rental car — Orlando airport Sat 7:30 AM → Tampa airport Sun 5 AM · All Four",
     "category": "other",
-    "status": "needed",
+    "status": "booked",
     "itineraryId": "03-all-four",
-    "date": "2026-11-05",
+    "date": "2026-11-07",
     "placeId": "mco-airport",
     "createdAt": "2026-10-19T22:45:00Z",
-    "updatedAt": "2026-10-19T22:45:00Z",
-    "notes": "One-way MCO → TPA. Chase Travel prices (Alamo Intermediate, Nissan Rogue or similar): Fri→Sun 2 days $177, Wed→Sun 4 days $341 — so Thu→Sun ≈ $260 (estimate, re-price on Chase). Sapphire Reserve covers collision: decline the counter CDW.",
+    "updatedAt": "2026-11-05T03:10:00Z",
+    "notes": "BOOKED 2026-11-04 directly on alamo.com — confirmation in email/calendar. Pay Later $85.51 incl. taxes, free cancellation, no extras. Jaquan rideshares alone to MCO Sat 6:50 AM, returns to the hotel for the family. Disney-area desks (Avis at the Hilton) were sold out for one-way; Chase Travel had the same car at $97. Decline counter CDW (Sapphire Reserve covers).",
     "options": [
+      {
+        "id": "o-car-alamo-mco-tpa-sat-af",
+        "url": "https://www.alamo.com/",
+        "title": "Alamo Midsize SUV (Nissan Rogue or similar) — MCO Sat 7:30 AM → TPA Sun 5:00 AM",
+        "status": "chosen",
+        "totalPrice": 85.51,
+        "currency": "USD",
+        "location": "Orlando airport → Tampa airport",
+        "availability": "available",
+        "availabilityCheckedAt": "2026-11-05T03:10:00Z",
+        "notes": "BOOKED — [conf. in calendar]. Pay at counter."
+      },
       {
         "id": "o-car-alamo-mco-tpa-thu-af",
         "url": "https://travelsecure.chase.com/",
         "title": "Alamo Intermediate (Nissan Rogue or similar) — MCO Thu 10:30 AM → TPA Sun 5:00 AM",
-        "status": "shortlist",
+        "status": "rejected",
         "totalPrice": 260,
         "currency": "USD",
         "location": "Orlando airport → Tampa airport",
@@ -4012,7 +4037,7 @@
         "id": "o-car-alamo-tpa-rt-af",
         "url": "https://travelsecure.chase.com/",
         "title": "Alamo Intermediate — TPA Wed 11:30 PM → TPA Sun 5 AM (round trip, Wednesday-Tampa scenario)",
-        "status": "shortlist",
+        "status": "rejected",
         "totalPrice": 249,
         "currency": "USD",
         "location": "Tampa airport",
@@ -4020,7 +4045,9 @@
         "availabilityCheckedAt": "2026-10-19T22:30:00Z",
         "notes": "Chase quote 2026-10-18 for the United EWR→TPA Wednesday option."
       }
-    ]
+    ],
+    "cost": 85.51,
+    "bookingUrl": "https://www.alamo.com/en/reserve/view-modify-cancel.html"
   },
   {
     "id": "r-hotel-disney-af",
