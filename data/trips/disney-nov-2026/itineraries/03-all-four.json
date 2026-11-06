@@ -176,7 +176,7 @@
     {
       "id": "day3",
       "label": "Day 3 — Friday, Nov 6",
-      "theme": "EPCOT — Early Entry 8:30, parade 10:05, Guardians 7:25 PM, Luminous 9 PM",
+      "theme": "EPCOT AM (Early Entry 8:30, parade 10:05) → Hollywood Studios PM → EPCOT for Guardians 7:25 PM, Luminous 9 PM",
       "legs": [
         {
           "id": "leg-hotel-epcot-4",
@@ -230,10 +230,10 @@
         {
           "time": "12:30 PM",
           "placeId": "hollywood-studios",
-          "activity": "Afternoon option A: Skyliner to Hollywood Studios (~15–20 min) → Rise of the Resistance standby. Option B: bus to Animal Kingdom → Expedition Everest (needs an AK Multi Pass)",
+          "activity": "Skyliner from Epcot's International Gateway to Hollywood Studios (~20 min). HS Multi Pass: Slinky Dog Dash, Tower of Terror, Toy Story Mania (refill after each scan); Rise of the Resistance standby if the posted wait is reasonable",
           "durationMinutes": 330,
           "eventType": "activity",
-          "notes": "Rise Single Pass sold out Thu & Fri as of Nov 3 — re-check the app for cancellations. Be back at Epcot by ~7 PM."
+          "notes": "Rise Single Pass still sold out as of 9:45 PM Thu. HS Multi Pass $32pp. Leave HS by ~6:45 PM (Skyliner back) for Guardians 7:25–8:25."
         },
         {
           "time": "7:25 PM",
