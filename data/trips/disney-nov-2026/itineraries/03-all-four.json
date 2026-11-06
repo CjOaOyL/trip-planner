@@ -185,16 +185,17 @@
           "distanceMiles": 6,
           "drivingMinutes": 20,
           "travelMode": "drive",
-          "notes": "Hotel park shuttle (free with the resort fee) or rideshare ~10–15 min. Confirm shuttle times at the front desk Thursday night."
+          "notes": "Hotel park shuttle booked for 8:00 AM (free, code from front desk). Returns hourly at :40 from Epcot space #34."
         }
       ],
       "segments": [
         {
-          "time": "7:45 AM",
+          "time": "8:00 AM",
           "placeId": "hi-disney-springs",
-          "activity": "Hotel shuttle or rideshare to Epcot",
+          "activity": "Hotel shuttle (Fabulous Buses, booked, free with hotel code) → Epcot bus lot space #34",
           "durationMinutes": 30,
-          "eventType": "travel"
+          "eventType": "travel",
+          "notes": "Show the QR code from the confirmation email. Returns leave Epcot space #34 at :40 past each hour; last ~90 min after close; any return works."
         },
         {
           "time": "8:30 AM",
@@ -230,10 +231,10 @@
         {
           "time": "12:30 PM",
           "placeId": "hollywood-studios",
-          "activity": "Skyliner from Epcot's International Gateway to Hollywood Studios (~20 min). HS Multi Pass: Slinky Dog Dash, Tower of Terror, Toy Story Mania (refill after each scan); Rise of the Resistance standby if the posted wait is reasonable",
+          "activity": "Skyliner to Hollywood Studios. HS Multi Pass (booked): Millennium Falcon 1:30–2:30, Star Tours 2:30–3:30, Indiana Jones show (arrive 4:00–4:15, show 4:30). Keep checking Modify for Slinky Dog; Rise standby if the wait is reasonable",
           "durationMinutes": 330,
           "eventType": "activity",
-          "notes": "Rise Single Pass still sold out as of 9:45 PM Thu. HS Multi Pass $32pp. Leave HS by ~6:45 PM (Skyliner back) for Guardians 7:25–8:25."
+          "notes": "HS Multi Pass bought Nov 5 ($136.32 incl. tax, 4 guests). Slinky and Toy Story Mania were sold out; Rise Single Pass sold out. No inversions/no Tower of Terror per family preference. Leave HS by ~6:45 PM for Guardians."
         },
         {
           "time": "7:25 PM",
@@ -254,7 +255,7 @@
         }
       ],
       "overnightPlaceId": "disney-area",
-      "notes": "Lightning Lanes bought Nov 3 in the MDE app (Guardians $23pp). Park hours 9 AM–9 PM, Early Entry 8:30 for our hotel. Thandi's band is free in the park after ~11 AM."
+      "notes": "Lightning Lanes bought Nov 3 in the MDE app (Guardians $23pp). Park hours 9 AM–9 PM, Early Entry 8:30 for our hotel. Thandi's band is free in the park after ~11 AM. HS Multi Pass added Nov 5."
     },
     {
       "id": "day4",
